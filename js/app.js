@@ -164,10 +164,10 @@ const App = (function() {
    */
   function initModules() {
     // Initialize Gallery
-    if (typeof Gallery !== 'undefined') {
+    if (typeof Gallery !== 'undefined' && typeof Gallery.init === 'function') {
       Gallery.init();
-    } else if (typeof HouseColorGallery !== 'undefined') {
-      HouseColorGallery.initGallery();
+    } else {
+      console.warn('Gallery module not available');
     }
 
     // Initialize Comments/Favorites
