@@ -167,7 +167,15 @@ const Ratings = (function () {
           .set({ value, updatedAt }, { merge: true });
       }
     } catch (error) {
-      console.error("Ratings: setRating failed", error);
+      console.error("Ratings: setRating failed, falling back to localStorage", error);
+      // Fallback to localStorage when Firebase fails
+      const store = loadOfflineStore();
+      if (isToggleOff) {
+        if (store[id]) delete store[id][user];
+      } else {
+        store[id] = { ...(store[id] || {}), [user]: value };
+      }
+      writeOfflineStore(store);
     }
   }
 
@@ -189,8 +197,10 @@ const Ratings = (function () {
       });
       return ratings;
     } catch (error) {
-      console.error("Ratings: getRatings failed", error);
-      return {};
+      console.error("Ratings: getRatings failed, falling back to localStorage", error);
+      // Fallback to localStorage when Firebase fails
+      const store = loadOfflineStore();
+      return { ...(store[id] || {}) };
     }
   }
 
