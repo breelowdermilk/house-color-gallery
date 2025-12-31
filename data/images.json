@@ -1,0 +1,1729 @@
+{
+  "parlor": [
+    {
+      "id": "parlor-001",
+      "filename": "Ash Walls - Chestler Trim - Burgundy Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Burgundy%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Burgundy%20Mantle",
+      "walls": "Ash",
+      "trim": "Chestler",
+      "feature": "Burgundy Mantle",
+      "tags": [
+        "chestler",
+        "mantle",
+        "ash",
+        "burgundy"
+      ]
+    },
+    {
+      "id": "parlor-002",
+      "filename": "Ash Walls - Chestler Trim - Cream Panels",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Cream%20Panels",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Cream%20Panels",
+      "walls": "Ash",
+      "trim": "Chestler",
+      "feature": "Cream Panels",
+      "tags": [
+        "cream",
+        "chestler",
+        "panels",
+        "ash"
+      ]
+    },
+    {
+      "id": "parlor-003",
+      "filename": "Ash Walls - Chestler Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "walls": "Ash",
+      "trim": "Chestler",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "chestler",
+        "ash",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-004",
+      "filename": "Ash Walls - Coal Black Trim - Gold Accents",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Coal%20Black%20Trim%20-%20Gold%20Accents",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Coal%20Black%20Trim%20-%20Gold%20Accents",
+      "walls": "Ash",
+      "trim": "Coal Black",
+      "feature": "Gold Accents",
+      "tags": [
+        "coal",
+        "ash",
+        "gold",
+        "black",
+        "accents"
+      ]
+    },
+    {
+      "id": "parlor-005",
+      "filename": "Ash Walls - Elderberry Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Elderberry%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Elderberry%20Trim%20-%20Wood%20Mantle",
+      "walls": "Ash",
+      "trim": "Elderberry",
+      "feature": "Wood Mantle",
+      "tags": [
+        "elderberry",
+        "wood",
+        "ash",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-006",
+      "filename": "Ash Walls - Winchester Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "walls": "Ash",
+      "trim": "Winchester",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "mantle",
+        "ash",
+        "winchester"
+      ]
+    },
+    {
+      "id": "parlor-007",
+      "filename": "Chestler Walls - Ash Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Ash%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Ash%20Trim%20-%20Wood%20Mantle",
+      "walls": "Chestler",
+      "trim": "Ash",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "chestler",
+        "ash",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-008",
+      "filename": "Chestler Walls - Coal Black Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Coal%20Black%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Coal%20Black%20Trim%20-%20Wood%20Mantle",
+      "walls": "Chestler",
+      "trim": "Coal Black",
+      "feature": "Wood Mantle",
+      "tags": [
+        "chestler",
+        "coal",
+        "mantle",
+        "wood",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-009",
+      "filename": "Chestler Walls - Velvet Plum Trim - Gold Accents",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Gold%20Accents",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Gold%20Accents",
+      "walls": "Chestler",
+      "trim": "Velvet Plum",
+      "feature": "Gold Accents",
+      "tags": [
+        "velvet",
+        "chestler",
+        "plum",
+        "gold",
+        "accents"
+      ]
+    },
+    {
+      "id": "parlor-010",
+      "filename": "Chestler Walls - Winchester Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "walls": "Chestler",
+      "trim": "Winchester",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "chestler",
+        "winchester",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-011",
+      "filename": "Coal Black Walls - Ash Trim - Gold Accents",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Ash%20Trim%20-%20Gold%20Accents",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Ash%20Trim%20-%20Gold%20Accents",
+      "walls": "Coal Black",
+      "trim": "Ash",
+      "feature": "Gold Accents",
+      "tags": [
+        "coal",
+        "ash",
+        "gold",
+        "black",
+        "accents"
+      ]
+    },
+    {
+      "id": "parlor-012",
+      "filename": "Coal Black Walls - Chestler Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "walls": "Coal Black",
+      "trim": "Chestler",
+      "feature": "Wood Mantle",
+      "tags": [
+        "chestler",
+        "coal",
+        "mantle",
+        "wood",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-013",
+      "filename": "Coal Black Walls - Velvet Plum Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Wood%20Mantle",
+      "walls": "Coal Black",
+      "trim": "Velvet Plum",
+      "feature": "Wood Mantle",
+      "tags": [
+        "velvet",
+        "coal",
+        "mantle",
+        "wood",
+        "plum",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-014",
+      "filename": "Coal Black Walls - Winchester Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
+      "walls": "Coal Black",
+      "trim": "Winchester",
+      "feature": "Wood Mantle",
+      "tags": [
+        "winchester",
+        "coal",
+        "mantle",
+        "wood",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-015",
+      "filename": "Oakham Walls - Chestler Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Oakham%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Oakham%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
+      "walls": "Oakham",
+      "trim": "Chestler",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "chestler",
+        "oakham",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-016",
+      "filename": "Sage Green Walls - Cream Trim - Wood Mantle - Dark",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Sage%20Green%20Walls%20-%20Cream%20Trim%20-%20Wood%20Mantle%20-%20Dark",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Sage%20Green%20Walls%20-%20Cream%20Trim%20-%20Wood%20Mantle%20-%20Dark",
+      "walls": "Sage Green",
+      "trim": "Cream",
+      "feature": "Wood Mantle",
+      "tags": [
+        "green",
+        "sage",
+        "mantle",
+        "wood",
+        "cream"
+      ]
+    },
+    {
+      "id": "parlor-017",
+      "filename": "Slate Blue Walls - Burgundy Trim - Wood Mantle - Moody",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Slate%20Blue%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20-%20Moody",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Slate%20Blue%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20-%20Moody",
+      "walls": "Slate Blue",
+      "trim": "Burgundy",
+      "feature": "Wood Mantle",
+      "tags": [
+        "burgundy",
+        "mantle",
+        "wood",
+        "blue",
+        "slate"
+      ]
+    },
+    {
+      "id": "parlor-018",
+      "filename": "Teal Walls - Brown Chocolate Trim and Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Brown%20Chocolate%20Trim%20and%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Brown%20Chocolate%20Trim%20and%20Mantle",
+      "walls": "Teal",
+      "trim": "Brown Chocolate and Mantle",
+      "feature": null,
+      "tags": [
+        "teal",
+        "chocolate",
+        "brown",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-019",
+      "filename": "Teal Walls - Burgundy Trim - Burgundy Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Burgundy%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Burgundy%20Mantle",
+      "walls": "Teal",
+      "trim": "Burgundy",
+      "feature": "Burgundy Mantle",
+      "tags": [
+        "teal",
+        "burgundy",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-020",
+      "filename": "Teal Walls - Burgundy Trim - Wood Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle",
+      "walls": "Teal",
+      "trim": "Burgundy",
+      "feature": "Wood Mantle",
+      "tags": [
+        "wood",
+        "teal",
+        "burgundy",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-021",
+      "filename": "Teal Walls - Burgundy Trim - Wood Mantle B",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20B",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20B",
+      "walls": "Teal",
+      "trim": "Burgundy",
+      "feature": "Wood Mantle B",
+      "tags": [
+        "wood",
+        "teal",
+        "burgundy",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-022",
+      "filename": "Teal Walls - Cream Trim - Burgundy Mantle Shelf",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Burgundy%20Mantle%20Shelf",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Burgundy%20Mantle%20Shelf",
+      "walls": "Teal",
+      "trim": "Cream",
+      "feature": "Burgundy Mantle Shelf",
+      "tags": [
+        "teal",
+        "burgundy",
+        "mantle",
+        "cream",
+        "shelf"
+      ]
+    },
+    {
+      "id": "parlor-023",
+      "filename": "Teal Walls - Cream Trim - Hot Pink Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Hot%20Pink%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Hot%20Pink%20Mantle",
+      "walls": "Teal",
+      "trim": "Cream",
+      "feature": "Hot Pink Mantle",
+      "tags": [
+        "teal",
+        "mantle",
+        "cream",
+        "hot",
+        "pink"
+      ]
+    },
+    {
+      "id": "parlor-024",
+      "filename": "Teal Walls - Cream Trim - Pink Mantle Shelf Accent",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Pink%20Mantle%20Shelf%20Accent",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Pink%20Mantle%20Shelf%20Accent",
+      "walls": "Teal",
+      "trim": "Cream",
+      "feature": "Pink Mantle Shelf Accent",
+      "tags": [
+        "teal",
+        "mantle",
+        "cream",
+        "pink",
+        "shelf",
+        "accent"
+      ]
+    },
+    {
+      "id": "parlor-025",
+      "filename": "Teal Walls - Maroon Trim Mantle Baseboard",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Maroon%20Trim%20Mantle%20Baseboard",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Maroon%20Trim%20Mantle%20Baseboard",
+      "walls": "Teal",
+      "trim": "Maroon Mantle Baseboard",
+      "feature": null,
+      "tags": [
+        "teal",
+        "maroon",
+        "baseboard",
+        "mantle"
+      ]
+    },
+    {
+      "id": "parlor-026",
+      "filename": "Teal Walls - Mauve Trim - Dusty Pink Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Mauve%20Trim%20-%20Dusty%20Pink%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Mauve%20Trim%20-%20Dusty%20Pink%20Mantle",
+      "walls": "Teal",
+      "trim": "Mauve",
+      "feature": "Dusty Pink Mantle",
+      "tags": [
+        "teal",
+        "mantle",
+        "mauve",
+        "pink",
+        "dusty"
+      ]
+    },
+    {
+      "id": "parlor-027",
+      "filename": "Teal Walls - Sage Green Trim - Gray Green Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Sage%20Green%20Trim%20-%20Gray%20Green%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Sage%20Green%20Trim%20-%20Gray%20Green%20Mantle",
+      "walls": "Teal",
+      "trim": "Sage Green",
+      "feature": "Gray Green Mantle",
+      "tags": [
+        "teal",
+        "green",
+        "sage",
+        "mantle",
+        "gray"
+      ]
+    },
+    {
+      "id": "parlor-028",
+      "filename": "Teal Walls - Tan Cream Trim - Tan Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Tan%20Cream%20Trim%20-%20Tan%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Tan%20Cream%20Trim%20-%20Tan%20Mantle",
+      "walls": "Teal",
+      "trim": "Tan Cream",
+      "feature": "Tan Mantle",
+      "tags": [
+        "teal",
+        "cream",
+        "tan",
+        "mantle"
+      ]
+    }
+  ],
+  "dining-room": [
+    {
+      "id": "dining-room-001",
+      "filename": "4 Panel Grid - Cream vs Sage Walls - White vs Oak Trim Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/4%20Panel%20Grid%20-%20Cream%20vs%20Sage%20Walls%20-%20White%20vs%20Oak%20Trim%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/4%20Panel%20Grid%20-%20Cream%20vs%20Sage%20Walls%20-%20White%20vs%20Oak%20Trim%20Comparison",
+      "pattern": "4 Panel Grid - Cream vs Sage Walls - White vs Oak Trim Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "panel",
+        "grid",
+        "sage",
+        "comparison",
+        "walls",
+        "cream",
+        "trim",
+        "white",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-002",
+      "filename": "4 Panel Grid - Marigold Chrysanthemum Sunflower Damask Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/4%20Panel%20Grid%20-%20Marigold%20Chrysanthemum%20Sunflower%20Damask%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/4%20Panel%20Grid%20-%20Marigold%20Chrysanthemum%20Sunflower%20Damask%20Comparison",
+      "pattern": "4 Panel Grid - Marigold Chrysanthemum Sunflower Damask Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "panel",
+        "grid",
+        "comparison",
+        "marigold",
+        "damask",
+        "chrysanthemum",
+        "sunflower"
+      ]
+    },
+    {
+      "id": "dining-room-003",
+      "filename": "Attingham Blue Deco Fan - Mustard Wainscoting - Oak Trim - Window View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Attingham%20Blue%20Deco%20Fan%20-%20Mustard%20Wainscoting%20-%20Oak%20Trim%20-%20Window%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Attingham%20Blue%20Deco%20Fan%20-%20Mustard%20Wainscoting%20-%20Oak%20Trim%20-%20Window%20View",
+      "pattern": "Attingham Blue Deco Fan",
+      "wainscoting": "Mustard",
+      "trim": "Oak",
+      "view": "Window View",
+      "type": "standard",
+      "tags": [
+        "attingham",
+        "mustard",
+        "standard",
+        "window",
+        "blue",
+        "deco",
+        "fan",
+        "view",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-004",
+      "filename": "Attingham Blue Deco Fan - Periwinkle Wainscoting - White Trim - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Attingham%20Blue%20Deco%20Fan%20-%20Periwinkle%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Attingham%20Blue%20Deco%20Fan%20-%20Periwinkle%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
+      "pattern": "Attingham Blue Deco Fan",
+      "wainscoting": "Periwinkle",
+      "trim": "White",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "attingham",
+        "wide",
+        "standard",
+        "blue",
+        "deco",
+        "fan",
+        "view",
+        "periwinkle",
+        "white"
+      ]
+    },
+    {
+      "id": "dining-room-005",
+      "filename": "Chrysanthemum Pink Gold Floral - Sage Wainscoting - Oak Trim - Oak Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20Oak%20Trim%20-%20Oak%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20Oak%20Trim%20-%20Oak%20Door",
+      "pattern": "Chrysanthemum Pink Gold Floral",
+      "wainscoting": "Sage",
+      "trim": "Oak",
+      "view": "Oak Door",
+      "type": "standard",
+      "tags": [
+        "standard",
+        "floral",
+        "sage",
+        "chrysanthemum",
+        "door",
+        "gold",
+        "pink",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-006",
+      "filename": "Chrysanthemum Pink Gold Floral - Sage Wainscoting - White Trim - Bay Window",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20White%20Trim%20-%20Bay%20Window",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20White%20Trim%20-%20Bay%20Window",
+      "pattern": "Chrysanthemum Pink Gold Floral",
+      "wainscoting": "Sage",
+      "trim": "White",
+      "view": "Bay Window",
+      "type": "standard",
+      "tags": [
+        "bay",
+        "standard",
+        "floral",
+        "sage",
+        "window",
+        "chrysanthemum",
+        "gold",
+        "pink",
+        "white"
+      ]
+    },
+    {
+      "id": "dining-room-007",
+      "filename": "Dining Room Bree Target",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Dining%20Room%20Bree%20Target",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Dining%20Room%20Bree%20Target",
+      "pattern": "Dining Room Bree Target",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "reference",
+      "tags": [
+        "dining",
+        "target",
+        "room",
+        "bree",
+        "reference"
+      ]
+    },
+    {
+      "id": "dining-room-008",
+      "filename": "Dining Room Target 2",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Dining%20Room%20Target%202",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Dining%20Room%20Target%202",
+      "pattern": "Dining Room Target 2",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "reference",
+      "tags": [
+        "reference",
+        "dining",
+        "target",
+        "room"
+      ]
+    },
+    {
+      "id": "dining-room-009",
+      "filename": "Dove-and-Rose-purple-floral_gray-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Dove-and-Rose-purple-floral_gray-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Dove-and-Rose-purple-floral_gray-wainscoting",
+      "pattern": "Dove And Rose Purple Floral",
+      "wainscoting": "Gray",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "rose",
+        "underscore",
+        "floral",
+        "gray",
+        "dove",
+        "purple"
+      ]
+    },
+    {
+      "id": "dining-room-010",
+      "filename": "Dove-and-Rose-teal-floral_pink-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Dove-and-Rose-teal-floral_pink-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Dove-and-Rose-teal-floral_pink-wainscoting",
+      "pattern": "Dove And Rose Teal Floral",
+      "wainscoting": "Pink",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "teal",
+        "underscore",
+        "floral",
+        "dove",
+        "pink",
+        "rose"
+      ]
+    },
+    {
+      "id": "dining-room-011",
+      "filename": "Garden Floral Morris - Ochre Wainscoting Oak Trim",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Garden%20Floral%20Morris%20-%20Ochre%20Wainscoting%20Oak%20Trim",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Garden%20Floral%20Morris%20-%20Ochre%20Wainscoting%20Oak%20Trim",
+      "pattern": "Garden Floral Morris",
+      "wainscoting": "Ochre Oak Trim",
+      "trim": null,
+      "view": null,
+      "type": "standard",
+      "tags": [
+        "morris",
+        "standard",
+        "floral",
+        "garden",
+        "ochre",
+        "trim",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-012",
+      "filename": "Garden-green-morris_mauve-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Garden-green-morris_mauve-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Garden-green-morris_mauve-wainscoting",
+      "pattern": "Garden Green Morris",
+      "wainscoting": "Mauve",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "morris",
+        "underscore",
+        "green",
+        "garden",
+        "mauve"
+      ]
+    },
+    {
+      "id": "dining-room-013",
+      "filename": "Gemini Design Concept - Stripped Dining Room",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Gemini%20Design%20Concept%20-%20Stripped%20Dining%20Room",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Gemini%20Design%20Concept%20-%20Stripped%20Dining%20Room",
+      "pattern": "Gemini Design Concept - Stripped Dining Room",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "reference",
+      "tags": [
+        "dining",
+        "room",
+        "concept",
+        "gemini",
+        "reference",
+        "design",
+        "stripped"
+      ]
+    },
+    {
+      "id": "dining-room-014",
+      "filename": "Gray-damask_wood-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Gray-damask_wood-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Gray-damask_wood-wainscoting",
+      "pattern": "Gray Damask",
+      "wainscoting": "Wood",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "wood",
+        "gray",
+        "underscore",
+        "damask"
+      ]
+    },
+    {
+      "id": "dining-room-015",
+      "filename": "Lavender Chinoiserie - Cream Wainscoting - White Trim - Furnished Chandelier",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Lavender%20Chinoiserie%20-%20Cream%20Wainscoting%20-%20White%20Trim%20-%20Furnished%20Chandelier",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Lavender%20Chinoiserie%20-%20Cream%20Wainscoting%20-%20White%20Trim%20-%20Furnished%20Chandelier",
+      "pattern": "Lavender Chinoiserie",
+      "wainscoting": "Cream",
+      "trim": "White",
+      "view": "Furnished Chandelier",
+      "type": "standard",
+      "tags": [
+        "lavender",
+        "furnished",
+        "chandelier",
+        "standard",
+        "chinoiserie",
+        "cream",
+        "white"
+      ]
+    },
+    {
+      "id": "dining-room-016",
+      "filename": "Light Floral - Pink Wainscoting - 6 Panel Window Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Light%20Floral%20-%20Pink%20Wainscoting%20-%206%20Panel%20Window%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Light%20Floral%20-%20Pink%20Wainscoting%20-%206%20Panel%20Window%20Comparison",
+      "pattern": "Light Floral - Pink Wainscoting - 6 Panel Window Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "panel",
+        "floral",
+        "comparison",
+        "wainscoting",
+        "window",
+        "light",
+        "pink"
+      ]
+    },
+    {
+      "id": "dining-room-017",
+      "filename": "Light Floral - Tan Wainscoting - 6 Panel Window Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Light%20Floral%20-%20Tan%20Wainscoting%20-%206%20Panel%20Window%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Light%20Floral%20-%20Tan%20Wainscoting%20-%206%20Panel%20Window%20Comparison",
+      "pattern": "Light Floral - Tan Wainscoting - 6 Panel Window Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "panel",
+        "floral",
+        "comparison",
+        "wainscoting",
+        "window",
+        "light",
+        "tan"
+      ]
+    },
+    {
+      "id": "dining-room-018",
+      "filename": "Marigold Gold Damask - Cream Wainscoting - Oak Trim - Furnished Full Room",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Marigold%20Gold%20Damask%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Furnished%20Full%20Room",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Marigold%20Gold%20Damask%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Furnished%20Full%20Room",
+      "pattern": "Marigold Gold Damask",
+      "wainscoting": "Cream",
+      "trim": "Oak",
+      "view": "Furnished Full Room",
+      "type": "standard",
+      "tags": [
+        "furnished",
+        "standard",
+        "room",
+        "damask",
+        "marigold",
+        "full",
+        "cream",
+        "gold",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-019",
+      "filename": "Marigold Yellow Floral - Oak Trim - Cream Wainscoting - Oak Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Marigold%20Yellow%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Marigold%20Yellow%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
+      "pattern": "Marigold Yellow Floral",
+      "wainscoting": "Cream",
+      "trim": "Oak",
+      "view": "Oak Door",
+      "type": "standard",
+      "tags": [
+        "yellow",
+        "standard",
+        "floral",
+        "marigold",
+        "cream",
+        "door",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-020",
+      "filename": "Marigold Yellow Floral - White Trim - Oak Mantle - Stained Glass Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Marigold%20Yellow%20Floral%20-%20White%20Trim%20-%20Oak%20Mantle%20-%20Stained%20Glass%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Marigold%20Yellow%20Floral%20-%20White%20Trim%20-%20Oak%20Mantle%20-%20Stained%20Glass%20Door",
+      "pattern": "Marigold Yellow Floral",
+      "wainscoting": null,
+      "trim": "Oak Mantle",
+      "view": "Stained Glass Door",
+      "type": "standard",
+      "tags": [
+        "glass",
+        "yellow",
+        "standard",
+        "stained",
+        "floral",
+        "mantle",
+        "marigold",
+        "door",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-021",
+      "filename": "Masoala-tropical-palm_navy-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Masoala-tropical-palm_navy-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Masoala-tropical-palm_navy-wainscoting",
+      "pattern": "Masoala Tropical Palm",
+      "wainscoting": "Navy",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "palm",
+        "underscore",
+        "tropical",
+        "masoala",
+        "navy"
+      ]
+    },
+    {
+      "id": "dining-room-022",
+      "filename": "Morris Floral Green - Mustard Wainscoting - Fireplace View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Morris%20Floral%20Green%20-%20Mustard%20Wainscoting%20-%20Fireplace%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Morris%20Floral%20Green%20-%20Mustard%20Wainscoting%20-%20Fireplace%20View",
+      "pattern": "Morris Floral Green",
+      "wainscoting": "Mustard",
+      "trim": null,
+      "view": "Fireplace View",
+      "type": "standard",
+      "tags": [
+        "morris",
+        "mustard",
+        "green",
+        "standard",
+        "floral",
+        "view",
+        "fireplace"
+      ]
+    },
+    {
+      "id": "dining-room-023",
+      "filename": "Morris Floral Green - Rust Wainscoting - Fireplace View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Morris%20Floral%20Green%20-%20Rust%20Wainscoting%20-%20Fireplace%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Morris%20Floral%20Green%20-%20Rust%20Wainscoting%20-%20Fireplace%20View",
+      "pattern": "Morris Floral Green",
+      "wainscoting": "Rust",
+      "trim": null,
+      "view": "Fireplace View",
+      "type": "standard",
+      "tags": [
+        "morris",
+        "rust",
+        "green",
+        "standard",
+        "floral",
+        "view",
+        "fireplace"
+      ]
+    },
+    {
+      "id": "dining-room-024",
+      "filename": "Morris Floral Green - Rust Wainscoting - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Morris%20Floral%20Green%20-%20Rust%20Wainscoting%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Morris%20Floral%20Green%20-%20Rust%20Wainscoting%20-%20Wide%20View",
+      "pattern": "Morris Floral Green",
+      "wainscoting": "Rust",
+      "trim": null,
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "morris",
+        "rust",
+        "wide",
+        "green",
+        "standard",
+        "floral",
+        "view"
+      ]
+    },
+    {
+      "id": "dining-room-025",
+      "filename": "Mustard Ceiling - Sage Damask Walls Green Tile Fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Mustard%20Ceiling%20-%20Sage%20Damask%20Walls%20Green%20Tile%20Fireplace",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Mustard%20Ceiling%20-%20Sage%20Damask%20Walls%20Green%20Tile%20Fireplace",
+      "pattern": "Mustard Ceiling",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Sage Damask Walls Green Tile Fireplace",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "green",
+        "standard",
+        "sage",
+        "damask",
+        "walls",
+        "tile",
+        "ceiling",
+        "fireplace"
+      ]
+    },
+    {
+      "id": "dining-room-026",
+      "filename": "Pink Floral - Sage Green Wainscoting - Oak Mantle - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Pink%20Floral%20-%20Sage%20Green%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Pink%20Floral%20-%20Sage%20Green%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
+      "pattern": "Pink Floral",
+      "wainscoting": "Sage Green",
+      "trim": "Oak Mantle",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "wide",
+        "green",
+        "standard",
+        "floral",
+        "sage",
+        "mantle",
+        "pink",
+        "view",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-027",
+      "filename": "Pink-stripes_green-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Pink-stripes_green-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Pink-stripes_green-wainscoting",
+      "pattern": "Pink Stripes",
+      "wainscoting": "Green",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "stripes",
+        "pink",
+        "underscore",
+        "green"
+      ]
+    },
+    {
+      "id": "dining-room-028",
+      "filename": "Purple-damask-floral_cream-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Purple-damask-floral_cream-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Purple-damask-floral_cream-wainscoting",
+      "pattern": "Purple Damask Floral",
+      "wainscoting": "Cream",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "underscore",
+        "floral",
+        "damask",
+        "cream",
+        "purple"
+      ]
+    },
+    {
+      "id": "dining-room-029",
+      "filename": "Purple-gold-damask_oak-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Purple-gold-damask_oak-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Purple-gold-damask_oak-wainscoting",
+      "pattern": "Purple Gold Damask",
+      "wainscoting": "Oak",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "underscore",
+        "damask",
+        "gold",
+        "purple",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-030",
+      "filename": "Sage Damask Wallpaper - Cream Wainscoting Green Tile Fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sage%20Damask%20Wallpaper%20-%20Cream%20Wainscoting%20Green%20Tile%20Fireplace",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sage%20Damask%20Wallpaper%20-%20Cream%20Wainscoting%20Green%20Tile%20Fireplace",
+      "pattern": "Sage Damask Wallpaper",
+      "wainscoting": "Cream Green Tile Fireplace",
+      "trim": null,
+      "view": null,
+      "type": "standard",
+      "tags": [
+        "green",
+        "wallpaper",
+        "standard",
+        "sage",
+        "damask",
+        "tile",
+        "cream",
+        "fireplace"
+      ]
+    },
+    {
+      "id": "dining-room-031",
+      "filename": "Sky Ceiling Mural Cranes - Gray Textured Walls - Slate Blue Wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sky%20Ceiling%20Mural%20Cranes%20-%20Gray%20Textured%20Walls%20-%20Slate%20Blue%20Wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sky%20Ceiling%20Mural%20Cranes%20-%20Gray%20Textured%20Walls%20-%20Slate%20Blue%20Wainscoting",
+      "pattern": "Sky Ceiling Mural Cranes",
+      "wainscoting": "Slate Blue",
+      "trim": null,
+      "view": null,
+      "type": "standard",
+      "tags": [
+        "mural",
+        "sky",
+        "standard",
+        "blue",
+        "cranes",
+        "ceiling",
+        "slate"
+      ]
+    },
+    {
+      "id": "dining-room-032",
+      "filename": "Sky Cloud Ceiling Mural - Gray Walls - Gray Wainscoting - Oak Trim - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sky%20Cloud%20Ceiling%20Mural%20-%20Gray%20Walls%20-%20Gray%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sky%20Cloud%20Ceiling%20Mural%20-%20Gray%20Walls%20-%20Gray%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
+      "pattern": "Sky Cloud Ceiling Mural",
+      "wainscoting": "Gray",
+      "trim": "Oak",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "mural",
+        "sky",
+        "wide",
+        "standard",
+        "cloud",
+        "gray",
+        "ceiling",
+        "view",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-033",
+      "filename": "Snakeshead-dense-morris_yellow-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Snakeshead-dense-morris_yellow-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Snakeshead-dense-morris_yellow-wainscoting",
+      "pattern": "Snakeshead Dense Morris",
+      "wainscoting": "Yellow",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "morris",
+        "underscore",
+        "yellow",
+        "snakeshead",
+        "dense"
+      ]
+    },
+    {
+      "id": "dining-room-034",
+      "filename": "Snakeshead-golden-morris_green-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Snakeshead-golden-morris_green-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Snakeshead-golden-morris_green-wainscoting",
+      "pattern": "Snakeshead Golden Morris",
+      "wainscoting": "Green",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "morris",
+        "underscore",
+        "green",
+        "golden",
+        "snakeshead"
+      ]
+    },
+    {
+      "id": "dining-room-035",
+      "filename": "Snakeshead-light-floral_green-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Snakeshead-light-floral_green-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Snakeshead-light-floral_green-wainscoting",
+      "pattern": "Snakeshead Light Floral",
+      "wainscoting": "Green",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "underscore",
+        "green",
+        "floral",
+        "light",
+        "snakeshead"
+      ]
+    },
+    {
+      "id": "dining-room-036",
+      "filename": "Stockholm-Floral-coral_sage-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Stockholm-Floral-coral_sage-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Stockholm-Floral-coral_sage-wainscoting",
+      "pattern": "Stockholm Floral Coral",
+      "wainscoting": "Sage",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "stockholm",
+        "underscore",
+        "sage",
+        "floral",
+        "coral"
+      ]
+    },
+    {
+      "id": "dining-room-037",
+      "filename": "Sunflower Gold Floral - White Trim - Cream Wainscoting - Bay Window",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Gold%20Floral%20-%20White%20Trim%20-%20Cream%20Wainscoting%20-%20Bay%20Window",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Gold%20Floral%20-%20White%20Trim%20-%20Cream%20Wainscoting%20-%20Bay%20Window",
+      "pattern": "Sunflower Gold Floral",
+      "wainscoting": "Cream",
+      "trim": "White",
+      "view": "Bay Window",
+      "type": "standard",
+      "tags": [
+        "bay",
+        "standard",
+        "floral",
+        "window",
+        "cream",
+        "gold",
+        "sunflower",
+        "white"
+      ]
+    },
+    {
+      "id": "dining-room-038",
+      "filename": "Sunflower Green Floral - Cream Wainscoting - Oak Trim - Fireplace View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Green%20Floral%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Fireplace%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Green%20Floral%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Fireplace%20View",
+      "pattern": "Sunflower Green Floral",
+      "wainscoting": "Cream",
+      "trim": "Oak",
+      "view": "Fireplace View",
+      "type": "standard",
+      "tags": [
+        "green",
+        "standard",
+        "floral",
+        "cream",
+        "sunflower",
+        "view",
+        "fireplace",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-039",
+      "filename": "Sunflower Green Floral - Cream Wainscoting - Oak Trim - Pocket Doors View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Green%20Floral%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Pocket%20Doors%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Green%20Floral%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Pocket%20Doors%20View",
+      "pattern": "Sunflower Green Floral",
+      "wainscoting": "Cream",
+      "trim": "Oak",
+      "view": "Pocket Doors View",
+      "type": "standard",
+      "tags": [
+        "pocket",
+        "green",
+        "standard",
+        "floral",
+        "cream",
+        "doors",
+        "sunflower",
+        "view",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-040",
+      "filename": "Sunflower Green Floral - Mustard Wainscoting - Oak Trim - Bay Window View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Green%20Floral%20-%20Mustard%20Wainscoting%20-%20Oak%20Trim%20-%20Bay%20Window%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Green%20Floral%20-%20Mustard%20Wainscoting%20-%20Oak%20Trim%20-%20Bay%20Window%20View",
+      "pattern": "Sunflower Green Floral",
+      "wainscoting": "Mustard",
+      "trim": "Oak",
+      "view": "Bay Window View",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "green",
+        "bay",
+        "standard",
+        "floral",
+        "window",
+        "sunflower",
+        "view",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-041",
+      "filename": "Sunflower Green Floral - Oak Trim - Cream Wainscoting - Oak Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Green%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Green%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
+      "pattern": "Sunflower Green Floral",
+      "wainscoting": "Cream",
+      "trim": "Oak",
+      "view": "Oak Door",
+      "type": "standard",
+      "tags": [
+        "green",
+        "standard",
+        "floral",
+        "cream",
+        "door",
+        "sunflower",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-042",
+      "filename": "Trapez-geometric-triangles_terracotta-wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Trapez-geometric-triangles_terracotta-wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Trapez-geometric-triangles_terracotta-wainscoting",
+      "pattern": "Trapez Geometric Triangles",
+      "wainscoting": "Terracotta",
+      "trim": null,
+      "view": null,
+      "type": "underscore",
+      "tags": [
+        "underscore",
+        "trapez",
+        "terracotta",
+        "triangles",
+        "geometric"
+      ]
+    },
+    {
+      "id": "dining-room-043",
+      "filename": "Tropical Jungle Birds - Dark Green Wainscoting - Oak Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Dark%20Green%20Wainscoting%20-%20Oak%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Dark%20Green%20Wainscoting%20-%20Oak%20Mantle",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Dark Green",
+      "trim": "Oak Mantle",
+      "view": null,
+      "type": "standard",
+      "tags": [
+        "dark",
+        "green",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-044",
+      "filename": "Tropical Jungle Birds - Gray Wainscoting - White Trim - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Gray%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Gray%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Gray",
+      "trim": "White",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "wide",
+        "jungle",
+        "standard",
+        "tropical",
+        "gray",
+        "view",
+        "white",
+        "birds"
+      ]
+    },
+    {
+      "id": "dining-room-045",
+      "filename": "Tropical Jungle Birds - Green Mantle - 3 Wainscoting Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Green%20Mantle%20-%203%20Wainscoting%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Green%20Mantle%20-%203%20Wainscoting%20Comparison",
+      "pattern": "Tropical Jungle Birds - Green Mantle - 3 Wainscoting Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "green",
+        "jungle",
+        "tropical",
+        "comparison",
+        "wainscoting",
+        "mantle",
+        "birds"
+      ]
+    },
+    {
+      "id": "dining-room-046",
+      "filename": "Tropical Jungle Birds - Mustard Wainscoting - Green Mantle - Mustard Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Green%20Mantle%20-%20Mustard%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Green%20Mantle%20-%20Mustard%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Mustard",
+      "trim": "Green Mantle",
+      "view": "Mustard Door",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "green",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "door",
+        "birds"
+      ]
+    },
+    {
+      "id": "dining-room-047",
+      "filename": "Tropical Jungle Birds - Mustard Wainscoting - Green Mantle - Navy Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Green%20Mantle%20-%20Navy%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Green%20Mantle%20-%20Navy%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Mustard",
+      "trim": "Green Mantle",
+      "view": "Navy Door",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "green",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "door",
+        "birds",
+        "navy"
+      ]
+    },
+    {
+      "id": "dining-room-048",
+      "filename": "Tropical Jungle Birds - Mustard Wainscoting - Navy Mantle - Navy Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Navy%20Mantle%20-%20Navy%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Navy%20Mantle%20-%20Navy%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Mustard",
+      "trim": "Navy Mantle",
+      "view": "Navy Door",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "door",
+        "birds",
+        "navy"
+      ]
+    },
+    {
+      "id": "dining-room-049",
+      "filename": "Tropical Jungle Birds - Mustard Wainscoting - Oak Mantle - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Mustard%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Mustard",
+      "trim": "Oak Mantle",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "mustard",
+        "wide",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "view",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-050",
+      "filename": "Tropical Jungle Birds - Navy Wainscoting - Oak Mantle - Wood Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Navy%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Navy%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Navy",
+      "trim": "Oak Mantle",
+      "view": "Wood Door",
+      "type": "standard",
+      "tags": [
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "wood",
+        "door",
+        "navy",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-051",
+      "filename": "Tropical Jungle Birds - Oak Mantle - 3 Wainscoting Comparison",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Oak%20Mantle%20-%203%20Wainscoting%20Comparison",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Oak%20Mantle%20-%203%20Wainscoting%20Comparison",
+      "pattern": "Tropical Jungle Birds - Oak Mantle - 3 Wainscoting Comparison",
+      "wainscoting": null,
+      "trim": null,
+      "view": null,
+      "type": "comparison",
+      "tags": [
+        "jungle",
+        "tropical",
+        "comparison",
+        "wainscoting",
+        "mantle",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-052",
+      "filename": "Tropical Jungle Birds - Rust Wainscoting - Oak Mantle - Wood Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Rust",
+      "trim": "Oak Mantle",
+      "view": "Wood Door",
+      "type": "standard",
+      "tags": [
+        "rust",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "wood",
+        "door",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-053",
+      "filename": "Tropical Jungle Birds - Rust Wainscoting - Oak Trim - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Rust",
+      "trim": "Oak",
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "rust",
+        "wide",
+        "jungle",
+        "standard",
+        "tropical",
+        "view",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-054",
+      "filename": "Tropical Jungle Birds - Tan Wainscoting - Oak Mantle",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Tan%20Wainscoting%20-%20Oak%20Mantle",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Tan%20Wainscoting%20-%20Oak%20Mantle",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Tan",
+      "trim": "Oak Mantle",
+      "view": null,
+      "type": "standard",
+      "tags": [
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "tan",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-055",
+      "filename": "Tropical Jungle Birds - Tan Wainscoting - Window View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Tan%20Wainscoting%20-%20Window%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Tan%20Wainscoting%20-%20Window%20View",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Tan",
+      "trim": null,
+      "view": "Window View",
+      "type": "standard",
+      "tags": [
+        "jungle",
+        "standard",
+        "tropical",
+        "window",
+        "tan",
+        "view",
+        "birds"
+      ]
+    },
+    {
+      "id": "dining-room-056",
+      "filename": "Tropical Jungle Birds - Teal Wainscoting - Oak Mantle - Wood Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Teal%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Teal%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
+      "pattern": "Tropical Jungle Birds",
+      "wainscoting": "Teal",
+      "trim": "Oak Mantle",
+      "view": "Wood Door",
+      "type": "standard",
+      "tags": [
+        "teal",
+        "jungle",
+        "standard",
+        "tropical",
+        "mantle",
+        "wood",
+        "door",
+        "birds",
+        "oak"
+      ]
+    },
+    {
+      "id": "dining-room-057",
+      "filename": "Tulip Floral Green - Blush Pink Wainscoting - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tulip%20Floral%20Green%20-%20Blush%20Pink%20Wainscoting%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tulip%20Floral%20Green%20-%20Blush%20Pink%20Wainscoting%20-%20Wide%20View",
+      "pattern": "Tulip Floral Green",
+      "wainscoting": "Blush Pink",
+      "trim": null,
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "wide",
+        "green",
+        "standard",
+        "tulip",
+        "floral",
+        "pink",
+        "view",
+        "blush"
+      ]
+    },
+    {
+      "id": "dining-room-058",
+      "filename": "Tulip Floral Green - Dark Green Wainscoting - Wide View",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tulip%20Floral%20Green%20-%20Dark%20Green%20Wainscoting%20-%20Wide%20View",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tulip%20Floral%20Green%20-%20Dark%20Green%20Wainscoting%20-%20Wide%20View",
+      "pattern": "Tulip Floral Green",
+      "wainscoting": "Dark Green",
+      "trim": null,
+      "view": "Wide View",
+      "type": "standard",
+      "tags": [
+        "dark",
+        "wide",
+        "green",
+        "standard",
+        "tulip",
+        "floral",
+        "view"
+      ]
+    }
+  ],
+  "office": [
+    {
+      "id": "office-001",
+      "filename": "Gray Textured - Gaming Desk Setup",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Gaming%20Desk%20Setup",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Gaming%20Desk%20Setup",
+      "walls": "Gray Textured",
+      "wainscoting": null,
+      "feature": "Gaming Desk Setup",
+      "tags": [
+        "desk",
+        "setup",
+        "textured",
+        "gray",
+        "gaming"
+      ]
+    },
+    {
+      "id": "office-002",
+      "filename": "Gray Textured - Slate Blue Wainscoting - Bay Window A",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Slate%20Blue%20Wainscoting%20-%20Bay%20Window%20A",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Slate%20Blue%20Wainscoting%20-%20Bay%20Window%20A",
+      "walls": "Gray Textured",
+      "wainscoting": "Slate Blue",
+      "feature": "Bay Window A",
+      "tags": [
+        "bay",
+        "textured",
+        "window",
+        "blue",
+        "gray",
+        "slate"
+      ]
+    },
+    {
+      "id": "office-003",
+      "filename": "Gray Textured - Slate Blue Wainscoting - Bay Window B",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Slate%20Blue%20Wainscoting%20-%20Bay%20Window%20B",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Slate%20Blue%20Wainscoting%20-%20Bay%20Window%20B",
+      "walls": "Gray Textured",
+      "wainscoting": "Slate Blue",
+      "feature": "Bay Window B",
+      "tags": [
+        "bay",
+        "textured",
+        "window",
+        "blue",
+        "gray",
+        "slate"
+      ]
+    },
+    {
+      "id": "office-004",
+      "filename": "Gray Textured - Slate Gray Wainscoting - Bay Window",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Slate%20Gray%20Wainscoting%20-%20Bay%20Window",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Slate%20Gray%20Wainscoting%20-%20Bay%20Window",
+      "walls": "Gray Textured",
+      "wainscoting": "Slate Gray",
+      "feature": "Bay Window",
+      "tags": [
+        "bay",
+        "textured",
+        "window",
+        "gray",
+        "slate"
+      ]
+    },
+    {
+      "id": "office-005",
+      "filename": "Neutral Geometric Patchwork - Slate Blue Wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Neutral%20Geometric%20Patchwork%20-%20Slate%20Blue%20Wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Neutral%20Geometric%20Patchwork%20-%20Slate%20Blue%20Wainscoting",
+      "walls": "Neutral Geometric Patchwork",
+      "wainscoting": "Slate Blue",
+      "feature": null,
+      "tags": [
+        "blue",
+        "slate",
+        "geometric",
+        "neutral",
+        "patchwork"
+      ]
+    },
+    {
+      "id": "office-006",
+      "filename": "Purple Plum Upper Walls - Slate Blue Wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Purple%20Plum%20Upper%20Walls%20-%20Slate%20Blue%20Wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Purple%20Plum%20Upper%20Walls%20-%20Slate%20Blue%20Wainscoting",
+      "walls": "Purple Plum Upper Walls",
+      "wainscoting": "Slate Blue",
+      "feature": null,
+      "tags": [
+        "upper",
+        "walls",
+        "blue",
+        "plum",
+        "slate",
+        "purple"
+      ]
+    },
+    {
+      "id": "office-007",
+      "filename": "Strawberry Thief Floral - Slate Blue Wainscoting",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Strawberry%20Thief%20Floral%20-%20Slate%20Blue%20Wainscoting",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Strawberry%20Thief%20Floral%20-%20Slate%20Blue%20Wainscoting",
+      "walls": "Strawberry Thief Floral",
+      "wainscoting": "Slate Blue",
+      "feature": null,
+      "tags": [
+        "floral",
+        "thief",
+        "blue",
+        "strawberry",
+        "slate"
+      ]
+    }
+  ]
+}
