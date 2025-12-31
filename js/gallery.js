@@ -228,11 +228,14 @@ const Gallery = (function () {
         "group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow";
       card.dataset.imageId = imageId;
 
-      const link = document.createElement("a");
-      link.href = getFullUrl(image) || "#";
-      link.target = "_blank";
-      link.rel = "noreferrer noopener";
-      link.className = "block";
+      const link = document.createElement("div");
+      link.className = "block cursor-pointer";
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (typeof Lightbox !== "undefined" && Lightbox.openLightbox) {
+          Lightbox.openLightbox(imageId);
+        }
+      });
 
       const img = document.createElement("img");
       img.className = "h-40 w-full object-cover bg-slate-100";
@@ -340,6 +343,23 @@ const Gallery = (function () {
     grid.setAttribute("aria-busy", "true");
     await loadImages();
     grid.setAttribute("aria-busy", "false");
+
+    // Initialize Lightbox with all images
+    if (typeof Lightbox !== "undefined" && Lightbox.init) {
+      const allImages = [];
+      for (const room of Object.keys(state.images)) {
+        for (const img of state.images[room]) {
+          allImages.push({
+            id: img.id,
+            src: getFullUrl(img),
+            thumbnail: getThumbUrl(img),
+            title: getTitle(img),
+            room: room
+          });
+        }
+      }
+      Lightbox.init(allImages);
+    }
 
     renderGallery(state.currentRoom);
 
