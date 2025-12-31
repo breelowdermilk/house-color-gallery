@@ -174,6 +174,37 @@ const App = (function() {
     if (typeof Ratings !== 'undefined' && typeof Ratings.init === 'function') {
       Ratings.init(db, currentUser);
     }
+
+    // Initialize Results
+    if (typeof Results !== 'undefined' && typeof Results.init === 'function') {
+      Results.init(db);
+    }
+
+    // Keep Lightbox user in sync (for vote UI + Rate All mode)
+    if (typeof Lightbox !== 'undefined' && typeof Lightbox.setUser === 'function') {
+      Lightbox.setUser(currentUser);
+    }
+
+    bindRateAll();
+  }
+
+  function bindRateAll() {
+    const btn = document.getElementById('rate-all');
+    if (!btn) return;
+
+    // Avoid double-binding if initModules is called again (e.g. after naming).
+    if (btn.dataset.bound === 'true') return;
+    btn.dataset.bound = 'true';
+
+    btn.addEventListener('click', () => {
+      const activeRoom = document.querySelector('.room-tab[aria-selected="true"]');
+      const room = activeRoom?.getAttribute('data-room') || 'parlor';
+      if (typeof Lightbox !== 'undefined' && typeof Lightbox.startRateAll === 'function') {
+        Lightbox.startRateAll(room);
+      } else {
+        console.warn('Rate All unavailable: Lightbox not ready');
+      }
+    });
   }
 
   /**

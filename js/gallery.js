@@ -22,6 +22,8 @@ const Gallery = (function () {
   const state = {
     allImages: [],
     currentRoom: "parlor",
+    currentFilter: "all",
+    ratingsCache: {},
     cleanupLazy: null,
     unsubscribers: [],
     didInit: false,
@@ -198,7 +200,73 @@ const Gallery = (function () {
     return `${base} ${variants[rating] || "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"}`;
   }
 
-  function renderGallery(room) {
+  function getCurrentUser() {
+    return (typeof App !== "undefined" && App.getUser?.()) || localStorage.getItem("houseColorUser") || "Guest";
+  }
+
+  async function getRatingsForImage(imageId) {
+    if (state.ratingsCache[imageId]) return state.ratingsCache[imageId];
+
+    let ratings = {};
+    if (typeof Ratings !== "undefined" && Ratings.getRatings) {
+      ratings = await Ratings.getRatings(imageId);
+    } else {
+      const stored = JSON.parse(localStorage.getItem("houseRatings") || "{}");
+      ratings = stored[imageId] || {};
+    }
+    state.ratingsCache[imageId] = ratings;
+    return ratings;
+  }
+
+  async function applyRatingFilter(images, filter) {
+    if (filter === "all") return images;
+
+    const user = getCurrentUser();
+    const results = [];
+
+    for (const image of images) {
+      const ratings = await getRatingsForImage(image.id);
+      const myRating = ratings[user];
+      const votes = Object.values(ratings);
+      const likes = votes.filter(v => v === "like").length;
+      const dislikes = votes.filter(v => v === "dislike").length;
+
+      switch (filter) {
+        case "unrated":
+          if (!myRating) results.push(image);
+          break;
+        case "my-likes":
+          if (myRating === "like") results.push(image);
+          break;
+        case "my-dislikes":
+          if (myRating === "dislike") results.push(image);
+          break;
+        case "popular":
+          if (likes >= 2) results.push(image);
+          break;
+        case "controversial":
+          if (likes > 0 && dislikes > 0) results.push(image);
+          break;
+        default:
+          results.push(image);
+      }
+    }
+
+    return results;
+  }
+
+  function bindFilterSelect() {
+    const select = document.getElementById("rating-filter");
+    if (!select) return;
+
+    select.addEventListener("change", (e) => {
+      state.currentFilter = e.target.value;
+      state.ratingsCache = {}; // Clear cache to get fresh data
+      renderGallery(state.currentRoom);
+    });
+  }
+
+  async function renderGallery(room) {
     const grid = $(SELECTORS.grid);
     if (!grid) return;
 
@@ -212,7 +280,7 @@ const Gallery = (function () {
     state.currentRoom = roomValue || state.currentRoom;
 
     const roomImages = getRoomImages(state.currentRoom);
-    const filtered = roomImages;
+    const filtered = await applyRatingFilter(roomImages, state.currentFilter);
 
     grid.innerHTML = "";
     setEmptyState(filtered.length === 0);
@@ -325,9 +393,31 @@ const Gallery = (function () {
     const room = normalizeText(tab.getAttribute("data-room")).toLowerCase();
     if (!room) return;
 
+    // Handle Results tab specially
+    if (room === "results") {
+      state.currentRoom = room;
+      setActiveRoomTab(room);
+      if (typeof Results !== "undefined" && Results.show) {
+        Results.show();
+      }
+      return;
+    }
+
+    // Hide results if switching away from it
+    if (typeof Results !== "undefined" && Results.hide) {
+      Results.hide();
+    }
+
     state.currentRoom = room;
     setActiveRoomTab(room);
     renderGallery(state.currentRoom);
+  }
+
+  /**
+   * Get all images (for Results module)
+   */
+  function getAllImages() {
+    return [...state.allImages];
   }
 
   async function init() {
@@ -346,30 +436,29 @@ const Gallery = (function () {
 
     // Initialize Lightbox with all images
     if (typeof Lightbox !== "undefined" && Lightbox.init) {
-      const allImages = [];
-      for (const room of Object.keys(state.images)) {
-        for (const img of state.images[room]) {
-          allImages.push({
-            id: img.id,
-            src: getFullUrl(img),
-            thumbnail: getThumbUrl(img),
-            title: getTitle(img),
-            room: room
-          });
-        }
-      }
-      Lightbox.init(allImages);
+      const allImages = state.allImages.map((img) => ({
+        id: img.id,
+        src: getFullUrl(img),
+        thumbnail: getThumbUrl(img),
+        title: getTitle(img),
+        room: img.room,
+        filename: img.filename,
+        url: img.url,
+      }));
+      Lightbox.init(allImages, typeof App !== "undefined" && typeof App.getUser === "function" ? App.getUser() : null);
     }
 
     renderGallery(state.currentRoom);
 
     document.addEventListener("click", onRoomTabClick);
+    bindFilterSelect();
   }
 
   return {
     init,
     loadImages,
     renderGallery,
+    getAllImages,
   };
 })();
 

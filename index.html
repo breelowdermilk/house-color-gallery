@@ -22,6 +22,7 @@
     <script defer src="js/gallery.js"></script>
     <script defer src="js/lightbox.js"></script>
     <script defer src="js/ratings.js"></script>
+    <script defer src="js/results.js"></script>
     <script defer src="js/app.js"></script>
   </head>
 
@@ -40,6 +41,14 @@
         </div>
 
         <div class="flex items-center gap-2">
+          <button
+            id="rate-all"
+            type="button"
+            class="inline-flex items-center justify-center rounded-md bg-slate-900 px-3 py-2 text-sm font-medium text-white shadow-sm hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+            title="Rate images one-by-one"
+          >
+            Rate All
+          </button>
           <button
             id="compare-toggle"
             type="button"
@@ -85,6 +94,17 @@
             >
               Office
             </button>
+            <span class="mx-1 text-slate-300">|</span>
+            <button
+              id="tab-results"
+              type="button"
+              class="room-tab whitespace-nowrap rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+              data-room="results"
+              role="tab"
+              aria-selected="false"
+            >
+              Results
+            </button>
           </div>
         </div>
       </nav>
@@ -94,6 +114,20 @@
       <section aria-label="Gallery" class="min-h-[40vh]">
         <div class="mb-3 flex items-center justify-between gap-3">
           <p id="results-summary" class="text-sm text-slate-700"></p>
+          <div class="flex items-center gap-2">
+            <label for="rating-filter" class="text-sm text-slate-600">Show:</label>
+            <select
+              id="rating-filter"
+              class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
+            >
+              <option value="all">All</option>
+              <option value="unrated">Not yet rated</option>
+              <option value="my-likes">My likes</option>
+              <option value="my-dislikes">My dislikes</option>
+              <option value="popular">Popular (most likes)</option>
+              <option value="controversial">Controversial</option>
+            </select>
+          </div>
         </div>
 
         <div
@@ -106,6 +140,81 @@
         <div id="empty-state" class="hidden py-16 text-center">
           <h3 class="text-base font-semibold text-slate-900">No matches</h3>
           <p class="mt-1 text-sm text-slate-600">Try adjusting your filters.</p>
+        </div>
+      </section>
+
+      <!-- Results/Summary Section (hidden by default) -->
+      <section id="results-section" class="hidden" aria-label="Voting Results">
+        <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 class="text-lg font-semibold text-slate-900">Voting Results</h2>
+            <p class="text-sm text-slate-600">See where everyone agrees and disagrees</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <label for="results-filter-user" class="text-sm text-slate-600">Filter by:</label>
+            <select
+              id="results-filter-user"
+              class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
+            >
+              <option value="all">Everyone</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Consensus Picks -->
+        <div id="results-consensus" class="mb-8">
+          <div class="mb-3 flex items-center gap-2">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-sm">
+              <span class="text-emerald-600">+</span>
+            </span>
+            <h3 class="text-base font-medium text-slate-900">Consensus Picks</h3>
+            <span class="text-sm text-slate-500" id="consensus-count">(0)</span>
+          </div>
+          <p class="mb-3 text-sm text-slate-600">Everyone likes these options</p>
+          <div id="consensus-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"></div>
+          <p id="consensus-empty" class="hidden text-sm text-slate-500 italic">No consensus picks yet</p>
+        </div>
+
+        <!-- Controversial -->
+        <div id="results-controversial" class="mb-8">
+          <div class="mb-3 flex items-center gap-2">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 text-sm">
+              <span class="text-amber-600">?</span>
+            </span>
+            <h3 class="text-base font-medium text-slate-900">Controversial</h3>
+            <span class="text-sm text-slate-500" id="controversial-count">(0)</span>
+          </div>
+          <p class="mb-3 text-sm text-slate-600">Mixed reactions - some like, some don't</p>
+          <div id="controversial-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"></div>
+          <p id="controversial-empty" class="hidden text-sm text-slate-500 italic">No controversial picks</p>
+        </div>
+
+        <!-- Rejected -->
+        <div id="results-rejected" class="mb-8">
+          <div class="mb-3 flex items-center gap-2">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-100 text-sm">
+              <span class="text-rose-600">-</span>
+            </span>
+            <h3 class="text-base font-medium text-slate-900">Rejected</h3>
+            <span class="text-sm text-slate-500" id="rejected-count">(0)</span>
+          </div>
+          <p class="mb-3 text-sm text-slate-600">Mostly dislikes - probably skip these</p>
+          <div id="rejected-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"></div>
+          <p id="rejected-empty" class="hidden text-sm text-slate-500 italic">No rejected picks</p>
+        </div>
+
+        <!-- Unrated -->
+        <div id="results-unrated" class="mb-8">
+          <div class="mb-3 flex items-center gap-2">
+            <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100 text-sm">
+              <span class="text-slate-500">...</span>
+            </span>
+            <h3 class="text-base font-medium text-slate-900">Needs More Votes</h3>
+            <span class="text-sm text-slate-500" id="unrated-count">(0)</span>
+          </div>
+          <p class="mb-3 text-sm text-slate-600">Not enough people have voted yet</p>
+          <div id="unrated-grid" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"></div>
+          <p id="unrated-empty" class="hidden text-sm text-slate-500 italic">All images have votes!</p>
         </div>
       </section>
     </main>

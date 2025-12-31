@@ -14,8 +14,12 @@ const Lightbox = (function() {
   let currentImageId = null;
   let currentUser = null;
   let imageList = [];
+  let rateAllMode = false;
+  let rateAllRoom = null;
+  let rateAllList = [];
   let compareSelection = [];
   let currentRatings = {}; // Cache of ratings for current image
+  let currentComments = []; // Cache of comments for current image
   const MAX_COMPARE = 3;
 
   // Rating options
@@ -96,6 +100,14 @@ const Lightbox = (function() {
             </button>
           </div>
           <div class="lightbox-votes"></div>
+          <div class="lightbox-comments">
+            <h4 class="comments-header">Comments</h4>
+            <div class="comments-list"></div>
+            <form class="comment-form">
+              <input type="text" class="comment-input" placeholder="Add a comment..." maxlength="200">
+              <button type="submit" class="comment-submit">Post</button>
+            </form>
+          </div>
         </div>
         <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
       </div>
@@ -151,6 +163,12 @@ const Lightbox = (function() {
 
     // Comparison panel events
     comparisonPanel.querySelector('.comparison-clear').addEventListener('click', clearComparison);
+
+    // Comment form events
+    const commentForm = overlay.querySelector('.comment-form');
+    if (commentForm) {
+      commentForm.addEventListener('submit', handleCommentSubmit);
+    }
   }
 
   /**
@@ -169,6 +187,8 @@ const Lightbox = (function() {
     if (typeof Ratings !== 'undefined' && Ratings.setRating) {
       Ratings.setRating(currentImageId, rating).then(() => {
         updateRatingUI();
+        // Always auto-advance to next image after rating
+        setTimeout(() => navigateLightbox(1), 150);
       });
     } else {
       // Fallback: store locally
@@ -179,6 +199,8 @@ const Lightbox = (function() {
       localStorage.setItem(key, JSON.stringify(stored));
       currentRatings = stored[currentImageId];
       updateRatingUI();
+      // Always auto-advance to next image after rating
+      setTimeout(() => navigateLightbox(1), 150);
     }
   }
 
@@ -206,6 +228,15 @@ const Lightbox = (function() {
         break;
       case 'ArrowRight':
         navigateLightbox(1);
+        break;
+      case '1':
+        if (rateAllMode) overlay.querySelector('.rating-btn[data-rating="like"]')?.click();
+        break;
+      case '2':
+        if (rateAllMode) overlay.querySelector('.rating-btn[data-rating="unsure"]')?.click();
+        break;
+      case '3':
+        if (rateAllMode) overlay.querySelector('.rating-btn[data-rating="dislike"]')?.click();
         break;
     }
   }
@@ -259,13 +290,24 @@ const Lightbox = (function() {
 
     lightboxImg.src = image.src || image.url;
     lightboxImg.alt = image.title || image.filename || '';
-    lightboxCaption.textContent = image.title || image.filename || '';
+    lightboxCaption.textContent = formatCaption(image);
 
     overlay.classList.add('active');
     document.body.classList.add('lightbox-open');
 
     updateNavButtons();
     loadAndDisplayRatings(imageId);
+    loadAndDisplayComments(imageId);
+  }
+
+  function formatCaption(image) {
+    const base = image?.title || image?.filename || '';
+    if (!rateAllMode) return base;
+
+    const total = rateAllList.length || 0;
+    const index = Math.max(0, rateAllList.findIndex((img) => img.id === image?.id));
+    const roomLabel = rateAllRoom ? ` • ${rateAllRoom}` : '';
+    return `${base} (${index + 1}/${total})${roomLabel}`;
   }
 
   /**
@@ -315,12 +357,137 @@ const Lightbox = (function() {
   }
 
   /**
+   * Handle comment form submit
+   */
+  function handleCommentSubmit(e) {
+    e.preventDefault();
+    const input = overlay.querySelector('.comment-input');
+    const text = (input?.value || '').trim();
+
+    if (!text || !currentImageId || !currentUser) return;
+
+    const comment = {
+      user: currentUser,
+      text: text,
+      timestamp: Date.now()
+    };
+
+    // Save comment
+    saveComment(currentImageId, comment).then(() => {
+      input.value = '';
+      loadAndDisplayComments(currentImageId);
+    });
+  }
+
+  /**
+   * Save a comment to storage
+   */
+  async function saveComment(imageId, comment) {
+    // Try Firebase first
+    if (typeof firebase !== 'undefined' && firebase.firestore) {
+      try {
+        const db = firebase.firestore();
+        await db.collection('images').doc(imageId).collection('comments').add(comment);
+        return;
+      } catch (e) {
+        console.warn('Firebase comment save failed, using localStorage', e);
+      }
+    }
+
+    // Fallback to localStorage
+    const key = 'houseComments';
+    const stored = JSON.parse(localStorage.getItem(key) || '{}');
+    if (!stored[imageId]) stored[imageId] = [];
+    stored[imageId].push(comment);
+    localStorage.setItem(key, JSON.stringify(stored));
+  }
+
+  /**
+   * Load and display comments for an image
+   */
+  async function loadAndDisplayComments(imageId) {
+    const commentsList = overlay.querySelector('.comments-list');
+    if (!commentsList) return;
+
+    // Try Firebase first
+    if (typeof firebase !== 'undefined' && firebase.firestore) {
+      try {
+        const db = firebase.firestore();
+        const snapshot = await db.collection('images').doc(imageId)
+          .collection('comments')
+          .orderBy('timestamp', 'desc')
+          .limit(20)
+          .get();
+
+        currentComments = [];
+        snapshot.forEach(doc => {
+          currentComments.push(doc.data());
+        });
+        renderComments(commentsList);
+        return;
+      } catch (e) {
+        console.warn('Firebase comments load failed, using localStorage', e);
+      }
+    }
+
+    // Fallback to localStorage
+    const stored = JSON.parse(localStorage.getItem('houseComments') || '{}');
+    currentComments = (stored[imageId] || []).sort((a, b) => b.timestamp - a.timestamp);
+    renderComments(commentsList);
+  }
+
+  /**
+   * Render comments to the DOM
+   */
+  function renderComments(container) {
+    if (!container) return;
+
+    if (currentComments.length === 0) {
+      container.innerHTML = '<p class="no-comments">No comments yet</p>';
+      return;
+    }
+
+    container.innerHTML = currentComments.map(c => {
+      const timeAgo = formatTimeAgo(c.timestamp);
+      return `<div class="comment">
+        <span class="comment-user">${escapeHtml(c.user)}</span>
+        <span class="comment-text">${escapeHtml(c.text)}</span>
+        <span class="comment-time">${timeAgo}</span>
+      </div>`;
+    }).join('');
+  }
+
+  /**
+   * Format timestamp as relative time
+   */
+  function formatTimeAgo(timestamp) {
+    const seconds = Math.floor((Date.now() - timestamp) / 1000);
+    if (seconds < 60) return 'just now';
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return `${minutes}m ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    return `${days}d ago`;
+  }
+
+  /**
+   * Escape HTML to prevent XSS
+   */
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  /**
    * Close the lightbox
    */
   function closeLightbox() {
     overlay.classList.remove('active');
     document.body.classList.remove('lightbox-open');
     currentImageId = null;
+    stopRateAll();
   }
 
   /**
@@ -330,16 +497,25 @@ const Lightbox = (function() {
   function navigateLightbox(direction) {
     if (!currentImageId) return;
 
-    const currentIndex = imageList.findIndex(img => img.id === currentImageId);
+    const list = rateAllMode ? rateAllList : imageList;
+    const currentIndex = list.findIndex(img => img.id === currentImageId);
     if (currentIndex === -1) return;
 
     let newIndex = currentIndex + direction;
 
-    // Wrap around
-    if (newIndex < 0) newIndex = imageList.length - 1;
-    if (newIndex >= imageList.length) newIndex = 0;
+    if (rateAllMode) {
+      if (newIndex < 0) newIndex = 0;
+      if (newIndex >= list.length) {
+        closeLightbox();
+        return;
+      }
+    } else {
+      // Wrap around
+      if (newIndex < 0) newIndex = list.length - 1;
+      if (newIndex >= list.length) newIndex = 0;
+    }
 
-    openLightbox(imageList[newIndex].id);
+    openLightbox(list[newIndex].id);
   }
 
   /**
@@ -349,9 +525,36 @@ const Lightbox = (function() {
     const prevBtn = overlay.querySelector('.lightbox-prev');
     const nextBtn = overlay.querySelector('.lightbox-next');
 
-    // Show both buttons (we have wrap-around navigation)
-    prevBtn.style.display = imageList.length > 1 ? 'block' : 'none';
-    nextBtn.style.display = imageList.length > 1 ? 'block' : 'none';
+    const list = rateAllMode ? rateAllList : imageList;
+    prevBtn.style.display = list.length > 1 ? 'block' : 'none';
+    nextBtn.style.display = list.length > 1 ? 'block' : 'none';
+  }
+
+  /**
+   * Start "Rate All" mode for a room (one-by-one, auto-advance after voting).
+   * @param {string} room - room slug (e.g. "parlor")
+   */
+  function startRateAll(room) {
+    const normalized = (room || '').toString().trim().toLowerCase();
+    rateAllRoom = normalized || null;
+    rateAllList = normalized
+      ? imageList.filter((img) => (img.room || '').toString().trim().toLowerCase() === normalized)
+      : [...imageList];
+    rateAllMode = true;
+
+    if (!rateAllList.length) {
+      console.warn('Lightbox: no images available for Rate All');
+      stopRateAll();
+      return;
+    }
+
+    openLightbox(rateAllList[0].id);
+  }
+
+  function stopRateAll() {
+    rateAllMode = false;
+    rateAllRoom = null;
+    rateAllList = [];
   }
 
   /**
@@ -530,6 +733,8 @@ const Lightbox = (function() {
     openLightbox,
     closeLightbox,
     navigateLightbox,
+    startRateAll,
+    stopRateAll,
     toggleCompare,
     isInComparison,
     getCompareSelection,
