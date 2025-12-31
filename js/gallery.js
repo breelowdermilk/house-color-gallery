@@ -222,11 +222,15 @@ const Gallery = (function () {
     if (filter === "all") return images;
 
     const user = getCurrentUser();
+    console.log("[Filter] filter=" + filter + " user=" + user);
     const results = [];
 
     for (const image of images) {
       const ratings = await getRatingsForImage(image.id);
       const myRating = ratings[user];
+      if (myRating) {
+        console.log("[Filter] " + image.id + " myRating=" + myRating + " ratings=" + JSON.stringify(ratings));
+      }
       const votes = Object.values(ratings);
       const likes = votes.filter(v => v === "like").length;
       const dislikes = votes.filter(v => v === "dislike").length;
@@ -252,6 +256,7 @@ const Gallery = (function () {
       }
     }
 
+    console.log("[Filter] results=" + results.length + " from " + images.length);
     return results;
   }
 
