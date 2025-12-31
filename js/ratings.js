@@ -1,376 +1,305 @@
 /**
  * Ratings module for House Color Gallery
- * Handles Firebase Firestore integration for 3-way ratings (like/unsure/dislike)
+ *
+ * Firestore model (compat API):
+ * - `images/{imageId}/ratings/{userName}` => { value: "like"|"unsure"|"dislike", updatedAt }
+ * - `users/{userName}` => { createdAt }
+ *
+ * Public API: `window.Ratings`
  */
 
-const Ratings = (function() {
+const Ratings = (function () {
+  const VALID = new Set(["like", "unsure", "dislike"]);
+  const STORAGE_KEY = "houseRatings";
+
   let db = null;
   let currentUser = null;
-  let unsubscribers = [];
-  let ratingsCache = {}; // Cache ratings to reduce Firestore reads
 
-  // Rating types
-  const RATING_TYPES = ['like', 'unsure', 'dislike'];
-  const RATING_INFO = {
-    like: { emoji: '👍', label: 'Like', color: '#22c55e' },
-    unsure: { emoji: '❓', label: 'Unsure', color: '#eab308' },
-    dislike: { emoji: '✖️', label: 'Dislike', color: '#ef4444' }
-  };
+  const cache = new Map(); // imageId -> { [userName]: rating }
+  const watchers = new Map(); // imageId -> Set<fn>
 
-  /**
-   * Initialize the ratings module
-   */
-  function init(firestore, user) {
-    db = firestore;
-    currentUser = user;
+  function normalizeText(value) {
+    return String(value ?? "").trim();
+  }
 
-    if (!db) {
-      console.warn('Ratings: No database connection - running in offline mode');
+  function resolveUser() {
+    return (
+      currentUser ||
+      (typeof App !== "undefined" && typeof App.getUser === "function" ? App.getUser() : null) ||
+      localStorage.getItem("houseColorUser") ||
+      "Guest"
+    );
+  }
+
+  function loadOfflineStore() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch {
+      return {};
     }
-
-    // Set up rating button listeners (for cards)
-    setupRatingButtons();
-
-    // Listen for gallery updates to rebind buttons
-    observeGalleryChanges();
   }
 
-  /**
-   * Set the current user
-   */
-  function setUser(user) {
-    currentUser = user;
+  function writeOfflineStore(store) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(store || {}));
   }
 
-  /**
-   * Get current user
-   */
-  function getUser() {
-    return currentUser || localStorage.getItem('houseColorUser');
+  function getCachedRatings(imageId) {
+    return cache.get(imageId) || {};
   }
 
-  /**
-   * Set up click handlers for rating buttons
-   */
-  function setupRatingButtons() {
-    document.addEventListener('click', async (e) => {
-      const btn = e.target.closest('.rating-btn[data-image-id]');
-      if (!btn) return;
+  function setCachedRatings(imageId, ratings) {
+    cache.set(imageId, ratings || {});
+    notify(imageId);
+  }
 
-      e.preventDefault();
-      e.stopPropagation();
-
-      const imageId = btn.dataset.imageId;
-      const rating = btn.dataset.rating;
-
-      if (imageId && rating) {
-        await setRating(imageId, rating);
+  function notify(imageId) {
+    const set = watchers.get(imageId);
+    if (!set) return;
+    const ratings = getCachedRatings(imageId);
+    for (const fn of set) {
+      try {
+        fn({ ...ratings });
+      } catch (e) {
+        console.warn("Ratings watcher failed", e);
       }
-    });
+    }
   }
 
-  /**
-   * Watch for gallery DOM changes to update rating states
-   */
-  function observeGalleryChanges() {
-    const grid = document.getElementById('image-grid');
-    if (!grid) return;
+  function subscribeToRatings(imageId, callback) {
+    const id = normalizeText(imageId);
+    if (!id || typeof callback !== "function") return () => {};
 
-    const observer = new MutationObserver(() => {
-      updateAllRatingStates();
-    });
+    if (!watchers.has(id)) watchers.set(id, new Set());
+    watchers.get(id).add(callback);
 
-    observer.observe(grid, { childList: true, subtree: true });
+    // Ensure callback receives current value ASAP.
+    callback({ ...getCachedRatings(id) });
+
+    // If we don't have a live listener yet, hydrate once.
+    if (!cache.has(id)) {
+      void getRatings(id).then((ratings) => {
+        setCachedRatings(id, ratings);
+      });
+    }
+
+    return () => {
+      const set = watchers.get(id);
+      if (!set) return;
+      set.delete(callback);
+      if (!set.size) watchers.delete(id);
+    };
   }
 
-  /**
-   * Set rating for an image
-   * @param {string} imageId - Image ID
-   * @param {string} rating - 'like', 'unsure', or 'dislike'
-   */
-  async function setRating(imageId, rating) {
-    const user = getUser();
-    if (!user) {
-      console.warn('Cannot rate: no user');
-      return;
-    }
-
-    if (!RATING_TYPES.includes(rating)) {
-      console.warn('Invalid rating:', rating);
-      return;
-    }
-
-    // Update cache immediately for responsive UI
-    if (!ratingsCache[imageId]) ratingsCache[imageId] = {};
-    ratingsCache[imageId][user] = rating;
-
-    if (!db) {
-      // Offline mode - use localStorage
-      const key = 'houseRatings';
-      const stored = JSON.parse(localStorage.getItem(key) || '{}');
-      if (!stored[imageId]) stored[imageId] = {};
-      stored[imageId][user] = rating;
-      localStorage.setItem(key, JSON.stringify(stored));
-
-      // Update UI
-      updateRatingButtons(imageId, stored[imageId]);
-      return;
-    }
+  async function ensureUserDocument(userName) {
+    if (!db) return;
+    const name = normalizeText(userName);
+    if (!name) return;
 
     try {
-      const docRef = db.collection('images').doc(imageId);
-      await docRef.set({
-        ratings: {
-          [user]: rating
-        }
-      }, { merge: true });
-
-      // Update UI
-      updateRatingButtons(imageId, ratingsCache[imageId]);
-    } catch (error) {
-      console.error('Error setting rating:', error);
+      const createdAt =
+        typeof firebase !== "undefined" && firebase.firestore?.FieldValue?.serverTimestamp
+          ? firebase.firestore.FieldValue.serverTimestamp()
+          : Date.now();
+      await db.collection("users").doc(name).set({ createdAt }, { merge: true });
+    } catch (e) {
+      console.warn("Ratings: could not write users doc", e);
     }
   }
 
-  /**
-   * Clear rating for an image (remove user's vote)
-   */
-  async function clearRating(imageId) {
-    const user = getUser();
+  async function setRating(imageId, rating) {
+    const id = normalizeText(imageId);
+    const value = normalizeText(rating);
+    if (!id) return;
+    if (!VALID.has(value)) return;
+
+    const user = resolveUser();
     if (!user) return;
 
-    // Update cache
-    if (ratingsCache[imageId]) {
-      delete ratingsCache[imageId][user];
-    }
+    // Optimistic local update
+    const next = { ...getCachedRatings(id), [user]: value };
+    setCachedRatings(id, next);
 
     if (!db) {
-      const key = 'houseRatings';
-      const stored = JSON.parse(localStorage.getItem(key) || '{}');
-      if (stored[imageId]) {
-        delete stored[imageId][user];
-        localStorage.setItem(key, JSON.stringify(stored));
-      }
-      updateRatingButtons(imageId, stored[imageId] || {});
+      const store = loadOfflineStore();
+      store[id] = { ...(store[id] || {}), [user]: value };
+      writeOfflineStore(store);
       return;
     }
 
     try {
-      const docRef = db.collection('images').doc(imageId);
-      await docRef.update({
-        [`ratings.${user}`]: firebase.firestore.FieldValue.delete()
-      });
+      await ensureUserDocument(user);
+
+      const updatedAt =
+        typeof firebase !== "undefined" && firebase.firestore?.FieldValue?.serverTimestamp
+          ? firebase.firestore.FieldValue.serverTimestamp()
+          : Date.now();
+
+      await db
+        .collection("images")
+        .doc(id)
+        .collection("ratings")
+        .doc(user)
+        .set({ value, updatedAt }, { merge: true });
     } catch (error) {
-      console.error('Error clearing rating:', error);
+      console.error("Ratings: setRating failed", error);
     }
   }
 
-  /**
-   * Get ratings for an image
-   * @param {string} imageId - Image ID
-   * @returns {Object} - { userName: 'like'|'unsure'|'dislike', ... }
-   */
   async function getRatings(imageId) {
-    // Check cache first
-    if (ratingsCache[imageId]) {
-      return ratingsCache[imageId];
-    }
+    const id = normalizeText(imageId);
+    if (!id) return {};
 
     if (!db) {
-      const stored = JSON.parse(localStorage.getItem('houseRatings') || '{}');
-      ratingsCache[imageId] = stored[imageId] || {};
-      return ratingsCache[imageId];
+      const store = loadOfflineStore();
+      return { ...(store[id] || {}) };
     }
 
     try {
-      const doc = await db.collection('images').doc(imageId).get();
-      const ratings = doc.exists ? (doc.data().ratings || {}) : {};
-      ratingsCache[imageId] = ratings;
+      const snapshot = await db.collection("images").doc(id).collection("ratings").get();
+      const ratings = {};
+      snapshot.forEach((doc) => {
+        const value = normalizeText(doc.data()?.value);
+        if (VALID.has(value)) ratings[doc.id] = value;
+      });
       return ratings;
     } catch (error) {
-      console.error('Error getting ratings:', error);
+      console.error("Ratings: getRatings failed", error);
       return {};
     }
   }
 
-  /**
-   * Get all ratings for all images
-   * @returns {Object} - { imageId: { userName: rating, ... }, ... }
-   */
-  async function getAllRatings() {
-    if (!db) {
-      return JSON.parse(localStorage.getItem('houseRatings') || '{}');
-    }
-
-    try {
-      const snapshot = await db.collection('images').get();
-      const allRatings = {};
-      snapshot.forEach(doc => {
-        const data = doc.data();
-        if (data.ratings) {
-          allRatings[doc.id] = data.ratings;
-        }
-      });
-      // Update cache
-      Object.assign(ratingsCache, allRatings);
-      return allRatings;
-    } catch (error) {
-      console.error('Error getting all ratings:', error);
-      return {};
+  function ratingBadgeClasses(value) {
+    switch (value) {
+      case "like":
+        return "border-emerald-200 bg-emerald-50 text-emerald-800";
+      case "unsure":
+        return "border-amber-200 bg-amber-50 text-amber-800";
+      case "dislike":
+        return "border-rose-200 bg-rose-50 text-rose-800";
+      default:
+        return "border-slate-200 bg-white text-slate-700";
     }
   }
 
-  /**
-   * Subscribe to real-time updates for an image's ratings
-   */
-  function subscribeToRatings(imageId, callback) {
-    if (!db) return () => {};
-
-    const unsubscribe = db.collection('images').doc(imageId)
-      .onSnapshot((doc) => {
-        const ratings = doc.exists ? (doc.data().ratings || {}) : {};
-        ratingsCache[imageId] = ratings;
-        callback(ratings);
-      });
-
-    unsubscribers.push(unsubscribe);
-    return unsubscribe;
+  function ratingSymbol(value) {
+    switch (value) {
+      case "like":
+        return "👍";
+      case "unsure":
+        return "❓";
+      case "dislike":
+        return "✖️";
+      default:
+        return "";
+    }
   }
 
-  /**
-   * Update rating buttons UI for an image
-   */
-  function updateRatingButtons(imageId, ratings) {
-    const user = getUser();
-    const userRating = ratings[user];
+  function updateCardUI(cardEl, imageId, ratings) {
+    if (!cardEl) return;
+    const id = normalizeText(imageId);
+    if (!id) return;
 
-    // Update card rating buttons
-    const cardBtns = document.querySelectorAll(`.rating-btn[data-image-id="${imageId}"]`);
-    cardBtns.forEach(btn => {
-      const rating = btn.dataset.rating;
-      btn.classList.toggle('active', rating === userRating);
+    const user = resolveUser();
+    const myRating = ratings?.[user] || "";
+
+    const buttons = cardEl.querySelectorAll(".rating-btn[data-rating]");
+    buttons.forEach((btn) => {
+      const value = normalizeText(btn.getAttribute("data-rating"));
+      const isActive = value && value === myRating;
+      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+
+      // Active state: stronger border + ring.
+      btn.classList.toggle("ring-2", isActive);
+      btn.classList.toggle("ring-slate-400", isActive);
+      btn.classList.toggle("ring-offset-1", isActive);
     });
 
-    // Update vote summary if present
-    const voteSummary = document.querySelector(`[data-vote-summary="${imageId}"]`);
-    if (voteSummary) {
-      renderVoteSummary(voteSummary, ratings);
-    }
+    const summary = cardEl.querySelector("[data-rating-summary]");
+    if (!summary) return;
 
-    // Notify lightbox if open
-    if (typeof Lightbox !== 'undefined' && Lightbox.updateRatingUI) {
-      Lightbox.updateRatingUI();
-    }
-  }
-
-  /**
-   * Update all visible rating buttons with current state
-   */
-  async function updateAllRatingStates() {
-    const imageIds = new Set();
-    document.querySelectorAll('.rating-btn[data-image-id]').forEach(btn => {
-      imageIds.add(btn.dataset.imageId);
-    });
-
-    for (const imageId of imageIds) {
-      const ratings = await getRatings(imageId);
-      updateRatingButtons(imageId, ratings);
-    }
-  }
-
-  /**
-   * Render vote summary HTML
-   */
-  function renderVoteSummary(container, ratings) {
-    const votes = Object.entries(ratings);
-
-    if (votes.length === 0) {
-      container.innerHTML = '';
+    const entries = Object.entries(ratings || {});
+    if (!entries.length) {
+      summary.innerHTML = '<span class="text-xs text-slate-400">No votes</span>';
       return;
     }
 
-    container.innerHTML = votes.map(([user, rating]) => {
-      const info = RATING_INFO[rating] || { emoji: '?', label: rating };
-      return `<span class="vote-chip vote-${rating}" title="${user}: ${info.label}">
-        <span class="vote-user">${user.charAt(0)}</span>
-        <span class="vote-emoji">${info.emoji}</span>
-      </span>`;
-    }).join('');
+    const ordered = entries.sort(([a], [b]) => a.localeCompare(b));
+    summary.innerHTML = "";
+    for (const [name, value] of ordered) {
+      const chip = document.createElement("span");
+      chip.className = `inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] ${ratingBadgeClasses(
+        value
+      )}`;
+      const initial = normalizeText(name).slice(0, 1).toUpperCase() || "?";
+      chip.textContent = `${initial} ${ratingSymbol(value)}`;
+      chip.title = `${name}: ${value}`;
+      summary.appendChild(chip);
+    }
   }
 
-  /**
-   * Create rating buttons for an image card
-   * @param {string} imageId - Image ID
-   * @returns {HTMLElement}
-   */
-  function createRatingButtons(imageId) {
-    const container = document.createElement('div');
-    container.className = 'card-rating-buttons';
+  function mountCard(cardEl, imageId) {
+    const id = normalizeText(imageId);
+    if (!cardEl || !id) return () => {};
 
-    RATING_TYPES.forEach(rating => {
-      const info = RATING_INFO[rating];
-      const btn = document.createElement('button');
-      btn.className = `rating-btn rating-${rating}`;
-      btn.dataset.imageId = imageId;
-      btn.dataset.rating = rating;
-      btn.title = info.label;
-      btn.innerHTML = `<span class="rating-emoji">${info.emoji}</span>`;
-      container.appendChild(btn);
+    // Intercept button clicks (avoid opening the card link).
+    cardEl.querySelectorAll(".rating-btn[data-rating]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const rating = normalizeText(btn.getAttribute("data-rating"));
+        void setRating(id, rating);
+      });
     });
 
-    return container;
+    let firestoreUnsub = null;
+
+    if (db) {
+      try {
+        firestoreUnsub = db
+          .collection("images")
+          .doc(id)
+          .collection("ratings")
+          .onSnapshot((snapshot) => {
+            const ratings = {};
+            snapshot.forEach((doc) => {
+              const value = normalizeText(doc.data()?.value);
+              if (VALID.has(value)) ratings[doc.id] = value;
+            });
+            setCachedRatings(id, ratings);
+          });
+      } catch (e) {
+        console.warn("Ratings: realtime subscription failed", e);
+      }
+    }
+
+    const localUnsub = subscribeToRatings(id, (ratings) => updateCardUI(cardEl, id, ratings));
+
+    return () => {
+      try {
+        if (typeof firestoreUnsub === "function") firestoreUnsub();
+      } catch {}
+      try {
+        if (typeof localUnsub === "function") localUnsub();
+      } catch {}
+    };
   }
 
-  /**
-   * Create vote summary element for a card
-   * @param {string} imageId - Image ID
-   * @returns {HTMLElement}
-   */
-  function createVoteSummary(imageId) {
-    const container = document.createElement('div');
-    container.className = 'card-vote-summary';
-    container.dataset.voteSummary = imageId;
-    return container;
+  function init(firestore, userName) {
+    db = firestore || null;
+    currentUser = userName || null;
+    void ensureUserDocument(resolveUser());
   }
 
-  /**
-   * Get rating info (emoji, label, color)
-   */
-  function getRatingInfo(rating) {
-    return RATING_INFO[rating] || null;
-  }
-
-  /**
-   * Cleanup subscriptions
-   */
-  function cleanup() {
-    unsubscribers.forEach(unsub => unsub());
-    unsubscribers = [];
-  }
-
-  // Public API
   return {
     init,
-    setUser,
-    getUser,
     setRating,
-    clearRating,
     getRatings,
-    getAllRatings,
     subscribeToRatings,
-    updateRatingButtons,
-    updateAllRatingStates,
-    createRatingButtons,
-    createVoteSummary,
-    renderVoteSummary,
-    getRatingInfo,
-    cleanup,
-    RATING_TYPES,
-    RATING_INFO
+    mountCard,
   };
 })();
 
-// Export for other modules
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   window.Ratings = Ratings;
 }
+

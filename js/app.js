@@ -170,9 +170,9 @@ const App = (function() {
       console.warn('Gallery module not available');
     }
 
-    // Initialize Comments/Favorites
-    if (typeof Comments !== 'undefined') {
-      Comments.init(db, currentUser);
+    // Initialize Ratings
+    if (typeof Ratings !== 'undefined' && typeof Ratings.init === 'function') {
+      Ratings.init(db, currentUser);
     }
   }
 
