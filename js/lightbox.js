@@ -3,6 +3,7 @@
  *
  * Features:
  * - Lightbox overlay for enlarged image viewing
+ * - Rating buttons (like/unsure/dislike)
  * - Keyboard navigation (arrows, Escape)
  * - Comparison mode (up to 3 images side-by-side)
  * - Touch/swipe support for mobile
@@ -11,9 +12,18 @@
 const Lightbox = (function() {
   // State
   let currentImageId = null;
+  let currentUser = null;
   let imageList = [];
   let compareSelection = [];
+  let currentRatings = {}; // Cache of ratings for current image
   const MAX_COMPARE = 3;
+
+  // Rating options
+  const RATINGS = {
+    like: { emoji: '👍', label: 'Like', class: 'rating-like' },
+    unsure: { emoji: '❓', label: 'Unsure', class: 'rating-unsure' },
+    dislike: { emoji: '✖️', label: 'Dislike', class: 'rating-dislike' }
+  };
 
   // Touch handling
   let touchStartX = 0;
@@ -28,12 +38,21 @@ const Lightbox = (function() {
   /**
    * Initialize the lightbox module
    * @param {Array} images - Array of image objects with id, src, title properties
+   * @param {string} user - Current user's name
    */
-  function init(images = []) {
+  function init(images = [], user = null) {
     imageList = images;
+    currentUser = user || (typeof App !== 'undefined' ? App.getUser() : null) || localStorage.getItem('houseColorUser');
     createLightboxDOM();
     createComparisonPanelDOM();
     bindEvents();
+  }
+
+  /**
+   * Set the current user
+   */
+  function setUser(user) {
+    currentUser = user;
   }
 
   /**
@@ -62,6 +81,21 @@ const Lightbox = (function() {
         <div class="lightbox-content">
           <img class="lightbox-image" src="" alt="">
           <div class="lightbox-caption"></div>
+          <div class="lightbox-rating-bar">
+            <button class="rating-btn rating-like" data-rating="like" title="Like">
+              <span class="rating-emoji">👍</span>
+              <span class="rating-label">Like</span>
+            </button>
+            <button class="rating-btn rating-unsure" data-rating="unsure" title="Unsure">
+              <span class="rating-emoji">❓</span>
+              <span class="rating-label">Unsure</span>
+            </button>
+            <button class="rating-btn rating-dislike" data-rating="dislike" title="Dislike">
+              <span class="rating-emoji">✖️</span>
+              <span class="rating-label">Dislike</span>
+            </button>
+          </div>
+          <div class="lightbox-votes"></div>
         </div>
         <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
       </div>
@@ -103,6 +137,11 @@ const Lightbox = (function() {
     overlay.querySelector('.lightbox-prev').addEventListener('click', () => navigateLightbox(-1));
     overlay.querySelector('.lightbox-next').addEventListener('click', () => navigateLightbox(1));
 
+    // Rating button events
+    overlay.querySelectorAll('.rating-btn').forEach(btn => {
+      btn.addEventListener('click', handleRatingClick);
+    });
+
     // Keyboard events
     document.addEventListener('keydown', handleKeydown);
 
@@ -112,6 +151,35 @@ const Lightbox = (function() {
 
     // Comparison panel events
     comparisonPanel.querySelector('.comparison-clear').addEventListener('click', clearComparison);
+  }
+
+  /**
+   * Handle rating button click
+   */
+  function handleRatingClick(e) {
+    const btn = e.currentTarget;
+    const rating = btn.dataset.rating;
+
+    if (!currentImageId || !currentUser) {
+      console.warn('Cannot rate: no image or user');
+      return;
+    }
+
+    // Call Ratings module if available
+    if (typeof Ratings !== 'undefined' && Ratings.setRating) {
+      Ratings.setRating(currentImageId, rating).then(() => {
+        updateRatingUI();
+      });
+    } else {
+      // Fallback: store locally
+      const key = 'houseRatings';
+      const stored = JSON.parse(localStorage.getItem(key) || '{}');
+      if (!stored[currentImageId]) stored[currentImageId] = {};
+      stored[currentImageId][currentUser] = rating;
+      localStorage.setItem(key, JSON.stringify(stored));
+      currentRatings = stored[currentImageId];
+      updateRatingUI();
+    }
   }
 
   /**
@@ -181,19 +249,69 @@ const Lightbox = (function() {
       return;
     }
 
+    // Update current user in case it changed
+    currentUser = currentUser || (typeof App !== 'undefined' ? App.getUser() : null) || localStorage.getItem('houseColorUser');
+
     currentImageId = imageId;
 
     const lightboxImg = overlay.querySelector('.lightbox-image');
     const lightboxCaption = overlay.querySelector('.lightbox-caption');
 
-    lightboxImg.src = image.src;
-    lightboxImg.alt = image.title || '';
-    lightboxCaption.textContent = image.title || '';
+    lightboxImg.src = image.src || image.url;
+    lightboxImg.alt = image.title || image.filename || '';
+    lightboxCaption.textContent = image.title || image.filename || '';
 
     overlay.classList.add('active');
     document.body.classList.add('lightbox-open');
 
     updateNavButtons();
+    loadAndDisplayRatings(imageId);
+  }
+
+  /**
+   * Load ratings and update the UI
+   */
+  async function loadAndDisplayRatings(imageId) {
+    // Get ratings from Ratings module or localStorage
+    if (typeof Ratings !== 'undefined' && Ratings.getRatings) {
+      currentRatings = await Ratings.getRatings(imageId);
+    } else {
+      const stored = JSON.parse(localStorage.getItem('houseRatings') || '{}');
+      currentRatings = stored[imageId] || {};
+    }
+
+    updateRatingUI();
+  }
+
+  /**
+   * Update the rating UI (buttons and vote summary)
+   */
+  function updateRatingUI() {
+    const ratingBar = overlay.querySelector('.lightbox-rating-bar');
+    const votesDisplay = overlay.querySelector('.lightbox-votes');
+
+    if (!ratingBar || !votesDisplay) return;
+
+    // Highlight current user's rating
+    const userRating = currentRatings[currentUser];
+    ratingBar.querySelectorAll('.rating-btn').forEach(btn => {
+      const rating = btn.dataset.rating;
+      btn.classList.toggle('active', rating === userRating);
+    });
+
+    // Show all votes
+    const votes = Object.entries(currentRatings);
+    if (votes.length === 0) {
+      votesDisplay.innerHTML = '<span class="no-votes">No votes yet</span>';
+    } else {
+      votesDisplay.innerHTML = votes.map(([user, rating]) => {
+        const ratingInfo = RATINGS[rating] || { emoji: '?', label: rating };
+        return `<span class="vote-chip vote-${rating}" title="${user}: ${ratingInfo.label}">
+          <span class="vote-user">${user}</span>
+          <span class="vote-emoji">${ratingInfo.emoji}</span>
+        </span>`;
+      }).join('');
+    }
   }
 
   /**
@@ -407,6 +525,7 @@ const Lightbox = (function() {
   // Public API
   return {
     init,
+    setUser,
     updateImageList,
     openLightbox,
     closeLightbox,
@@ -416,7 +535,9 @@ const Lightbox = (function() {
     getCompareSelection,
     clearComparison,
     renderComparisonPanel,
-    createCompareCheckbox
+    createCompareCheckbox,
+    updateRatingUI,
+    loadAndDisplayRatings
   };
 })();
 

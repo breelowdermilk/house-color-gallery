@@ -3,7 +3,6 @@
  *
  * - Loads `data/images.json`
  * - Renders into `#image-grid`
- * - Populates filters into `#filter-dropdowns`
  * - Room switching via `.room-tab[data-room]`
  *
  * Public API: `window.Gallery`
@@ -12,23 +11,19 @@
 const Gallery = (function () {
   const DATA_URL = "data/images.json";
 
-  const FILTER_KEYS = ["walls", "trim", "feature", "pattern", "wainscoting", "type"];
-
   const SELECTORS = {
     grid: "#image-grid",
     results: "#results-summary",
     empty: "#empty-state",
-    filterContainer: "#filter-dropdowns",
     roomTab: ".room-tab[data-room]",
     activeRoomTab: ".room-tab[data-room][aria-selected='true']",
-    clearFilters: "#clear-filters",
   };
 
   const state = {
     allImages: [],
     currentRoom: "parlor",
-    filters: {},
     cleanupLazy: null,
+    unsubscribers: [],
     didInit: false,
   };
 
@@ -137,124 +132,6 @@ const Gallery = (function () {
     return state.allImages.filter((img) => normalizeText(img.room).toLowerCase() === normalizedRoom);
   }
 
-  function readFiltersFromDom() {
-    const container = $(SELECTORS.filterContainer);
-    if (!container) return {};
-    const selects = $all("select[data-filter-key]", container);
-    const filters = {};
-    for (const select of selects) {
-      const key = normalizeText(select.getAttribute("data-filter-key"));
-      const value = normalizeText(select.value);
-      if (key && value) filters[key] = value;
-    }
-    return filters;
-  }
-
-  function populateSelect(select, values, selectedValue) {
-    const current = normalizeText(selectedValue);
-    select.innerHTML = "";
-
-    const allOpt = document.createElement("option");
-    allOpt.value = "";
-    allOpt.textContent = "All";
-    select.appendChild(allOpt);
-
-    for (const value of values) {
-      const opt = document.createElement("option");
-      opt.value = value;
-      opt.textContent = value;
-      select.appendChild(opt);
-    }
-
-    if (current && values.includes(current)) {
-      select.value = current;
-    } else {
-      select.value = "";
-    }
-  }
-
-  function populateFilters(images) {
-    const optionsByKey = {};
-    for (const key of FILTER_KEYS) optionsByKey[key] = new Set();
-
-    for (const image of images || []) {
-      for (const key of FILTER_KEYS) {
-        const raw = image?.[key];
-        if (raw == null) continue;
-        if (Array.isArray(raw)) {
-          for (const v of raw) {
-            const text = normalizeText(v);
-            if (text) optionsByKey[key].add(text);
-          }
-        } else {
-          const text = normalizeText(raw);
-          if (text) optionsByKey[key].add(text);
-        }
-      }
-    }
-
-    const container = $(SELECTORS.filterContainer);
-    if (!container) return {};
-
-    const normalized = {};
-    for (const key of FILTER_KEYS) {
-      normalized[key] = Array.from(optionsByKey[key]).sort((a, b) =>
-        a.localeCompare(b, undefined, { numeric: true })
-      );
-    }
-
-    container.innerHTML = "";
-    for (const key of FILTER_KEYS) {
-      const values = normalized[key];
-      if (!values.length) continue;
-
-      const wrapper = document.createElement("div");
-      wrapper.className = "col-span-1";
-
-      const label = document.createElement("label");
-      const id = `filter-${key}`;
-      label.className = "block text-xs font-medium text-slate-700";
-      label.setAttribute("for", id);
-      label.textContent = titleCase(key);
-
-      const select = document.createElement("select");
-      select.id = id;
-      select.className =
-        "mt-1 block w-full rounded-md border-slate-200 bg-white text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400";
-      select.setAttribute("data-filter-key", key);
-
-      populateSelect(select, values, state.filters[key] || "");
-
-      wrapper.appendChild(label);
-      wrapper.appendChild(select);
-      container.appendChild(wrapper);
-    }
-
-    // Make container layout match the old form.
-    container.classList.add("grid", "grid-cols-2", "gap-3", "sm:grid-cols-4");
-
-    return normalized;
-  }
-
-  function filterImages(images, filters) {
-    const entries = Object.entries(filters || {}).filter(([, v]) => normalizeText(v));
-    if (!entries.length) return images || [];
-
-    return (images || []).filter((image) => {
-      for (const [key, selected] of entries) {
-        const wanted = normalizeText(selected);
-        const raw = image?.[key];
-        if (raw == null) return false;
-        if (Array.isArray(raw)) {
-          if (!raw.some((v) => normalizeText(v) === wanted)) return false;
-        } else {
-          if (normalizeText(raw) !== wanted) return false;
-        }
-      }
-      return true;
-    });
-  }
-
   function getThumbUrl(image) {
     return normalizeText(image?.thumbnail || image?.thumb || image?.url || image?.src || "");
   }
@@ -299,7 +176,29 @@ const Gallery = (function () {
     return () => observer.disconnect();
   }
 
-  function renderGallery(room, filters) {
+  function cleanupSubscriptions() {
+    for (const unsub of state.unsubscribers) {
+      try {
+        if (typeof unsub === "function") unsub();
+      } catch (e) {
+        console.warn("Gallery: rating unsubscribe failed", e);
+      }
+    }
+    state.unsubscribers = [];
+  }
+
+  function ratingButtonClass(rating) {
+    const base =
+      "rating-btn inline-flex h-8 w-9 items-center justify-center rounded-md border text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2";
+    const variants = {
+      like: "border-emerald-200 bg-emerald-50 text-emerald-800 hover:bg-emerald-100",
+      unsure: "border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100",
+      dislike: "border-rose-200 bg-rose-50 text-rose-800 hover:bg-rose-100",
+    };
+    return `${base} ${variants[rating] || "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"}`;
+  }
+
+  function renderGallery(room) {
     const grid = $(SELECTORS.grid);
     if (!grid) return;
 
@@ -307,13 +206,13 @@ const Gallery = (function () {
       state.cleanupLazy();
       state.cleanupLazy = null;
     }
+    cleanupSubscriptions();
 
     const roomValue = normalizeText(room || state.currentRoom).toLowerCase();
     state.currentRoom = roomValue || state.currentRoom;
-    state.filters = { ...(filters || {}) };
 
     const roomImages = getRoomImages(state.currentRoom);
-    const filtered = filterImages(roomImages, state.filters);
+    const filtered = roomImages;
 
     grid.innerHTML = "";
     setEmptyState(filtered.length === 0);
@@ -321,9 +220,13 @@ const Gallery = (function () {
 
     const frag = document.createDocumentFragment();
     for (const image of filtered) {
+      const imageId = normalizeText(image?.id);
+      if (!imageId) continue;
+
       const card = document.createElement("div");
       card.className =
         "group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow";
+      card.dataset.imageId = imageId;
 
       const link = document.createElement("a");
       link.href = getFullUrl(image) || "#";
@@ -352,26 +255,63 @@ const Gallery = (function () {
       subtitle.className = "mt-1 text-xs text-slate-600";
       subtitle.textContent = titleCase(normalizeText(image.room || "")) || "";
 
+      const footer = document.createElement("div");
+      footer.className = "mt-3 flex items-start justify-between gap-2";
+
+      const buttons = document.createElement("div");
+      buttons.className = "flex items-center gap-1";
+      buttons.setAttribute("role", "group");
+      buttons.setAttribute("aria-label", "Rate this photo");
+
+      const likeBtn = document.createElement("button");
+      likeBtn.type = "button";
+      likeBtn.className = ratingButtonClass("like");
+      likeBtn.textContent = "👍";
+      likeBtn.setAttribute("data-image-id", imageId);
+      likeBtn.setAttribute("data-rating", "like");
+
+      const unsureBtn = document.createElement("button");
+      unsureBtn.type = "button";
+      unsureBtn.className = ratingButtonClass("unsure");
+      unsureBtn.textContent = "❓";
+      unsureBtn.setAttribute("data-image-id", imageId);
+      unsureBtn.setAttribute("data-rating", "unsure");
+
+      const dislikeBtn = document.createElement("button");
+      dislikeBtn.type = "button";
+      dislikeBtn.className = ratingButtonClass("dislike");
+      dislikeBtn.textContent = "✖️";
+      dislikeBtn.setAttribute("data-image-id", imageId);
+      dislikeBtn.setAttribute("data-rating", "dislike");
+
+      buttons.appendChild(likeBtn);
+      buttons.appendChild(unsureBtn);
+      buttons.appendChild(dislikeBtn);
+
+      const summary = document.createElement("div");
+      summary.className = "rating-summary flex items-center justify-end gap-1";
+      summary.setAttribute("data-rating-summary", "");
+      summary.setAttribute("data-image-id", imageId);
+
+      footer.appendChild(buttons);
+      footer.appendChild(summary);
+
       meta.appendChild(title);
       meta.appendChild(subtitle);
+      meta.appendChild(footer);
 
       card.appendChild(link);
       card.appendChild(meta);
       frag.appendChild(card);
+
+      if (typeof window !== "undefined" && window.Ratings?.mountCard) {
+        const unsub = window.Ratings.mountCard(card, imageId);
+        if (typeof unsub === "function") state.unsubscribers.push(unsub);
+      }
     }
 
     grid.appendChild(frag);
     state.cleanupLazy = setupLazyLoading(grid);
-  }
-
-  function clearFilters() {
-    const container = $(SELECTORS.filterContainer);
-    if (container) {
-      for (const select of $all("select[data-filter-key]", container)) {
-        select.value = "";
-      }
-    }
-    state.filters = {};
   }
 
   function onRoomTabClick(event) {
@@ -384,32 +324,7 @@ const Gallery = (function () {
 
     state.currentRoom = room;
     setActiveRoomTab(room);
-
-    // Reset filters when switching rooms, then rebuild options for that room.
-    clearFilters();
-    populateFilters(getRoomImages(state.currentRoom));
-    renderGallery(state.currentRoom, state.filters);
-  }
-
-  function onFilterChange(event) {
-    const container = $(SELECTORS.filterContainer);
-    if (!container) return;
-
-    const target = event.target;
-    if (!(target instanceof HTMLSelectElement)) return;
-    if (!container.contains(target)) return;
-
-    state.filters = readFiltersFromDom();
-    renderGallery(state.currentRoom, state.filters);
-  }
-
-  function onClearFiltersClick(event) {
-    const btn =
-      event.target instanceof Element ? event.target.closest(SELECTORS.clearFilters) : null;
-    if (!btn) return;
-
-    clearFilters();
-    renderGallery(state.currentRoom, state.filters);
+    renderGallery(state.currentRoom);
   }
 
   async function init() {
@@ -426,21 +341,15 @@ const Gallery = (function () {
     await loadImages();
     grid.setAttribute("aria-busy", "false");
 
-    populateFilters(getRoomImages(state.currentRoom));
-    state.filters = readFiltersFromDom();
-    renderGallery(state.currentRoom, state.filters);
+    renderGallery(state.currentRoom);
 
     document.addEventListener("click", onRoomTabClick);
-    document.addEventListener("change", onFilterChange);
-    document.addEventListener("click", onClearFiltersClick);
   }
 
   return {
     init,
     loadImages,
     renderGallery,
-    populateFilters,
-    filterImages,
   };
 })();
 
