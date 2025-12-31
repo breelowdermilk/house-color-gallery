@@ -404,9 +404,9 @@ const Gallery = (function () {
   }
 
   function onClearFiltersClick(event) {
-    const btn = $(SELECTORS.clearFilters);
+    const btn =
+      event.target instanceof Element ? event.target.closest(SELECTORS.clearFilters) : null;
     if (!btn) return;
-    if (event.target !== btn) return;
 
     clearFilters();
     renderGallery(state.currentRoom, state.filters);
@@ -447,4 +447,3 @@ const Gallery = (function () {
 if (typeof window !== "undefined") {
   window.Gallery = Gallery;
 }
-
