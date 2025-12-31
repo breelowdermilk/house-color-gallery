@@ -265,11 +265,16 @@ const Gallery = (function () {
       renderGallery(state.currentRoom);
     });
 
-    // Listen for rating changes to update cache
+    // Listen for rating changes to update cache and re-render if filtered
     window.addEventListener("ratingChanged", (e) => {
       const imageId = e.detail?.imageId;
-      if (imageId && state.ratingsCache[imageId]) {
+      if (imageId) {
         delete state.ratingsCache[imageId];
+      }
+      // Re-render if a filter is active (not "all")
+      if (state.currentFilter !== "all") {
+        state.ratingsCache = {}; // Clear entire cache for fresh data
+        renderGallery(state.currentRoom);
       }
     });
   }
