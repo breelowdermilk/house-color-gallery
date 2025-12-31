@@ -180,6 +180,11 @@ const App = (function() {
       Results.init(db);
     }
 
+    // Initialize Swatches
+    if (typeof Swatches !== 'undefined' && typeof Swatches.init === 'function') {
+      Swatches.init();
+    }
+
     // Keep Lightbox user in sync (for vote UI + Rate All mode)
     if (typeof Lightbox !== 'undefined' && typeof Lightbox.setUser === 'function') {
       Lightbox.setUser(currentUser);

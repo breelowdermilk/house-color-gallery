@@ -115,13 +115,29 @@ const Ratings = (function () {
     const user = resolveUser();
     if (!user) return;
 
+    // Check if toggling off (clicking same rating again)
+    const currentRatings = getCachedRatings(id);
+    const isToggleOff = currentRatings[user] === value;
+
     // Optimistic local update
-    const next = { ...getCachedRatings(id), [user]: value };
+    const next = { ...currentRatings };
+    if (isToggleOff) {
+      delete next[user];
+    } else {
+      next[user] = value;
+    }
     setCachedRatings(id, next);
+
+    // Dispatch event so Gallery can clear its cache
+    window.dispatchEvent(new CustomEvent('ratingChanged', { detail: { imageId: id } }));
 
     if (!db) {
       const store = loadOfflineStore();
-      store[id] = { ...(store[id] || {}), [user]: value };
+      if (isToggleOff) {
+        if (store[id]) delete store[id][user];
+      } else {
+        store[id] = { ...(store[id] || {}), [user]: value };
+      }
       writeOfflineStore(store);
       return;
     }
@@ -129,17 +145,27 @@ const Ratings = (function () {
     try {
       await ensureUserDocument(user);
 
-      const updatedAt =
-        typeof firebase !== "undefined" && firebase.firestore?.FieldValue?.serverTimestamp
-          ? firebase.firestore.FieldValue.serverTimestamp()
-          : Date.now();
+      if (isToggleOff) {
+        // Delete the rating
+        await db
+          .collection("images")
+          .doc(id)
+          .collection("ratings")
+          .doc(user)
+          .delete();
+      } else {
+        const updatedAt =
+          typeof firebase !== "undefined" && firebase.firestore?.FieldValue?.serverTimestamp
+            ? firebase.firestore.FieldValue.serverTimestamp()
+            : Date.now();
 
-      await db
-        .collection("images")
-        .doc(id)
-        .collection("ratings")
-        .doc(user)
-        .set({ value, updatedAt }, { merge: true });
+        await db
+          .collection("images")
+          .doc(id)
+          .collection("ratings")
+          .doc(user)
+          .set({ value, updatedAt }, { merge: true });
+      }
     } catch (error) {
       console.error("Ratings: setRating failed", error);
     }

@@ -264,6 +264,14 @@ const Gallery = (function () {
       state.ratingsCache = {}; // Clear cache to get fresh data
       renderGallery(state.currentRoom);
     });
+
+    // Listen for rating changes to update cache
+    window.addEventListener("ratingChanged", (e) => {
+      const imageId = e.detail?.imageId;
+      if (imageId && state.ratingsCache[imageId]) {
+        delete state.ratingsCache[imageId];
+      }
+    });
   }
 
   async function renderGallery(room) {
@@ -397,16 +405,23 @@ const Gallery = (function () {
     if (room === "results") {
       state.currentRoom = room;
       setActiveRoomTab(room);
-      if (typeof Results !== "undefined" && Results.show) {
-        Results.show();
-      }
+      if (typeof Swatches !== "undefined" && Swatches.hide) Swatches.hide();
+      if (typeof Results !== "undefined" && Results.show) Results.show();
       return;
     }
 
-    // Hide results if switching away from it
-    if (typeof Results !== "undefined" && Results.hide) {
-      Results.hide();
+    // Handle Swatches tab specially
+    if (room === "swatches") {
+      state.currentRoom = room;
+      setActiveRoomTab(room);
+      if (typeof Results !== "undefined" && Results.hide) Results.hide();
+      if (typeof Swatches !== "undefined" && Swatches.show) Swatches.show();
+      return;
     }
+
+    // Hide results and swatches if switching to a room
+    if (typeof Results !== "undefined" && Results.hide) Results.hide();
+    if (typeof Swatches !== "undefined" && Swatches.hide) Swatches.hide();
 
     state.currentRoom = room;
     setActiveRoomTab(room);
