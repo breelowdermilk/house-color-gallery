@@ -119,7 +119,7 @@ const Ratings = (function () {
     const currentRatings = getCachedRatings(id);
     const isToggleOff = currentRatings[user] === value;
 
-    // Optimistic local update
+    // Optimistic local update (both cache and localStorage)
     const next = { ...currentRatings };
     if (isToggleOff) {
       delete next[user];
@@ -128,17 +128,19 @@ const Ratings = (function () {
     }
     setCachedRatings(id, next);
 
+    // Always write to localStorage immediately for instant persistence
+    const store = loadOfflineStore();
+    if (isToggleOff) {
+      if (store[id]) delete store[id][user];
+    } else {
+      store[id] = { ...(store[id] || {}), [user]: value };
+    }
+    writeOfflineStore(store);
+
     // Dispatch event so Gallery can clear its cache
     window.dispatchEvent(new CustomEvent('ratingChanged', { detail: { imageId: id } }));
 
     if (!db) {
-      const store = loadOfflineStore();
-      if (isToggleOff) {
-        if (store[id]) delete store[id][user];
-      } else {
-        store[id] = { ...(store[id] || {}), [user]: value };
-      }
-      writeOfflineStore(store);
       return;
     }
 
@@ -167,15 +169,8 @@ const Ratings = (function () {
           .set({ value, updatedAt }, { merge: true });
       }
     } catch (error) {
-      console.error("Ratings: setRating failed, falling back to localStorage", error);
-      // Fallback to localStorage when Firebase fails
-      const store = loadOfflineStore();
-      if (isToggleOff) {
-        if (store[id]) delete store[id][user];
-      } else {
-        store[id] = { ...(store[id] || {}), [user]: value };
-      }
-      writeOfflineStore(store);
+      // Firebase failed but localStorage was already written optimistically
+      console.warn("Ratings: Firebase setRating failed (localStorage already saved)", error.message);
     }
   }
 
