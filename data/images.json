@@ -46,22 +46,6 @@
       ]
     },
     {
-      "id": "parlor-004",
-      "filename": "Ash Walls - Coal Black Trim - Gold Accents",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Coal%20Black%20Trim%20-%20Gold%20Accents",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Coal%20Black%20Trim%20-%20Gold%20Accents",
-      "walls": "Ash",
-      "trim": "Coal Black",
-      "feature": "Gold Accents",
-      "tags": [
-        "coal",
-        "ash",
-        "gold",
-        "black",
-        "accents"
-      ]
-    },
-    {
       "id": "parlor-005",
       "filename": "Ash Walls - Elderberry Trim - Wood Mantle",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Elderberry%20Trim%20-%20Wood%20Mantle",
@@ -107,38 +91,6 @@
       ]
     },
     {
-      "id": "parlor-008",
-      "filename": "Chestler Walls - Coal Black Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Coal%20Black%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Coal%20Black%20Trim%20-%20Wood%20Mantle",
-      "walls": "Chestler",
-      "trim": "Coal Black",
-      "feature": "Wood Mantle",
-      "tags": [
-        "chestler",
-        "coal",
-        "mantle",
-        "wood",
-        "black"
-      ]
-    },
-    {
-      "id": "parlor-009",
-      "filename": "Chestler Walls - Velvet Plum Trim - Gold Accents",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Gold%20Accents",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Chestler%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Gold%20Accents",
-      "walls": "Chestler",
-      "trim": "Velvet Plum",
-      "feature": "Gold Accents",
-      "tags": [
-        "velvet",
-        "chestler",
-        "plum",
-        "gold",
-        "accents"
-      ]
-    },
-    {
       "id": "parlor-010",
       "filename": "Chestler Walls - Winchester Trim - Wood Mantle",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Chestler%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
@@ -151,22 +103,6 @@
         "chestler",
         "winchester",
         "mantle"
-      ]
-    },
-    {
-      "id": "parlor-011",
-      "filename": "Coal Black Walls - Ash Trim - Gold Accents",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Ash%20Trim%20-%20Gold%20Accents",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Ash%20Trim%20-%20Gold%20Accents",
-      "walls": "Coal Black",
-      "trim": "Ash",
-      "feature": "Gold Accents",
-      "tags": [
-        "coal",
-        "ash",
-        "gold",
-        "black",
-        "accents"
       ]
     },
     {
@@ -219,37 +155,6 @@
       ]
     },
     {
-      "id": "parlor-015",
-      "filename": "Oakham Walls - Chestler Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Oakham%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Oakham%20Walls%20-%20Chestler%20Trim%20-%20Wood%20Mantle",
-      "walls": "Oakham",
-      "trim": "Chestler",
-      "feature": "Wood Mantle",
-      "tags": [
-        "wood",
-        "chestler",
-        "oakham",
-        "mantle"
-      ]
-    },
-    {
-      "id": "parlor-016",
-      "filename": "Sage Green Walls - Cream Trim - Wood Mantle - Dark",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Sage%20Green%20Walls%20-%20Cream%20Trim%20-%20Wood%20Mantle%20-%20Dark",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Sage%20Green%20Walls%20-%20Cream%20Trim%20-%20Wood%20Mantle%20-%20Dark",
-      "walls": "Sage Green",
-      "trim": "Cream",
-      "feature": "Wood Mantle",
-      "tags": [
-        "green",
-        "sage",
-        "mantle",
-        "wood",
-        "cream"
-      ]
-    },
-    {
       "id": "parlor-017",
       "filename": "Slate Blue Walls - Burgundy Trim - Wood Mantle - Moody",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Slate%20Blue%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20-%20Moody",
@@ -263,21 +168,6 @@
         "wood",
         "blue",
         "slate"
-      ]
-    },
-    {
-      "id": "parlor-018",
-      "filename": "Teal Walls - Brown Chocolate Trim and Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Brown%20Chocolate%20Trim%20and%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Brown%20Chocolate%20Trim%20and%20Mantle",
-      "walls": "Teal",
-      "trim": "Brown Chocolate and Mantle",
-      "feature": null,
-      "tags": [
-        "teal",
-        "chocolate",
-        "brown",
-        "mantle"
       ]
     },
     {
@@ -321,117 +211,6 @@
         "wood",
         "teal",
         "burgundy",
-        "mantle"
-      ]
-    },
-    {
-      "id": "parlor-022",
-      "filename": "Teal Walls - Cream Trim - Burgundy Mantle Shelf",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Burgundy%20Mantle%20Shelf",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Burgundy%20Mantle%20Shelf",
-      "walls": "Teal",
-      "trim": "Cream",
-      "feature": "Burgundy Mantle Shelf",
-      "tags": [
-        "teal",
-        "burgundy",
-        "mantle",
-        "cream",
-        "shelf"
-      ]
-    },
-    {
-      "id": "parlor-023",
-      "filename": "Teal Walls - Cream Trim - Hot Pink Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Hot%20Pink%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Hot%20Pink%20Mantle",
-      "walls": "Teal",
-      "trim": "Cream",
-      "feature": "Hot Pink Mantle",
-      "tags": [
-        "teal",
-        "mantle",
-        "cream",
-        "hot",
-        "pink"
-      ]
-    },
-    {
-      "id": "parlor-024",
-      "filename": "Teal Walls - Cream Trim - Pink Mantle Shelf Accent",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Pink%20Mantle%20Shelf%20Accent",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Cream%20Trim%20-%20Pink%20Mantle%20Shelf%20Accent",
-      "walls": "Teal",
-      "trim": "Cream",
-      "feature": "Pink Mantle Shelf Accent",
-      "tags": [
-        "teal",
-        "mantle",
-        "cream",
-        "pink",
-        "shelf",
-        "accent"
-      ]
-    },
-    {
-      "id": "parlor-025",
-      "filename": "Teal Walls - Maroon Trim Mantle Baseboard",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Maroon%20Trim%20Mantle%20Baseboard",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Maroon%20Trim%20Mantle%20Baseboard",
-      "walls": "Teal",
-      "trim": "Maroon Mantle Baseboard",
-      "feature": null,
-      "tags": [
-        "teal",
-        "maroon",
-        "baseboard",
-        "mantle"
-      ]
-    },
-    {
-      "id": "parlor-026",
-      "filename": "Teal Walls - Mauve Trim - Dusty Pink Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Mauve%20Trim%20-%20Dusty%20Pink%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Mauve%20Trim%20-%20Dusty%20Pink%20Mantle",
-      "walls": "Teal",
-      "trim": "Mauve",
-      "feature": "Dusty Pink Mantle",
-      "tags": [
-        "teal",
-        "mantle",
-        "mauve",
-        "pink",
-        "dusty"
-      ]
-    },
-    {
-      "id": "parlor-027",
-      "filename": "Teal Walls - Sage Green Trim - Gray Green Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Sage%20Green%20Trim%20-%20Gray%20Green%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Sage%20Green%20Trim%20-%20Gray%20Green%20Mantle",
-      "walls": "Teal",
-      "trim": "Sage Green",
-      "feature": "Gray Green Mantle",
-      "tags": [
-        "teal",
-        "green",
-        "sage",
-        "mantle",
-        "gray"
-      ]
-    },
-    {
-      "id": "parlor-028",
-      "filename": "Teal Walls - Tan Cream Trim - Tan Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Tan%20Cream%20Trim%20-%20Tan%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Teal%20Walls%20-%20Tan%20Cream%20Trim%20-%20Tan%20Mantle",
-      "walls": "Teal",
-      "trim": "Tan Cream",
-      "feature": "Tan Mantle",
-      "tags": [
-        "teal",
-        "cream",
-        "tan",
         "mantle"
       ]
     }
