@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reset Ratings</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h1>Reset All Ratings</h1>
+  <button id="reset" style="padding: 20px; font-size: 18px;">Click to Reset All Ratings</button>
+  <pre id="log"></pre>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAWhN91mH62wUPiLls5_g9HgbK76cytSJo",
+      authDomain: "house-color-gallery.firebaseapp.com",
+      projectId: "house-color-gallery",
+      storageBucket: "house-color-gallery.firebasestorage.app",
+      messagingSenderId: "904500653644",
+      appId: "1:904500653644:web:488dc5e8b04e4c57894ee9"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    function log(msg) {
+      document.getElementById('log').textContent += msg + '\n';
+      console.log(msg);
+    }
+
+    document.getElementById('reset').onclick = async function() {
+      if (!confirm('This will DELETE ALL RATINGS for ALL USERS. Are you sure?')) {
+        return;
+      }
+
+      log('Starting reset...');
+
+      // Get all images docs
+      const imagesSnap = await db.collection('images').get();
+      log('Found ' + imagesSnap.size + ' image documents');
+
+      let deleted = 0;
+      for (const imageDoc of imagesSnap.docs) {
+        const imageId = imageDoc.id;
+        log('Checking ' + imageId + '...');
+
+        // Get all ratings for this image
+        const ratingsSnap = await db.collection('images').doc(imageId).collection('ratings').get();
+
+        for (const ratingDoc of ratingsSnap.docs) {
+          await ratingDoc.ref.delete();
+          deleted++;
+          log('  Deleted rating from ' + ratingDoc.id);
+        }
+      }
+
+      // Also clear localStorage
+      localStorage.removeItem('houseRatings');
+      log('\nCleared localStorage');
+
+      log('\n✅ Done! Deleted ' + deleted + ' ratings.');
+      log('\nYou can close this page and refresh the gallery.');
+    };
+  </script>
+</body>
+</html>

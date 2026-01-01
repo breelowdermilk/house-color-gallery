@@ -1,0 +1,27 @@
+{
+  "name": "house-color-gallery",
+  "version": "1.0.0",
+  "main": "test-ratings.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "node test-ratings.js",
+    "serve": "npx http-server -p 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breelowdermilk/house-color-gallery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breelowdermilk/house-color-gallery/issues"
+  },
+  "homepage": "https://github.com/breelowdermilk/house-color-gallery#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "playwright": "^1.57.0"
+  }
+}
