@@ -126,7 +126,7 @@
                 Palettes
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </button>
-              <div id="palettes-menu" class="hidden absolute left-0 mt-2 w-56 rounded-lg border border-slate-200 bg-white shadow-lg z-50">
+              <div id="palettes-menu" class="hidden fixed w-56 rounded-lg border border-slate-200 bg-white shadow-lg z-50">
                 <div class="py-1">
                   <a href="palettes/office_crimson_pop.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
                     <span class="font-medium">Office</span>
@@ -404,13 +404,26 @@
         const btn = document.getElementById('palettes-btn');
         const menu = document.getElementById('palettes-menu');
 
+        function positionMenu() {
+          const rect = btn.getBoundingClientRect();
+          menu.style.top = (rect.bottom + 8) + 'px';
+          menu.style.left = rect.left + 'px';
+        }
+
         btn.addEventListener('click', function(e) {
           e.stopPropagation();
+          positionMenu();
           menu.classList.toggle('hidden');
         });
 
         document.addEventListener('click', function(e) {
           if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.classList.add('hidden');
+          }
+        });
+
+        window.addEventListener('scroll', function() {
+          if (!menu.classList.contains('hidden')) {
             menu.classList.add('hidden');
           }
         });
