@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Palette | Crimson Pop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #d4af37;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .concept-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        /* Wall Preview Section */
+        .wall-preview {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .wall-preview-visual {
+            height: 300px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ceiling-zone {
+            height: 60px;
+            background: #1f1f1f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 2px;
+        }
+
+        .above-rail {
+            flex: 1;
+            background:
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(114, 47, 55, 0.9) 0px,
+                    rgba(139, 41, 66, 0.85) 20px,
+                    rgba(114, 47, 55, 0.9) 40px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(80, 30, 40, 0.3) 0px,
+                    transparent 2px,
+                    transparent 20px
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .chair-rail-line {
+            height: 12px;
+            background: linear-gradient(180deg, #3d2817 0%, #2d1810 50%, #3d2817 100%);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .below-rail {
+            height: 100px;
+            background: #3d3d3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        .wall-preview-labels {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .wall-preview-labels span {
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        /* Palette Grid */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .group-header .tag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            background: rgba(212, 175, 55, 0.2);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 160px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 18px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .tag-below { background: rgba(100, 100, 100, 0.3); color: #aaa; }
+        .tag-above { background: rgba(114, 47, 55, 0.3); color: #d4a0a8; }
+        .tag-trim { background: rgba(61, 40, 23, 0.5); color: #c9a86c; }
+        .tag-ceiling { background: rgba(40, 40, 40, 0.5); color: #888; }
+        .tag-gold { background: rgba(212, 175, 55, 0.2); color: var(--accent); }
+
+        /* Gold Accents special styling */
+        .gold-card .swatch {
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 30%, #ffd700 50%, #d4af37 70%, #b8860b 100%);
+        }
+
+        /* Damask pattern preview */
+        .damask-swatch {
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(255,255,255,0.03) 0px,
+                    transparent 2px,
+                    transparent 10px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    rgba(255,255,255,0.03) 0px,
+                    transparent 2px,
+                    transparent 10px
+                );
+        }
+
+        /* Combination Section */
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .combo-visual {
+            display: flex;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .combo-stripe {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.7);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul {
+            padding-left: 20px;
+        }
+
+        .notes-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes-section strong {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Crimson Pop</h1>
+    <p class="subtitle">Office Paint Palette | Dark Academia meets Hans Zimmer</p>
+
+    <p class="concept-description">
+        A moody Victorian study with charcoal walls below the chair rail, deep red damask wallpaper above,
+        dark-stained wood trim, and a color-drenched ceiling. Antique gold accents provide warmth and opulence.
+    </p>
+
+    <!-- Wall Preview -->
+    <div class="wall-preview">
+        <div class="wall-preview-visual">
+            <div class="ceiling-zone">DARK CEILING</div>
+            <div class="above-rail">Deep Red Damask Wallpaper</div>
+            <div class="chair-rail-line"></div>
+            <div class="below-rail">CHARCOAL PAINT</div>
+        </div>
+        <div class="wall-preview-labels">
+            <span>Ceiling: #1F1F1F</span>
+            <span>Above Rail: Damask</span>
+            <span>Rail: Dark Wood</span>
+            <span>Below Rail: #3D3D3D</span>
+        </div>
+    </div>
+
+    <div class="palette-grid">
+
+        <!-- BELOW RAIL: Charcoals -->
+        <div class="group-header">
+            Below Chair Rail
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3d3d3d;"></div>
+            <div class="info">
+                <div class="name">Deep Charcoal <span class="hex">#3D3D3D</span></div>
+                <div class="description">Rich, warm charcoal. The perfect moody base that doesn't compete with the crimson above.</div>
+                <span class="use-tag tag-below">Below Rail</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2f2f2f;"></div>
+            <div class="info">
+                <div class="name">Coal <span class="hex">#2F2F2F</span></div>
+                <div class="description">Darker option. Nearly black but with warmth. More dramatic contrast with damask.</div>
+                <span class="use-tag tag-below">Below Rail</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4a4545;"></div>
+            <div class="info">
+                <div class="name">Warm Charcoal <span class="hex">#4A4545</span></div>
+                <div class="description">Charcoal with subtle brown undertone. Harmonizes with wood trim.</div>
+                <span class="use-tag tag-below">Below Rail</span>
+            </div>
+        </div>
+
+        <!-- ABOVE RAIL: Deep Reds -->
+        <div class="group-header">
+            Above Chair Rail
+            <span class="tag">WALLPAPER</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #722f37;"></div>
+            <div class="info">
+                <div class="name">Oxblood Damask <span class="hex">#722F37</span></div>
+                <div class="description">Classic Victorian library red. Deep, dried-blood tone with damask pattern.</div>
+                <span class="use-tag tag-above">Above Rail</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #8b2942;"></div>
+            <div class="info">
+                <div class="name">Crimson Damask <span class="hex">#8B2942</span></div>
+                <div class="description">Richer, more saturated red. Bolder statement with slight berry undertone.</div>
+                <span class="use-tag tag-above">Above Rail</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Winchester Damask <span class="hex">#5B3A3A</span></div>
+                <div class="description">Burgundy with brown undertones. Warmer, earthier, more subdued.</div>
+                <span class="use-tag tag-above">Above Rail</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #6b2c3e;"></div>
+            <div class="info">
+                <div class="name">Velvet Wine <span class="hex">#6B2C3E</span></div>
+                <div class="description">Deep wine with subtle purple. Elegant and opulent.</div>
+                <span class="use-tag tag-above">Above Rail</span>
+            </div>
+        </div>
+
+        <!-- TRIM: Dark Woods -->
+        <div class="group-header">
+            Trim, Rail & Baseboards
+            <span class="tag">STAIN / PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #2d1810 0%, #3d2817 50%, #2d1810 100%);"></div>
+            <div class="info">
+                <div class="name">Dark Espresso Stain</div>
+                <div class="description">Nearly black with warm brown. Classic stained wood trim that frames everything.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #3d2817 0%, #5c3d2e 50%, #3d2817 100%);"></div>
+            <div class="info">
+                <div class="name">Walnut Stain</div>
+                <div class="description">Rich medium-dark brown. Shows more wood grain character.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2d1f1a;"></div>
+            <div class="info">
+                <div class="name">Espresso Paint <span class="hex">#2D1F1A</span></div>
+                <div class="description">Painted trim option. Smooth, uniform dark brown.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <!-- CEILING -->
+        <div class="group-header">
+            Ceiling
+            <span class="tag">COLOR DRENCH</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #1f1f1f;"></div>
+            <div class="info">
+                <div class="name">Dark Charcoal <span class="hex">#1F1F1F</span></div>
+                <div class="description">Color-drenched ceiling matching wall tone. Creates cozy, infinite feel.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2b2b2b;"></div>
+            <div class="info">
+                <div class="name">Soft Black <span class="hex">#2B2B2B</span></div>
+                <div class="description">Slightly softer than walls. Subtle contrast, still very moody.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3d2a2a;"></div>
+            <div class="info">
+                <div class="name">Smoky Burgundy <span class="hex">#3D2A2A</span></div>
+                <div class="description">Ceiling with hint of damask red. Ties upper and lower together.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- GOLD ACCENTS -->
+        <div class="group-header">
+            Gold Accents
+            <span class="tag">HARDWARE / DECOR</span>
+        </div>
+
+        <div class="color-card gold-card">
+            <div class="swatch"></div>
+            <div class="info">
+                <div class="name">Antique Gold <span class="hex">#D4AF37</span></div>
+                <div class="description">Classic antique brass. Picture frames, sconces, door hardware, lamp bases.</div>
+                <span class="use-tag tag-gold">Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #8b7355 0%, #c9a86c 50%, #8b7355 100%);"></div>
+            <div class="info">
+                <div class="name">Burnished Bronze <span class="hex">#C9A86C</span></div>
+                <div class="description">Warmer, more muted gold. Feels more aged and Victorian.</div>
+                <span class="use-tag tag-gold">Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #a67c52 0%, #d4a574 50%, #a67c52 100%);"></div>
+            <div class="info">
+                <div class="name">Warm Brass <span class="hex">#D4A574</span></div>
+                <div class="description">Rosier gold tone. Pairs beautifully with the crimson damask.</div>
+                <span class="use-tag tag-gold">Accent</span>
+            </div>
+        </div>
+
+        <!-- THE COMBINATION -->
+        <div class="combo-section">
+            <h3>The Complete "Crimson Pop" Combination</h3>
+
+            <div class="combo-visual">
+                <div class="combo-stripe" style="background: #1f1f1f;">Ceiling</div>
+                <div class="combo-stripe" style="background: #722f37;">Damask</div>
+                <div class="combo-stripe" style="background: linear-gradient(180deg, #3d2817 0%, #2d1810 100%);">Trim</div>
+                <div class="combo-stripe" style="background: #3d3d3d;">Charcoal</div>
+                <div class="combo-stripe" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #b8860b 100%);">Gold</div>
+            </div>
+
+            <p style="opacity: 0.8; line-height: 1.7;">
+                <strong>Ceiling:</strong> Dark Charcoal (#1F1F1F) |
+                <strong>Above Rail:</strong> Oxblood Damask (#722F37) |
+                <strong>Chair Rail:</strong> Dark Espresso Stain |
+                <strong>Below Rail:</strong> Deep Charcoal (#3D3D3D) |
+                <strong>Accents:</strong> Antique Gold (#D4AF37)
+            </p>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>NO white anywhere</strong> - all trim, ceiling, and baseboards are colored</li>
+                <li><strong>Wallpaper:</strong> Look for Victorian damask patterns in oxblood/wine tones</li>
+                <li><strong>Furniture:</strong> Oxblood leather Chesterfield, oak Monkwood-style desk</li>
+                <li><strong>Lighting:</strong> Warm amber bulbs (2700K), brass sconces, steampunk desk lamp</li>
+                <li><strong>Curtains:</strong> Heavy velvet in deep red or charcoal, floor-to-ceiling</li>
+                <li><strong>Rug:</strong> Vintage Persian in deep reds/blues/golds</li>
+                <li><strong>Acoustics:</strong> Fabric-wrapped panels in coordinating deep tones</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Office "Crimson Pop" Palette | January 2025 | Dark Academia meets Hans Zimmer
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlor Full Palette | Teal + Purple Fireplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #7b4b7b;
+            --teal: #4a6670;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--teal) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 140px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch { filter: brightness(1.1); }
+
+        .info { padding: 15px; }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-top: 8px;
+        }
+
+        .tag-walls { background: rgba(74, 102, 112, 0.3); color: #8ab4b4; }
+        .tag-trim { background: rgba(60, 80, 85, 0.4); color: #7a9ea6; }
+        .tag-ceiling { background: rgba(197, 213, 213, 0.2); color: #c5d5d5; }
+        .tag-fireplace { background: rgba(123, 75, 123, 0.3); color: #b88db8; }
+        .tag-furniture { background: rgba(139, 90, 43, 0.3); color: #d4a574; }
+        .tag-textile { background: rgba(200, 150, 100, 0.2); color: #c9a86c; }
+        .tag-metal { background: rgba(212, 175, 55, 0.2); color: #d4af37; }
+        .tag-alt { background: rgba(66, 68, 67, 0.4); color: #aaa; }
+
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent);
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .combo-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .combo-swatch {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .combo-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .combo-name {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--teal);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul { padding-left: 20px; }
+        .notes-section li { margin-bottom: 10px; line-height: 1.6; opacity: 0.85; }
+        .notes-section strong { color: var(--accent); }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Parlor Full Palette</h1>
+    <p class="subtitle">All-Teal Monochrome with Purple Fireplace Pop</p>
+
+    <div class="palette-grid">
+
+        <!-- WALL COLORS -->
+        <div class="group-header">Wall Colors</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4a6670;"></div>
+            <div class="info">
+                <div class="name">Chestler Light <span class="hex">#4A6670</span></div>
+                <div class="description">The lighter teal from your favorite concept. Sophisticated blue-green.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c5055;"></div>
+            <div class="info">
+                <div class="name">Chestler Deep <span class="hex">#3C5055</span></div>
+                <div class="description">Original Fusion Mineral Paint Chestler. Darker, moodier.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4d6b72;"></div>
+            <div class="info">
+                <div class="name">Serpentine Teal <span class="hex">#4D6B72</span></div>
+                <div class="description">Zoffany-inspired. Slightly greener, more saturated.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3a5a5a;"></div>
+            <div class="info">
+                <div class="name">Deep Evergreen Teal <span class="hex">#3A5A5A</span></div>
+                <div class="description">More green undertone. Forest-meets-ocean depth.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #424443;"></div>
+            <div class="info">
+                <div class="name">Ash <span class="hex">#424443</span></div>
+                <div class="description">Deep charcoal gray. Alternative to teal for moodier option.</div>
+                <span class="use-tag tag-alt">Alternative</span>
+            </div>
+        </div>
+
+        <!-- TRIM & BEAMS -->
+        <div class="group-header">Trim & Ceiling Beam Colors</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c5055;"></div>
+            <div class="info">
+                <div class="name">Chestler Deep <span class="hex">#3C5055</span></div>
+                <div class="description">Match or slightly darker than walls. Monochrome envelope.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #324045;"></div>
+            <div class="info">
+                <div class="name">Dark Teal <span class="hex">#324045</span></div>
+                <div class="description">Deeper for more contrast against walls.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2a3a3e;"></div>
+            <div class="info">
+                <div class="name">Midnight Teal <span class="hex">#2A3A3E</span></div>
+                <div class="description">Near-black teal. Maximum drama on beams.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <!-- CEILING PANELS -->
+        <div class="group-header">Ceiling Panel Colors</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c5d5d5;"></div>
+            <div class="info">
+                <div class="name">Soft Blue-Gray <span class="hex">#C5D5D5</span></div>
+                <div class="description">Light ceiling between teal beams. Cool, calming.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b8c8c8;"></div>
+            <div class="info">
+                <div class="name">Pale Teal <span class="hex">#B8C8C8</span></div>
+                <div class="description">Slightly more saturated. Ties to wall family.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4dede;"></div>
+            <div class="info">
+                <div class="name">Whisper Gray <span class="hex">#D4DEDE</span></div>
+                <div class="description">Lightest option. Maximum contrast with beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4c8b8;"></div>
+            <div class="info">
+                <div class="name">Warm Cream <span class="hex">#D4C8B8</span></div>
+                <div class="description">Soft off-white. Warmer alternative to cool gray.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- FIREPLACE ACCENT -->
+        <div class="group-header">Fireplace Accent (The Pop)</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #7b4b7b;"></div>
+            <div class="info">
+                <div class="name">Velvet Purple <span class="hex">#7B4B7B</span></div>
+                <div class="description">Bold purple/magenta. THE focal point of the room.</div>
+                <span class="use-tag tag-fireplace">Fireplace</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #8b5a8b;"></div>
+            <div class="info">
+                <div class="name">Orchid Purple <span class="hex">#8B5A8B</span></div>
+                <div class="description">Lighter option. More playful, feminine.</div>
+                <span class="use-tag tag-fireplace">Fireplace</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6b3d6b;"></div>
+            <div class="info">
+                <div class="name">Deep Plum <span class="hex">#6B3D6B</span></div>
+                <div class="description">Darker, richer. More serious Victorian.</div>
+                <span class="use-tag tag-fireplace">Fireplace</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5a3050;"></div>
+            <div class="info">
+                <div class="name">Aubergine <span class="hex">#5A3050</span></div>
+                <div class="description">Deepest purple-brown. Moody, sophisticated.</div>
+                <span class="use-tag tag-fireplace">Fireplace</span>
+            </div>
+        </div>
+
+        <!-- FURNITURE COLORS -->
+        <div class="group-header">Furniture & Upholstery</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4c4a8;"></div>
+            <div class="info">
+                <div class="name">Cream / Ivory <span class="hex">#D4C4A8</span></div>
+                <div class="description">Light sofa option. Crisp contrast against teal.</div>
+                <span class="use-tag tag-furniture">Sofa</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a86c;"></div>
+            <div class="info">
+                <div class="name">Camel / Tan <span class="hex">#C9A86C</span></div>
+                <div class="description">Warm leather sofa. Classic with teal walls.</div>
+                <span class="use-tag tag-furniture">Sofa</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #8b5a2b;"></div>
+            <div class="info">
+                <div class="name">Cognac Leather <span class="hex">#8B5A2B</span></div>
+                <div class="description">Rich brown leather. Pairs beautifully with teal.</div>
+                <span class="use-tag tag-furniture">Chair</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Oxblood Leather <span class="hex">#5B3A3A</span></div>
+                <div class="description">Deep burgundy leather. Echoes fireplace purple.</div>
+                <span class="use-tag tag-furniture">Chair</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2c3e50;"></div>
+            <div class="info">
+                <div class="name">Navy Velvet <span class="hex">#2C3E50</span></div>
+                <div class="description">Deep blue velvet accent chair. Cool complement.</div>
+                <span class="use-tag tag-furniture">Chair</span>
+            </div>
+        </div>
+
+        <!-- TEXTILES -->
+        <div class="group-header">Textiles & Soft Furnishings</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #722f37 20%, #c9a86c 40%, #3c5055 60%, #d4c4a8 80%);"></div>
+            <div class="info">
+                <div class="name">Persian Rug Tones</div>
+                <div class="description">Deep red, gold, teal, cream. Traditional Persian pulls room together.</div>
+                <span class="use-tag tag-textile">Rug</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #8b5a7a;"></div>
+            <div class="info">
+                <div class="name">Dusty Rose <span class="hex">#8B5A7A</span></div>
+                <div class="description">Muted pink for pillows/throws. Soft echo of fireplace.</div>
+                <span class="use-tag tag-textile">Pillows</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a227;"></div>
+            <div class="info">
+                <div class="name">Antique Gold <span class="hex">#C9A227</span></div>
+                <div class="description">Gold velvet pillows or throw. Luxe accent.</div>
+                <span class="use-tag tag-textile">Pillows</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5c4033;"></div>
+            <div class="info">
+                <div class="name">Chocolate <span class="hex">#5C4033</span></div>
+                <div class="description">Deep brown for curtains or throw blanket.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <!-- METALS & ACCENTS -->
+        <div class="group-header">Metals & Hardware</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 30%, #ffd700 50%, #d4af37 70%, #b8860b 100%);"></div>
+            <div class="info">
+                <div class="name">Antique Brass</div>
+                <div class="description">Warm gold hardware. Door knobs, light fixtures, frames.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #8b7355 0%, #c9a86c 50%, #8b7355 100%);"></div>
+            <div class="info">
+                <div class="name">Burnished Bronze</div>
+                <div class="description">Warmer, aged brass. More Victorian feel.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 50%, #1a1a1a 100%);"></div>
+            <div class="info">
+                <div class="name">Matte Black</div>
+                <div class="description">Modern contrast. Fireplace tools, some fixtures.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <!-- WOOD TONES -->
+        <div class="group-header">Wood Tones</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8956c 0%, #d4a574 50%, #b8956c 100%);"></div>
+            <div class="info">
+                <div class="name">Medium Oak</div>
+                <div class="description">Natural warm wood. Floors, furniture legs.</div>
+                <span class="use-tag tag-furniture">Floors</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #3d2817 0%, #5c3d2e 50%, #3d2817 100%);"></div>
+            <div class="info">
+                <div class="name">Walnut</div>
+                <div class="description">Darker, richer brown. Side tables, bookshelves.</div>
+                <span class="use-tag tag-furniture">Furniture</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #2d1810 0%, #4a2c20 50%, #2d1810 100%);"></div>
+            <div class="info">
+                <div class="name">Mahogany</div>
+                <div class="description">Rich red-brown. Traditional Victorian pieces.</div>
+                <span class="use-tag tag-furniture">Furniture</span>
+            </div>
+        </div>
+
+        <!-- COMBINATIONS -->
+        <div class="combo-section">
+            <h3>Suggested Combinations</h3>
+
+            <div class="combo-name">1. The Winning Combo (Your Favorite)</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #4a6670;"></div>
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #c5d5d5;"></div>
+                <div class="combo-swatch" style="background: #7b4b7b;"></div>
+                <div class="combo-swatch" style="background: #c9a86c;"></div>
+                <div class="combo-label">Walls | Beams/Trim | Ceiling | Fireplace | Sofa</div>
+            </div>
+
+            <div class="combo-name">2. Darker & Moodier</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #2a3a3e;"></div>
+                <div class="combo-swatch" style="background: #b8c8c8;"></div>
+                <div class="combo-swatch" style="background: #6b3d6b;"></div>
+                <div class="combo-swatch" style="background: #d4c4a8;"></div>
+                <div class="combo-label">Deeper teal walls, midnight beams, deep plum fireplace</div>
+            </div>
+
+            <div class="combo-name">3. Ash Alternative with Purple Pop</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #424443;"></div>
+                <div class="combo-swatch" style="background: #363636;"></div>
+                <div class="combo-swatch" style="background: #d4c8b8;"></div>
+                <div class="combo-swatch" style="background: #7b4b7b;"></div>
+                <div class="combo-swatch" style="background: #8b5a2b;"></div>
+                <div class="combo-label">Ash gray walls, warm cream ceiling, purple pop, cognac leather</div>
+            </div>
+
+            <div class="combo-name">4. Warm & Traditional</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #4d6b72;"></div>
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #d4c8b8;"></div>
+                <div class="combo-swatch" style="background: #5a3050;"></div>
+                <div class="combo-swatch" style="background: #5b3a3a;"></div>
+                <div class="combo-label">Serpentine walls, aubergine fireplace, oxblood leather</div>
+            </div>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>Monochrome envelope:</strong> Same teal family on walls, trim, panels, beams creates immersive cocoon effect</li>
+                <li><strong>The fireplace is THE statement:</strong> Bold purple pops against teal - avoid diluting with other purple elements elsewhere</li>
+                <li><strong>Coffered ceiling:</strong> Light panels + teal beams adds architectural interest without competing</li>
+                <li><strong>Keep the brick:</strong> Original red/terracotta fireplace brick complements purple surround</li>
+                <li><strong>Stained glass transoms:</strong> Your existing warm-toned glass works beautifully with teal walls</li>
+                <li><strong>Contrast in furniture:</strong> Cream, camel, or cognac furniture provides necessary relief from dark walls</li>
+                <li><strong>Persian rug:</strong> Traditional rug in reds/golds/teals pulls the whole scheme together</li>
+                <li><strong>Brass everywhere:</strong> Antique brass hardware, frames, and fixtures add warmth and period authenticity</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Parlor Full Palette | Teal + Purple | January 2025
+    </footer>
+
+</body>
+</html>

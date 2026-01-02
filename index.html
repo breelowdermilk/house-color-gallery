@@ -116,6 +116,33 @@
             >
               Results
             </button>
+            <span class="mx-1 text-slate-300">|</span>
+            <div class="relative" id="palettes-dropdown">
+              <button
+                id="palettes-btn"
+                type="button"
+                class="whitespace-nowrap rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 inline-flex items-center gap-1"
+              >
+                Palettes
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div id="palettes-menu" class="hidden absolute left-0 mt-2 w-56 rounded-lg border border-slate-200 bg-white shadow-lg z-50">
+                <div class="py-1">
+                  <a href="palettes/office_crimson_pop.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                    <span class="font-medium">Office</span>
+                    <span class="text-slate-500 ml-1">— Crimson Pop</span>
+                  </a>
+                  <a href="palettes/parlor_teal_purple.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                    <span class="font-medium">Parlor</span>
+                    <span class="text-slate-500 ml-1">— Teal + Purple</span>
+                  </a>
+                  <a href="palettes/parlor_dark_academia.html" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                    <span class="font-medium">Parlor</span>
+                    <span class="text-slate-500 ml-1">— Dark Academia</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -370,6 +397,25 @@
         </div>
       </div>
     </aside>
+
+    <!-- Palettes dropdown toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('palettes-btn');
+        const menu = document.getElementById('palettes-menu');
+
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          menu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', function(e) {
+          if (!menu.contains(e.target) && !btn.contains(e.target)) {
+            menu.classList.add('hidden');
+          }
+        });
+      });
+    </script>
 
     <!-- Name prompt modal for first-time visitors (hidden by default) -->
     <div

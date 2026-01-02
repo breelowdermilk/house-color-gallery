@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlor Full Palette | Walls, Trim, Ceiling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent: #d4af37;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .back-link {
+            align-self: flex-start;
+            margin-bottom: 30px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 40px;
+            opacity: 0.8;
+            font-size: 1.2rem;
+        }
+
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 140px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 15px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-top: 8px;
+        }
+
+        .tag-walls { background: rgba(76, 175, 80, 0.2); color: #81c784; }
+        .tag-trim { background: rgba(33, 150, 243, 0.2); color: #64b5f6; }
+        .tag-ceiling { background: rgba(255, 193, 7, 0.2); color: #ffd54f; }
+        .tag-mantle { background: rgba(244, 67, 54, 0.2); color: #e57373; }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent);
+            margin-top: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .combo-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .combo-swatch {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .combo-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .combo-name {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Parlor Full Palette</h1>
+    <p class="subtitle">Dark Academia — Walls, Trim, Ceiling Panels, Mantle</p>
+
+    <div class="palette-grid">
+
+        <div class="group-header">Wall Colors</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #424443;"></div>
+            <div class="info">
+                <div class="name">Ash <span class="hex">#424443</span></div>
+                <div class="description">Deep charcoal gray. Classic Dark Academia.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c5055;"></div>
+            <div class="info">
+                <div class="name">Chestler <span class="hex">#3C5055</span></div>
+                <div class="description">Deep teal. Sophisticated blue-green jewel tone.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Winchester <span class="hex">#5B3A3A</span></div>
+                <div class="description">Deep burgundy/wine red with brown undertones.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #2b2b2b;"></div>
+            <div class="info">
+                <div class="name">Coal Black <span class="hex">#2B2B2B</span></div>
+                <div class="description">The deepest, truest black. Ultimate moody backdrop.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #443140;"></div>
+            <div class="info">
+                <div class="name">Velvet Plum <span class="hex">#443140</span></div>
+                <div class="description">Rich, regal purple/aubergine.</div>
+                <span class="use-tag tag-walls">Walls</span>
+            </div>
+        </div>
+
+        <div class="group-header">Trim & Ceiling Beam Colors</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c5055;"></div>
+            <div class="info">
+                <div class="name">Chestler <span class="hex">#3C5055</span></div>
+                <div class="description">Deep teal trim. Pairs with olive or gray walls.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Winchester <span class="hex">#5B3A3A</span></div>
+                <div class="description">Burgundy trim. Warm accent against cool walls.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4b3d5e;"></div>
+            <div class="info">
+                <div class="name">Deep Purple <span class="hex">#4B3D5E</span></div>
+                <div class="description">Rich plum/aubergine trim.</div>
+                <span class="use-tag tag-trim">Trim/Beams</span>
+            </div>
+        </div>
+
+        <div class="group-header">Ceiling Panel Colors (Lighter Shades)</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #7a9ea6;"></div>
+            <div class="info">
+                <div class="name">Light Teal <span class="hex">#7A9EA6</span></div>
+                <div class="description">Softer Chestler. Pairs with teal beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c4a4a4;"></div>
+            <div class="info">
+                <div class="name">Dusty Rose <span class="hex">#C4A4A4</span></div>
+                <div class="description">Soft muted pink with mauve. Pairs with burgundy beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b8a8c8;"></div>
+            <div class="info">
+                <div class="name">Soft Lavender <span class="hex">#B8A8C8</span></div>
+                <div class="description">Light purple with gray. Pairs with purple beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b0b8a8;"></div>
+            <div class="info">
+                <div class="name">Soft Sage <span class="hex">#B0B8A8</span></div>
+                <div class="description">Light green with gray. Pairs with olive beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4c8b8;"></div>
+            <div class="info">
+                <div class="name">Warm Cream <span class="hex">#D4C8B8</span></div>
+                <div class="description">Soft off-white with warmth. Universal ceiling option.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c5b5a5;"></div>
+            <div class="info">
+                <div class="name">Soft Mauve <span class="hex">#C5B5A5</span></div>
+                <div class="description">Dusty lavender with gray. Pairs with purple beams.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="group-header">Mantle Options</div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #3d2817 0%, #5c3d2e 50%, #3d2817 100%);"></div>
+            <div class="info">
+                <div class="name">Walnut Stain</div>
+                <div class="description">Natural dark wood. Classic Victorian.</div>
+                <span class="use-tag tag-mantle">Mantle</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #2d1810 0%, #4a2c20 50%, #2d1810 100%);"></div>
+            <div class="info">
+                <div class="name">Mahogany Stain</div>
+                <div class="description">Richer, redder wood tone.</div>
+                <span class="use-tag tag-mantle">Mantle</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Painted Burgundy <span class="hex">#5B3A3A</span></div>
+                <div class="description">Bold painted mantle. Matches Winchester.</div>
+                <span class="use-tag tag-mantle">Mantle</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c5055;"></div>
+            <div class="info">
+                <div class="name">Painted Teal <span class="hex">#3C5055</span></div>
+                <div class="description">Bold teal mantle. Accent against other walls.</div>
+                <span class="use-tag tag-mantle">Mantle</span>
+            </div>
+        </div>
+
+        <div class="combo-section">
+            <h3>Suggested Combinations</h3>
+
+            <div class="combo-name">1. Ash + Chestler + Cream</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #424443;"></div>
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #d4c8b8;"></div>
+                <div class="combo-swatch" style="background: linear-gradient(135deg, #3d2817 0%, #5c3d2e 50%, #3d2817 100%);"></div>
+                <div class="combo-label">Walls → Trim/Beams → Ceiling Panels → Mantle</div>
+            </div>
+
+            <div class="combo-name">2. Chestler + Winchester + Dusty Rose</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #5b3a3a;"></div>
+                <div class="combo-swatch" style="background: #c4a4a4;"></div>
+                <div class="combo-swatch" style="background: linear-gradient(135deg, #3d2817 0%, #5c3d2e 50%, #3d2817 100%);"></div>
+                <div class="combo-label">Teal walls, burgundy trim, dusty rose ceiling</div>
+            </div>
+
+            <div class="combo-name">4. Chestler + Deep Purple + Lavender</div>
+            <div class="combo-row">
+                <div class="combo-swatch" style="background: #3c5055;"></div>
+                <div class="combo-swatch" style="background: #4b3d5e;"></div>
+                <div class="combo-swatch" style="background: #b8a8c8;"></div>
+                <div class="combo-swatch" style="background: #5b3a3a;"></div>
+                <div class="combo-label">Teal walls, purple trim, lavender ceiling, burgundy mantle</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-top: 60px; opacity: 0.5; font-size: 0.8rem;">
+        Parlor Full Palette — December 2024 — Dark Academia Direction
+    </div>
+
+</body>
+</html>
