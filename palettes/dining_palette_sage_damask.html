@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Room Palette | Sage Damask Classic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #8fa98d;
+            --accent-light: #b5c9b3;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-light);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .concept-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        /* Wall Preview Section */
+        .wall-preview {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .wall-preview-visual {
+            height: 320px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ceiling-zone {
+            height: 50px;
+            background: #f5f2ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+        }
+
+        .crown-molding {
+            height: 8px;
+            background: linear-gradient(180deg, #fff 0%, #e8e4df 100%);
+        }
+
+        .wallpaper-zone {
+            flex: 1;
+            background:
+                repeating-linear-gradient(
+                    90deg,
+                    rgba(143, 169, 141, 0.95) 0px,
+                    rgba(159, 185, 157, 0.9) 30px,
+                    rgba(143, 169, 141, 0.95) 60px
+                ),
+                repeating-linear-gradient(
+                    0deg,
+                    rgba(120, 145, 118, 0.15) 0px,
+                    transparent 3px,
+                    transparent 30px
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: rgba(255,255,255,0.6);
+            font-size: 1rem;
+        }
+
+        .baseboard {
+            height: 12px;
+            background: linear-gradient(180deg, #f0ebe5 0%, #e0dbd5 100%);
+        }
+
+        .floor-zone {
+            height: 40px;
+            background: linear-gradient(90deg, #c9a86c 0%, #d4b07a 50%, #c9a86c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: rgba(80,50,20,0.6);
+        }
+
+        .wall-preview-labels {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .wall-preview-labels span {
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        /* Palette Grid */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .group-header .tag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            background: rgba(143, 169, 141, 0.2);
+            color: var(--accent-light);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 160px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 18px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .tag-wallpaper { background: rgba(143, 169, 141, 0.3); color: #b5c9b3; }
+        .tag-trim { background: rgba(240, 235, 229, 0.2); color: #d4cfc9; }
+        .tag-ceiling { background: rgba(245, 242, 237, 0.2); color: #c5c2bd; }
+        .tag-furniture { background: rgba(139, 90, 43, 0.3); color: #d4a574; }
+        .tag-textile { background: rgba(200, 150, 100, 0.2); color: #c9a86c; }
+        .tag-metal { background: rgba(212, 175, 55, 0.2); color: #d4af37; }
+
+        /* Damask pattern preview */
+        .damask-swatch {
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(255,255,255,0.05) 0px,
+                    transparent 2px,
+                    transparent 15px
+                ),
+                repeating-linear-gradient(
+                    -45deg,
+                    rgba(255,255,255,0.05) 0px,
+                    transparent 2px,
+                    transparent 15px
+                );
+        }
+
+        /* Combination Section */
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent-light);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .combo-visual {
+            display: flex;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .combo-stripe {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.7);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent-light);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul {
+            padding-left: 20px;
+        }
+
+        .notes-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes-section strong {
+            color: var(--accent-light);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Sage Damask Classic</h1>
+    <p class="subtitle">Dining Room Palette | Traditional Victorian Elegance</p>
+
+    <p class="concept-description">
+        The most refined and restrained option. A soft sage green tone-on-tone damask creates a serene,
+        sophisticated backdrop that lets your green tile fireplace shine as the natural focal point.
+        Timeless, elegant, and perfectly Victorian.
+    </p>
+
+    <!-- Wall Preview -->
+    <div class="wall-preview">
+        <div class="wall-preview-visual">
+            <div class="ceiling-zone">WARM WHITE CEILING</div>
+            <div class="crown-molding"></div>
+            <div class="wallpaper-zone">Full-Height Sage Damask Wallpaper</div>
+            <div class="baseboard"></div>
+            <div class="floor-zone">OAK FLOORS</div>
+        </div>
+        <div class="wall-preview-labels">
+            <span>Ceiling: Warm White</span>
+            <span>Walls: Sage Damask</span>
+            <span>Trim: Cream/White</span>
+        </div>
+    </div>
+
+    <div class="palette-grid">
+
+        <!-- WALLPAPER COLORS -->
+        <div class="group-header">
+            Wallpaper Ground Colors
+            <span class="tag">SAGE DAMASK</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #8fa98d;"></div>
+            <div class="info">
+                <div class="name">Soft Sage <span class="hex">#8FA98D</span></div>
+                <div class="description">The perfect mid-tone sage. Green enough to relate to your fireplace tile, gray enough to feel sophisticated.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #9db5a5;"></div>
+            <div class="info">
+                <div class="name">Lichen Sage <span class="hex">#9DB5A5</span></div>
+                <div class="description">Slightly lighter, more blue-gray. Softer, more muted feeling.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #a8b5a0;"></div>
+            <div class="info">
+                <div class="name">Celadon Sage <span class="hex">#A8B5A0</span></div>
+                <div class="description">Warmer, more yellow-green undertone. Pairs beautifully with oak.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch damask-swatch" style="background-color: #7a9178;"></div>
+            <div class="info">
+                <div class="name">Deep Sage <span class="hex">#7A9178</span></div>
+                <div class="description">Darker, moodier option. More dramatic, still elegant.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <!-- DAMASK PATTERN COLORS -->
+        <div class="group-header">
+            Damask Pattern Colors
+            <span class="tag">TONE-ON-TONE</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #a3bda1;"></div>
+            <div class="info">
+                <div class="name">Light Pattern <span class="hex">#A3BDA1</span></div>
+                <div class="description">Lighter sage for raised damask pattern. Subtle, sophisticated contrast.</div>
+                <span class="use-tag tag-wallpaper">Pattern Highlight</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6d836b;"></div>
+            <div class="info">
+                <div class="name">Shadow Pattern <span class="hex">#6D836B</span></div>
+                <div class="description">Darker sage for recessed damask areas. Creates depth.</div>
+                <span class="use-tag tag-wallpaper">Pattern Shadow</span>
+            </div>
+        </div>
+
+        <!-- TRIM OPTIONS -->
+        <div class="group-header">
+            Trim & Molding
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f5f2ed;"></div>
+            <div class="info">
+                <div class="name">Warm White <span class="hex">#F5F2ED</span></div>
+                <div class="description">Soft warm white. Traditional, clean, lets wallpaper be the star.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #e8e4d9;"></div>
+            <div class="info">
+                <div class="name">Antique Cream <span class="hex">#E8E4D9</span></div>
+                <div class="description">Richer cream with yellow undertone. More period-appropriate.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4cfc5;"></div>
+            <div class="info">
+                <div class="name">Putty <span class="hex">#D4CFC5</span></div>
+                <div class="description">Deeper tone. Creates less contrast, more enveloping feel.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <!-- CEILING -->
+        <div class="group-header">
+            Ceiling
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f8f6f2;"></div>
+            <div class="info">
+                <div class="name">Soft White <span class="hex">#F8F6F2</span></div>
+                <div class="description">Clean but warm. Standard choice that works with everything.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #ebe8e0;"></div>
+            <div class="info">
+                <div class="name">Cream <span class="hex">#EBE8E0</span></div>
+                <div class="description">Warmer option. Feels more Victorian, less stark.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d5ddd5;"></div>
+            <div class="info">
+                <div class="name">Pale Sage <span class="hex">#D5DDD5</span></div>
+                <div class="description">Tinted ceiling option. Ties room together, more immersive.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- FURNITURE -->
+        <div class="group-header">
+            Furniture & Upholstery
+            <span class="tag">FURNISHINGS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #5c3d2e 0%, #7a5240 50%, #5c3d2e 100%);"></div>
+            <div class="info">
+                <div class="name">Walnut / Mahogany</div>
+                <div class="description">Dark wood dining table and chairs. Classic Victorian pairing with sage.</div>
+                <span class="use-tag tag-furniture">Table & Chairs</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #7a9178;"></div>
+            <div class="info">
+                <div class="name">Sage Velvet <span class="hex">#7A9178</span></div>
+                <div class="description">Chair upholstery matching wallpaper tone. Cohesive and elegant.</div>
+                <span class="use-tag tag-furniture">Upholstery</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4c4a8;"></div>
+            <div class="info">
+                <div class="name">Cream Linen <span class="hex">#D4C4A8</span></div>
+                <div class="description">Light upholstery option. Creates contrast, feels fresh.</div>
+                <span class="use-tag tag-furniture">Upholstery</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5b3a3a;"></div>
+            <div class="info">
+                <div class="name">Oxblood Leather <span class="hex">#5B3A3A</span></div>
+                <div class="description">Rich burgundy accent chairs. Warm contrast to sage.</div>
+                <span class="use-tag tag-furniture">Accent Chair</span>
+            </div>
+        </div>
+
+        <!-- TEXTILES -->
+        <div class="group-header">
+            Textiles & Soft Furnishings
+            <span class="tag">FABRIC</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #8fa98d 20%, #d4c4a8 40%, #c9a86c 60%, #722f37 80%);"></div>
+            <div class="info">
+                <div class="name">Persian Rug Tones</div>
+                <div class="description">Sage, cream, gold, deep red. Traditional Persian ties everything together.</div>
+                <span class="use-tag tag-textile">Rug</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0e6d8;"></div>
+            <div class="info">
+                <div class="name">Ivory Sheers <span class="hex">#F0E6D8</span></div>
+                <div class="description">Light, airy curtains. Let natural light through bay window.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6d7a65;"></div>
+            <div class="info">
+                <div class="name">Forest Velvet <span class="hex">#6D7A65</span></div>
+                <div class="description">Deeper green for heavier drapes. More formal, dramatic.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a86c;"></div>
+            <div class="info">
+                <div class="name">Antique Gold <span class="hex">#C9A86C</span></div>
+                <div class="description">Gold accent pillows or table runner. Warmth and luxury.</div>
+                <span class="use-tag tag-textile">Accents</span>
+            </div>
+        </div>
+
+        <!-- METALS -->
+        <div class="group-header">
+            Metals & Hardware
+            <span class="tag">FIXTURES</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 30%, #ffd700 50%, #d4af37 70%, #b8860b 100%);"></div>
+            <div class="info">
+                <div class="name">Antique Brass</div>
+                <div class="description">Warm gold hardware. Chandelier, door handles, picture frames.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #8b7355 0%, #a69070 50%, #8b7355 100%);"></div>
+            <div class="info">
+                <div class="name">Burnished Bronze</div>
+                <div class="description">Warmer, more aged tone. Traditional Victorian feeling.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 50%, #c0c0c0 100%);"></div>
+            <div class="info">
+                <div class="name">Polished Silver</div>
+                <div class="description">Crystal chandelier, silver candlesticks. More formal option.</div>
+                <span class="use-tag tag-metal">Accents</span>
+            </div>
+        </div>
+
+        <!-- THE COMBINATION -->
+        <div class="combo-section">
+            <h3>The Complete "Sage Damask Classic" Combination</h3>
+
+            <div class="combo-visual">
+                <div class="combo-stripe" style="background: #f5f2ed;">Ceiling</div>
+                <div class="combo-stripe" style="background: #8fa98d;">Wallpaper</div>
+                <div class="combo-stripe" style="background: #f5f2ed;">Trim</div>
+                <div class="combo-stripe" style="background: #5c3d2e;">Wood</div>
+                <div class="combo-stripe" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #b8860b 100%);">Brass</div>
+            </div>
+
+            <p style="opacity: 0.8; line-height: 1.7;">
+                <strong>Ceiling:</strong> Warm White (#F5F2ED) |
+                <strong>Walls:</strong> Soft Sage Damask (#8FA98D) |
+                <strong>Trim:</strong> Warm White (#F5F2ED) |
+                <strong>Furniture:</strong> Dark Walnut |
+                <strong>Metals:</strong> Antique Brass
+            </p>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>Green tile fireplace:</strong> This palette is designed to complement, not compete. The sage wallpaper relates to the green tile through the green family, but is muted enough to let the tile remain the star.</li>
+                <li><strong>The hutch question:</strong> If keeping the hutch, consider painting it the same warm white as trim, or a deeper putty tone. If removing, the damask wall will look stunning uninterrupted.</li>
+                <li><strong>Full-height wallpaper:</strong> No chair rail or wainscoting. The damask pattern creates visual interest without needing horizontal breaks.</li>
+                <li><strong>Pattern scale:</strong> With 10'+ ceilings, choose a larger damask repeat (24"+) so the pattern reads well from across the room.</li>
+                <li><strong>Mood:</strong> This is your most traditional, serene option. It says "elegant dinner party" more than "cozy family meal."</li>
+                <li><strong>Lighting:</strong> Warm bulbs (2700K) in a traditional brass or crystal chandelier. Candles on the table.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Dining Room "Sage Damask Classic" Palette | January 2025 | Traditional Victorian Elegance
+    </footer>
+
+</body>
+</html>

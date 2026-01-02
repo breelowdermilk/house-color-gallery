@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Room Palette | Garden Botanical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #c87870;
+            --accent-light: #e0a098;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-light);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .concept-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        /* Wall Preview Section */
+        .wall-preview {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .wall-preview-visual {
+            height: 320px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ceiling-zone {
+            height: 50px;
+            background: #f0e8d8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+        }
+
+        .crown-molding {
+            height: 8px;
+            background: linear-gradient(180deg, #f5f0e5 0%, #e8e0d0 100%);
+        }
+
+        .wallpaper-zone {
+            flex: 1;
+            background:
+                radial-gradient(
+                    circle at 25% 35%,
+                    rgba(200, 120, 112, 0.5) 0%,
+                    transparent 12%
+                ),
+                radial-gradient(
+                    circle at 60% 55%,
+                    rgba(200, 120, 112, 0.45) 0%,
+                    transparent 14%
+                ),
+                radial-gradient(
+                    circle at 40% 75%,
+                    rgba(201, 162, 39, 0.35) 0%,
+                    transparent 10%
+                ),
+                radial-gradient(
+                    circle at 80% 30%,
+                    rgba(200, 120, 112, 0.4) 0%,
+                    transparent 11%
+                ),
+                linear-gradient(
+                    180deg,
+                    #e8e0d0 0%,
+                    #ddd5c5 100%
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: rgba(80,60,40,0.6);
+            font-size: 1rem;
+        }
+
+        .baseboard {
+            height: 12px;
+            background: linear-gradient(180deg, #f5f0e5 0%, #e8e0d0 100%);
+        }
+
+        .floor-zone {
+            height: 40px;
+            background: linear-gradient(90deg, #c9a86c 0%, #d4b07a 50%, #c9a86c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: rgba(80,50,20,0.6);
+        }
+
+        .wall-preview-labels {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .wall-preview-labels span {
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        /* Palette Grid */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .group-header .tag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            background: rgba(200, 120, 112, 0.2);
+            color: var(--accent-light);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 160px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 18px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .tag-wallpaper { background: rgba(232, 224, 208, 0.3); color: #d4ccc0; }
+        .tag-coral { background: rgba(200, 120, 112, 0.3); color: #e0a098; }
+        .tag-gold { background: rgba(201, 162, 39, 0.3); color: #e0c060; }
+        .tag-green { background: rgba(107, 122, 90, 0.4); color: #a8b898; }
+        .tag-trim { background: rgba(245, 240, 229, 0.2); color: #d4cfc9; }
+        .tag-ceiling { background: rgba(240, 232, 216, 0.15); color: #c5c2bd; }
+        .tag-furniture { background: rgba(139, 90, 43, 0.3); color: #d4a574; }
+        .tag-textile { background: rgba(200, 150, 100, 0.2); color: #c9a86c; }
+        .tag-metal { background: rgba(212, 175, 55, 0.2); color: #d4af37; }
+
+        /* Floral pattern preview */
+        .floral-swatch {
+            background:
+                radial-gradient(
+                    circle at 30% 40%,
+                    rgba(200, 120, 112, 0.4) 0%,
+                    transparent 20%
+                ),
+                radial-gradient(
+                    circle at 70% 60%,
+                    rgba(200, 140, 60, 0.3) 0%,
+                    transparent 18%
+                );
+        }
+
+        /* Combination Section */
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent-light);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .combo-visual {
+            display: flex;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .combo-stripe {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            color: rgba(80,60,40,0.8);
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+        }
+
+        .combo-stripe.dark-text {
+            color: rgba(255,255,255,0.7);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent-light);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul {
+            padding-left: 20px;
+        }
+
+        .notes-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes-section strong {
+            color: var(--accent-light);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Garden Botanical</h1>
+    <p class="subtitle">Dining Room Palette | Warm Coral Florals on Cream</p>
+
+    <p class="concept-description">
+        A lush Morris-style garden of coral and terracotta flowers blooming against a warm cream or
+        soft sage ground. This is the romantic, cottagecore interpretation of Arts & Crafts -
+        feminine but not fussy, colorful but not chaotic. Think English garden at golden hour.
+    </p>
+
+    <!-- Wall Preview -->
+    <div class="wall-preview">
+        <div class="wall-preview-visual">
+            <div class="ceiling-zone">WARM CREAM CEILING</div>
+            <div class="crown-molding"></div>
+            <div class="wallpaper-zone">Full-Height Garden Floral</div>
+            <div class="baseboard"></div>
+            <div class="floor-zone">OAK FLOORS</div>
+        </div>
+        <div class="wall-preview-labels">
+            <span>Ceiling: Warm Cream</span>
+            <span>Walls: Coral Garden Floral</span>
+            <span>Trim: Cream or Sage</span>
+        </div>
+    </div>
+
+    <div class="palette-grid">
+
+        <!-- WALLPAPER GROUND COLORS -->
+        <div class="group-header">
+            Wallpaper Ground Colors
+            <span class="tag">WARM BASE</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch floral-swatch" style="background-color: #e8e0d0;"></div>
+            <div class="info">
+                <div class="name">Warm Cream <span class="hex">#E8E0D0</span></div>
+                <div class="description">Soft, warm cream ground. Lets coral flowers pop. Light and airy.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch floral-swatch" style="background-color: #ddd5c5;"></div>
+            <div class="info">
+                <div class="name">Antique Ivory <span class="hex">#DDD5C5</span></div>
+                <div class="description">Slightly richer, more aged feeling. Period-appropriate.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch floral-swatch" style="background-color: #c5c8b8;"></div>
+            <div class="info">
+                <div class="name">Sage Cream <span class="hex">#C5C8B8</span></div>
+                <div class="description">Cooler with green undertone. Ties to fireplace tile and leaves.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch floral-swatch" style="background-color: #d0c8b0;"></div>
+            <div class="info">
+                <div class="name">Tea Stain <span class="hex">#D0C8B0</span></div>
+                <div class="description">Warmer, more golden undertone. Sunset feeling.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <!-- CORAL/PINK FLOWER COLORS -->
+        <div class="group-header">
+            Coral & Pink Florals
+            <span class="tag">THE STARS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c87870;"></div>
+            <div class="info">
+                <div class="name">Coral Rose <span class="hex">#C87870</span></div>
+                <div class="description">The primary flower color. Warm coral with pink undertone.</div>
+                <span class="use-tag tag-coral">Primary Flower</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d49088;"></div>
+            <div class="info">
+                <div class="name">Dusty Coral <span class="hex">#D49088</span></div>
+                <div class="description">Lighter, softer. Petal highlights and smaller blooms.</div>
+                <span class="use-tag tag-coral">Flower Highlight</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b86058;"></div>
+            <div class="info">
+                <div class="name">Terracotta <span class="hex">#B86058</span></div>
+                <div class="description">Deeper, earthier. Flower centers and shadows.</div>
+                <span class="use-tag tag-coral">Flower Shadow</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #e8b0a8;"></div>
+            <div class="info">
+                <div class="name">Pale Blush <span class="hex">#E8B0A8</span></div>
+                <div class="description">Lightest pink. Buds and delicate petals.</div>
+                <span class="use-tag tag-coral">Highlight</span>
+            </div>
+        </div>
+
+        <!-- GOLD/YELLOW ACCENTS -->
+        <div class="group-header">
+            Gold & Yellow Accents
+            <span class="tag">WARMTH</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a227;"></div>
+            <div class="info">
+                <div class="name">Marigold <span class="hex">#C9A227</span></div>
+                <div class="description">Golden accent flowers. Adds sunshine to the coral.</div>
+                <span class="use-tag tag-gold">Accent Flower</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4b060;"></div>
+            <div class="info">
+                <div class="name">Buttercup <span class="hex">#D4B060</span></div>
+                <div class="description">Lighter yellow. Smaller blooms and highlights.</div>
+                <span class="use-tag tag-gold">Accent</span>
+            </div>
+        </div>
+
+        <!-- GREEN/LEAF COLORS -->
+        <div class="group-header">
+            Green & Leaf Colors
+            <span class="tag">FOLIAGE</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6b7a5a;"></div>
+            <div class="info">
+                <div class="name">Olive Sage <span class="hex">#6B7A5A</span></div>
+                <div class="description">Leaves and vines. Relates to fireplace tile.</div>
+                <span class="use-tag tag-green">Leaves</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #8a9a78;"></div>
+            <div class="info">
+                <div class="name">Spring Green <span class="hex">#8A9A78</span></div>
+                <div class="description">Lighter leaves. New growth, highlights.</div>
+                <span class="use-tag tag-green">Light Leaves</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4a5a42;"></div>
+            <div class="info">
+                <div class="name">Deep Moss <span class="hex">#4A5A42</span></div>
+                <div class="description">Darkest green. Stems and shadow areas.</div>
+                <span class="use-tag tag-green">Stems</span>
+            </div>
+        </div>
+
+        <!-- TRIM OPTIONS -->
+        <div class="group-header">
+            Trim & Molding
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f5f0e5;"></div>
+            <div class="info">
+                <div class="name">Warm White <span class="hex">#F5F0E5</span></div>
+                <div class="description">Clean but warm. Matches cream ground, fresh feeling.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #a8b098;"></div>
+            <div class="info">
+                <div class="name">Sage <span class="hex">#A8B098</span></div>
+                <div class="description">Painted sage trim. Picks up leaf colors, more enveloping.</div>
+                <span class="use-tag tag-trim">Trim - Bold</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8956c 0%, #d4a574 50%, #b8956c 100%);"></div>
+            <div class="info">
+                <div class="name">Natural Oak</div>
+                <div class="description">Keep existing oak trim. Warm, cohesive with floors.</div>
+                <span class="use-tag tag-trim">Trim - Wood</span>
+            </div>
+        </div>
+
+        <!-- CEILING -->
+        <div class="group-header">
+            Ceiling
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f8f5f0;"></div>
+            <div class="info">
+                <div class="name">Soft White <span class="hex">#F8F5F0</span></div>
+                <div class="description">Clean, light ceiling. Opens up the space.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0e8d8;"></div>
+            <div class="info">
+                <div class="name">Cream <span class="hex">#F0E8D8</span></div>
+                <div class="description">Matches wallpaper ground. More cohesive, warmer.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- FURNITURE -->
+        <div class="group-header">
+            Furniture & Upholstery
+            <span class="tag">FURNISHINGS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #5c3d2e 0%, #7a5240 50%, #5c3d2e 100%);"></div>
+            <div class="info">
+                <div class="name">Walnut / Mahogany</div>
+                <div class="description">Rich dark wood dining table. Grounds the light, airy palette.</div>
+                <span class="use-tag tag-furniture">Table</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0e8d8;"></div>
+            <div class="info">
+                <div class="name">Cream Linen <span class="hex">#F0E8D8</span></div>
+                <div class="description">Light upholstered chairs. Fresh, cottage feeling.</div>
+                <span class="use-tag tag-furniture">Upholstery</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c87870;"></div>
+            <div class="info">
+                <div class="name">Coral Velvet <span class="hex">#C87870</span></div>
+                <div class="description">Statement chairs matching flowers. Bold but cohesive.</div>
+                <span class="use-tag tag-furniture">Accent Chair</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6b7a5a;"></div>
+            <div class="info">
+                <div class="name">Sage Green <span class="hex">#6B7A5A</span></div>
+                <div class="description">Green velvet accent. Bridges wallpaper leaves to fireplace tile.</div>
+                <span class="use-tag tag-furniture">Accent Chair</span>
+            </div>
+        </div>
+
+        <!-- TEXTILES -->
+        <div class="group-header">
+            Textiles & Soft Furnishings
+            <span class="tag">FABRIC</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c87870 20%, #e8e0d0 40%, #6b7a5a 60%, #c9a227 80%);"></div>
+            <div class="info">
+                <div class="name">Garden Palette Rug</div>
+                <div class="description">Coral, cream, sage, gold. Needlepoint, Aubusson, or soft Persian.</div>
+                <span class="use-tag tag-textile">Rug</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f5f0e5;"></div>
+            <div class="info">
+                <div class="name">Ivory Linen <span class="hex">#F5F0E5</span></div>
+                <div class="description">Light, breezy curtains. Cottage garden feeling.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d49088;"></div>
+            <div class="info">
+                <div class="name">Blush Silk <span class="hex">#D49088</span></div>
+                <div class="description">Soft coral drapes. More formal, romantic.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a227;"></div>
+            <div class="info">
+                <div class="name">Gold Accents <span class="hex">#C9A227</span></div>
+                <div class="description">Pillows, napkins, table runner. Sunshine touches.</div>
+                <span class="use-tag tag-textile">Accents</span>
+            </div>
+        </div>
+
+        <!-- METALS -->
+        <div class="group-header">
+            Metals & Hardware
+            <span class="tag">FIXTURES</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 30%, #ffd700 50%, #d4af37 70%, #b8860b 100%);"></div>
+            <div class="info">
+                <div class="name">Antique Brass</div>
+                <div class="description">Warm gold hardware. Door handles, light fixtures, picture frames.</div>
+                <span class="use-tag tag-metal">Primary Metal</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b87333 0%, #da8a4a 50%, #b87333 100%);"></div>
+            <div class="info">
+                <div class="name">Rose Gold / Copper</div>
+                <div class="description">Echoes the coral flowers. Vases, candlesticks, accents.</div>
+                <span class="use-tag tag-metal">Accent Metal</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #8b7355 0%, #a69070 50%, #8b7355 100%);"></div>
+            <div class="info">
+                <div class="name">Burnished Bronze</div>
+                <div class="description">Aged, warm tone. More traditional feeling.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <!-- THE COMBINATION -->
+        <div class="combo-section">
+            <h3>The Complete "Garden Botanical" Combination</h3>
+
+            <div class="combo-visual">
+                <div class="combo-stripe" style="background: #f0e8d8;">Ceiling</div>
+                <div class="combo-stripe" style="background: #e8e0d0;">Ground</div>
+                <div class="combo-stripe dark-text" style="background: #c87870;">Coral</div>
+                <div class="combo-stripe dark-text" style="background: #6b7a5a;">Sage</div>
+                <div class="combo-stripe dark-text" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #b8860b 100%);">Brass</div>
+            </div>
+
+            <p style="opacity: 0.8; line-height: 1.7;">
+                <strong>Ceiling:</strong> Cream (#F0E8D8) |
+                <strong>Walls:</strong> Coral Florals on Warm Cream (#E8E0D0) |
+                <strong>Flowers:</strong> Coral Rose + Marigold Gold |
+                <strong>Trim:</strong> Warm White or Sage |
+                <strong>Metals:</strong> Antique Brass + Copper accents
+            </p>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>Green tile fireplace:</strong> The sage and olive greens in the wallpaper leaves create a beautiful dialogue with your fireplace tile. It's connection without matching.</li>
+                <li><strong>Light vs. the others:</strong> This is your brightest, most airy option. The cream ground reflects light. Great if you want the room to feel spacious and cheerful.</li>
+                <li><strong>The hutch question:</strong> Paint it warm white to match trim, or sage to be more adventurous. Either works with this palette.</li>
+                <li><strong>Coral's warmth:</strong> Coral reads as both pink AND orange. It's inherently warm and will make the room feel inviting.</li>
+                <li><strong>Copper accents:</strong> This is the only palette where copper/rose gold makes perfect sense - it echoes the coral flowers.</li>
+                <li><strong>Mood:</strong> English cottage garden, romantic, feminine but grounded. Perfect for long leisurely brunches.</li>
+                <li><strong>Pattern vs. color:</strong> With a cream ground, the pattern does the heavy lifting. Make sure the scale is large enough for 10' ceilings.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Dining Room "Garden Botanical" Palette | January 2025 | Warm Coral Florals on Cream
+    </footer>
+
+</body>
+</html>

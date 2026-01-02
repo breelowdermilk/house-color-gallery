@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Room Palette | Lavender Chinoiserie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #b8a8c8;
+            --accent-light: #d4c8e0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-light);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .concept-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        /* Wall Preview Section */
+        .wall-preview {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .wall-preview-visual {
+            height: 320px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ceiling-zone {
+            height: 50px;
+            background: #f8f6f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+        }
+
+        .crown-molding {
+            height: 8px;
+            background: linear-gradient(180deg, #fff 0%, #f0ebe5 100%);
+        }
+
+        .wallpaper-zone {
+            flex: 1;
+            background:
+                radial-gradient(
+                    ellipse at 30% 40%,
+                    rgba(220, 215, 210, 0.3) 0%,
+                    transparent 40%
+                ),
+                radial-gradient(
+                    ellipse at 70% 60%,
+                    rgba(220, 215, 210, 0.25) 0%,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    180deg,
+                    #c4b8d4 0%,
+                    #b8a8c8 100%
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: rgba(255,255,255,0.7);
+            font-size: 1rem;
+        }
+
+        .baseboard {
+            height: 12px;
+            background: linear-gradient(180deg, #fff 0%, #f0ebe5 100%);
+        }
+
+        .floor-zone {
+            height: 40px;
+            background: linear-gradient(90deg, #c9a86c 0%, #d4b07a 50%, #c9a86c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: rgba(80,50,20,0.6);
+        }
+
+        .wall-preview-labels {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .wall-preview-labels span {
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        /* Palette Grid */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .group-header .tag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            background: rgba(184, 168, 200, 0.2);
+            color: var(--accent-light);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 160px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 18px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .tag-wallpaper { background: rgba(184, 168, 200, 0.3); color: #d4c8e0; }
+        .tag-pattern { background: rgba(220, 215, 210, 0.2); color: #e0dcd8; }
+        .tag-trim { background: rgba(255, 255, 255, 0.15); color: #d4d0cc; }
+        .tag-ceiling { background: rgba(248, 246, 244, 0.15); color: #c5c2bd; }
+        .tag-furniture { background: rgba(139, 90, 43, 0.3); color: #d4a574; }
+        .tag-textile { background: rgba(200, 150, 100, 0.2); color: #c9a86c; }
+        .tag-metal { background: rgba(192, 192, 192, 0.2); color: #d4d4d4; }
+
+        /* Chinoiserie pattern preview */
+        .chinoiserie-swatch {
+            background:
+                radial-gradient(
+                    ellipse at 25% 30%,
+                    rgba(255,255,255,0.15) 0%,
+                    transparent 30%
+                ),
+                radial-gradient(
+                    ellipse at 75% 70%,
+                    rgba(255,255,255,0.1) 0%,
+                    transparent 25%
+                );
+        }
+
+        /* Combination Section */
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent-light);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .combo-visual {
+            display: flex;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .combo-stripe {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.7);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent-light);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul {
+            padding-left: 20px;
+        }
+
+        .notes-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes-section strong {
+            color: var(--accent-light);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Lavender Chinoiserie</h1>
+    <p class="subtitle">Dining Room Palette | Elegant & Ethereal</p>
+
+    <p class="concept-description">
+        Soft, romantic, and undeniably elegant. A delicate lavender chinoiserie with silvery botanical motifs
+        creates an airy, feminine atmosphere that feels like dining in an English garden at twilight.
+        The unexpected purple family creates beautiful contrast with your green tile fireplace.
+    </p>
+
+    <!-- Wall Preview -->
+    <div class="wall-preview">
+        <div class="wall-preview-visual">
+            <div class="ceiling-zone">SOFT WHITE CEILING</div>
+            <div class="crown-molding"></div>
+            <div class="wallpaper-zone">Full-Height Lavender Chinoiserie</div>
+            <div class="baseboard"></div>
+            <div class="floor-zone">OAK FLOORS</div>
+        </div>
+        <div class="wall-preview-labels">
+            <span>Ceiling: Soft White</span>
+            <span>Walls: Lavender Chinoiserie</span>
+            <span>Trim: Crisp White</span>
+        </div>
+    </div>
+
+    <div class="palette-grid">
+
+        <!-- WALLPAPER GROUND COLORS -->
+        <div class="group-header">
+            Wallpaper Ground Colors
+            <span class="tag">CHINOISERIE</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch chinoiserie-swatch" style="background-color: #b8a8c8;"></div>
+            <div class="info">
+                <div class="name">Soft Lavender <span class="hex">#B8A8C8</span></div>
+                <div class="description">Perfect mid-tone lavender. Purple enough to read as intentional, soft enough to live with.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch chinoiserie-swatch" style="background-color: #c4b8d4;"></div>
+            <div class="info">
+                <div class="name">Pale Wisteria <span class="hex">#C4B8D4</span></div>
+                <div class="description">Lighter, airier. More pink undertone. Very romantic.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch chinoiserie-swatch" style="background-color: #a898b8;"></div>
+            <div class="info">
+                <div class="name">Twilight Lavender <span class="hex">#A898B8</span></div>
+                <div class="description">Deeper, more saturated. More dramatic presence.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch chinoiserie-swatch" style="background-color: #c8bcd0;"></div>
+            <div class="info">
+                <div class="name">Misty Mauve <span class="hex">#C8BCD0</span></div>
+                <div class="description">Greyer, more muted. Sophisticated and subtle.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <!-- PATTERN ACCENT COLORS -->
+        <div class="group-header">
+            Chinoiserie Pattern Colors
+            <span class="tag">BOTANICAL MOTIFS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #e8e4dc;"></div>
+            <div class="info">
+                <div class="name">Silver Cream <span class="hex">#E8E4DC</span></div>
+                <div class="description">Branches, leaves, birds. The silvery-cream botanical overlay.</div>
+                <span class="use-tag tag-pattern">Branches & Birds</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d0cbc5;"></div>
+            <div class="info">
+                <div class="name">Dove Gray <span class="hex">#D0CBC5</span></div>
+                <div class="description">Softer gray-taupe for subtle pattern variation.</div>
+                <span class="use-tag tag-pattern">Foliage</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #8b9a78;"></div>
+            <div class="info">
+                <div class="name">Sage Accent <span class="hex">#8B9A78</span></div>
+                <div class="description">Hint of sage green in leaves. Ties to fireplace tile.</div>
+                <span class="use-tag tag-pattern">Leaf Details</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a86c;"></div>
+            <div class="info">
+                <div class="name">Gilded Accents <span class="hex">#C9A86C</span></div>
+                <div class="description">Optional gold highlights on birds or branches.</div>
+                <span class="use-tag tag-pattern">Highlights</span>
+            </div>
+        </div>
+
+        <!-- TRIM OPTIONS -->
+        <div class="group-header">
+            Trim & Molding
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #ffffff;"></div>
+            <div class="info">
+                <div class="name">Crisp White <span class="hex">#FFFFFF</span></div>
+                <div class="description">Pure white trim. Creates clean contrast, feels fresh and modern.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f8f6f2;"></div>
+            <div class="info">
+                <div class="name">Soft White <span class="hex">#F8F6F2</span></div>
+                <div class="description">Slightly warm. Softer transition, less stark.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #e8e4dc;"></div>
+            <div class="info">
+                <div class="name">Cream <span class="hex">#E8E4DC</span></div>
+                <div class="description">Matches pattern colors. More enveloping, less contrast.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <!-- CEILING -->
+        <div class="group-header">
+            Ceiling
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f8f6f4;"></div>
+            <div class="info">
+                <div class="name">Cloud White <span class="hex">#F8F6F4</span></div>
+                <div class="description">Soft, warm white. Opens up the space, feels light.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #e8e0e8;"></div>
+            <div class="info">
+                <div class="name">Whisper Lavender <span class="hex">#E8E0E8</span></div>
+                <div class="description">Barely-there lavender tint. Ties ceiling to walls subtly.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- FURNITURE -->
+        <div class="group-header">
+            Furniture & Upholstery
+            <span class="tag">FURNISHINGS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #5c3d2e 0%, #7a5240 50%, #5c3d2e 100%);"></div>
+            <div class="info">
+                <div class="name">Dark Mahogany</div>
+                <div class="description">Rich dark wood dining table. Traditional, grounding.</div>
+                <span class="use-tag tag-furniture">Table</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0e8e0;"></div>
+            <div class="info">
+                <div class="name">Cream Linen <span class="hex">#F0E8E0</span></div>
+                <div class="description">Light upholstered chairs. Airy, elegant, matches pattern.</div>
+                <span class="use-tag tag-furniture">Chair Upholstery</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #9888a8;"></div>
+            <div class="info">
+                <div class="name">Dusty Lavender <span class="hex">#9888A8</span></div>
+                <div class="description">Velvet chair option. Echoes wallpaper, very cohesive.</div>
+                <span class="use-tag tag-furniture">Upholstery</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6b7a65;"></div>
+            <div class="info">
+                <div class="name">Sage Green <span class="hex">#6B7A65</span></div>
+                <div class="description">Green velvet accent. Bridges wallpaper and fireplace.</div>
+                <span class="use-tag tag-furniture">Accent Chair</span>
+            </div>
+        </div>
+
+        <!-- TEXTILES -->
+        <div class="group-header">
+            Textiles & Soft Furnishings
+            <span class="tag">FABRIC</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c8bcd0 20%, #e8e4dc 40%, #c9a86c 60%, #8b9a78 80%);"></div>
+            <div class="info">
+                <div class="name">Soft Persian Tones</div>
+                <div class="description">Muted lavender, cream, gold, sage. Soft-colored Persian or Oushak rug.</div>
+                <span class="use-tag tag-textile">Rug</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f5f0e8;"></div>
+            <div class="info">
+                <div class="name">Ivory Silk <span class="hex">#F5F0E8</span></div>
+                <div class="description">Sheer silk or linen curtains. Light, ethereal, romantic.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #a898b8;"></div>
+            <div class="info">
+                <div class="name">Lavender Velvet <span class="hex">#A898B8</span></div>
+                <div class="description">Richer drapes for more formal occasions. Matches walls.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #d4a0a8;"></div>
+            <div class="info">
+                <div class="name">Dusty Rose <span class="hex">#D4A0A8</span></div>
+                <div class="description">Pink accent pillows. Adds warmth to the purple palette.</div>
+                <span class="use-tag tag-textile">Accents</span>
+            </div>
+        </div>
+
+        <!-- METALS -->
+        <div class="group-header">
+            Metals & Hardware
+            <span class="tag">FIXTURES</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 30%, #f5f5f5 50%, #e8e8e8 70%, #c0c0c0 100%);"></div>
+            <div class="info">
+                <div class="name">Polished Silver</div>
+                <div class="description">Crystal chandelier, silver candlesticks. Cool, elegant, period-appropriate.</div>
+                <span class="use-tag tag-metal">Primary Metal</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #a0a0a0 0%, #c8c8c8 50%, #a0a0a0 100%);"></div>
+            <div class="info">
+                <div class="name">Brushed Nickel</div>
+                <div class="description">Door hardware, picture frames. More contemporary option.</div>
+                <span class="use-tag tag-metal">Hardware</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #b8860b 100%);"></div>
+            <div class="info">
+                <div class="name">Antique Gold</div>
+                <div class="description">Optional warm metal for mixing. Picture frames, mirror.</div>
+                <span class="use-tag tag-metal">Accent Metal</span>
+            </div>
+        </div>
+
+        <!-- THE COMBINATION -->
+        <div class="combo-section">
+            <h3>The Complete "Lavender Chinoiserie" Combination</h3>
+
+            <div class="combo-visual">
+                <div class="combo-stripe" style="background: #f8f6f4;">Ceiling</div>
+                <div class="combo-stripe" style="background: #b8a8c8;">Wallpaper</div>
+                <div class="combo-stripe" style="background: #ffffff;">Trim</div>
+                <div class="combo-stripe" style="background: #5c3d2e;">Wood</div>
+                <div class="combo-stripe" style="background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 50%, #c0c0c0 100%);">Silver</div>
+            </div>
+
+            <p style="opacity: 0.8; line-height: 1.7;">
+                <strong>Ceiling:</strong> Cloud White (#F8F6F4) |
+                <strong>Walls:</strong> Soft Lavender Chinoiserie (#B8A8C8) |
+                <strong>Trim:</strong> Crisp White |
+                <strong>Furniture:</strong> Dark Mahogany + Cream Linen |
+                <strong>Metals:</strong> Polished Silver & Crystal
+            </p>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>Green tile fireplace:</strong> This is color theory magic - purple and green are complementary colors. The lavender makes the green tile POP. The contrast is intentional and beautiful.</li>
+                <li><strong>The "purple + something" direction:</strong> This palette delivers on your stated interest in purple. It's bold but not overwhelming thanks to the soft, muted lavender.</li>
+                <li><strong>The hutch question:</strong> Paint it crisp white to match trim, or remove entirely. The wallpaper pattern is the star here.</li>
+                <li><strong>Silver over brass:</strong> This palette calls for cool metals. Crystal chandelier is perfect. Save the brass for warmer palettes.</li>
+                <li><strong>Full-height impact:</strong> Chinoiserie patterns are traditionally meant to flow floor to ceiling. The botanical motifs will look stunning at full height.</li>
+                <li><strong>Mood:</strong> Romantic, feminine, elegant. Perfect for special occasion dinners. Has a slightly English country house feel.</li>
+                <li><strong>The oak question:</strong> The oak mantel works beautifully - it provides necessary warmth against the cool lavender. Keep it natural.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Dining Room "Lavender Chinoiserie" Palette | January 2025 | Elegant & Ethereal
+    </footer>
+
+</body>
+</html>
