@@ -246,24 +246,36 @@ const Results = (function () {
   }
 
   /**
-   * Fetch all ratings for all images
+   * Fetch all ratings for all images (parallelized for speed)
    */
   async function loadAllRatings() {
     allRatings = {};
     allUsers.clear();
 
-    for (const image of allImages) {
+    // Fetch all ratings in parallel for faster loading
+    const fetchPromises = allImages.map(async (image) => {
       let ratings = {};
 
       if (typeof Ratings !== "undefined" && Ratings.getRatings) {
-        ratings = await Ratings.getRatings(image.id);
+        try {
+          ratings = await Ratings.getRatings(image.id);
+        } catch (e) {
+          console.warn("Failed to load ratings for", image.id, e);
+        }
       } else {
         // Fallback to localStorage
         const stored = JSON.parse(localStorage.getItem("houseRatings") || "{}");
         ratings = stored[image.id] || {};
       }
 
-      allRatings[image.id] = ratings;
+      return { imageId: image.id, ratings };
+    });
+
+    const results = await Promise.all(fetchPromises);
+
+    // Process results
+    for (const { imageId, ratings } of results) {
+      allRatings[imageId] = ratings;
 
       // Collect users
       for (const user of Object.keys(ratings)) {
