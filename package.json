@@ -23,5 +23,8 @@
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "playwright": "^1.57.0"
+  },
+  "dependencies": {
+    "firebase": "^12.7.0"
   }
 }
