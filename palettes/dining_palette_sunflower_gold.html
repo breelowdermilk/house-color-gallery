@@ -334,6 +334,65 @@
             color: var(--accent-light);
         }
 
+        /* Wallpaper Suggestions */
+        .wallpaper-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .wallpaper-section h3 {
+            color: var(--accent-light);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .wallpaper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .wallpaper-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .wallpaper-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .wallpaper-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .wallpaper-card .wp-info {
+            padding: 15px;
+        }
+
+        .wallpaper-card .wp-name {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: var(--accent-light);
+        }
+
+        .wallpaper-card .wp-details {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            line-height: 1.4;
+        }
+
         footer {
             text-align: center;
             margin-top: 60px;
@@ -700,6 +759,41 @@
                 <strong>Trim:</strong> Natural Oak |
                 <strong>Metals:</strong> Antique Brass
             </p>
+        </div>
+
+        <!-- SUGGESTED WALLPAPERS -->
+        <div class="wallpaper-section">
+            <h3>Suggested Wallpapers for This Palette</h3>
+            <div class="wallpaper-grid">
+                <div class="wallpaper-card">
+                    <img src="../Wallpaper/Swatches/Dining Room/Morris & Arts Crafts/Golden Lily HOH - apatite green pink morris.jpg" alt="Golden Lily Apatite">
+                    <div class="wp-info">
+                        <div class="wp-name">House of Hackney Golden Lily</div>
+                        <div class="wp-details">Apatite | Classic Morris pattern with gold lilies on deep green. Perfect gold-on-olive Arts & Crafts.</div>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../Wallpaper/Swatches/Dining Room/Morris & Arts Crafts/Fruit 216859 - beige gold coral pomegranate morris.jpg" alt="Fruit">
+                    <div class="wp-info">
+                        <div class="wp-name">Morris & Co Fruit</div>
+                        <div class="wp-details">216859 | Gold, coral and green pomegranates. Rich warm tones on neutral ground.</div>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../Wallpaper/Swatches/Dining Room/Morris & Arts Crafts/Pimpernel 210388 - bayleaf manilla red green morris.jpg" alt="Pimpernel Bayleaf">
+                    <div class="wp-info">
+                        <div class="wp-name">Morris & Co Pimpernel</div>
+                        <div class="wp-details">210388 Bayleaf/Manilla | Classic with gold, coral and green tones. Warm and inviting.</div>
+                    </div>
+                </div>
+                <div class="wallpaper-card">
+                    <img src="../Wallpaper/Swatches/Dining Room/Morris & Arts Crafts/Morris Co Golden Lily - green red art-nouveau.jpg" alt="Golden Lily Green Red">
+                    <div class="wp-info">
+                        <div class="wp-name">Morris & Co Golden Lily</div>
+                        <div class="wp-details">Green & Red | Bold version with deeper colors. Maximum Arts & Crafts impact.</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- NOTES -->
