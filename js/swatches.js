@@ -170,8 +170,8 @@ const Swatches = (function () {
       lightbox.className = "fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4";
       lightbox.innerHTML = `
         <button class="lightbox-close absolute top-4 right-4 text-white text-3xl hover:text-slate-300">&times;</button>
-        <div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
-          <img class="max-h-[60vh] object-contain rounded-lg" src="" alt="">
+        <div class="max-w-4xl max-h-[90vh] flex flex-col items-center overflow-y-auto">
+          <img class="max-h-[50vh] object-contain rounded-lg" src="" alt="">
           <p class="swatch-title text-white text-lg font-medium mt-4 text-center"></p>
           <p class="swatch-category text-white/70 text-sm mt-1"></p>
           <div class="swatch-rating-bar flex items-center gap-3 mt-4">
@@ -180,6 +180,14 @@ const Swatches = (function () {
             <button class="rating-btn rating-dislike px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-medium" data-rating="dislike">✖️ Dislike</button>
           </div>
           <div class="swatch-votes flex items-center gap-2 mt-3"></div>
+          <div class="swatch-comments w-full max-w-md mt-4 bg-white/10 rounded-lg p-3">
+            <h4 class="text-white text-sm font-medium mb-2">Comments</h4>
+            <div class="swatch-comments-list text-white/80 text-sm space-y-2 max-h-32 overflow-y-auto"></div>
+            <form class="swatch-comment-form flex gap-2 mt-3">
+              <input type="text" class="swatch-comment-input flex-1 px-3 py-2 rounded-lg bg-white/20 text-white placeholder-white/50 text-sm border-0 focus:ring-2 focus:ring-white/50" placeholder="Add a comment..." maxlength="200">
+              <button type="submit" class="px-3 py-2 rounded-lg bg-white/20 hover:bg-white/30 text-white text-sm font-medium">Post</button>
+            </form>
+          </div>
         </div>
       `;
       document.body.appendChild(lightbox);
@@ -203,6 +211,9 @@ const Swatches = (function () {
     const cat = lightbox.querySelector(".swatch-category");
     const ratingBar = lightbox.querySelector(".swatch-rating-bar");
     const votesDisplay = lightbox.querySelector(".swatch-votes");
+    const commentsList = lightbox.querySelector(".swatch-comments-list");
+    const commentForm = lightbox.querySelector(".swatch-comment-form");
+    const commentInput = lightbox.querySelector(".swatch-comment-input");
 
     img.src = swatch.url;
     img.alt = swatch.name;
@@ -223,10 +234,74 @@ const Swatches = (function () {
       };
     });
 
-    // Load and display votes
+    // Bind comment form
+    commentForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const text = commentInput.value.trim();
+      if (!text) return;
+
+      const user = (typeof App !== "undefined" && App.getUser?.()) || localStorage.getItem("houseColorUser") || "Guest";
+
+      if (typeof firebase !== "undefined" && firebase.firestore) {
+        try {
+          const db = firebase.firestore();
+          await db.collection("images").doc(swatch.id).collection("comments").add({
+            user,
+            text,
+            timestamp: Date.now()
+          });
+          commentInput.value = "";
+          loadSwatchComments(swatch.id, commentsList);
+        } catch (e) {
+          console.warn("Failed to save comment", e);
+        }
+      }
+    };
+
+    // Load and display votes and comments
     updateLightboxVotes(swatch.id, votesDisplay, ratingBar);
+    loadSwatchComments(swatch.id, commentsList);
 
     lightbox.classList.remove("hidden");
+  }
+
+  async function loadSwatchComments(swatchId, container) {
+    container.innerHTML = '<span class="text-white/50">Loading...</span>';
+
+    if (typeof firebase !== "undefined" && firebase.firestore) {
+      try {
+        const db = firebase.firestore();
+        const snapshot = await db.collection("images").doc(swatchId)
+          .collection("comments")
+          .orderBy("timestamp", "desc")
+          .limit(20)
+          .get();
+
+        if (snapshot.empty) {
+          container.innerHTML = '<span class="text-white/50">No comments yet</span>';
+          return;
+        }
+
+        container.innerHTML = "";
+        snapshot.forEach(doc => {
+          const data = doc.data();
+          const div = document.createElement("div");
+          div.className = "bg-white/10 rounded px-2 py-1";
+          div.innerHTML = `<span class="font-medium">${escapeHtml(data.user)}:</span> ${escapeHtml(data.text)}`;
+          container.appendChild(div);
+        });
+      } catch (e) {
+        container.innerHTML = '<span class="text-white/50">Could not load comments</span>';
+      }
+    } else {
+      container.innerHTML = '<span class="text-white/50">Comments unavailable</span>';
+    }
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
   }
 
   async function updateLightboxVotes(swatchId, votesDisplay, ratingBar) {
