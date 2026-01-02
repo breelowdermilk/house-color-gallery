@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Room Palette | Tropical Drama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --text-color: #e0e0e0;
+            --card-bg: #1a1a1a;
+            --accent: #5a6a4a;
+            --accent-light: #8a9a6a;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Outfit', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-light);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .concept-description {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        /* Wall Preview Section */
+        .wall-preview {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+
+        .wall-preview-visual {
+            height: 320px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ceiling-zone {
+            height: 50px;
+            background: #f5f2ed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            color: rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+        }
+
+        .crown-molding {
+            height: 8px;
+            background: linear-gradient(180deg, #f5f0e5 0%, #e8e0d0 100%);
+        }
+
+        .wallpaper-zone {
+            flex: 1;
+            background:
+                linear-gradient(
+                    45deg,
+                    rgba(90, 106, 74, 0.4) 0%,
+                    transparent 30%
+                ),
+                linear-gradient(
+                    -45deg,
+                    rgba(90, 106, 74, 0.35) 0%,
+                    transparent 40%
+                ),
+                linear-gradient(
+                    135deg,
+                    rgba(120, 100, 70, 0.3) 0%,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    180deg,
+                    #e8e4d8 0%,
+                    #e0dcd0 100%
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: rgba(60,50,30,0.6);
+            font-size: 1rem;
+        }
+
+        .baseboard {
+            height: 12px;
+            background: linear-gradient(180deg, #f5f0e5 0%, #e8e0d0 100%);
+        }
+
+        .floor-zone {
+            height: 40px;
+            background: linear-gradient(90deg, #c9a86c 0%, #d4b07a 50%, #c9a86c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: rgba(80,50,20,0.6);
+        }
+
+        .wall-preview-labels {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .wall-preview-labels span {
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 6px;
+        }
+
+        /* Palette Grid */
+        .palette-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .group-header {
+            grid-column: 1 / -1;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .group-header .tag {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.7rem;
+            background: rgba(90, 106, 74, 0.3);
+            color: var(--accent-light);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .color-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .color-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: var(--accent);
+        }
+
+        .swatch {
+            height: 160px;
+            width: 100%;
+            transition: filter 0.3s ease;
+        }
+
+        .color-card:hover .swatch {
+            filter: brightness(1.1);
+        }
+
+        .info {
+            padding: 18px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hex {
+            font-weight: 400;
+            font-size: 0.85rem;
+            opacity: 0.5;
+            font-family: monospace;
+        }
+
+        .description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            opacity: 0.8;
+        }
+
+        .use-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .tag-wallpaper { background: rgba(232, 228, 216, 0.3); color: #d4d0c0; }
+        .tag-olive { background: rgba(90, 106, 74, 0.4); color: #a8b898; }
+        .tag-sepia { background: rgba(120, 100, 70, 0.4); color: #c8b898; }
+        .tag-forest { background: rgba(60, 80, 60, 0.5); color: #88a888; }
+        .tag-terracotta { background: rgba(180, 100, 70, 0.3); color: #d4a080; }
+        .tag-trim { background: rgba(245, 240, 229, 0.2); color: #d4cfc9; }
+        .tag-ceiling { background: rgba(245, 242, 237, 0.15); color: #c5c2bd; }
+        .tag-furniture { background: rgba(139, 90, 43, 0.3); color: #d4a574; }
+        .tag-textile { background: rgba(200, 150, 100, 0.2); color: #c9a86c; }
+        .tag-metal { background: rgba(212, 175, 55, 0.2); color: #d4af37; }
+
+        /* Tropical pattern preview */
+        .tropical-swatch {
+            background:
+                linear-gradient(
+                    60deg,
+                    rgba(90, 106, 74, 0.5) 0%,
+                    transparent 30%
+                ),
+                linear-gradient(
+                    -30deg,
+                    rgba(90, 106, 74, 0.4) 0%,
+                    transparent 35%
+                );
+        }
+
+        /* Combination Section */
+        .combo-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .combo-section h3 {
+            color: var(--accent-light);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+        }
+
+        .combo-visual {
+            display: flex;
+            height: 120px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .combo-stripe {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 10px;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.7);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .notes-section {
+            grid-column: 1 / -1;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .notes-section h3 {
+            color: var(--accent-light);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .notes-section ul {
+            padding-left: 20px;
+        }
+
+        .notes-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            opacity: 0.85;
+        }
+
+        .notes-section strong {
+            color: var(--accent-light);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.8rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--accent-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Gallery</a>
+
+    <h1>Tropical Drama</h1>
+    <p class="subtitle">Dining Room Palette | Bold Botanical Maximalism</p>
+
+    <p class="concept-description">
+        The most unexpected and dramatic option. Sweeping palm fronds and tropical foliage create a
+        lush, maximalist statement. This is colonial revival meets jungle greenhouse - bold, confident,
+        and utterly distinctive. Not for the faint of heart, but unforgettable.
+    </p>
+
+    <!-- Wall Preview -->
+    <div class="wall-preview">
+        <div class="wall-preview-visual">
+            <div class="ceiling-zone">OFF-WHITE CEILING</div>
+            <div class="crown-molding"></div>
+            <div class="wallpaper-zone">Full-Height Tropical Palm</div>
+            <div class="baseboard"></div>
+            <div class="floor-zone">OAK FLOORS</div>
+        </div>
+        <div class="wall-preview-labels">
+            <span>Ceiling: Off-White</span>
+            <span>Walls: Tropical Palm</span>
+            <span>Trim: White or Forest Green</span>
+        </div>
+    </div>
+
+    <div class="palette-grid">
+
+        <!-- WALLPAPER GROUND COLORS -->
+        <div class="group-header">
+            Wallpaper Ground Colors
+            <span class="tag">TROPICAL</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch tropical-swatch" style="background-color: #e8e4d8;"></div>
+            <div class="info">
+                <div class="name">Parchment <span class="hex">#E8E4D8</span></div>
+                <div class="description">Warm off-white ground. Lets the palm pattern be the star. Most versatile.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch tropical-swatch" style="background-color: #e0dcd0;"></div>
+            <div class="info">
+                <div class="name">Linen <span class="hex">#E0DCD0</span></div>
+                <div class="description">Slightly warmer, more aged feeling. Natural and organic.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch tropical-swatch" style="background-color: #d8d0c0;"></div>
+            <div class="info">
+                <div class="name">Sepia Tint <span class="hex">#D8D0C0</span></div>
+                <div class="description">Warmer, more vintage botanical illustration feeling.</div>
+                <span class="use-tag tag-wallpaper">Wallpaper Ground</span>
+            </div>
+        </div>
+
+        <!-- PALM/FOLIAGE COLORS -->
+        <div class="group-header">
+            Palm & Foliage Colors
+            <span class="tag">THE DRAMA</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5a6a4a;"></div>
+            <div class="info">
+                <div class="name">Olive Palm <span class="hex">#5A6A4A</span></div>
+                <div class="description">Primary frond color. Earthy olive-green. Classic tropical.</div>
+                <span class="use-tag tag-olive">Palm Fronds</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #6a7a58;"></div>
+            <div class="info">
+                <div class="name">Fresh Palm <span class="hex">#6A7A58</span></div>
+                <div class="description">Lighter, more vibrant. New growth, highlights.</div>
+                <span class="use-tag tag-olive">Highlight Fronds</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #4a5a3a;"></div>
+            <div class="info">
+                <div class="name">Deep Jungle <span class="hex">#4A5A3A</span></div>
+                <div class="description">Darkest green. Shadow areas, depth in the foliage.</div>
+                <span class="use-tag tag-olive">Shadow</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #786446;"></div>
+            <div class="info">
+                <div class="name">Sepia Brown <span class="hex">#786446</span></div>
+                <div class="description">Trunk, stem, and shadow tones. Grounds the green.</div>
+                <span class="use-tag tag-sepia">Stems & Trunks</span>
+            </div>
+        </div>
+
+        <!-- BOLD ACCENT COLORS -->
+        <div class="group-header">
+            Bold Furniture Accents
+            <span class="tag">THE POP</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c503c;"></div>
+            <div class="info">
+                <div class="name">Forest Green <span class="hex">#3C503C</span></div>
+                <div class="description">Deep forest green for chairs or painted trim. Amplifies the tropical feel.</div>
+                <span class="use-tag tag-forest">Bold Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b46848;"></div>
+            <div class="info">
+                <div class="name">Terracotta <span class="hex">#B46848</span></div>
+                <div class="description">Warm earth accent. Grounds the green, adds warmth.</div>
+                <span class="use-tag tag-terracotta">Bold Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3a3a38;"></div>
+            <div class="info">
+                <div class="name">Charcoal <span class="hex">#3A3A38</span></div>
+                <div class="description">Sophisticated dark neutral. Modern edge to the tropical.</div>
+                <span class="use-tag tag-forest">Bold Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #c9a86c;"></div>
+            <div class="info">
+                <div class="name">Rattan Gold <span class="hex">#C9A86C</span></div>
+                <div class="description">Natural wicker/rattan tone. Classic tropical material.</div>
+                <span class="use-tag tag-sepia">Material Accent</span>
+            </div>
+        </div>
+
+        <!-- TRIM OPTIONS -->
+        <div class="group-header">
+            Trim & Molding
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f5f2ed;"></div>
+            <div class="info">
+                <div class="name">Soft White <span class="hex">#F5F2ED</span></div>
+                <div class="description">Clean, crisp trim. Lets the wallpaper do the talking.</div>
+                <span class="use-tag tag-trim">Trim</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c503c;"></div>
+            <div class="info">
+                <div class="name">Forest Green <span class="hex">#3C503C</span></div>
+                <div class="description">Bold painted trim. Maximum tropical impact. Very committed.</div>
+                <span class="use-tag tag-forest">Trim - Bold</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8956c 0%, #d4a574 50%, #b8956c 100%);"></div>
+            <div class="info">
+                <div class="name">Natural Oak</div>
+                <div class="description">Keep existing oak. Warm, colonial feeling.</div>
+                <span class="use-tag tag-trim">Trim - Wood</span>
+            </div>
+        </div>
+
+        <!-- CEILING -->
+        <div class="group-header">
+            Ceiling
+            <span class="tag">PAINT</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f8f6f2;"></div>
+            <div class="info">
+                <div class="name">Clean White <span class="hex">#F8F6F2</span></div>
+                <div class="description">Bright ceiling. Opens up space, provides contrast.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0ece0;"></div>
+            <div class="info">
+                <div class="name">Warm Cream <span class="hex">#F0ECE0</span></div>
+                <div class="description">Softer, warmer. Ties to wallpaper ground.</div>
+                <span class="use-tag tag-ceiling">Ceiling</span>
+            </div>
+        </div>
+
+        <!-- FURNITURE -->
+        <div class="group-header">
+            Furniture & Upholstery
+            <span class="tag">FURNISHINGS</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #5c3d2e 0%, #7a5240 50%, #5c3d2e 100%);"></div>
+            <div class="info">
+                <div class="name">Dark Mahogany</div>
+                <div class="description">Rich, colonial-style dining table. Classic tropical elegance.</div>
+                <span class="use-tag tag-furniture">Table</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #3c503c;"></div>
+            <div class="info">
+                <div class="name">Forest Velvet <span class="hex">#3C503C</span></div>
+                <div class="description">Deep green upholstered chairs. Maximum jungle drama.</div>
+                <span class="use-tag tag-forest">Chairs</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b46848;"></div>
+            <div class="info">
+                <div class="name">Terracotta Velvet <span class="hex">#B46848</span></div>
+                <div class="description">Warm earth-toned chairs. Bold but warmer than green.</div>
+                <span class="use-tag tag-terracotta">Chairs</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c9a86c 0%, #d4b07a 50%, #c9a86c 100%);"></div>
+            <div class="info">
+                <div class="name">Rattan / Cane</div>
+                <div class="description">Natural rattan chairs. Authentic tropical material. Lighter feeling.</div>
+                <span class="use-tag tag-sepia">Chairs</span>
+            </div>
+        </div>
+
+        <!-- TEXTILES -->
+        <div class="group-header">
+            Textiles & Soft Furnishings
+            <span class="tag">FABRIC</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #5a6a4a 20%, #c9a86c 40%, #b46848 60%, #786446 80%);"></div>
+            <div class="info">
+                <div class="name">Earthy Tribal</div>
+                <div class="description">Olive, rattan, terracotta, brown. Kilim, jute, or tribal-inspired rug.</div>
+                <span class="use-tag tag-textile">Rug</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #f0e8d8;"></div>
+            <div class="info">
+                <div class="name">Natural Linen <span class="hex">#F0E8D8</span></div>
+                <div class="description">Light, breezy curtains. Plantation shutters also work.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #5a6a4a;"></div>
+            <div class="info">
+                <div class="name">Olive Linen <span class="hex">#5A6A4A</span></div>
+                <div class="description">Heavier drapes matching palms. More dramatic, enveloping.</div>
+                <span class="use-tag tag-textile">Curtains</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background-color: #b46848;"></div>
+            <div class="info">
+                <div class="name">Terracotta Accents <span class="hex">#B46848</span></div>
+                <div class="description">Pillows, napkins, pottery. Warm earth pops.</div>
+                <span class="use-tag tag-terracotta">Accents</span>
+            </div>
+        </div>
+
+        <!-- METALS & MATERIALS -->
+        <div class="group-header">
+            Metals & Materials
+            <span class="tag">FIXTURES</span>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 30%, #ffd700 50%, #d4af37 70%, #b8860b 100%);"></div>
+            <div class="info">
+                <div class="name">Antique Brass</div>
+                <div class="description">Warm gold hardware. Colonial elegance. Chandelier, handles.</div>
+                <span class="use-tag tag-metal">Primary Metal</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #1a1a1a 0%, #333 50%, #1a1a1a 100%);"></div>
+            <div class="info">
+                <div class="name">Matte Black</div>
+                <div class="description">Modern contrast option. Ceiling fan, light fixtures.</div>
+                <span class="use-tag tag-metal">Modern Accent</span>
+            </div>
+        </div>
+
+        <div class="color-card">
+            <div class="swatch" style="background: linear-gradient(135deg, #c9a86c 0%, #e0c088 50%, #c9a86c 100%);"></div>
+            <div class="info">
+                <div class="name">Rattan & Wicker</div>
+                <div class="description">Natural materials. Pendant lights, mirror frames, baskets.</div>
+                <span class="use-tag tag-sepia">Natural Material</span>
+            </div>
+        </div>
+
+        <!-- THE COMBINATION -->
+        <div class="combo-section">
+            <h3>The Complete "Tropical Drama" Combination</h3>
+
+            <div class="combo-visual">
+                <div class="combo-stripe" style="background: #f8f6f2;">Ceiling</div>
+                <div class="combo-stripe" style="background: #e8e4d8;">Ground</div>
+                <div class="combo-stripe" style="background: #5a6a4a;">Palm</div>
+                <div class="combo-stripe" style="background: #3c503c;">Forest</div>
+                <div class="combo-stripe" style="background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #b8860b 100%);">Brass</div>
+            </div>
+
+            <p style="opacity: 0.8; line-height: 1.7;">
+                <strong>Ceiling:</strong> Clean White (#F8F6F2) |
+                <strong>Walls:</strong> Palm Fronds on Parchment (#E8E4D8) |
+                <strong>Trim:</strong> Soft White or Oak |
+                <strong>Chairs:</strong> Forest Green Velvet (#3C503C) |
+                <strong>Metals:</strong> Antique Brass
+            </p>
+        </div>
+
+        <!-- NOTES -->
+        <div class="notes-section">
+            <h3>Design Notes</h3>
+            <ul>
+                <li><strong>Green tile fireplace:</strong> The olive and forest greens in this palette are in perfect harmony with your fireplace tile. It will feel intentional and cohesive.</li>
+                <li><strong>The boldest option:</strong> This is maximalism. The room will be a statement. It's not subtle. Make sure you're ready to commit.</li>
+                <li><strong>The hutch question:</strong> Paint it forest green for full drama, or remove entirely. A wood hutch could work but might compete with the pattern.</li>
+                <li><strong>Scale matters:</strong> Tropical patterns should be LARGE. With 10'+ ceilings, go for palm fronds that feel life-sized.</li>
+                <li><strong>Colonial vibes:</strong> This palette channels British Colonial/plantation style. Dark wood, brass, rattan, and palms create that world.</li>
+                <li><strong>Terracotta vs. Forest:</strong> Choose your accent. Both work, but mixing them can get busy. Pick one for chairs/major accents.</li>
+                <li><strong>Mood:</strong> Dramatic dinner parties, conversation starter, memorable. This room will feel like an event.</li>
+                <li><strong>Crystal chandelier:</strong> Yes. A grand crystal chandelier is perfect here - colonial elegance meets jungle drama.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Dining Room "Tropical Drama" Palette | January 2025 | Bold Botanical Maximalism
+    </footer>
+
+</body>
+</html>
