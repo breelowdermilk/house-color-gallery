@@ -213,6 +213,282 @@
         "burgundy",
         "mantle"
       ]
+    },
+    {
+      "id": "parlor-022",
+      "filename": "parlor staircase black purple ottoman",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_black_purple_ottoman_1767331090050",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_black_purple_ottoman_1767331090050",
+      "walls": "Mixed",
+      "trim": "Purple",
+      "feature": "Staircase View",
+      "tags": [
+        "purple",
+        "ottoman",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-023",
+      "filename": "parlor staircase moody purple teal",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_moody_purple_teal_1767331054883",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_moody_purple_teal_1767331054883",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Staircase View",
+      "tags": [
+        "purple",
+        "teal",
+        "moody"
+      ]
+    },
+    {
+      "id": "parlor-024",
+      "filename": "parlor staircase final two tone bright purple",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_final_two_tone_bright_purple_1767331554716",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_final_two_tone_bright_purple_1767331554716",
+      "walls": "Mixed",
+      "trim": "Purple",
+      "feature": "Staircase View",
+      "tags": [
+        "purple",
+        "two",
+        "bright",
+        "final",
+        "tone"
+      ]
+    },
+    {
+      "id": "parlor-025",
+      "filename": "parlor staircase teal paneled purple",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_teal_paneled_purple_1767331074036",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_teal_paneled_purple_1767331074036",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Staircase View",
+      "tags": [
+        "purple",
+        "paneled",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-026",
+      "filename": "parlor main all teal jewel berry corrected",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_jewel_berry_corrected_1767332513614",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_jewel_berry_corrected_1767332513614",
+      "walls": "Teal",
+      "trim": "Mixed",
+      "feature": "Main Room",
+      "tags": [
+        "all",
+        "jewel",
+        "berry",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-027",
+      "filename": "parlor main all teal lavender ceiling panels",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_lavender_ceiling_panels_1767331931152",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_lavender_ceiling_panels_1767331931152",
+      "walls": "Teal",
+      "trim": "Mixed",
+      "feature": "Main Room",
+      "tags": [
+        "ceiling",
+        "all",
+        "panels",
+        "lavender",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-028",
+      "filename": "parlor main all teal velvet purple corrected",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_velvet_purple_corrected_1767332492308",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_velvet_purple_corrected_1767332492308",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "velvet",
+        "purple",
+        "all",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-029",
+      "filename": "parlor main subtle window pop fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_subtle_window_pop_fireplace_1767331714818",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_subtle_window_pop_fireplace_1767331714818",
+      "walls": "Mixed",
+      "trim": "Mixed",
+      "feature": "Main Room",
+      "tags": [
+        "window",
+        "subtle",
+        "fireplace",
+        "pop"
+      ]
+    },
+    {
+      "id": "parlor-030",
+      "filename": "parlor main all teal velvet purple fireplace natural tile",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_velvet_purple_fireplace_natural_tile_1767332250525",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_velvet_purple_fireplace_natural_tile_1767332250525",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "velvet",
+        "purple",
+        "tile",
+        "all",
+        "fireplace",
+        "teal",
+        "natural"
+      ]
+    },
+    {
+      "id": "parlor-031",
+      "filename": "parlor main hybrid all teal bright purple fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_hybrid_all_teal_bright_purple_fireplace_1767332090415",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_hybrid_all_teal_bright_purple_fireplace_1767332090415",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "hybrid",
+        "purple",
+        "bright",
+        "all",
+        "fireplace",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-032",
+      "filename": "parlor main all teal purple fireplace only",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_purple_fireplace_only_1767331729716",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_purple_fireplace_only_1767331729716",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "only",
+        "all",
+        "fireplace",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-033",
+      "filename": "parlor main all teal deep aubergine fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_deep_aubergine_fireplace_1767331915675",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_deep_aubergine_fireplace_1767331915675",
+      "walls": "Teal",
+      "trim": "Mixed",
+      "feature": "Main Room",
+      "tags": [
+        "deep",
+        "aubergine",
+        "all",
+        "fireplace",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-034",
+      "filename": "parlor main final two tone bright purple",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_final_two_tone_bright_purple_1767331540886",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_final_two_tone_bright_purple_1767331540886",
+      "walls": "Mixed",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "two",
+        "bright",
+        "final",
+        "tone"
+      ]
+    },
+    {
+      "id": "parlor-035",
+      "filename": "parlor main moody purple teal",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_moody_purple_teal_1767331120200",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_moody_purple_teal_1767331120200",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "teal",
+        "moody"
+      ]
+    },
+    {
+      "id": "parlor-036",
+      "filename": "parlor main black purple ottoman",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_black_purple_ottoman_1767331168336",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_black_purple_ottoman_1767331168336",
+      "walls": "Mixed",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "ottoman",
+        "black"
+      ]
+    },
+    {
+      "id": "parlor-037",
+      "filename": "parlor main teal purple two tone ceiling",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_teal_purple_two_tone_ceiling_1767331438075",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_teal_purple_two_tone_ceiling_1767331438075",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "ceiling",
+        "tone",
+        "two",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-038",
+      "filename": "parlor main teal purple refined lighter ceiling",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_teal_purple_refined_lighter_ceiling_1767331361084",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_teal_purple_refined_lighter_ceiling_1767331361084",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "ceiling",
+        "lighter",
+        "refined",
+        "teal"
+      ]
+    },
+    {
+      "id": "parlor-039",
+      "filename": "parlor main teal paneled purple",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_teal_paneled_purple_1767331136946",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_teal_paneled_purple_1767331136946",
+      "walls": "Teal",
+      "trim": "Purple",
+      "feature": "Main Room",
+      "tags": [
+        "purple",
+        "paneled",
+        "teal"
+      ]
     }
   ],
   "dining-room": [
@@ -857,6 +1133,279 @@
         "pink",
         "view",
         "blush"
+      ]
+    },
+    {
+      "id": "dining-room-058",
+      "filename": "Restyled Garden Floral",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_garden_floral_1767310166898",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_garden_floral_1767310166898",
+      "pattern": "Garden Floral",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "garden",
+        "floral"
+      ]
+    },
+    {
+      "id": "dining-room-059",
+      "filename": "Restyled Sunflower Gold",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_gold_1767310391161",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_gold_1767310391161",
+      "pattern": "Sunflower Gold",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "sunflower",
+        "gold"
+      ]
+    },
+    {
+      "id": "dining-room-060",
+      "filename": "Restyled Sunflower Green Pocket",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_green_pocket_1767310468548",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_green_pocket_1767310468548",
+      "pattern": "Sunflower Green Pocket",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "pocket",
+        "sunflower",
+        "green"
+      ]
+    },
+    {
+      "id": "dining-room-061",
+      "filename": "Restyled Dove Rose",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_dove_rose_1767310151177",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_dove_rose_1767310151177",
+      "pattern": "Dove Rose",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "dove",
+        "rose"
+      ]
+    },
+    {
+      "id": "dining-room-062",
+      "filename": "Restyled Sunflower Green Door",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_green_door_1767310506335",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_green_door_1767310506335",
+      "pattern": "Sunflower Green Door",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "door",
+        "sunflower",
+        "green"
+      ]
+    },
+    {
+      "id": "dining-room-063",
+      "filename": "Restyled Trapez Geo",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_trapez_geo_1767310545972",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_trapez_geo_1767310545972",
+      "pattern": "Trapez Geo",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "geo",
+        "trapez"
+      ]
+    },
+    {
+      "id": "dining-room-064",
+      "filename": "Restyled Sunflower Green Fireplace",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_green_fireplace_1767310447940",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_green_fireplace_1767310447940",
+      "pattern": "Sunflower Green Fireplace",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "fireplace",
+        "sunflower",
+        "green"
+      ]
+    },
+    {
+      "id": "dining-room-065",
+      "filename": "Restyled Gray Damask",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_gray_damask_1767310187211",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_gray_damask_1767310187211",
+      "pattern": "Gray Damask",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "damask",
+        "gray"
+      ]
+    },
+    {
+      "id": "dining-room-066",
+      "filename": "Restyled Snakeshead Retry",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_snakeshead_retry_1767310426757",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_snakeshead_retry_1767310426757",
+      "pattern": "Snakeshead Retry",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "snakeshead",
+        "retry"
+      ]
+    },
+    {
+      "id": "dining-room-067",
+      "filename": "Restyled Mustard Ceiling",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_mustard_ceiling_1767310275656",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_mustard_ceiling_1767310275656",
+      "pattern": "Mustard Ceiling",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "mustard",
+        "ceiling"
+      ]
+    },
+    {
+      "id": "dining-room-068",
+      "filename": "Restyled Lavender Chinoiserie",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_lavender_chinoiserie_1767310223806",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_lavender_chinoiserie_1767310223806",
+      "pattern": "Lavender Chinoiserie",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "lavender",
+        "chinoiserie"
+      ]
+    },
+    {
+      "id": "dining-room-069",
+      "filename": "Restyled Sunflower Mustard",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_mustard_1767310491020",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_mustard_1767310491020",
+      "pattern": "Sunflower Mustard",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "mustard",
+        "sunflower"
+      ]
+    },
+    {
+      "id": "dining-room-070",
+      "filename": "Restyled Sage Damask",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sage_damask_1767310290824",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sage_damask_1767310290824",
+      "pattern": "Sage Damask",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "damask",
+        "sage"
+      ]
+    },
+    {
+      "id": "dining-room-071",
+      "filename": "Restyled Target 2",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_target_2_1767310130305",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_target_2_1767310130305",
+      "pattern": "Target 2",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "target"
+      ]
+    },
+    {
+      "id": "dining-room-072",
+      "filename": "Restyled Chrysanthemum Pink Gold",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_chrysanthemum_pink_gold_1767310083518",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_chrysanthemum_pink_gold_1767310083518",
+      "pattern": "Chrysanthemum Pink Gold",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "pink",
+        "gold",
+        "chrysanthemum"
+      ]
+    },
+    {
+      "id": "dining-room-073",
+      "filename": "Restyled Bree Target",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_bree_target_1767310100645",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_bree_target_1767310100645",
+      "pattern": "Bree Target",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "bree",
+        "target"
+      ]
+    },
+    {
+      "id": "dining-room-074",
+      "filename": "Restyled Stockholm Floral",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_stockholm_floral_1767310370391",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_stockholm_floral_1767310370391",
+      "pattern": "Stockholm Floral",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "stockholm",
+        "floral"
+      ]
+    },
+    {
+      "id": "dining-room-075",
+      "filename": "Restyled Marigold Yellow",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_marigold_yellow_1767310238791",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_marigold_yellow_1767310238791",
+      "pattern": "Marigold Yellow",
+      "wainscoting": null,
+      "trim": null,
+      "view": "Restyled",
+      "type": "restyled",
+      "tags": [
+        "marigold",
+        "yellow"
       ]
     }
   ],
