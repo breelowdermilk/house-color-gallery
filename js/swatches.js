@@ -17,6 +17,27 @@ const Swatches = (function () {
   let allSwatches = [];
   let categories = [];
   let currentCategory = "all";
+  let unsubscribers = [];
+
+  function ratingButtonClass(rating) {
+    const base =
+      "rating-btn inline-flex h-8 w-9 items-center justify-center rounded-md border text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2";
+    const variants = {
+      like: "border-emerald-200 bg-emerald-50 text-emerald-800 hover:bg-emerald-100",
+      unsure: "border-amber-200 bg-amber-50 text-amber-800 hover:bg-amber-100",
+      dislike: "border-rose-200 bg-rose-50 text-rose-800 hover:bg-rose-100",
+    };
+    return `${base} ${variants[rating] || "border-slate-200 bg-white text-slate-700 hover:bg-slate-50"}`;
+  }
+
+  function cleanupSubscriptions() {
+    for (const unsub of unsubscribers) {
+      try {
+        if (typeof unsub === "function") unsub();
+      } catch (e) {}
+    }
+    unsubscribers = [];
+  }
 
   function $(selector) {
     return document.querySelector(selector);
@@ -50,8 +71,16 @@ const Swatches = (function () {
 
   function createSwatchCard(swatch) {
     const card = document.createElement("div");
-    card.className = "group relative overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer";
+    card.className = "group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow";
     card.dataset.swatchId = swatch.id;
+    card.dataset.imageId = swatch.id; // For Ratings module compatibility
+
+    // Image container (clickable)
+    const imgContainer = document.createElement("div");
+    imgContainer.className = "cursor-pointer";
+    imgContainer.addEventListener("click", () => {
+      openSwatchLightbox(swatch);
+    });
 
     const img = document.createElement("img");
     img.className = "h-40 w-full object-cover bg-slate-100";
@@ -59,30 +88,75 @@ const Swatches = (function () {
     img.alt = swatch.name || "Wallpaper swatch";
     img.src = swatch.thumbnail || swatch.url;
 
-    const overlay = document.createElement("div");
-    overlay.className = "absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity";
+    imgContainer.appendChild(img);
 
-    const info = document.createElement("div");
-    info.className = "absolute bottom-0 left-0 right-0 p-3";
+    // Meta section with name and rating buttons
+    const meta = document.createElement("div");
+    meta.className = "p-3";
 
     const name = document.createElement("p");
-    name.className = "text-sm font-medium text-white line-clamp-2";
+    name.className = "text-sm font-medium text-slate-900 line-clamp-2";
     name.textContent = swatch.name || swatch.id;
 
     const category = document.createElement("p");
-    category.className = "text-xs text-white/70 mt-0.5";
+    category.className = "text-xs text-slate-600 mt-0.5";
     category.textContent = swatch.category || "";
 
-    info.appendChild(name);
-    info.appendChild(category);
-    overlay.appendChild(info);
-    card.appendChild(img);
-    card.appendChild(overlay);
+    const footer = document.createElement("div");
+    footer.className = "mt-3 flex items-start justify-between gap-2";
 
-    // Click to view full size
-    card.addEventListener("click", () => {
-      openSwatchLightbox(swatch);
-    });
+    // Rating buttons
+    const buttons = document.createElement("div");
+    buttons.className = "flex items-center gap-1";
+    buttons.setAttribute("role", "group");
+    buttons.setAttribute("aria-label", "Rate this swatch");
+
+    const likeBtn = document.createElement("button");
+    likeBtn.type = "button";
+    likeBtn.className = ratingButtonClass("like");
+    likeBtn.textContent = "👍";
+    likeBtn.setAttribute("data-image-id", swatch.id);
+    likeBtn.setAttribute("data-rating", "like");
+
+    const unsureBtn = document.createElement("button");
+    unsureBtn.type = "button";
+    unsureBtn.className = ratingButtonClass("unsure");
+    unsureBtn.textContent = "❓";
+    unsureBtn.setAttribute("data-image-id", swatch.id);
+    unsureBtn.setAttribute("data-rating", "unsure");
+
+    const dislikeBtn = document.createElement("button");
+    dislikeBtn.type = "button";
+    dislikeBtn.className = ratingButtonClass("dislike");
+    dislikeBtn.textContent = "✖️";
+    dislikeBtn.setAttribute("data-image-id", swatch.id);
+    dislikeBtn.setAttribute("data-rating", "dislike");
+
+    buttons.appendChild(likeBtn);
+    buttons.appendChild(unsureBtn);
+    buttons.appendChild(dislikeBtn);
+
+    // Rating summary
+    const summary = document.createElement("div");
+    summary.className = "rating-summary flex items-center justify-end gap-1";
+    summary.setAttribute("data-rating-summary", "");
+    summary.setAttribute("data-image-id", swatch.id);
+
+    footer.appendChild(buttons);
+    footer.appendChild(summary);
+
+    meta.appendChild(name);
+    meta.appendChild(category);
+    meta.appendChild(footer);
+
+    card.appendChild(imgContainer);
+    card.appendChild(meta);
+
+    // Mount ratings if available
+    if (typeof Ratings !== "undefined" && Ratings.mountCard) {
+      const unsub = Ratings.mountCard(card, swatch.id);
+      if (typeof unsub === "function") unsubscribers.push(unsub);
+    }
 
     return card;
   }
@@ -95,17 +169,23 @@ const Swatches = (function () {
       lightbox.id = "swatch-lightbox";
       lightbox.className = "fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4";
       lightbox.innerHTML = `
-        <button class="absolute top-4 right-4 text-white text-3xl hover:text-slate-300">&times;</button>
+        <button class="lightbox-close absolute top-4 right-4 text-white text-3xl hover:text-slate-300">&times;</button>
         <div class="max-w-4xl max-h-[90vh] flex flex-col items-center">
-          <img class="max-h-[70vh] object-contain rounded-lg" src="" alt="">
-          <p class="text-white text-lg font-medium mt-4 text-center"></p>
-          <p class="text-white/70 text-sm mt-1"></p>
+          <img class="max-h-[60vh] object-contain rounded-lg" src="" alt="">
+          <p class="swatch-title text-white text-lg font-medium mt-4 text-center"></p>
+          <p class="swatch-category text-white/70 text-sm mt-1"></p>
+          <div class="swatch-rating-bar flex items-center gap-3 mt-4">
+            <button class="rating-btn rating-like px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium" data-rating="like">👍 Like</button>
+            <button class="rating-btn rating-unsure px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium" data-rating="unsure">❓ Unsure</button>
+            <button class="rating-btn rating-dislike px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-medium" data-rating="dislike">✖️ Dislike</button>
+          </div>
+          <div class="swatch-votes flex items-center gap-2 mt-3"></div>
         </div>
       `;
       document.body.appendChild(lightbox);
 
       // Close handlers
-      lightbox.querySelector("button").addEventListener("click", () => {
+      lightbox.querySelector(".lightbox-close").addEventListener("click", () => {
         lightbox.classList.add("hidden");
       });
       lightbox.addEventListener("click", (e) => {
@@ -119,21 +199,74 @@ const Swatches = (function () {
     }
 
     const img = lightbox.querySelector("img");
-    const title = lightbox.querySelector("p");
-    const cat = lightbox.querySelectorAll("p")[1];
+    const title = lightbox.querySelector(".swatch-title");
+    const cat = lightbox.querySelector(".swatch-category");
+    const ratingBar = lightbox.querySelector(".swatch-rating-bar");
+    const votesDisplay = lightbox.querySelector(".swatch-votes");
 
     img.src = swatch.url;
     img.alt = swatch.name;
     title.textContent = swatch.name;
     cat.textContent = swatch.category || "";
 
+    // Store current swatch ID for rating
+    lightbox.dataset.swatchId = swatch.id;
+
+    // Bind rating buttons
+    ratingBar.querySelectorAll(".rating-btn").forEach(btn => {
+      btn.onclick = async () => {
+        const rating = btn.dataset.rating;
+        if (typeof Ratings !== "undefined" && Ratings.setRating) {
+          await Ratings.setRating(swatch.id, rating);
+          updateLightboxVotes(swatch.id, votesDisplay, ratingBar);
+        }
+      };
+    });
+
+    // Load and display votes
+    updateLightboxVotes(swatch.id, votesDisplay, ratingBar);
+
     lightbox.classList.remove("hidden");
+  }
+
+  async function updateLightboxVotes(swatchId, votesDisplay, ratingBar) {
+    let ratings = {};
+    if (typeof Ratings !== "undefined" && Ratings.getRatings) {
+      ratings = await Ratings.getRatings(swatchId);
+    }
+
+    const currentUser = (typeof App !== "undefined" && App.getUser?.()) || localStorage.getItem("houseColorUser") || "Guest";
+    const userRating = ratings[currentUser];
+
+    // Highlight active button
+    ratingBar.querySelectorAll(".rating-btn").forEach(btn => {
+      const rating = btn.dataset.rating;
+      if (rating === userRating) {
+        btn.classList.add("ring-2", "ring-white", "ring-offset-2", "ring-offset-black");
+      } else {
+        btn.classList.remove("ring-2", "ring-white", "ring-offset-2", "ring-offset-black");
+      }
+    });
+
+    // Show votes
+    const votes = Object.entries(ratings);
+    if (votes.length === 0) {
+      votesDisplay.innerHTML = '<span class="text-white/50">No votes yet</span>';
+    } else {
+      votesDisplay.innerHTML = votes.map(([user, rating]) => {
+        const emoji = rating === "like" ? "👍" : rating === "unsure" ? "❓" : "✖️";
+        return `<span class="px-2 py-1 rounded bg-white/20 text-white text-sm">${user} ${emoji}</span>`;
+      }).join("");
+    }
   }
 
   function renderSwatches() {
     const grid = $(SELECTORS.grid);
     const countEl = $(SELECTORS.count);
     if (!grid) return;
+
+    // Cleanup previous subscriptions
+    cleanupSubscriptions();
 
     const filtered = getFilteredSwatches();
     grid.innerHTML = "";
