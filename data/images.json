@@ -1524,6 +1524,169 @@
         "strawberry",
         "slate"
       ]
+    },
+    {
+      "id": "office-008",
+      "filename": "Office - Current Setup Wide View Closet - Stripped Brown Oak",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Brown%20Oak",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Brown%20Oak",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Brown Oak",
+      "tags": [
+        "brown",
+        "wide",
+        "oak",
+        "stripped",
+        "view",
+        "closet"
+      ]
+    },
+    {
+      "id": "office-009",
+      "filename": "Office - Current Setup Bay Window Dual Desks - Stripped Empty",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Bay%20Window%20Dual%20Desks%20-%20Stripped%20Empty",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Bay%20Window%20Dual%20Desks%20-%20Stripped%20Empty",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Empty",
+      "tags": [
+        "bay",
+        "desks",
+        "stripped",
+        "dual",
+        "empty",
+        "window"
+      ]
+    },
+    {
+      "id": "office-010",
+      "filename": "Office - Current Setup Entry Door Guitar Art - Stripped Empty",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Empty",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Empty",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Empty",
+      "tags": [
+        "guitar",
+        "entry",
+        "stripped",
+        "door",
+        "empty",
+        "art"
+      ]
+    },
+    {
+      "id": "office-011",
+      "filename": "Office - Current Setup Monitors Closet Door - Stripped Empty",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Monitors%20Closet%20Door%20-%20Stripped%20Empty",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Monitors%20Closet%20Door%20-%20Stripped%20Empty",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Empty",
+      "tags": [
+        "stripped",
+        "monitors",
+        "door",
+        "empty",
+        "closet"
+      ]
+    },
+    {
+      "id": "office-012",
+      "filename": "Office - Current Setup Wide View Closet - Stripped Empty",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Empty",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Empty",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Empty",
+      "tags": [
+        "wide",
+        "stripped",
+        "empty",
+        "view",
+        "closet"
+      ]
+    },
+    {
+      "id": "office-013",
+      "filename": "Office - Current Setup Both Doors Wide - Stripped Empty",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Empty",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Empty",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Empty",
+      "tags": [
+        "both",
+        "empty",
+        "wide",
+        "stripped",
+        "doors"
+      ]
+    },
+    {
+      "id": "office-014",
+      "filename": "Office - Current Setup Both Doors Wide - Stripped Brown Oak",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Brown%20Oak",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Brown%20Oak",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Brown Oak",
+      "tags": [
+        "both",
+        "brown",
+        "wide",
+        "oak",
+        "stripped",
+        "doors"
+      ]
+    },
+    {
+      "id": "office-015",
+      "filename": "Office - Current Setup Entry Door Guitar Art - Stripped Brown Oak",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Brown%20Oak",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Brown%20Oak",
+      "walls": "Current",
+      "wainscoting": null,
+      "feature": "Stripped Brown Oak",
+      "tags": [
+        "guitar",
+        "entry",
+        "brown",
+        "oak",
+        "stripped",
+        "door",
+        "art"
+      ]
+    },
+    {
+      "id": "office-016",
+      "filename": "Concept - Crimson Pop Sofa",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Concept%20-%20Crimson%20Pop%20Sofa",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Concept%20-%20Crimson%20Pop%20Sofa",
+      "walls": "Concept",
+      "wainscoting": null,
+      "feature": "Crimson Pop Sofa",
+      "tags": [
+        "pop",
+        "concept",
+        "crimson",
+        "sofa"
+      ]
+    },
+    {
+      "id": "office-017",
+      "filename": "Concept - The Zimmer Style",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Concept%20-%20The%20Zimmer%20Style",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Concept%20-%20The%20Zimmer%20Style",
+      "walls": "Concept",
+      "wainscoting": null,
+      "feature": "The Zimmer Style",
+      "tags": [
+        "style",
+        "concept",
+        "zimmer"
+      ]
     }
   ]
 }
