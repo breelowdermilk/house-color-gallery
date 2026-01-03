@@ -1,0 +1,4969 @@
+{
+  "exportedAt": "2026-01-03T03:08:26.496Z",
+  "summary": {
+    "images": 258,
+    "ratings": 699,
+    "comments": 128
+  },
+  "data": {
+    "121027---navy-blue-gold-bronze-geo-trellis": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:40:25.118Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:48.919Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:33:34.144Z"
+        }
+      },
+      "comments": []
+    },
+    "acanthus-w0175-01---sage-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:56.624Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:56:24.970Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:11.852Z"
+        }
+      },
+      "comments": []
+    },
+    "art-deco-104299---black-gold-geometric-fan": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:05.442Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:32.068Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:17.850Z"
+        }
+      },
+      "comments": []
+    },
+    "attingham-w0193-02---blue-green-art-nouveau-floral": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:39:36.412Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:26.529Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:09.815Z"
+        }
+      },
+      "comments": []
+    },
+    "attingham-w0193-03---teal-cream-art-nouveau-floral": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:38:29.287Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:06.092Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:50.349Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "JUh8QfHIn9suyPMOAB4f",
+          "user": "Anna",
+          "text": "LOVE",
+          "timestamp": 1767397111183
+        }
+      ]
+    },
+    "bird-anemone-216958---olive-turquoise-teal-birds-m": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:31:29.792Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:04.695Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:15.504Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "h7kYvc8lrdFJb1BdP3IW",
+          "user": "Anna",
+          "text": "Wish there weren't animals but I love this one",
+          "timestamp": 1767396701191
+        }
+      ]
+    },
+    "bird-pomegranate-124260---deep-green-birds-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:33:46.204Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:45.565Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:29:43.187Z"
+        }
+      },
+      "comments": []
+    },
+    "bird-pomegranate-212538---turquoise-coral-teal-pin": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:31:57.620Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:12.666Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:34.658Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "6nOYkNZmi05q42UfvRzN",
+          "user": "Anna",
+          "text": "Love the colors, not the birds",
+          "timestamp": 1767396721644
+        }
+      ]
+    },
+    "bird-pomegranate-212539---bayleaf-cream-green-bird": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:34:34.169Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:57:00.778Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:30:00.925Z"
+        }
+      },
+      "comments": []
+    },
+    "blackthorn-216857---green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:40.968Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:44.533Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:25.271Z"
+        }
+      },
+      "comments": []
+    },
+    "blackthorn-hoh---billiard-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:32:08.839Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:28.277Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:28:43.306Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Go3ocl9vjYvy0bkHbmgS",
+          "user": "Anna",
+          "text": "Love the colors, too busy",
+          "timestamp": 1767396735029
+        }
+      ]
+    },
+    "blackthorn-hoh---tourmaline-pink-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:51.858Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:20.223Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:02.581Z"
+        }
+      },
+      "comments": []
+    },
+    "bower-217205---boughs-green-rose-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:59.423Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:23.683Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:09.279Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "ZXMcxuMOz7U2QppYi6k5",
+          "user": "Anna",
+          "text": "Maybe too busy?",
+          "timestamp": 1767396782773
+        }
+      ]
+    },
+    "cole-and-son-cow-parsley---charcoal-dark-botanical": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:28:21.149Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:50:30.986Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:12.010Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "KA1WI8oI7LMUKP2lfIx9",
+          "user": "Anna",
+          "text": "Might work if there's an interesting paint color?",
+          "timestamp": 1767396510595
+        }
+      ]
+    },
+    "cole-and-son-hummingbirds---charcoal-ginger-dark-b": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:27:57.712Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:50:04.900Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:01.879Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-and-son-palm-jungle---green-black-dark-botani": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:28:02.970Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:49:28.414Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:02.799Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-116-3010---floral-kingdom-rose-forest-cha": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:36:08.935Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:21.889Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:32.111Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "H630vhi0CQ5ctAGsfbv5",
+          "user": "Bree",
+          "text": "LOVE",
+          "timestamp": 1767409046295
+        },
+        {
+          "id": "NxWAkYahT8TpPYi4nNAZ",
+          "user": "Anna",
+          "text": "LOVE",
+          "timestamp": 1767396971374
+        }
+      ]
+    },
+    "cole-son-byron---teal-silver-olive-peacock-art-nou": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:25:35.831Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:47:39.349Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:25:48.695Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-hummingbirds-112-4014---viridian-green-ex": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:15.127Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:09.834Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:25.743Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-hummingbirds-112-4017---charcoal-ginger-d": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:27:16.278Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:49:07.931Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:53.131Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-hummingbirds-124-1005---fuchsia-on-racing": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:44.267Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:39.144Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:32.549Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-hummingbirds-flora-124-2012---fuchsia-on-": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:27:24.289Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:49:13.926Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:26:56.142Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "LUbkB9Mt8GREdzu5c8wl",
+          "user": "Anna",
+          "text": "I like how simple this is",
+          "timestamp": 1767396450211
+        }
+      ]
+    },
+    "cole-son-hummingbirds-flora-124-2013---multi-old-o": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:46.622Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:48:43.816Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:26:37.754Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-japanese-chinoiserie-126-5012---pink-opal": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:32.603Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:15.549Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:45.830Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-japanese-chinoiserie-126-5015---orchid-pi": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:30:50.533Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:55:45.983Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:01.718Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-japanese-chinoiserie-126-5016---antique-g": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:22.362Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:17.882Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:35.171Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-japanese-woods-126-6018---charcoal-japane": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:30:48.245Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:55:32.940Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:51.083Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "2AZk5s0Bi2BXPrA3MFKr",
+          "user": "Bree",
+          "text": "for office",
+          "timestamp": 1767408935808
+        }
+      ]
+    },
+    "cole-son-japanese-woods-126-6022---patina-gold-jap": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:31:04.285Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:55:39.653Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:53.136Z"
+        }
+      },
+      "comments": []
+    },
+    "cole-son-singita-109-7034---olive-green-jungle-bir": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:27:49.280Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:49:17.879Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:57.553Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "TmvNRQOBiSgXTWm4garP",
+          "user": "Anna",
+          "text": "I like it but too busy",
+          "timestamp": 1767396468656
+        }
+      ]
+    },
+    "cole-son-singita-109-7035---viridian-green-jungle-": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:26:27.050Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:13.552Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:27.354Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "81v4iEfKAUBojScwuB3c",
+          "user": "Anna",
+          "text": "I like the colors but maybe too much going on?",
+          "timestamp": 1767396386085
+        }
+      ]
+    },
+    "crocodile-effect-32-659---charcoal-gray-texture-an": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:38:22.542Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:59.123Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:37.653Z"
+        }
+      },
+      "comments": []
+    },
+    "crocodile-effect-32-663---green-texture-animal-pri": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:09.683Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:37.313Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:23.308Z"
+        }
+      },
+      "comments": []
+    },
+    "crown-flora-nouveau---peacock-green-teal-gold-art-": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:25:04.231Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:47:23.580Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:25:20.721Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "3YPCZpRrtluFTOPlJHwL",
+          "user": "Bree",
+          "text": "Test swatch comment - 1767326672017",
+          "timestamp": 1767326672038
+        }
+      ]
+    },
+    "dewdrops-misp1358---yellow-mustard-midcentury-retr": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:39:41.525Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:24.795Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:04.384Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "XnKJyHUOwW1ohmxrLifq",
+          "user": "Anna",
+          "text": "Feels too 70s but maybe is good??",
+          "timestamp": 1767397188563
+        }
+      ]
+    },
+    "dining-room-001": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:48:26.805Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:39:08.435Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:21:57.283Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "y2fVKLsvumalxuqkWZvj",
+          "user": "Anna",
+          "text": "It feels maybe a little too traditional? But I do like the green color paint maybe with wallpaper on the one wall and not all of them?",
+          "timestamp": 1767383305328
+        },
+        {
+          "id": "mlc72rlVCbAJ9KSVs8NU",
+          "user": "Riley",
+          "text": "I think not wood. Just. Not into it personally!",
+          "timestamp": 1767374025998
+        }
+      ]
+    },
+    "dining-room-002": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:48:49.076Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:14.674Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:21:49.738Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "f0dc6uiSfa0lw1AKyWI7",
+          "user": "Anna",
+          "text": "I feel like I like aspects of this but it feels a little old person and not us?",
+          "timestamp": 1767383328316
+        }
+      ]
+    },
+    "dining-room-003": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:58:38.371Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-004": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:58:41.121Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-005": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:48:54.796Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:18.701Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:14:13.644Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-006": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:51:23.852Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:39:21.426Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:14:17.793Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "t37YY41Jgm9RdG9dPqrQ",
+          "user": "Anna",
+          "text": "I like the green and the colors of the wallpaper, would prefer not flowers but like this overall vibe!",
+          "timestamp": 1767383482858
+        }
+      ]
+    },
+    "dining-room-007": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:51:54.235Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:26.371Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "451AgcUH05pJCD0woHjh",
+          "user": "Anna",
+          "text": "I'm less interested in the banquette because of the flow between rooms but open to seeing it in a different place?",
+          "timestamp": 1767383553051
+        },
+        {
+          "id": "Y1jDa3CHgVKKMSZxg0Dy",
+          "user": "Anna",
+          "text": "I like the white bottom and the colors of the wallpaper, just less floral",
+          "timestamp": 1767383513553
+        },
+        {
+          "id": "zq7h4WWU1cRC8AJnHGFZ",
+          "user": "Riley",
+          "text": "I think it makes a lot of sense to utilize that space but curious what would happen with the radiator? It’s already pretty cold in that room.",
+          "timestamp": 1767374118493
+        }
+      ]
+    },
+    "dining-room-008": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:39:31.266Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "LeoprXuQuPlm53w2oykN",
+          "user": "Anna",
+          "text": "Again I like the white bottom and colors of the wallpaper just less floral",
+          "timestamp": 1767383529139
+        }
+      ]
+    },
+    "dining-room-009": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:53:02.212Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:39:38.597Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:10:04.299Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "AJtRcsZuomiGTD0DDTVV",
+          "user": "Anna",
+          "text": "It's a little straight laced/old lady Victorian for us but also I like it? So that's confusing haha",
+          "timestamp": 1767383581174
+        }
+      ]
+    },
+    "dining-room-010": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:53:26.635Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:39:40.224Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:10:15.002Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Dkz0uuRvA96QMS5IxRrz",
+          "user": "Anna",
+          "text": "Pretty, but a little old lady? But not a bad thing!",
+          "timestamp": 1767383605072
+        },
+        {
+          "id": "PmVtM7UFauyxjAV2p0Xm",
+          "user": "Riley",
+          "text": "And also having the teal makes it an easy transition from the other room (assuming we also do teal there)",
+          "timestamp": 1767374484546
+        },
+        {
+          "id": "OvHg2ADWR919EynssTgK",
+          "user": "Riley",
+          "text": "I really like this and in terms of what the internet says, pink and sage green are colors that are good for dining rooms",
+          "timestamp": 1767374447815
+        }
+      ]
+    },
+    "dining-room-011": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:53:50.809Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:43.037Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:15:50.098Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "ibDqKquepmisRuEv4H5H",
+          "user": "Anna",
+          "text": "I think I like it? But a little old? Maybe slightly less decorative wallpaper?",
+          "timestamp": 1767383630060
+        }
+      ]
+    },
+    "dining-room-012": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:10.576Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-013": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:14.385Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-014": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:54:00.251Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:47.602Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:15:52.494Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "P7VIoZI4F0rdRP9IQvUv",
+          "user": "Anna",
+          "text": "A little too old person",
+          "timestamp": 1767383639356
+        }
+      ]
+    },
+    "dining-room-015": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:54:15.524Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:39:52.448Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:10:33.037Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "9B1VoQoGS9k4liy28JFp",
+          "user": "Anna",
+          "text": "Too femme/B&B old lady",
+          "timestamp": 1767383654445
+        }
+      ]
+    },
+    "dining-room-016": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:24.599Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-017": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:26.561Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-018": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:54:27.413Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:39:55.076Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:15:57.489Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-019": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:54:32.713Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:40:03.111Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:15:59.814Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-020": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:38.992Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-021": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:54:57.154Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:40:11.388Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:10:50.644Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "4vlFuFZhuBpce6H78s6C",
+          "user": "Anna",
+          "text": "I actually love this??",
+          "timestamp": 1767383695929
+        }
+      ]
+    },
+    "dining-room-022": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:55.775Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-023": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T21:59:58.177Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-024": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:02.924Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-025": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:56:08.888Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:40:17.873Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:16:07.370Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "rxUZyY86KPvdJgwxFhKW",
+          "user": "Anna",
+          "text": "I love the wallpaper and color of the walls. Not sure about ceiling??",
+          "timestamp": 1767383766979
+        }
+      ]
+    },
+    "dining-room-026": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:56:11.945Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:40:20.895Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:00.987Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-027": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:13.956Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-028": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:21.561Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-029": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:29.827Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-030": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:56:27.000Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:40:30.492Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:11:04.658Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "iqb3b5bCgEIeW4UprxgU",
+          "user": "Anna",
+          "text": "I actually love the green and white combo, classic but not old?",
+          "timestamp": 1767383786036
+        }
+      ]
+    },
+    "dining-room-031": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:37.290Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-032": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:41.140Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-033": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:56:48.073Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:41:32.019Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:11:09.287Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Jh50XFiGpujMFHiE3NSH",
+          "user": "Anna",
+          "text": "Love this, Maybe less decorative on the wallpaper, but overall vibe is great",
+          "timestamp": 1767383807081
+        }
+      ]
+    },
+    "dining-room-034": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:00:48.613Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-035": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:57:10.877Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:41:41.392Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:11:13.426Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "nDQKtdjXmsRxhDnRj6k0",
+          "user": "Anna",
+          "text": "I really like the green and brown colors but not the wallpaper",
+          "timestamp": 1767383824875
+        }
+      ]
+    },
+    "dining-room-036": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:57:30.382Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:41:55.141Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:11:18.458Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "tgSUfRGPwROw6YzoeKPZ",
+          "user": "Anna",
+          "text": "Like the green, but not the wallpaper- way too loud for me",
+          "timestamp": 1767383848566
+        },
+        {
+          "id": "TtnegHNVzJzmZlw443Gm",
+          "user": "Riley",
+          "text": "Feels a little loud but I like it kind of?",
+          "timestamp": 1767374193867
+        }
+      ]
+    },
+    "dining-room-037": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:57:35.573Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:41:58.581Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:20.647Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-038": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:57:39.149Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:42:00.461Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:24.227Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-039": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:57:41.607Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:42:02.158Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:25.756Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-040": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:57:45.979Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:42:03.529Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:29.636Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-041": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:57:47.615Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:42:04.743Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:31.756Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-042": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:58:21.728Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:42:20.658Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:11:39.409Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "SgjpioEv47qdTRylXgoC",
+          "user": "Bree",
+          "text": "it's too large - i would want something much smaller pattern wise",
+          "timestamp": 1767408139203
+        },
+        {
+          "id": "yn0ZD3ClBO5fQqgv2HOy",
+          "user": "Anna",
+          "text": "I love the colors, but the geometric pattern is way too much",
+          "timestamp": 1767383901019
+        }
+      ]
+    },
+    "dining-room-043": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:06.453Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-044": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:58:25.413Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:42:25.388Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:41.687Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-045": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:14.724Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-046": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:16.782Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-047": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:18.104Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-048": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:19.813Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-049": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:23.101Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-050": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:24.922Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-051": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:58:30.628Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:43:27.138Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:46.409Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-052": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:58:35.484Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:44:11.946Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:48.417Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-053": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:58:57.737Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:44:02.951Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:50.096Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "h2c4HGltSzaGKgi9X1Aw",
+          "user": "Anna",
+          "text": "I'm into the wallpaper if it's less decorative, not sure about the bottom color",
+          "timestamp": 1767383936874
+        }
+      ]
+    },
+    "dining-room-054": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:45.553Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-055": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:59:20.540Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:44:15.648Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:51.597Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "FoW3bkh5iDQHP0qX24XO",
+          "user": "Anna",
+          "text": "Love the colors, wish wallpaper was less decorative",
+          "timestamp": 1767383959817
+        }
+      ]
+    },
+    "dining-room-056": {
+      "ratings": {
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-01T22:02:52.134Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-057": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:59:23.672Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:44:19.594Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:11:54.618Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-058": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:00:10.988Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:44:26.751Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:11:58.705Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "g2z4GAr98KeBAEiOiSlR",
+          "user": "Anna",
+          "text": "I kinda love it and also it's old person feeling??",
+          "timestamp": 1767384010208
+        }
+      ]
+    },
+    "dining-room-059": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:00:17.269Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:44:31.845Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:03.056Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-060": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:00:19.246Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:44:33.900Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:05.346Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-061": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:00:28.015Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:44:42.521Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:12:08.307Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "OSoeIm5u9er4p8nu6Z8i",
+          "user": "Anna",
+          "text": "I'm surprised how much I like this!",
+          "timestamp": 1767384027180
+        }
+      ]
+    },
+    "dining-room-062": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:00:33.562Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:44:45.365Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:14.236Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-063": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:00:50.993Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:44:50.281Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:12:17.266Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "2kd1xCkSyGoVVAzHXTpa",
+          "user": "Anna",
+          "text": "Love the colors, not the wallpaper",
+          "timestamp": 1767384049687
+        }
+      ]
+    },
+    "dining-room-064": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:00:53.040Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:44:52.929Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:20.396Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-065": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:09.973Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:45:00.565Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:23.486Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "o97OhkI7UFO1NU5BmTz5",
+          "user": "Anna",
+          "text": "Maybe old person-y but also nice and simple?",
+          "timestamp": 1767384064177
+        }
+      ]
+    },
+    "dining-room-066": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:13.257Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:45:09.760Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:12:29.126Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "ddmbXeZvGpXhJ4DJduUQ",
+          "user": "Riley",
+          "text": "Love this",
+          "timestamp": 1767374235081
+        }
+      ]
+    },
+    "dining-room-067": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:29.433Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:45:18.905Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:12:36.616Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Dub0XpP2Lo7dqqTbPRtI",
+          "user": "Anna",
+          "text": "Surprised that I love both of these wallpaper/colors but maybe not together?",
+          "timestamp": 1767384088522
+        }
+      ]
+    },
+    "dining-room-068": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:01:34.421Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:45:29.003Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:12:40.786Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-069": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:41.179Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:45:32.027Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:12:45.867Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-070": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:44.886Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:45:39.028Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:12:48.187Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-071": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:01:49.166Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:45:45.383Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:17:41.773Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-072": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:52.955Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:45:56.101Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:12:57.447Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-073": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:01:55.697Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:45:59.380Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:17:46.658Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-074": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:01:57.729Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:46:05.287Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:13:09.886Z"
+        }
+      },
+      "comments": []
+    },
+    "dining-room-075": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:01:59.549Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:46:18.945Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:13:12.968Z"
+        }
+      },
+      "comments": []
+    },
+    "dove-and-rose-140478---purple-teal-floral-birds-mo": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:38:46.225Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T03:00:04.591Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:47.254Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "swUX1vIxEM1Neq5unUvQ",
+          "user": "Anna",
+          "text": "Too decorative? But colors are so pretty",
+          "timestamp": 1767397132511
+        }
+      ]
+    },
+    "dove-and-rose-140480---green-pink-floral-birds-mor": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:32.715Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:43.399Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:11.589Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "WnjdY2fXoWdVbubtUQ3b",
+          "user": "Anna",
+          "text": "Wish it didn't have birds but love it",
+          "timestamp": 1767396817908
+        }
+      ]
+    },
+    "erismann-paradisio-10121-18---blue-green-toucans-h": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:12.014Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:06.214Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:22.324Z"
+        }
+      },
+      "comments": []
+    },
+    "eternity-104065---cream-gold-geometric-circles": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:38:26.257Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:58.073Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:40.466Z"
+        }
+      },
+      "comments": []
+    },
+    "eternity-104068---teal-gold-geometric-circles": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:37:29.421Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:59.298Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "VIf09wv23pPqtiVcON3L",
+          "user": "Anna",
+          "text": "LOVE",
+          "timestamp": 1767397051411
+        }
+      ]
+    },
+    "fan-104303---black-gold-art-deco-geometric": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:39:51.484Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:30.328Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:07.168Z"
+        }
+      },
+      "comments": []
+    },
+    "fruit-216859---beige-gold-coral-pomegranate-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:20.966Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:40.869Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:15.306Z"
+        }
+      },
+      "comments": []
+    },
+    "fruit-510018---tangled-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:28.217Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:16.366Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:49.174Z"
+        }
+      },
+      "comments": []
+    },
+    "full-bloom-navy---a-street-2821-12902": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:16.029Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:57:09.585Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:30:41.402Z"
+        }
+      },
+      "comments": []
+    },
+    "garden-140495---green-floral-morris-arts-crafts": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:33.751Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:17.274Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:28:54.460Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "HWMZNKx9NARHqbRczeJ9",
+          "user": "Anna",
+          "text": "Can't tell if it's too busy",
+          "timestamp": 1767396757844
+        }
+      ]
+    },
+    "geometric-weave-333656---purple-geometric-texture": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:38:07.246Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:50.723Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:32:26.317Z"
+        }
+      },
+      "comments": []
+    },
+    "golden-lily-hoh---apatite-green-pink-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:34:13.359Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:52.463Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:50.916Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "F6n1O8WrI9hHuy3u061c",
+          "user": "Anna",
+          "text": "Maybe too busy but I love the bold colors",
+          "timestamp": 1767396860077
+        }
+      ]
+    },
+    "golden-lily-hoh---midnight-teal-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:56.066Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:47.350Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:37.953Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "mA5cBzXsRJf9Fv3U8h4u",
+          "user": "Anna",
+          "text": "Maybe too busy, but so beautiful.",
+          "timestamp": 1767396844349
+        }
+      ]
+    },
+    "graham-brown-120659---navy-grasscloth-texture": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:50.450Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:01:02.362Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:33:56.385Z"
+        }
+      },
+      "comments": []
+    },
+    "graham-brown-tigerlily---midnight-blue-orange-purp": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:29:06.909Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:50:56.364Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:27:26.307Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "l47iQE4yiDMqFtl0KqQA",
+          "user": "Anna",
+          "text": "Nice colors, a little busy",
+          "timestamp": 1767396551258
+        }
+      ]
+    },
+    "graham-brown-wallflower-night-garden---black-pops-": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:28:58.713Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:51:03.681Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:27:23.257Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "WaWE8dWweZD7dcTcsMkS",
+          "user": "Anna",
+          "text": "Too busy but nice colors",
+          "timestamp": 1767396542750
+        }
+      ]
+    },
+    "happywall-71457---velveteen-teal-flowers": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:34:54.672Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:11.050Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:30:33.806Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "7pAM7hGukKvKM5xsp2Sw",
+          "user": "Anna",
+          "text": "Especially for hallway?",
+          "timestamp": 1767396906350
+        },
+        {
+          "id": "GW1GHzkYM0S13621HXHM",
+          "user": "Anna",
+          "text": "Maybe too dark but maybe beautiful?",
+          "timestamp": 1767396900648
+        }
+      ]
+    },
+    "holden-jungle-animals-90690---navy-blue-tropical-b": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:37.810Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:18.654Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:28.852Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "fdryoExaTDDgPjnyRSg4",
+          "user": "Anna",
+          "text": "Great for Elia's room :)",
+          "timestamp": 1767396396985
+        }
+      ]
+    },
+    "honeysuckle-216842---green-beige-pink-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:34:24.255Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:56:54.216Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:52.605Z"
+        }
+      },
+      "comments": []
+    },
+    "honeysuckle-dmc1hs102---green-coral-pink-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:51.596Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:46.449Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:41.053Z"
+        }
+      },
+      "comments": []
+    },
+    "house-of-hackney---hollyhocks-winter-teal-berry-pi": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:35:10.230Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:57:13.222Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:30:36.616Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "MCDHN2S1jio3fFkFszQM",
+          "user": "Anna",
+          "text": "Maybe too busy?",
+          "timestamp": 1767396913318
+        }
+      ]
+    },
+    "house-of-hackney-artemis---black-red-blue-wildflow": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:14.665Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:50:53.394Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:28.530Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "AAIkOoqRc0PmqD4tKZ13",
+          "user": "Anna",
+          "text": "Too busy",
+          "timestamp": 1767396557213
+        }
+      ]
+    },
+    "house-of-hackney-golden-lily---midnight-teal-green": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:25:26.493Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:47:32.411Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:25:36.085Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "1x531FlY2UoUKEjrlx7i",
+          "user": "Anna",
+          "text": "I like the colors but the design might be slightly too busy for me?",
+          "timestamp": 1767396323398
+        }
+      ]
+    },
+    "house-of-hackney-midnight-garden---multi-pink-gree": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:28:07.018Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:50:22.890Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:06.852Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "AlRHaCzcvS4isEiGMdL1",
+          "user": "Anna",
+          "text": "Feels a little old lady?",
+          "timestamp": 1767396491602
+        }
+      ]
+    },
+    "house-of-hackney-papavera---noir-gothic-poppies-am": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:28:53.155Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:50:47.433Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:27:17.977Z"
+        }
+      },
+      "comments": []
+    },
+    "hovia-ornament---dark-green-pink-floral-mural": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:35:43.303Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:17.606Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:30:54.642Z"
+        }
+      },
+      "comments": []
+    },
+    "kelapa-112973---pink-blush-tropical-palm-leaves": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:39:05.762Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:53.150Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:56.808Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "aLB7bmA17qia3ARvFpvm",
+          "user": "Anna",
+          "text": "Could be nice depending on other color of paint",
+          "timestamp": 1767396430541
+        }
+      ]
+    },
+    "lattice-fretwork-100315ol---sage-green-geometric-t": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:38:15.150Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T03:00:00.149Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:32:32.732Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "y0IF4xLwIv4gDUoh0Zep",
+          "user": "Anna",
+          "text": "Might be nice with certain paint colors",
+          "timestamp": 1767397100390
+        }
+      ]
+    },
+    "maris-2973-87365---charcoal-flock-damask": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:39:12.895Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T03:00:10.838Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:58.762Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Z35PVTzYk6zzq5fSjl7d",
+          "user": "Bree",
+          "text": "for office or hallway maybe",
+          "timestamp": 1767409218551
+        },
+        {
+          "id": "4IzmVL3OTmSGFzOsPyM6",
+          "user": "Anna",
+          "text": "Would be curious about this in a different color, or if it were in the hallway to offset the brightness of the teal?",
+          "timestamp": 1767397167236
+        }
+      ]
+    },
+    "masoala-91441---dark-green-tropical-jungle-birds": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:27:53.914Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:49:18.952Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:59.616Z"
+        }
+      },
+      "comments": []
+    },
+    "milton-king-birds-of-paradise-wr427tc---evening-bl": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:48.773Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:46.182Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:39.408Z"
+        }
+      },
+      "comments": []
+    },
+    "milton-king-birds-of-paradise-wr427tc---green-vogu": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:41.971Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:28.402Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:30.967Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "Wskg8aa14as2tJYZeCpF",
+          "user": "Bree",
+          "text": "LOVE this",
+          "timestamp": 1767408515316
+        }
+      ]
+    },
+    "milton-king-cranes---midori-green-gold-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:21.615Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:51:21.120Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:33.262Z"
+        }
+      },
+      "comments": []
+    },
+    "milton-king-cranes---yuri-blue-gold-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:30:49.621Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:55:50.933Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:02.467Z"
+        }
+      },
+      "comments": []
+    },
+    "milton-king-golden-koi---black-gold-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:31:08.980Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:55:54.252Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:08.600Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "eusKW7bM9mEsmC8QojsP",
+          "user": "Anna",
+          "text": "Love except for fish",
+          "timestamp": 1767396673541
+        }
+      ]
+    },
+    "milton-king-golden-koi---deep-water-blue-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:30:18.881Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:51:24.565Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:47.308Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "tJKqmBHoRQj1DQFc15HO",
+          "user": "Anna",
+          "text": "Love except for fish",
+          "timestamp": 1767396622694
+        }
+      ]
+    },
+    "milton-king-golden-koi---navy-lotus-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:53.552Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:08.217Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:38.612Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "MGUtpxfej36j79qLrFlr",
+          "user": "Anna",
+          "text": "I would like without the fish",
+          "timestamp": 1767396598679
+        }
+      ]
+    },
+    "milton-king-golden-koi---teal-lotus-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:30:03.090Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:51:12.060Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:36.703Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "nnKNJzL3pfxolfLeN4I3",
+          "user": "Anna",
+          "text": "I love the colors and everything about this except the fish!",
+          "timestamp": 1767396612859
+        }
+      ]
+    },
+    "milton-king-great-wave-bloom---blue-ukiyo-e-japane": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:30:56.435Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:55:43.422Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:28:00.359Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "MMndiSX1rwF8UpJqodsN",
+          "user": "Anna",
+          "text": "Really bizarre in a way I like",
+          "timestamp": 1767396660896
+        }
+      ]
+    },
+    "milton-king-parrot-jungle-wr519jac---black-tropica": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:26:52.082Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:48:49.651Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:42.098Z"
+        }
+      },
+      "comments": []
+    },
+    "milton-king-water-lillies---violet-green-art-nouve": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:26:00.431Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:47:57.327Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:18.653Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "pYo7XQSFbPrTMJ1Fj0r3",
+          "user": "Anna",
+          "text": "Probably too much? But interesting",
+          "timestamp": 1767396368225
+        }
+      ]
+    },
+    "morris-co-golden-lily---charcoal-olive-art-nouveau": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:34:26.906Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:55.329Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:55.525Z"
+        }
+      },
+      "comments": []
+    },
+    "morris-co-golden-lily---green-red-art-nouveau": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:31:26.334Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:09.880Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:28:14.211Z"
+        }
+      },
+      "comments": []
+    },
+    "morris-co-golden-lily---indigo-blue-gold-art-nouve": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:12.952Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:21.463Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:29:05.270Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "KYCj4m9S0VvBfOsCFHhG",
+          "user": "Anna",
+          "text": "Love this one",
+          "timestamp": 1767396796078
+        }
+      ]
+    },
+    "morris-co-pimpernel---weld-leaf-green-art-nouveau": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:21.446Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:32.054Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:36.638Z"
+        }
+      },
+      "comments": []
+    },
+    "mosaic-37421-1---terracotta-moroccan-quatrefoil-ti": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:38:54.777Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T03:00:02.011Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:32:43.175Z"
+        }
+      },
+      "comments": []
+    },
+    "mulberry-game-birds---charcoal-game-birds-dark-bot": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:28:14.357Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:50:27.214Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:05.055Z"
+        }
+      },
+      "comments": []
+    },
+    "office-001": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:05.047Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:46.511Z"
+        }
+      },
+      "comments": []
+    },
+    "office-002": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:08.693Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:37:49.178Z"
+        }
+      },
+      "comments": []
+    },
+    "office-003": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:10.722Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:37:53.299Z"
+        }
+      },
+      "comments": []
+    },
+    "office-004": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:13.545Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:55.284Z"
+        }
+      },
+      "comments": []
+    },
+    "office-005": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:15.362Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:57.212Z"
+        }
+      },
+      "comments": []
+    },
+    "office-006": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:20.219Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:59.008Z"
+        }
+      },
+      "comments": []
+    },
+    "office-007": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:02:24.111Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:03.155Z"
+        }
+      },
+      "comments": []
+    },
+    "office-008": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:27.880Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:08.194Z"
+        }
+      },
+      "comments": []
+    },
+    "office-009": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:30.197Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:09.749Z"
+        }
+      },
+      "comments": []
+    },
+    "office-010": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:32.123Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:12.103Z"
+        }
+      },
+      "comments": []
+    },
+    "office-011": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:02:35.031Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:38:17.379Z"
+        }
+      },
+      "comments": []
+    },
+    "office-012": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T20:02:37.149Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:20.305Z"
+        }
+      },
+      "comments": []
+    },
+    "office-013": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:39.846Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:23.468Z"
+        }
+      },
+      "comments": []
+    },
+    "office-014": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:44.259Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:26.930Z"
+        }
+      },
+      "comments": []
+    },
+    "office-015": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:45.357Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:29.095Z"
+        }
+      },
+      "comments": []
+    },
+    "office-016": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T20:02:48.590Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:38:34.610Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:26:40.269Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "8INTEX6ErO7XrbFqknse",
+          "user": "Riley",
+          "text": "This vibe is nice!",
+          "timestamp": 1767374797943
+        }
+      ]
+    },
+    "office-017": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T20:02:57.467Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:38:40.549Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:27:11.168Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "UBTM1qv5IJUKTMmM5w3V",
+          "user": "Riley",
+          "text": "This has me feeling like you’re gonna sing “you’ll be back”",
+          "timestamp": 1767374823308
+        }
+      ]
+    },
+    "parlor-001": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:39:30.604Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:32:48.172Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:22:15.194Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "sMB5NdKgMkfuZjetIr1N",
+          "user": "Anna",
+          "text": "I think I like it, but I wonder about it being a bit too cold? I think I like the white ceiling?",
+          "timestamp": 1767382805669
+        }
+      ]
+    },
+    "parlor-002": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:40:17.788Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:32:51.683Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:22:19.624Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-003": {
+      "ratings": {
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:32:55.767Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:22:32.124Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "fk5ND0qyHvhazAci1JdQ",
+          "user": "Anna",
+          "text": "I think I like this more than the red fireplace and this could work if there's a pop of color from seeing the wallpaper in the dining room and/or bright doorframe/wallpaper on the stairs etc",
+          "timestamp": 1767382846304
+        }
+      ]
+    },
+    "parlor-005": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:41:10.798Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:33:03.391Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:37.063Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-006": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:41:27.037Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:33:10.155Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:40.003Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "MIzkyEw4xSuFdVUHJsxS",
+          "user": "Anna",
+          "text": "Colors feel like a lot",
+          "timestamp": 1767382894500
+        }
+      ]
+    },
+    "parlor-007": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:41:46.690Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:33:12.518Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:07:02.479Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "V7S3BW1QqvbCNc0paPyd",
+          "user": "Anna",
+          "text": "This feels warm and cozy to me. Not sure about the ceiling color - is it slightly yellow?",
+          "timestamp": 1767382930276
+        },
+        {
+          "id": "aSi98XFKFXeIyoSnqGCR",
+          "user": "Riley",
+          "text": "My fav",
+          "timestamp": 1767373755237
+        }
+      ]
+    },
+    "parlor-010": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:42:17.338Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:33:14.461Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:07:09.596Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "lh58J5HUzuAtJcAfa3R1",
+          "user": "Anna",
+          "text": "The pink on the ceiling might be too much for me but I'm open to discussing! I like it around the window. I might like it with slightly different contrasting colors?",
+          "timestamp": 1767382968545
+        },
+        {
+          "id": "MpRVGcX8dakAoOVhLjmw",
+          "user": "Riley",
+          "text": "My other fav",
+          "timestamp": 1767373770957
+        }
+      ]
+    },
+    "parlor-012": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:43:01.553Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:33:16.846Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:49.304Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "g4mIVrCLO6Gy4s9bI10w",
+          "user": "Anna",
+          "text": "I wonder about the black and teal swapped? I like the ceiling colors",
+          "timestamp": 1767383009123
+        }
+      ]
+    },
+    "parlor-013": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:43:35.434Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:33:22.703Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:50.723Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-014": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:43:41.278Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:33:24.364Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:52.182Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-017": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:43:46.866Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:33:29.145Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:56.710Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "h1JjzWLpTCpCO8ytygQo",
+          "user": "Anna",
+          "text": "Everything feels dark and cold, I don't like the red-ish color",
+          "timestamp": 1767383039061
+        }
+      ]
+    },
+    "parlor-019": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:44:10.580Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:33:31.276Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:22:59.844Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-020": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:44:17.684Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:33:35.505Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:23:05.915Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-021": {
+      "ratings": {
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:33:37.504Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:23:10.374Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-022": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:44:25.476Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:33:43.095Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:07:30.134Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-023": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:44:29.674Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:23:19.064Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "LUBdig9xpBudpB7L8HmR",
+          "user": "Bree",
+          "text": "yes but not this shade or this amount of it  and the trim is off - but it's in range",
+          "timestamp": 1767407650111
+        },
+        {
+          "id": "dG39uDKX1L6uLiSG2OsK",
+          "user": "Anna",
+          "text": "I don't know about the staircase as the same color but I'm surprised how much I like the pop of these two colors together",
+          "timestamp": 1767383088980
+        }
+      ]
+    },
+    "parlor-024": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:44:51.405Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:34:18.805Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:23:23.900Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-025": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:44:56.859Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:34:20.975Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:23:27.714Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-026": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:45:05.553Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:36:45.296Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "iJ95y1zckMFPutxU9lRe",
+          "user": "Bree",
+          "text": "that shade isn't quite right on the fireplace but i llove the teal shades in this one. can we find a darker or deeper purple?",
+          "timestamp": 1767407691846
+        },
+        {
+          "id": "VWvJG6bZ0KXtGwRKWovk",
+          "user": "Anna",
+          "text": "Very much agree about LOVING the teal on teal but not that fireplace color",
+          "timestamp": 1767383154427
+        },
+        {
+          "id": "hEI6npODQParZDPF7mLK",
+          "user": "Riley",
+          "text": "I really do not want the fireplace that color but like the teal on teal!",
+          "timestamp": 1767374628345
+        }
+      ]
+    },
+    "parlor-027": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:46:14.141Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:35:06.748Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:00.908Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "x2VF7NivSGjwEnbHG3Yj",
+          "user": "Anna",
+          "text": "Feels child-like?",
+          "timestamp": 1767383172911
+        }
+      ]
+    },
+    "parlor-028": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:46:21.580Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:35:27.276Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:21.832Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "7z4A6sI4oD8iphRjrlJZ",
+          "user": "Bree",
+          "text": "the color isn't quite right but it's close for me",
+          "timestamp": 1767407726368
+        },
+        {
+          "id": "rQ4P2JeielIxtvDddlRW",
+          "user": "Anna",
+          "text": "Again I like the teal on teal but not pop of color there or not that color",
+          "timestamp": 1767383193002
+        }
+      ]
+    },
+    "parlor-029": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:46:41.615Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:35:30.826Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:25.132Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-030": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:46:47.869Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:35:33.255Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:36.817Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-031": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:46:52.514Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:35:44.618Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:45.189Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "vHMdLjI5PeTWM1L9TYVk",
+          "user": "Bree",
+          "text": "not the right shade but close",
+          "timestamp": 1767407743351
+        }
+      ]
+    },
+    "parlor-032": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T19:46:57.007Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:35:56.683Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:47.617Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-033": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:47:06.578Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:36:25.255Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:50.747Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "0BoiMxv0IvZ7Rhm6Dimb",
+          "user": "Bree",
+          "text": "that was a mis-post i DON't like this one - i don't like the paint above the fireplace",
+          "timestamp": 1767407784195
+        },
+        {
+          "id": "36ooYsO24TB8Qu8XGHZI",
+          "user": "Bree",
+          "text": "not the right fireplace shade but close",
+          "timestamp": 1767407757834
+        }
+      ]
+    },
+    "parlor-034": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:47:09.830Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:36:27.649Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:24:57.437Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-035": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:47:11.729Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:36:29.418Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:25:00.949Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-036": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:47:15.509Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:36:32.042Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:25:03.897Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-037": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T19:47:41.912Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:37:21.370Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-02T17:08:23.147Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "drCWh4zTyB1D3BEwqPFn",
+          "user": "Bree",
+          "text": "i'm unsure - i feel like this feels like a TEAL AND PURPLE room in a way that freaks me out a bit... versus teal with some various highlights and trims and contrasts...",
+          "timestamp": 1767407846548
+        },
+        {
+          "id": "dwqthw86f8khbxQog13P",
+          "user": "Riley",
+          "text": "I also like this— to me doesn’t feel like too much— though the fireplace is just the hardest part for me!",
+          "timestamp": 1767400573978
+        },
+        {
+          "id": "u0k6qGGMBAVtyLWZHm2T",
+          "user": "Anna",
+          "text": "I think I like it but can't tell if it's too much? Would love others' opinions on this one!",
+          "timestamp": 1767383261044
+        }
+      ]
+    },
+    "parlor-038": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:47:44.564Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:31.156Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T17:25:18.096Z"
+        }
+      },
+      "comments": []
+    },
+    "parlor-039": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T19:47:46.748Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:37:34.248Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T17:22:05.549Z"
+        }
+      },
+      "comments": []
+    },
+    "pierre-frey-toile-de-nantes---bleu-ancien-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:08.616Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:53.466Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:31:55.086Z"
+        }
+      },
+      "comments": []
+    },
+    "pimpernel-210388---bayleaf-manilla-red-green-morri": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:33:05.930Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:22.514Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:07.753Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "2TSowyHANUSc5w6rDg3I",
+          "user": "Anna",
+          "text": "Maybe not bright enough?",
+          "timestamp": 1767396789974
+        }
+      ]
+    },
+    "pimpernel-217362---ink-sage-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:31:46.263Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:11.254Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:33.170Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "SbLIZaPO0XAdlpIyfoxw",
+          "user": "Anna",
+          "text": "I love the design, want more interesting colors",
+          "timestamp": 1767396713915
+        }
+      ]
+    },
+    "portofino-205012---brown-bronze-gold-flocked-damas": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:22.546Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:49.877Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:41.311Z"
+        }
+      },
+      "comments": []
+    },
+    "portofino-75706---burgundy-red-gold-grasscloth-dam": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:37:33.724Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:58:04.128Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:32:04.351Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "4YazbzN5RUJGWslT9gn1",
+          "user": "Bree",
+          "text": "cause i might want the wooden soundproof slats on walls",
+          "timestamp": 1767409185811
+        },
+        {
+          "id": "fuRhfF06lW5rA6xLYaBx",
+          "user": "Bree",
+          "text": "for the office, yes love. not sure about walls or CEILING",
+          "timestamp": 1767409169076
+        },
+        {
+          "id": "URqPwjdHmSCA2zuLoBQQ",
+          "user": "Anna",
+          "text": "LOVE",
+          "timestamp": 1767397055912
+        }
+      ]
+    },
+    "prism-104741---yellow-mustard-geometric-starburst": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:38:57.751Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:23.761Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:32:53.227Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "eJFf9qzqQoTk55xsmcIB",
+          "user": "Anna",
+          "text": "Love, so relaxing",
+          "timestamp": 1767397140824
+        }
+      ]
+    },
+    "reference-01": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:55.674Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:16.756Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:23.925Z"
+        }
+      },
+      "comments": []
+    },
+    "reference-02": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:36:14.155Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:19.861Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:29.921Z"
+        }
+      },
+      "comments": []
+    },
+    "reference-03": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:36:17.913Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:18.926Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:28.290Z"
+        }
+      },
+      "comments": []
+    },
+    "reference-04": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:21.960Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:08.706Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:30:52.039Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "XkVtgNixMig6HvZDRN0u",
+          "user": "Anna",
+          "text": "too busy",
+          "timestamp": 1767396925393
+        }
+      ]
+    },
+    "reference-05": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:28.590Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:07.816Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:30:49.343Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "uNLFOWa87uBvzCgwOMxc",
+          "user": "Anna",
+          "text": "too busy",
+          "timestamp": 1767396930879
+        }
+      ]
+    },
+    "reference-06": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:35:40.232Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:05.827Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:30:44.802Z"
+        }
+      },
+      "comments": []
+    },
+    "reference-07": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:35.852Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:06.789Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:30:46.196Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "mvk3S540DlecgtE12APz",
+          "user": "Anna",
+          "text": "too busy",
+          "timestamp": 1767396935230
+        }
+      ]
+    },
+    "rene-105925---blush-pink-art-deco-geometric-fan": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:39:56.803Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T03:00:36.029Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:33:19.456Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "6963a73nBtS1urZZPiW5",
+          "user": "Anna",
+          "text": "Maybe I'd like this with bolder colors",
+          "timestamp": 1767397202517
+        }
+      ]
+    },
+    "rifle-paper-co-peacock---emerald-green-gold-art-no": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:28:44.114Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:50:37.846Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:16.455Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "ZzIcHPnrYStAqeA7FnwQ",
+          "user": "Anna",
+          "text": "I would like this one without the bird",
+          "timestamp": 1767396528854
+        }
+      ]
+    },
+    "rifle-paper-co-peacock---navy-blue-green-gold-art-": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:25:39.561Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:47:43.683Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:25:54.309Z"
+        }
+      },
+      "comments": []
+    },
+    "sanderson-bird-of-paradise-216653---olive-green-tr": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:27:14.408Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:49:01.393Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:51.161Z"
+        }
+      },
+      "comments": []
+    },
+    "scalamandre-fine-sisal---espresso-brown-grasscloth": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:17.006Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:39.504Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:32.291Z"
+        }
+      },
+      "comments": []
+    },
+    "schumacher-indian-arbre---peacock-emerald-art-nouv": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:25:52.497Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:47:54.890Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:26:12.482Z"
+        }
+      },
+      "comments": []
+    },
+    "schumacher-katsugi---cobalt-turquoise-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:30:27.636Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:51:30.192Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:48.172Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "miyv2sdd8VIYOCvNSvRD",
+          "user": "Bree",
+          "text": "this is GORGEOUS - we should love up this designer and wallpaper company",
+          "timestamp": 1767408702936
+        },
+        {
+          "id": "HrPxevQXC8aBFX1lNjK6",
+          "user": "Anna",
+          "text": "Really bizarre in a way I like",
+          "timestamp": 1767396634313
+        }
+      ]
+    },
+    "schumacher-khilana-floral---peacock-teal-art-nouve": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:25:48.619Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:47:47.417Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:26:00.030Z"
+        }
+      },
+      "comments": []
+    },
+    "schumacher-lotus-garden---jade-green-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:30:40.736Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:55:25.794Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:50.186Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "1r1WP1NLUyyJRJ2eZbor",
+          "user": "Anna",
+          "text": "Love except for animals",
+          "timestamp": 1767396644621
+        }
+      ]
+    },
+    "schumacher-mizu---sky-blue-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:31:18.080Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:55:53.075Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:28:06.921Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "RYseOl8gvDv3n6hbom1S",
+          "user": "Anna",
+          "text": "I find this relaxing",
+          "timestamp": 1767396682532
+        }
+      ]
+    },
+    "schumacher-sea-garden---porcelain-blue-koi-fish-ja": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:28.793Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:16.245Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:27:44.643Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "PrIQdWGEJHV5yj7xeBmQ",
+          "user": "Anna",
+          "text": "Reminds me of the Roberts' house in a good way, would like but don't like the fish",
+          "timestamp": 1767396586320
+        }
+      ]
+    },
+    "schumacher-toile-de-fleurs---delft-blue-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:36:49.571Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:49.325Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:31:42.030Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "3JhfJEJgYqTTTYP8i0LU",
+          "user": "Anna",
+          "text": "Feels like fancy Roberts house in a nice way, not sure what it would look nice with or if it feels like us?",
+          "timestamp": 1767397025103
+        }
+      ]
+    },
+    "schumacher-toile-de-fleurs---grisaille-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:36:37.431Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:48.641Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:31:40.597Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "AbD8bor2rYfda4DyvCsQ",
+          "user": "Anna",
+          "text": "Maybe nice with a bold paint color? I don't know, maybe boring?",
+          "timestamp": 1767397005642
+        }
+      ]
+    },
+    "schumacher-toile-de-la-prairie---blue-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:36:31.898Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:47.927Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:31:36.884Z"
+        }
+      },
+      "comments": []
+    },
+    "schumacher-toile-de-la-prairie---green-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:14.781Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:51.924Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:31:50.906Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "HqEEtYiQvVEp35Zv6fw2",
+          "user": "Anna",
+          "text": "I like the colors just not the birds :)",
+          "timestamp": 1767397042867
+        }
+      ]
+    },
+    "seabrook-acanthus-floral---charcoal-rosewood-dark-": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:28:34.407Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:50:34.592Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:14.234Z"
+        }
+      },
+      "comments": []
+    },
+    "seabrook-tp80502---navy-blue-hexagon-geometric": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:45.384Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:51.608Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:32:30.815Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "YveD1kDpUSWEN2TZ968r",
+          "user": "Anna",
+          "text": "HATE",
+          "timestamp": 1767397067323
+        }
+      ]
+    },
+    "simply-strawberry-thief-217061---cochineal-pink-bi": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:32:05.957Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:30.048Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:28:46.990Z"
+        }
+      },
+      "comments": []
+    },
+    "snakeshead-216427---forest-thyme-green-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:34:30.550Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:57.899Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:57.909Z"
+        }
+      },
+      "comments": []
+    },
+    "snakeshead-216863---green-gold-morris-floral-arts-": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:39.166Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:48.454Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:06.681Z"
+        }
+      },
+      "comments": []
+    },
+    "sophia-geo-710144---teal-geometric-hexagon-honeyco": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:39:29.880Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:08.530Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:01.247Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "glEh76um5XnMBnzlI8kW",
+          "user": "Anna",
+          "text": "hurts my eyes",
+          "timestamp": 1767397172651
+        }
+      ]
+    },
+    "spoonflower-arcane-atelier---gilded-discontentment": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:35:47.357Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:36.585Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:30:58.104Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "6s4bfLF0AZH6xj8DSbav",
+          "user": "Riley",
+          "text": "100%. This is the one",
+          "timestamp": 1767400273640
+        },
+        {
+          "id": "Dd0uENK8JyTDeSo6dpcj",
+          "user": "Anna",
+          "text": "WTF SO SCARRRRYYYYY",
+          "timestamp": 1767396952791
+        }
+      ]
+    },
+    "spoonflower-micklyn---coral-peach-peonies-emerald-": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:34:41.896Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:57:04.107Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:30:30.263Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "AnC8kiOkpFGGFFPPkJEP",
+          "user": "Anna",
+          "text": "Really hard to tell if I would like this in real life",
+          "timestamp": 1767396889849
+        }
+      ]
+    },
+    "stockholm-floral-391174---teal-green-floral-botani": {
+      "ratings": {
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:14.396Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:28:38.435Z"
+        }
+      },
+      "comments": []
+    },
+    "strawberry-thief-212564---indigo-mineral-red-green": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:33:25.306Z"
+        },
+        "Bree": {
+          "value": "like",
+          "updatedAt": "2026-01-03T02:56:41.934Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:20.279Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "kaAebXVUDkVSnAr5nVjI",
+          "user": "Anna",
+          "text": "Love colors, but not the birds",
+          "timestamp": 1767396809631
+        }
+      ]
+    },
+    "strawberry-thief-w017106---teal-birds-morris": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:34:09.032Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:56:50.589Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:29:34.319Z"
+        }
+      },
+      "comments": []
+    },
+    "summer-love-teal---wallpops-nu3037": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:36:05.345Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:57:33.586Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:25.109Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "k0YmnJVE9CZp304pLiat",
+          "user": "Anna",
+          "text": "Maybe too girly but I also kinda love it?",
+          "timestamp": 1767396966155
+        }
+      ]
+    },
+    "tempaper-sisal---dark-brown-grasscloth": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:19.365Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:50.962Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:43.868Z"
+        }
+      },
+      "comments": []
+    },
+    "thibaut-japanese-garden---emerald-green-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:19.822Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:06.683Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:31.289Z"
+        }
+      },
+      "comments": []
+    },
+    "thibaut-japanese-garden---navy-blue-japanese": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:29:20.892Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:51:07.401Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:27:31.979Z"
+        }
+      },
+      "comments": []
+    },
+    "trapez-1993---olive-gold-geometric-triangles-midce": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:41.459Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:58:01.804Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:32:10.129Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "71XCBL7hujp4mAZayZp9",
+          "user": "Anna",
+          "text": "HATE",
+          "timestamp": 1767397063217
+        }
+      ]
+    },
+    "trussardi-z21806---burgundy-gold-embossed-victoria": {
+      "ratings": {
+        "Anna": {
+          "value": "unsure",
+          "updatedAt": "2026-01-02T23:37:51.404Z"
+        },
+        "Bree": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T02:59:55.929Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:32:29.270Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "I9td5Q1gdGqkn9UK54Nj",
+          "user": "Anna",
+          "text": "Can't tell if I love it or hate it, especially if it were a different color",
+          "timestamp": 1767397079679
+        }
+      ]
+    },
+    "tuileries-216995---teal-birds-botanical-chinoiseri": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:38:36.340Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:06.911Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:32:51.210Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "gx02SZBXT58kWeAGZ9ON",
+          "user": "Anna",
+          "text": "Wish there weren't birds, colors are so pretty",
+          "timestamp": 1767397121851
+        }
+      ]
+    },
+    "willow-boughs-216722---delft-porcelain-blue-green-": {
+      "ratings": {
+        "Anna": {
+          "value": "like",
+          "updatedAt": "2026-01-02T23:32:43.874Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:56:18.593Z"
+        },
+        "Riley": {
+          "value": "like",
+          "updatedAt": "2026-01-03T00:28:56.149Z"
+        }
+      },
+      "comments": []
+    },
+    "wood-geo-36913-1---brown-wood-texture-geometric": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:41.509Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:59.478Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:46.503Z"
+        }
+      },
+      "comments": []
+    },
+    "york-campagne-toile---blue-white-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:25.943Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:51.350Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:47.807Z"
+        }
+      },
+      "comments": []
+    },
+    "york-old-world-toile---black-white-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:36:26.476Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:47.279Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:31:35.208Z"
+        }
+      },
+      "comments": []
+    },
+    "york-pagoda-and-sampan-scenic---black-toile": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:37:10.966Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T02:57:52.621Z"
+        }
+      },
+      "comments": []
+    },
+    "zambaiti-m1241---navy-blue-black-beige-victorian-d": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:28.750Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:42.741Z"
+        },
+        "Riley": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T00:33:36.303Z"
+        }
+      },
+      "comments": []
+    },
+    "zambaiti-z72046---burgundy-gold-metallic-victorian": {
+      "ratings": {
+        "Anna": {
+          "value": "dislike",
+          "updatedAt": "2026-01-02T23:40:33.078Z"
+        },
+        "Bree": {
+          "value": "dislike",
+          "updatedAt": "2026-01-03T03:00:58.370Z"
+        },
+        "Riley": {
+          "value": "unsure",
+          "updatedAt": "2026-01-03T00:33:48.661Z"
+        }
+      },
+      "comments": [
+        {
+          "id": "vWoqYoNh4UlV0LGEall7",
+          "user": "Anna",
+          "text": "But maybe good for Bree office",
+          "timestamp": 1767397239142
+        }
+      ]
+    }
+  }
+}
