@@ -19,19 +19,10 @@ const Gallery = (function () {
     activeRoomTab: ".room-tab[data-room][aria-selected='true']",
   };
 
-  const TIERS = [
-    { likeCount: 3, name: "Favorites", emoji: "⭐", defaultOpen: true },
-    { likeCount: 2, name: "Strong", emoji: "👍", defaultOpen: true },
-    { likeCount: 1, name: "Maybe", emoji: "🤔", defaultOpen: true },
-    { likeCount: 0, name: "Rejected", emoji: "❌", defaultOpen: false },
-  ];
-
-  const TIER_STORAGE_KEY = "galleryTierState";
-
   const state = {
     allImages: [],
     currentRoom: "parlor",
-    currentFilter: "tiered",
+    currentFilter: "all",
     ratingsCache: {},
     cleanupLazy: null,
     unsubscribers: [],
@@ -227,106 +218,29 @@ const Gallery = (function () {
     return ratings;
   }
 
-  function getTierState() {
-    try {
-      return JSON.parse(localStorage.getItem(TIER_STORAGE_KEY) || "{}");
-    } catch {
-      return {};
+  // Filter using pre-computed SCORE field (like=2, unsure=1, dislike=0)
+  // So "1 like + 2 unsures" (score 4) is Strong, not Controversial
+  function applyLikesFilter(images, filter) {
+    let result;
+    switch (filter) {
+      case "favorites":
+        result = images.filter(img => (img.score || 0) >= 5);
+        break;
+      case "strong":
+        result = images.filter(img => (img.score || 0) >= 4);
+        break;
+      case "promising":
+        result = images.filter(img => (img.score || 0) >= 3);
+        break;
+      case "controversial":
+        result = images.filter(img => (img.score || 0) <= 2);
+        break;
+      case "all":
+      default:
+        result = [...images];
     }
-  }
-
-  function saveTierState(tierState) {
-    localStorage.setItem(TIER_STORAGE_KEY, JSON.stringify(tierState));
-  }
-
-  function isTierOpen(tierName, defaultOpen) {
-    const tierState = getTierState();
-    return tierState[tierName] !== undefined ? tierState[tierName] : defaultOpen;
-  }
-
-  function createTierSection(tier, images, createCardFn) {
-    const section = document.createElement("details");
-    section.className = "tier-section col-span-full mb-6";
-    section.open = isTierOpen(tier.name, tier.defaultOpen);
-
-    const summary = document.createElement("summary");
-    summary.className = "tier-header cursor-pointer select-none rounded-lg bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-colors flex items-center gap-2";
-    summary.innerHTML = `<span class="text-lg">${tier.emoji}</span> ${tier.name} (${tier.likeCount} like${tier.likeCount !== 1 ? "s" : ""}) — <span class="font-normal text-slate-500">${images.length} item${images.length !== 1 ? "s" : ""}</span>`;
-
-    section.appendChild(summary);
-
-    const content = document.createElement("div");
-    content.className = "tier-content mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5";
-
-    for (const image of images) {
-      const card = createCardFn(image);
-      if (card) content.appendChild(card);
-    }
-
-    section.appendChild(content);
-
-    // Save open/closed state when toggled
-    section.addEventListener("toggle", () => {
-      const tierState = getTierState();
-      tierState[tier.name] = section.open;
-      saveTierState(tierState);
-    });
-
-    return section;
-  }
-
-  async function groupImagesByLikes(images) {
-    const groups = { 3: [], 2: [], 1: [], 0: [] };
-
-    for (const image of images) {
-      const ratings = await getRatingsForImage(image.id);
-      const likeCount = typeof Ratings !== "undefined" && Ratings.getLikeCount
-        ? Ratings.getLikeCount(ratings)
-        : Object.values(ratings).filter(v => v === "like").length;
-
-      // Clamp to 0-3
-      const key = Math.min(3, Math.max(0, likeCount));
-      groups[key].push(image);
-    }
-
-    return groups;
-  }
-
-  async function applyRatingFilter(images, filter) {
-    if (filter === "all") return images;
-
-    const user = getCurrentUser();
-    const results = [];
-
-    for (const image of images) {
-      const ratings = await getRatingsForImage(image.id);
-      const myRating = ratings[user];
-      const votes = Object.values(ratings);
-      const likes = votes.filter(v => v === "like").length;
-      const dislikes = votes.filter(v => v === "dislike").length;
-
-      switch (filter) {
-        case "unrated":
-          if (!myRating) results.push(image);
-          break;
-        case "my-likes":
-          if (myRating === "like") results.push(image);
-          break;
-        case "my-dislikes":
-          if (myRating === "dislike") results.push(image);
-          break;
-        case "popular":
-          if (likes >= 2) results.push(image);
-          break;
-        case "controversial":
-          if (likes > 0 && dislikes > 0) results.push(image);
-          break;
-        default:
-          results.push(image);
-      }
-    }
-
-    return results;
+    // Sort by score (highest first), then by likes
+    return result.sort((a, b) => (b.score || 0) - (a.score || 0) || (b.likes || 0) - (a.likes || 0));
   }
 
   function bindFilterSelect() {
@@ -448,7 +362,7 @@ const Gallery = (function () {
     return card;
   }
 
-  async function renderGallery(room) {
+  function renderGallery(room) {
     const grid = $(SELECTORS.grid);
     if (!grid) return;
 
@@ -462,43 +376,47 @@ const Gallery = (function () {
     state.currentRoom = roomValue || state.currentRoom;
 
     const roomImages = getRoomImages(state.currentRoom);
+    const filtered = applyLikesFilter(roomImages, state.currentFilter);
 
     grid.innerHTML = "";
-
-    // Handle tiered view specially
-    if (state.currentFilter === "tiered") {
-      const groups = await groupImagesByLikes(roomImages);
-      const totalCount = roomImages.length;
-      const nonRejectedCount = groups[3].length + groups[2].length + groups[1].length;
-
-      setEmptyState(totalCount === 0);
-      setResultsSummary(`${nonRejectedCount} of ${totalCount} photo${totalCount !== 1 ? "s" : ""} (${groups[0].length} rejected)`);
-
-      const frag = document.createDocumentFragment();
-
-      for (const tier of TIERS) {
-        const tierImages = groups[tier.likeCount];
-        if (tierImages.length === 0) continue;
-
-        const section = createTierSection(tier, tierImages, createImageCard);
-        frag.appendChild(section);
-      }
-
-      grid.appendChild(frag);
-      state.cleanupLazy = setupLazyLoading(grid);
-      return;
-    }
-
-    // Regular (non-tiered) rendering
-    const filtered = await applyRatingFilter(roomImages, state.currentFilter);
-
     setEmptyState(filtered.length === 0);
     setResultsSummary(`${filtered.length} photo${filtered.length === 1 ? "" : "s"}`);
 
     const frag = document.createDocumentFragment();
-    for (const image of filtered) {
-      const card = createImageCard(image);
-      if (card) frag.appendChild(card);
+
+    // For "all" view, group by tier with headers based on SCORE (like=2, unsure=1)
+    // So "1 like + 2 unsures" (score 4) ranks with Strong, not Controversial
+    if (state.currentFilter === "all") {
+      const tiers = [
+        { min: 5, label: "⭐ Favorites", sublabel: "score 5-6" },
+        { min: 4, max: 4, label: "👍 Strong", sublabel: "score 4" },
+        { min: 3, max: 3, label: "👀 Promising", sublabel: "score 3" },
+        { min: 1, max: 2, label: "🤔 Controversial", sublabel: "score 1-2" },
+      ];
+
+      for (const tier of tiers) {
+        const tierImages = filtered.filter(img => {
+          const score = img.score || 0;
+          if (tier.max !== undefined) return score >= tier.min && score <= tier.max;
+          return score >= tier.min;
+        });
+        if (tierImages.length === 0) continue;
+
+        const header = document.createElement("div");
+        header.className = "col-span-full flex items-center gap-2 mt-6 mb-3 first:mt-0";
+        header.innerHTML = `<span class="text-base font-semibold text-slate-800">${tier.label}</span><span class="text-sm text-slate-500">(${tier.sublabel}) — ${tierImages.length} item${tierImages.length !== 1 ? "s" : ""}</span>`;
+        frag.appendChild(header);
+
+        for (const image of tierImages) {
+          const card = createImageCard(image);
+          if (card) frag.appendChild(card);
+        }
+      }
+    } else {
+      for (const image of filtered) {
+        const card = createImageCard(image);
+        if (card) frag.appendChild(card);
+      }
     }
 
     grid.appendChild(frag);

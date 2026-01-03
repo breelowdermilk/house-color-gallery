@@ -13,7 +13,9 @@
         "mantle",
         "ash",
         "burgundy"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "parlor-002",
@@ -28,7 +30,9 @@
         "chestler",
         "panels",
         "ash"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "parlor-003",
@@ -43,37 +47,9 @@
         "chestler",
         "ash",
         "mantle"
-      ]
-    },
-    {
-      "id": "parlor-005",
-      "filename": "Ash Walls - Elderberry Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Elderberry%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Elderberry%20Trim%20-%20Wood%20Mantle",
-      "walls": "Ash",
-      "trim": "Elderberry",
-      "feature": "Wood Mantle",
-      "tags": [
-        "elderberry",
-        "wood",
-        "ash",
-        "mantle"
-      ]
-    },
-    {
-      "id": "parlor-006",
-      "filename": "Ash Walls - Winchester Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Ash%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Ash%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
-      "walls": "Ash",
-      "trim": "Winchester",
-      "feature": "Wood Mantle",
-      "tags": [
-        "wood",
-        "mantle",
-        "ash",
-        "winchester"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-007",
@@ -88,7 +64,9 @@
         "chestler",
         "ash",
         "mantle"
-      ]
+      ],
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "parlor-010",
@@ -103,7 +81,9 @@
         "chestler",
         "winchester",
         "mantle"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "parlor-012",
@@ -119,40 +99,9 @@
         "mantle",
         "wood",
         "black"
-      ]
-    },
-    {
-      "id": "parlor-013",
-      "filename": "Coal Black Walls - Velvet Plum Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Velvet%20Plum%20Trim%20-%20Wood%20Mantle",
-      "walls": "Coal Black",
-      "trim": "Velvet Plum",
-      "feature": "Wood Mantle",
-      "tags": [
-        "velvet",
-        "coal",
-        "mantle",
-        "wood",
-        "plum",
-        "black"
-      ]
-    },
-    {
-      "id": "parlor-014",
-      "filename": "Coal Black Walls - Winchester Trim - Wood Mantle",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Coal%20Black%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Coal%20Black%20Walls%20-%20Winchester%20Trim%20-%20Wood%20Mantle",
-      "walls": "Coal Black",
-      "trim": "Winchester",
-      "feature": "Wood Mantle",
-      "tags": [
-        "winchester",
-        "coal",
-        "mantle",
-        "wood",
-        "black"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-017",
@@ -168,7 +117,9 @@
         "wood",
         "blue",
         "slate"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "parlor-019",
@@ -182,7 +133,9 @@
         "teal",
         "burgundy",
         "mantle"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-020",
@@ -197,7 +150,9 @@
         "teal",
         "burgundy",
         "mantle"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-021",
@@ -212,21 +167,9 @@
         "teal",
         "burgundy",
         "mantle"
-      ]
-    },
-    {
-      "id": "parlor-022",
-      "filename": "parlor staircase black purple ottoman",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_black_purple_ottoman_1767331090050",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_black_purple_ottoman_1767331090050",
-      "walls": "Mixed",
-      "trim": "Purple",
-      "feature": "Staircase View",
-      "tags": [
-        "purple",
-        "ottoman",
-        "black"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-023",
@@ -240,37 +183,9 @@
         "purple",
         "teal",
         "moody"
-      ]
-    },
-    {
-      "id": "parlor-024",
-      "filename": "parlor staircase final two tone bright purple",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_final_two_tone_bright_purple_1767331554716",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_final_two_tone_bright_purple_1767331554716",
-      "walls": "Mixed",
-      "trim": "Purple",
-      "feature": "Staircase View",
-      "tags": [
-        "purple",
-        "two",
-        "bright",
-        "final",
-        "tone"
-      ]
-    },
-    {
-      "id": "parlor-025",
-      "filename": "parlor staircase teal paneled purple",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_staircase_teal_paneled_purple_1767331074036",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_staircase_teal_paneled_purple_1767331074036",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Staircase View",
-      "tags": [
-        "purple",
-        "paneled",
-        "teal"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "parlor-026",
@@ -285,23 +200,9 @@
         "jewel",
         "berry",
         "teal"
-      ]
-    },
-    {
-      "id": "parlor-027",
-      "filename": "parlor main all teal lavender ceiling panels",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_lavender_ceiling_panels_1767331931152",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_lavender_ceiling_panels_1767331931152",
-      "walls": "Teal",
-      "trim": "Mixed",
-      "feature": "Main Room",
-      "tags": [
-        "ceiling",
-        "all",
-        "panels",
-        "lavender",
-        "teal"
-      ]
+      ],
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "parlor-028",
@@ -316,40 +217,9 @@
         "purple",
         "all",
         "teal"
-      ]
-    },
-    {
-      "id": "parlor-029",
-      "filename": "parlor main subtle window pop fireplace",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_subtle_window_pop_fireplace_1767331714818",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_subtle_window_pop_fireplace_1767331714818",
-      "walls": "Mixed",
-      "trim": "Mixed",
-      "feature": "Main Room",
-      "tags": [
-        "window",
-        "subtle",
-        "fireplace",
-        "pop"
-      ]
-    },
-    {
-      "id": "parlor-030",
-      "filename": "parlor main all teal velvet purple fireplace natural tile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_all_teal_velvet_purple_fireplace_natural_tile_1767332250525",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_all_teal_velvet_purple_fireplace_natural_tile_1767332250525",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "velvet",
-        "purple",
-        "tile",
-        "all",
-        "fireplace",
-        "teal",
-        "natural"
-      ]
+      ],
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "parlor-031",
@@ -366,7 +236,9 @@
         "all",
         "fireplace",
         "teal"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-032",
@@ -382,7 +254,9 @@
         "all",
         "fireplace",
         "teal"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "parlor-033",
@@ -398,51 +272,9 @@
         "all",
         "fireplace",
         "teal"
-      ]
-    },
-    {
-      "id": "parlor-034",
-      "filename": "parlor main final two tone bright purple",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_final_two_tone_bright_purple_1767331540886",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_final_two_tone_bright_purple_1767331540886",
-      "walls": "Mixed",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "purple",
-        "two",
-        "bright",
-        "final",
-        "tone"
-      ]
-    },
-    {
-      "id": "parlor-035",
-      "filename": "parlor main moody purple teal",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_moody_purple_teal_1767331120200",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_moody_purple_teal_1767331120200",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "purple",
-        "teal",
-        "moody"
-      ]
-    },
-    {
-      "id": "parlor-036",
-      "filename": "parlor main black purple ottoman",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_black_purple_ottoman_1767331168336",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_black_purple_ottoman_1767331168336",
-      "walls": "Mixed",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "purple",
-        "ottoman",
-        "black"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "parlor-037",
@@ -458,62 +290,12 @@
         "tone",
         "two",
         "teal"
-      ]
-    },
-    {
-      "id": "parlor-038",
-      "filename": "parlor main teal purple refined lighter ceiling",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_teal_purple_refined_lighter_ceiling_1767331361084",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_teal_purple_refined_lighter_ceiling_1767331361084",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "purple",
-        "ceiling",
-        "lighter",
-        "refined",
-        "teal"
-      ]
-    },
-    {
-      "id": "parlor-039",
-      "filename": "parlor main teal paneled purple",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_teal_paneled_purple_1767331136946",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_teal_paneled_purple_1767331136946",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "purple",
-        "paneled",
-        "teal"
-      ]
+      ],
+      "likes": 2,
+      "score": 5
     }
   ],
   "dining-room": [
-    {
-      "id": "dining-room-001",
-      "filename": "4 Panel Grid - Cream vs Sage Walls - White vs Oak Trim Comparison",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/4%20Panel%20Grid%20-%20Cream%20vs%20Sage%20Walls%20-%20White%20vs%20Oak%20Trim%20Comparison",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/4%20Panel%20Grid%20-%20Cream%20vs%20Sage%20Walls%20-%20White%20vs%20Oak%20Trim%20Comparison",
-      "pattern": "4 Panel Grid - Cream vs Sage Walls - White vs Oak Trim Comparison",
-      "wainscoting": null,
-      "trim": null,
-      "view": null,
-      "type": "comparison",
-      "tags": [
-        "panel",
-        "grid",
-        "sage",
-        "comparison",
-        "walls",
-        "cream",
-        "trim",
-        "white",
-        "oak"
-      ]
-    },
     {
       "id": "dining-room-002",
       "filename": "4 Panel Grid - Marigold Chrysanthemum Sunflower Damask Comparison",
@@ -532,7 +314,9 @@
         "damask",
         "chrysanthemum",
         "sunflower"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-005",
@@ -553,29 +337,9 @@
         "gold",
         "pink",
         "oak"
-      ]
-    },
-    {
-      "id": "dining-room-006",
-      "filename": "Chrysanthemum Pink Gold Floral - Sage Wainscoting - White Trim - Bay Window",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20White%20Trim%20-%20Bay%20Window",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Chrysanthemum%20Pink%20Gold%20Floral%20-%20Sage%20Wainscoting%20-%20White%20Trim%20-%20Bay%20Window",
-      "pattern": "Chrysanthemum Pink Gold Floral",
-      "wainscoting": "Sage",
-      "trim": "White",
-      "view": "Bay Window",
-      "type": "standard",
-      "tags": [
-        "bay",
-        "standard",
-        "floral",
-        "sage",
-        "window",
-        "chrysanthemum",
-        "gold",
-        "pink",
-        "white"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-007",
@@ -593,24 +357,9 @@
         "room",
         "bree",
         "reference"
-      ]
-    },
-    {
-      "id": "dining-room-008",
-      "filename": "Dining Room Target 2",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Dining%20Room%20Target%202",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Dining%20Room%20Target%202",
-      "pattern": "Dining Room Target 2",
-      "wainscoting": null,
-      "trim": null,
-      "view": null,
-      "type": "reference",
-      "tags": [
-        "reference",
-        "dining",
-        "target",
-        "room"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-009",
@@ -629,7 +378,9 @@
         "gray",
         "dove",
         "purple"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-010",
@@ -648,7 +399,9 @@
         "dove",
         "pink",
         "rose"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-011",
@@ -668,7 +421,9 @@
         "ochre",
         "trim",
         "oak"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-014",
@@ -685,7 +440,9 @@
         "gray",
         "underscore",
         "damask"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "dining-room-015",
@@ -705,49 +462,9 @@
         "chinoiserie",
         "cream",
         "white"
-      ]
-    },
-    {
-      "id": "dining-room-018",
-      "filename": "Marigold Gold Damask - Cream Wainscoting - Oak Trim - Furnished Full Room",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Marigold%20Gold%20Damask%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Furnished%20Full%20Room",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Marigold%20Gold%20Damask%20-%20Cream%20Wainscoting%20-%20Oak%20Trim%20-%20Furnished%20Full%20Room",
-      "pattern": "Marigold Gold Damask",
-      "wainscoting": "Cream",
-      "trim": "Oak",
-      "view": "Furnished Full Room",
-      "type": "standard",
-      "tags": [
-        "furnished",
-        "standard",
-        "room",
-        "damask",
-        "marigold",
-        "full",
-        "cream",
-        "gold",
-        "oak"
-      ]
-    },
-    {
-      "id": "dining-room-019",
-      "filename": "Marigold Yellow Floral - Oak Trim - Cream Wainscoting - Oak Door",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Marigold%20Yellow%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Marigold%20Yellow%20Floral%20-%20Oak%20Trim%20-%20Cream%20Wainscoting%20-%20Oak%20Door",
-      "pattern": "Marigold Yellow Floral",
-      "wainscoting": "Cream",
-      "trim": "Oak",
-      "view": "Oak Door",
-      "type": "standard",
-      "tags": [
-        "yellow",
-        "standard",
-        "floral",
-        "marigold",
-        "cream",
-        "door",
-        "oak"
-      ]
+      ],
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "dining-room-021",
@@ -765,7 +482,9 @@
         "tropical",
         "masoala",
         "navy"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-025",
@@ -787,29 +506,9 @@
         "tile",
         "ceiling",
         "fireplace"
-      ]
-    },
-    {
-      "id": "dining-room-026",
-      "filename": "Pink Floral - Sage Green Wainscoting - Oak Mantle - Wide View",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Pink%20Floral%20-%20Sage%20Green%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Pink%20Floral%20-%20Sage%20Green%20Wainscoting%20-%20Oak%20Mantle%20-%20Wide%20View",
-      "pattern": "Pink Floral",
-      "wainscoting": "Sage Green",
-      "trim": "Oak Mantle",
-      "view": "Wide View",
-      "type": "standard",
-      "tags": [
-        "wide",
-        "green",
-        "standard",
-        "floral",
-        "sage",
-        "mantle",
-        "pink",
-        "view",
-        "oak"
-      ]
+      ],
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "dining-room-030",
@@ -830,7 +529,9 @@
         "tile",
         "cream",
         "fireplace"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-033",
@@ -848,7 +549,9 @@
         "yellow",
         "snakeshead",
         "dense"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-035",
@@ -866,46 +569,9 @@
         "floral",
         "light",
         "snakeshead"
-      ]
-    },
-    {
-      "id": "dining-room-036",
-      "filename": "Stockholm-Floral-coral_sage-wainscoting",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Stockholm-Floral-coral_sage-wainscoting",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Stockholm-Floral-coral_sage-wainscoting",
-      "pattern": "Stockholm Floral Coral",
-      "wainscoting": "Sage",
-      "trim": null,
-      "view": null,
-      "type": "underscore",
-      "tags": [
-        "stockholm",
-        "underscore",
-        "sage",
-        "floral",
-        "coral"
-      ]
-    },
-    {
-      "id": "dining-room-037",
-      "filename": "Sunflower Gold Floral - White Trim - Cream Wainscoting - Bay Window",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Sunflower%20Gold%20Floral%20-%20White%20Trim%20-%20Cream%20Wainscoting%20-%20Bay%20Window",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Sunflower%20Gold%20Floral%20-%20White%20Trim%20-%20Cream%20Wainscoting%20-%20Bay%20Window",
-      "pattern": "Sunflower Gold Floral",
-      "wainscoting": "Cream",
-      "trim": "White",
-      "view": "Bay Window",
-      "type": "standard",
-      "tags": [
-        "bay",
-        "standard",
-        "floral",
-        "window",
-        "cream",
-        "gold",
-        "sunflower",
-        "white"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-038",
@@ -926,7 +592,9 @@
         "view",
         "fireplace",
         "oak"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-039",
@@ -948,7 +616,9 @@
         "sunflower",
         "view",
         "oak"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-040",
@@ -970,7 +640,9 @@
         "sunflower",
         "view",
         "oak"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-041",
@@ -990,109 +662,9 @@
         "door",
         "sunflower",
         "oak"
-      ]
-    },
-    {
-      "id": "dining-room-042",
-      "filename": "Trapez-geometric-triangles_terracotta-wainscoting",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Trapez-geometric-triangles_terracotta-wainscoting",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Trapez-geometric-triangles_terracotta-wainscoting",
-      "pattern": "Trapez Geometric Triangles",
-      "wainscoting": "Terracotta",
-      "trim": null,
-      "view": null,
-      "type": "underscore",
-      "tags": [
-        "underscore",
-        "trapez",
-        "terracotta",
-        "triangles",
-        "geometric"
-      ]
-    },
-    {
-      "id": "dining-room-044",
-      "filename": "Tropical Jungle Birds - Gray Wainscoting - White Trim - Wide View",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Gray%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Gray%20Wainscoting%20-%20White%20Trim%20-%20Wide%20View",
-      "pattern": "Tropical Jungle Birds",
-      "wainscoting": "Gray",
-      "trim": "White",
-      "view": "Wide View",
-      "type": "standard",
-      "tags": [
-        "wide",
-        "jungle",
-        "standard",
-        "tropical",
-        "gray",
-        "view",
-        "white",
-        "birds"
-      ]
-    },
-    {
-      "id": "dining-room-051",
-      "filename": "Tropical Jungle Birds - Oak Mantle - 3 Wainscoting Comparison",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Oak%20Mantle%20-%203%20Wainscoting%20Comparison",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Oak%20Mantle%20-%203%20Wainscoting%20Comparison",
-      "pattern": "Tropical Jungle Birds - Oak Mantle - 3 Wainscoting Comparison",
-      "wainscoting": null,
-      "trim": null,
-      "view": null,
-      "type": "comparison",
-      "tags": [
-        "jungle",
-        "tropical",
-        "comparison",
-        "wainscoting",
-        "mantle",
-        "birds",
-        "oak"
-      ]
-    },
-    {
-      "id": "dining-room-052",
-      "filename": "Tropical Jungle Birds - Rust Wainscoting - Oak Mantle - Wood Door",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Mantle%20-%20Wood%20Door",
-      "pattern": "Tropical Jungle Birds",
-      "wainscoting": "Rust",
-      "trim": "Oak Mantle",
-      "view": "Wood Door",
-      "type": "standard",
-      "tags": [
-        "rust",
-        "jungle",
-        "standard",
-        "tropical",
-        "mantle",
-        "wood",
-        "door",
-        "birds",
-        "oak"
-      ]
-    },
-    {
-      "id": "dining-room-053",
-      "filename": "Tropical Jungle Birds - Rust Wainscoting - Oak Trim - Wide View",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tropical%20Jungle%20Birds%20-%20Rust%20Wainscoting%20-%20Oak%20Trim%20-%20Wide%20View",
-      "pattern": "Tropical Jungle Birds",
-      "wainscoting": "Rust",
-      "trim": "Oak",
-      "view": "Wide View",
-      "type": "standard",
-      "tags": [
-        "rust",
-        "wide",
-        "jungle",
-        "standard",
-        "tropical",
-        "view",
-        "birds",
-        "oak"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-055",
@@ -1112,28 +684,9 @@
         "tan",
         "view",
         "birds"
-      ]
-    },
-    {
-      "id": "dining-room-057",
-      "filename": "Tulip Floral Green - Blush Pink Wainscoting - Wide View",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/Tulip%20Floral%20Green%20-%20Blush%20Pink%20Wainscoting%20-%20Wide%20View",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/Tulip%20Floral%20Green%20-%20Blush%20Pink%20Wainscoting%20-%20Wide%20View",
-      "pattern": "Tulip Floral Green",
-      "wainscoting": "Blush Pink",
-      "trim": null,
-      "view": "Wide View",
-      "type": "standard",
-      "tags": [
-        "wide",
-        "green",
-        "standard",
-        "tulip",
-        "floral",
-        "pink",
-        "view",
-        "blush"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dining-room-058",
@@ -1148,38 +701,9 @@
       "tags": [
         "garden",
         "floral"
-      ]
-    },
-    {
-      "id": "dining-room-059",
-      "filename": "Restyled Sunflower Gold",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_gold_1767310391161",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_gold_1767310391161",
-      "pattern": "Sunflower Gold",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "sunflower",
-        "gold"
-      ]
-    },
-    {
-      "id": "dining-room-060",
-      "filename": "Restyled Sunflower Green Pocket",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_green_pocket_1767310468548",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_green_pocket_1767310468548",
-      "pattern": "Sunflower Green Pocket",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "pocket",
-        "sunflower",
-        "green"
-      ]
+      ],
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "dining-room-061",
@@ -1194,38 +718,9 @@
       "tags": [
         "dove",
         "rose"
-      ]
-    },
-    {
-      "id": "dining-room-062",
-      "filename": "Restyled Sunflower Green Door",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_sunflower_green_door_1767310506335",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_sunflower_green_door_1767310506335",
-      "pattern": "Sunflower Green Door",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "door",
-        "sunflower",
-        "green"
-      ]
-    },
-    {
-      "id": "dining-room-063",
-      "filename": "Restyled Trapez Geo",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_trapez_geo_1767310545972",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_trapez_geo_1767310545972",
-      "pattern": "Trapez Geo",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "geo",
-        "trapez"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-064",
@@ -1241,7 +736,9 @@
         "fireplace",
         "sunflower",
         "green"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "dining-room-065",
@@ -1256,7 +753,9 @@
       "tags": [
         "damask",
         "gray"
-      ]
+      ],
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "dining-room-066",
@@ -1271,7 +770,9 @@
       "tags": [
         "snakeshead",
         "retry"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-067",
@@ -1286,7 +787,9 @@
       "tags": [
         "mustard",
         "ceiling"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-068",
@@ -1301,7 +804,9 @@
       "tags": [
         "lavender",
         "chinoiserie"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "dining-room-069",
@@ -1316,7 +821,9 @@
       "tags": [
         "mustard",
         "sunflower"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "dining-room-070",
@@ -1331,21 +838,9 @@
       "tags": [
         "damask",
         "sage"
-      ]
-    },
-    {
-      "id": "dining-room-071",
-      "filename": "Restyled Target 2",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_target_2_1767310130305",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_target_2_1767310130305",
-      "pattern": "Target 2",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "target"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "dining-room-072",
@@ -1361,7 +856,9 @@
         "pink",
         "gold",
         "chrysanthemum"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-073",
@@ -1376,7 +873,9 @@
       "tags": [
         "bree",
         "target"
-      ]
+      ],
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "dining-room-074",
@@ -1391,41 +890,12 @@
       "tags": [
         "stockholm",
         "floral"
-      ]
-    },
-    {
-      "id": "dining-room-075",
-      "filename": "Restyled Marigold Yellow",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/dining-room/restyled_marigold_yellow_1767310238791",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/dining-room/restyled_marigold_yellow_1767310238791",
-      "pattern": "Marigold Yellow",
-      "wainscoting": null,
-      "trim": null,
-      "view": "Restyled",
-      "type": "restyled",
-      "tags": [
-        "marigold",
-        "yellow"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     }
   ],
   "office": [
-    {
-      "id": "office-001",
-      "filename": "Gray Textured - Gaming Desk Setup",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Gaming%20Desk%20Setup",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Gaming%20Desk%20Setup",
-      "walls": "Gray Textured",
-      "wainscoting": null,
-      "feature": "Gaming Desk Setup",
-      "tags": [
-        "desk",
-        "setup",
-        "textured",
-        "gray",
-        "gaming"
-      ]
-    },
     {
       "id": "office-002",
       "filename": "Gray Textured - Slate Blue Wainscoting - Bay Window A",
@@ -1441,7 +911,9 @@
         "blue",
         "gray",
         "slate"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "office-003",
@@ -1458,56 +930,9 @@
         "blue",
         "gray",
         "slate"
-      ]
-    },
-    {
-      "id": "office-004",
-      "filename": "Gray Textured - Slate Gray Wainscoting - Bay Window",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Gray%20Textured%20-%20Slate%20Gray%20Wainscoting%20-%20Bay%20Window",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Gray%20Textured%20-%20Slate%20Gray%20Wainscoting%20-%20Bay%20Window",
-      "walls": "Gray Textured",
-      "wainscoting": "Slate Gray",
-      "feature": "Bay Window",
-      "tags": [
-        "bay",
-        "textured",
-        "window",
-        "gray",
-        "slate"
-      ]
-    },
-    {
-      "id": "office-005",
-      "filename": "Neutral Geometric Patchwork - Slate Blue Wainscoting",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Neutral%20Geometric%20Patchwork%20-%20Slate%20Blue%20Wainscoting",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Neutral%20Geometric%20Patchwork%20-%20Slate%20Blue%20Wainscoting",
-      "walls": "Neutral Geometric Patchwork",
-      "wainscoting": "Slate Blue",
-      "feature": null,
-      "tags": [
-        "blue",
-        "slate",
-        "geometric",
-        "neutral",
-        "patchwork"
-      ]
-    },
-    {
-      "id": "office-006",
-      "filename": "Purple Plum Upper Walls - Slate Blue Wainscoting",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Purple%20Plum%20Upper%20Walls%20-%20Slate%20Blue%20Wainscoting",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Purple%20Plum%20Upper%20Walls%20-%20Slate%20Blue%20Wainscoting",
-      "walls": "Purple Plum Upper Walls",
-      "wainscoting": "Slate Blue",
-      "feature": null,
-      "tags": [
-        "upper",
-        "walls",
-        "blue",
-        "plum",
-        "slate",
-        "purple"
-      ]
+      ],
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "office-007",
@@ -1523,58 +948,9 @@
         "blue",
         "strawberry",
         "slate"
-      ]
-    },
-    {
-      "id": "office-008",
-      "filename": "Office - Current Setup Wide View Closet - Stripped Brown Oak",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Brown%20Oak",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Brown%20Oak",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Brown Oak",
-      "tags": [
-        "brown",
-        "wide",
-        "oak",
-        "stripped",
-        "view",
-        "closet"
-      ]
-    },
-    {
-      "id": "office-009",
-      "filename": "Office - Current Setup Bay Window Dual Desks - Stripped Empty",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Bay%20Window%20Dual%20Desks%20-%20Stripped%20Empty",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Bay%20Window%20Dual%20Desks%20-%20Stripped%20Empty",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Empty",
-      "tags": [
-        "bay",
-        "desks",
-        "stripped",
-        "dual",
-        "empty",
-        "window"
-      ]
-    },
-    {
-      "id": "office-010",
-      "filename": "Office - Current Setup Entry Door Guitar Art - Stripped Empty",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Empty",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Empty",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Empty",
-      "tags": [
-        "guitar",
-        "entry",
-        "stripped",
-        "door",
-        "empty",
-        "art"
-      ]
+      ],
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "office-011",
@@ -1590,74 +966,9 @@
         "door",
         "empty",
         "closet"
-      ]
-    },
-    {
-      "id": "office-012",
-      "filename": "Office - Current Setup Wide View Closet - Stripped Empty",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Empty",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Wide%20View%20Closet%20-%20Stripped%20Empty",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Empty",
-      "tags": [
-        "wide",
-        "stripped",
-        "empty",
-        "view",
-        "closet"
-      ]
-    },
-    {
-      "id": "office-013",
-      "filename": "Office - Current Setup Both Doors Wide - Stripped Empty",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Empty",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Empty",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Empty",
-      "tags": [
-        "both",
-        "empty",
-        "wide",
-        "stripped",
-        "doors"
-      ]
-    },
-    {
-      "id": "office-014",
-      "filename": "Office - Current Setup Both Doors Wide - Stripped Brown Oak",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Brown%20Oak",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Both%20Doors%20Wide%20-%20Stripped%20Brown%20Oak",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Brown Oak",
-      "tags": [
-        "both",
-        "brown",
-        "wide",
-        "oak",
-        "stripped",
-        "doors"
-      ]
-    },
-    {
-      "id": "office-015",
-      "filename": "Office - Current Setup Entry Door Guitar Art - Stripped Brown Oak",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Brown%20Oak",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Office%20-%20Current%20Setup%20Entry%20Door%20Guitar%20Art%20-%20Stripped%20Brown%20Oak",
-      "walls": "Current",
-      "wainscoting": null,
-      "feature": "Stripped Brown Oak",
-      "tags": [
-        "guitar",
-        "entry",
-        "brown",
-        "oak",
-        "stripped",
-        "door",
-        "art"
-      ]
+      ],
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "office-016",
@@ -1672,21 +983,9 @@
         "concept",
         "crimson",
         "sofa"
-      ]
-    },
-    {
-      "id": "office-017",
-      "filename": "Concept - The Zimmer Style",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/office/Concept%20-%20The%20Zimmer%20Style",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/office/Concept%20-%20The%20Zimmer%20Style",
-      "walls": "Concept",
-      "wainscoting": null,
-      "feature": "The Zimmer Style",
-      "tags": [
-        "style",
-        "concept",
-        "zimmer"
-      ]
+      ],
+      "likes": 3,
+      "score": 6
     }
   ]
 }

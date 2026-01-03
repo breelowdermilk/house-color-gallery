@@ -6,7 +6,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221223/house-color-gallery/swatches/eternity-104068---teal-gold-geometric-circles.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221223/house-color-gallery/swatches/eternity-104068---teal-gold-geometric-circles.png",
-      "filename": "Eternity 104068 - teal gold geometric circles.png"
+      "filename": "Eternity 104068 - teal gold geometric circles.png",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "portofino-75706---burgundy-red-gold-grasscloth-dam",
@@ -14,15 +16,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221223/house-color-gallery/swatches/portofino-75706---burgundy-red-gold-grasscloth-dam.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221223/house-color-gallery/swatches/portofino-75706---burgundy-red-gold-grasscloth-dam.jpg",
-      "filename": "Portofino 75706 - burgundy red gold grasscloth damask.jpg"
-    },
-    {
-      "id": "snakeshead-216863---green-gold-morris-floral-arts-",
-      "name": "Snakeshead 216863 - green gold morris floral arts-crafts",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221224/house-color-gallery/swatches/snakeshead-216863---green-gold-morris-floral-arts-.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221224/house-color-gallery/swatches/snakeshead-216863---green-gold-morris-floral-arts-.png",
-      "filename": "Snakeshead 216863 - green gold morris floral arts-crafts.png"
+      "filename": "Portofino 75706 - burgundy red gold grasscloth damask.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "trapez-1993---olive-gold-geometric-triangles-midce",
@@ -30,15 +26,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221224/house-color-gallery/swatches/trapez-1993---olive-gold-geometric-triangles-midce.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221224/house-color-gallery/swatches/trapez-1993---olive-gold-geometric-triangles-midce.png",
-      "filename": "Trapez 1993 - olive gold geometric triangles midcentury.png"
-    },
-    {
-      "id": "geometric-weave-333656---purple-geometric-texture",
-      "name": "Geometric Weave 333656 - purple geometric texture",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221225/house-color-gallery/swatches/geometric-weave-333656---purple-geometric-texture.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221225/house-color-gallery/swatches/geometric-weave-333656---purple-geometric-texture.png",
-      "filename": "Geometric Weave 333656 - purple geometric texture.png"
+      "filename": "Trapez 1993 - olive gold geometric triangles midcentury.png",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "stockholm-floral-391174---teal-green-floral-botani",
@@ -46,23 +36,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221225/house-color-gallery/swatches/stockholm-floral-391174---teal-green-floral-botani.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221225/house-color-gallery/swatches/stockholm-floral-391174---teal-green-floral-botani.png",
-      "filename": "Stockholm Floral 391174 - teal green floral botanical wildflower.png"
-    },
-    {
-      "id": "trussardi-z21806---burgundy-gold-embossed-victoria",
-      "name": "Trussardi Z21806 - burgundy gold embossed victorian damask",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221225/house-color-gallery/swatches/trussardi-z21806---burgundy-gold-embossed-victoria.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221225/house-color-gallery/swatches/trussardi-z21806---burgundy-gold-embossed-victoria.jpg",
-      "filename": "Trussardi Z21806 - burgundy gold embossed victorian damask.jpg"
-    },
-    {
-      "id": "seabrook-tp80502---navy-blue-hexagon-geometric",
-      "name": "Seabrook TP80502 - navy blue hexagon geometric",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221227/house-color-gallery/swatches/seabrook-tp80502---navy-blue-hexagon-geometric.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221227/house-color-gallery/swatches/seabrook-tp80502---navy-blue-hexagon-geometric.jpg",
-      "filename": "Seabrook TP80502 - navy blue hexagon geometric.jpg"
+      "filename": "Stockholm Floral 391174 - teal green floral botanical wildflower.png",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "garden-140495---green-floral-morris-arts-crafts",
@@ -70,7 +46,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221227/house-color-gallery/swatches/garden-140495---green-floral-morris-arts-crafts.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221227/house-color-gallery/swatches/garden-140495---green-floral-morris-arts-crafts.png",
-      "filename": "Garden 140495 - green floral morris arts-crafts.png"
+      "filename": "Garden 140495 - green floral morris arts-crafts.png",
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "lattice-fretwork-100315ol---sage-green-geometric-t",
@@ -78,23 +56,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221228/house-color-gallery/swatches/lattice-fretwork-100315ol---sage-green-geometric-t.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221228/house-color-gallery/swatches/lattice-fretwork-100315ol---sage-green-geometric-t.png",
-      "filename": "Lattice Fretwork 100315OL - sage green geometric trellis.png"
-    },
-    {
-      "id": "crocodile-effect-32-659---charcoal-gray-texture-an",
-      "name": "Crocodile Effect 32-659 - charcoal gray texture animal-print",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221228/house-color-gallery/swatches/crocodile-effect-32-659---charcoal-gray-texture-an.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221228/house-color-gallery/swatches/crocodile-effect-32-659---charcoal-gray-texture-an.png",
-      "filename": "Crocodile Effect 32-659 - charcoal gray texture animal-print.png"
-    },
-    {
-      "id": "eternity-104065---cream-gold-geometric-circles",
-      "name": "Eternity 104065 - cream gold geometric circles",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221229/house-color-gallery/swatches/eternity-104065---cream-gold-geometric-circles.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221229/house-color-gallery/swatches/eternity-104065---cream-gold-geometric-circles.png",
-      "filename": "Eternity 104065 - cream gold geometric circles.png"
+      "filename": "Lattice Fretwork 100315OL - sage green geometric trellis.png",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "mosaic-37421-1---terracotta-moroccan-quatrefoil-ti",
@@ -102,7 +66,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221229/house-color-gallery/swatches/mosaic-37421-1---terracotta-moroccan-quatrefoil-ti.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221229/house-color-gallery/swatches/mosaic-37421-1---terracotta-moroccan-quatrefoil-ti.png",
-      "filename": "Mosaic 37421-1 - terracotta moroccan quatrefoil tile.png"
+      "filename": "Mosaic 37421-1 - terracotta moroccan quatrefoil tile.png",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dove-and-rose-140478---purple-teal-floral-birds-mo",
@@ -110,7 +76,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221229/house-color-gallery/swatches/dove-and-rose-140478---purple-teal-floral-birds-mo.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221229/house-color-gallery/swatches/dove-and-rose-140478---purple-teal-floral-birds-mo.png",
-      "filename": "Dove and Rose 140478 - purple teal floral birds morris.png"
+      "filename": "Dove and Rose 140478 - purple teal floral birds morris.png",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "tuileries-216995---teal-birds-botanical-chinoiseri",
@@ -118,7 +86,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221230/house-color-gallery/swatches/tuileries-216995---teal-birds-botanical-chinoiseri.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221230/house-color-gallery/swatches/tuileries-216995---teal-birds-botanical-chinoiseri.png",
-      "filename": "Tuileries 216995 - teal birds botanical chinoiserie.png"
+      "filename": "Tuileries 216995 - teal birds botanical chinoiserie.png",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "attingham-w0193-03---teal-cream-art-nouveau-floral",
@@ -126,7 +96,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221230/house-color-gallery/swatches/attingham-w0193-03---teal-cream-art-nouveau-floral.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221230/house-color-gallery/swatches/attingham-w0193-03---teal-cream-art-nouveau-floral.png",
-      "filename": "Attingham W0193-03 - teal cream art-nouveau floral.png"
+      "filename": "Attingham W0193-03 - teal cream art-nouveau floral.png",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "prism-104741---yellow-mustard-geometric-starburst",
@@ -134,7 +106,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221231/house-color-gallery/swatches/prism-104741---yellow-mustard-geometric-starburst.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221231/house-color-gallery/swatches/prism-104741---yellow-mustard-geometric-starburst.png",
-      "filename": "Prism 104741 - yellow mustard geometric starburst.png"
+      "filename": "Prism 104741 - yellow mustard geometric starburst.png",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "kelapa-112973---pink-blush-tropical-palm-leaves",
@@ -142,7 +116,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221231/house-color-gallery/swatches/kelapa-112973---pink-blush-tropical-palm-leaves.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221231/house-color-gallery/swatches/kelapa-112973---pink-blush-tropical-palm-leaves.png",
-      "filename": "Kelapa 112973 - pink blush tropical palm-leaves.png"
+      "filename": "Kelapa 112973 - pink blush tropical palm-leaves.png",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "maris-2973-87365---charcoal-flock-damask",
@@ -150,31 +126,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221232/house-color-gallery/swatches/maris-2973-87365---charcoal-flock-damask.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221232/house-color-gallery/swatches/maris-2973-87365---charcoal-flock-damask.jpg",
-      "filename": "Maris 2973-87365 - charcoal flock damask.jpg"
-    },
-    {
-      "id": "sophia-geo-710144---teal-geometric-hexagon-honeyco",
-      "name": "Sophia Geo 710144 - teal geometric hexagon honeycomb",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221232/house-color-gallery/swatches/sophia-geo-710144---teal-geometric-hexagon-honeyco.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221232/house-color-gallery/swatches/sophia-geo-710144---teal-geometric-hexagon-honeyco.png",
-      "filename": "Sophia Geo 710144 - teal geometric hexagon honeycomb.png"
-    },
-    {
-      "id": "fan-104303---black-gold-art-deco-geometric",
-      "name": "Fan 104303 - black gold art-deco geometric",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221233/house-color-gallery/swatches/fan-104303---black-gold-art-deco-geometric.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221233/house-color-gallery/swatches/fan-104303---black-gold-art-deco-geometric.jpg",
-      "filename": "Fan 104303 - black gold art-deco geometric.jpg"
-    },
-    {
-      "id": "dewdrops-misp1358---yellow-mustard-midcentury-retr",
-      "name": "Dewdrops MISP1358 - yellow mustard midcentury retro",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221233/house-color-gallery/swatches/dewdrops-misp1358---yellow-mustard-midcentury-retr.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221233/house-color-gallery/swatches/dewdrops-misp1358---yellow-mustard-midcentury-retr.png",
-      "filename": "Dewdrops MISP1358 - yellow mustard midcentury retro.png"
+      "filename": "Maris 2973-87365 - charcoal flock damask.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "dove-and-rose-140480---green-pink-floral-birds-mor",
@@ -182,23 +136,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221233/house-color-gallery/swatches/dove-and-rose-140480---green-pink-floral-birds-mor.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221233/house-color-gallery/swatches/dove-and-rose-140480---green-pink-floral-birds-mor.png",
-      "filename": "Dove and Rose 140480 - green pink floral birds morris.png"
-    },
-    {
-      "id": "attingham-w0193-02---blue-green-art-nouveau-floral",
-      "name": "Attingham W0193-02 - blue green art-nouveau floral",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221234/house-color-gallery/swatches/attingham-w0193-02---blue-green-art-nouveau-floral.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221234/house-color-gallery/swatches/attingham-w0193-02---blue-green-art-nouveau-floral.png",
-      "filename": "Attingham W0193-02 - blue green art-nouveau floral.png"
-    },
-    {
-      "id": "art-deco-104299---black-gold-geometric-fan",
-      "name": "Art Deco 104299 - black gold geometric fan",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221235/house-color-gallery/swatches/art-deco-104299---black-gold-geometric-fan.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221235/house-color-gallery/swatches/art-deco-104299---black-gold-geometric-fan.jpg",
-      "filename": "Art Deco 104299 - black gold geometric fan.jpg"
+      "filename": "Dove and Rose 140480 - green pink floral birds morris.png",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "rene-105925---blush-pink-art-deco-geometric-fan",
@@ -206,7 +146,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221235/house-color-gallery/swatches/rene-105925---blush-pink-art-deco-geometric-fan.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221235/house-color-gallery/swatches/rene-105925---blush-pink-art-deco-geometric-fan.png",
-      "filename": "Rene 105925 - blush pink art-deco geometric fan.png"
+      "filename": "Rene 105925 - blush pink art-deco geometric fan.png",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "masoala-91441---dark-green-tropical-jungle-birds",
@@ -214,55 +156,9 @@
       "category": "General",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221236/house-color-gallery/swatches/masoala-91441---dark-green-tropical-jungle-birds.png",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221236/house-color-gallery/swatches/masoala-91441---dark-green-tropical-jungle-birds.png",
-      "filename": "Masoala 91441 - dark green tropical jungle birds.png"
-    },
-    {
-      "id": "crocodile-effect-32-663---green-texture-animal-pri",
-      "name": "Crocodile Effect 32-663 - green texture animal-print",
-      "category": "General",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221236/house-color-gallery/swatches/crocodile-effect-32-663---green-texture-animal-pri.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221236/house-color-gallery/swatches/crocodile-effect-32-663---green-texture-animal-pri.png",
-      "filename": "Crocodile Effect 32-663 - green texture animal-print.png"
-    },
-    {
-      "id": "portofino-75706---burgundy-red-gold-grasscloth-dam",
-      "name": "Portofino 75706 - burgundy red gold grasscloth damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221223/house-color-gallery/swatches/portofino-75706---burgundy-red-gold-grasscloth-dam.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221223/house-color-gallery/swatches/portofino-75706---burgundy-red-gold-grasscloth-dam.jpg",
-      "filename": "Portofino 75706 - burgundy red gold grasscloth damask.jpg"
-    },
-    {
-      "id": "trussardi-z21806---burgundy-gold-embossed-victoria",
-      "name": "Trussardi Z21806 - burgundy gold embossed victorian damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221225/house-color-gallery/swatches/trussardi-z21806---burgundy-gold-embossed-victoria.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221225/house-color-gallery/swatches/trussardi-z21806---burgundy-gold-embossed-victoria.jpg",
-      "filename": "Trussardi Z21806 - burgundy gold embossed victorian damask.jpg"
-    },
-    {
-      "id": "seabrook-tp80502---navy-blue-hexagon-geometric",
-      "name": "Seabrook TP80502 - navy blue hexagon geometric",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221227/house-color-gallery/swatches/seabrook-tp80502---navy-blue-hexagon-geometric.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221227/house-color-gallery/swatches/seabrook-tp80502---navy-blue-hexagon-geometric.jpg",
-      "filename": "Seabrook TP80502 - navy blue hexagon geometric.jpg"
-    },
-    {
-      "id": "scalamandre-fine-sisal---espresso-brown-grasscloth",
-      "name": "Scalamandre Fine Sisal - espresso brown grasscloth",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221238/house-color-gallery/swatches/scalamandre-fine-sisal---espresso-brown-grasscloth.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221238/house-color-gallery/swatches/scalamandre-fine-sisal---espresso-brown-grasscloth.jpg",
-      "filename": "Scalamandre Fine Sisal - espresso brown grasscloth.jpg"
-    },
-    {
-      "id": "zambaiti-m1241---navy-blue-black-beige-victorian-d",
-      "name": "Zambaiti M1241 - navy blue black beige victorian damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221240/house-color-gallery/swatches/zambaiti-m1241---navy-blue-black-beige-victorian-d.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221240/house-color-gallery/swatches/zambaiti-m1241---navy-blue-black-beige-victorian-d.jpg",
-      "filename": "Zambaiti M1241 - navy blue black beige victorian damask.jpg"
+      "filename": "Masoala 91441 - dark green tropical jungle birds.png",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "121027---navy-blue-gold-bronze-geo-trellis",
@@ -270,63 +166,9 @@
       "category": "Office",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221241/house-color-gallery/swatches/121027---navy-blue-gold-bronze-geo-trellis.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221241/house-color-gallery/swatches/121027---navy-blue-gold-bronze-geo-trellis.jpg",
-      "filename": "121027 - navy blue gold bronze geo trellis.jpg"
-    },
-    {
-      "id": "portofino-205012---brown-bronze-gold-flocked-damas",
-      "name": "Portofino 205012 - brown bronze gold flocked damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221242/house-color-gallery/swatches/portofino-205012---brown-bronze-gold-flocked-damas.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221242/house-color-gallery/swatches/portofino-205012---brown-bronze-gold-flocked-damas.jpg",
-      "filename": "Portofino 205012 - brown bronze gold flocked damask.jpg"
-    },
-    {
-      "id": "tempaper-sisal---dark-brown-grasscloth",
-      "name": "Tempaper Sisal - dark brown grasscloth",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221242/house-color-gallery/swatches/tempaper-sisal---dark-brown-grasscloth.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221242/house-color-gallery/swatches/tempaper-sisal---dark-brown-grasscloth.jpg",
-      "filename": "Tempaper Sisal - dark brown grasscloth.jpg"
-    },
-    {
-      "id": "zambaiti-z72046---burgundy-gold-metallic-victorian",
-      "name": "Zambaiti Z72046 - burgundy gold metallic victorian damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221243/house-color-gallery/swatches/zambaiti-z72046---burgundy-gold-metallic-victorian.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221243/house-color-gallery/swatches/zambaiti-z72046---burgundy-gold-metallic-victorian.jpg",
-      "filename": "Zambaiti Z72046 - burgundy gold metallic victorian damask.jpg"
-    },
-    {
-      "id": "wood-geo-36913-1---brown-wood-texture-geometric",
-      "name": "Wood Geo 36913-1 - brown wood texture geometric",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221243/house-color-gallery/swatches/wood-geo-36913-1---brown-wood-texture-geometric.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221243/house-color-gallery/swatches/wood-geo-36913-1---brown-wood-texture-geometric.png",
-      "filename": "Wood Geo 36913-1 - brown wood texture geometric.png"
-    },
-    {
-      "id": "maris-2973-87365---charcoal-flock-damask",
-      "name": "Maris 2973-87365 - charcoal flock damask",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221232/house-color-gallery/swatches/maris-2973-87365---charcoal-flock-damask.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221232/house-color-gallery/swatches/maris-2973-87365---charcoal-flock-damask.jpg",
-      "filename": "Maris 2973-87365 - charcoal flock damask.jpg"
-    },
-    {
-      "id": "fan-104303---black-gold-art-deco-geometric",
-      "name": "Fan 104303 - black gold art-deco geometric",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221233/house-color-gallery/swatches/fan-104303---black-gold-art-deco-geometric.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221233/house-color-gallery/swatches/fan-104303---black-gold-art-deco-geometric.jpg",
-      "filename": "Fan 104303 - black gold art-deco geometric.jpg"
-    },
-    {
-      "id": "art-deco-104299---black-gold-geometric-fan",
-      "name": "Art Deco 104299 - black gold geometric fan",
-      "category": "Office",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221235/house-color-gallery/swatches/art-deco-104299---black-gold-geometric-fan.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221235/house-color-gallery/swatches/art-deco-104299---black-gold-geometric-fan.jpg",
-      "filename": "Art Deco 104299 - black gold geometric fan.jpg"
+      "filename": "121027 - navy blue gold bronze geo trellis.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "graham-brown-120659---navy-grasscloth-texture",
@@ -334,15 +176,9 @@
       "category": "Office",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221247/house-color-gallery/swatches/graham-brown-120659---navy-grasscloth-texture.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221247/house-color-gallery/swatches/graham-brown-120659---navy-grasscloth-texture.jpg",
-      "filename": "Graham Brown 120659 - navy grasscloth texture.jpg"
-    },
-    {
-      "id": "york-old-world-toile---black-white-toile",
-      "name": "York Old World Toile - black white toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221247/house-color-gallery/swatches/york-old-world-toile---black-white-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221247/house-color-gallery/swatches/york-old-world-toile---black-white-toile.jpg",
-      "filename": "York Old World Toile - black white toile.jpg"
+      "filename": "Graham Brown 120659 - navy grasscloth texture.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "schumacher-toile-de-la-prairie---blue-toile",
@@ -350,15 +186,9 @@
       "category": "Dining Room - Toile",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221248/house-color-gallery/swatches/schumacher-toile-de-la-prairie---blue-toile.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221248/house-color-gallery/swatches/schumacher-toile-de-la-prairie---blue-toile.jpg",
-      "filename": "Schumacher Toile De La Prairie - blue toile.jpg"
-    },
-    {
-      "id": "schumacher-toile-de-fleurs---grisaille-toile",
-      "name": "Schumacher Toile De Fleurs - grisaille toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221249/house-color-gallery/swatches/schumacher-toile-de-fleurs---grisaille-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221249/house-color-gallery/swatches/schumacher-toile-de-fleurs---grisaille-toile.jpg",
-      "filename": "Schumacher Toile De Fleurs - grisaille toile.jpg"
+      "filename": "Schumacher Toile De La Prairie - blue toile.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "schumacher-toile-de-fleurs---delft-blue-toile",
@@ -366,55 +196,9 @@
       "category": "Dining Room - Toile",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221250/house-color-gallery/swatches/schumacher-toile-de-fleurs---delft-blue-toile.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221250/house-color-gallery/swatches/schumacher-toile-de-fleurs---delft-blue-toile.jpg",
-      "filename": "Schumacher Toile De Fleurs - delft blue toile.jpg"
-    },
-    {
-      "id": "york-campagne-toile---blue-white-toile",
-      "name": "York Campagne Toile - blue white toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221252/house-color-gallery/swatches/york-campagne-toile---blue-white-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221252/house-color-gallery/swatches/york-campagne-toile---blue-white-toile.jpg",
-      "filename": "York Campagne Toile - blue white toile.jpg"
-    },
-    {
-      "id": "schumacher-toile-de-la-prairie---green-toile",
-      "name": "Schumacher Toile De La Prairie - green toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221252/house-color-gallery/swatches/schumacher-toile-de-la-prairie---green-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221252/house-color-gallery/swatches/schumacher-toile-de-la-prairie---green-toile.jpg",
-      "filename": "Schumacher Toile De La Prairie - green toile.jpg"
-    },
-    {
-      "id": "york-pagoda-and-sampan-scenic---black-toile",
-      "name": "York Pagoda And Sampan Scenic - black toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221254/house-color-gallery/swatches/york-pagoda-and-sampan-scenic---black-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221254/house-color-gallery/swatches/york-pagoda-and-sampan-scenic---black-toile.jpg",
-      "filename": "York Pagoda And Sampan Scenic - black toile.jpg"
-    },
-    {
-      "id": "pierre-frey-toile-de-nantes---bleu-ancien-toile",
-      "name": "Pierre Frey Toile de Nantes - bleu ancien toile",
-      "category": "Dining Room - Toile",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221254/house-color-gallery/swatches/pierre-frey-toile-de-nantes---bleu-ancien-toile.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221254/house-color-gallery/swatches/pierre-frey-toile-de-nantes---bleu-ancien-toile.jpg",
-      "filename": "Pierre Frey Toile de Nantes - bleu ancien toile.jpg"
-    },
-    {
-      "id": "thibaut-japanese-garden---emerald-green-japanese",
-      "name": "Thibaut Japanese Garden - Emerald green japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221255/house-color-gallery/swatches/thibaut-japanese-garden---emerald-green-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221255/house-color-gallery/swatches/thibaut-japanese-garden---emerald-green-japanese.jpg",
-      "filename": "Thibaut Japanese Garden - Emerald green japanese.jpg"
-    },
-    {
-      "id": "thibaut-japanese-garden---navy-blue-japanese",
-      "name": "Thibaut Japanese Garden - Navy blue japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221256/house-color-gallery/swatches/thibaut-japanese-garden---navy-blue-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221256/house-color-gallery/swatches/thibaut-japanese-garden---navy-blue-japanese.jpg",
-      "filename": "Thibaut Japanese Garden - Navy blue japanese.jpg"
+      "filename": "Schumacher Toile De Fleurs - delft blue toile.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "milton-king-cranes---midori-green-gold-japanese",
@@ -422,47 +206,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221257/house-color-gallery/swatches/milton-king-cranes---midori-green-gold-japanese.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221257/house-color-gallery/swatches/milton-king-cranes---midori-green-gold-japanese.jpg",
-      "filename": "Milton King Cranes - Midori green gold japanese.jpg"
-    },
-    {
-      "id": "cole-son-japanese-chinoiserie-126-5016---antique-g",
-      "name": "Cole Son Japanese Chinoiserie 126-5016 - Antique gold japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221257/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5016---antique-g.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221257/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5016---antique-g.jpg",
-      "filename": "Cole Son Japanese Chinoiserie 126-5016 - Antique gold japanese.jpg"
-    },
-    {
-      "id": "milton-king-golden-koi---teal-lotus-japanese",
-      "name": "Milton King Golden Koi - Teal lotus japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221258/house-color-gallery/swatches/milton-king-golden-koi---teal-lotus-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221258/house-color-gallery/swatches/milton-king-golden-koi---teal-lotus-japanese.jpg",
-      "filename": "Milton King Golden Koi - Teal lotus japanese.jpg"
-    },
-    {
-      "id": "milton-king-golden-koi---navy-lotus-japanese",
-      "name": "Milton King Golden Koi - Navy lotus japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221258/house-color-gallery/swatches/milton-king-golden-koi---navy-lotus-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221258/house-color-gallery/swatches/milton-king-golden-koi---navy-lotus-japanese.jpg",
-      "filename": "Milton King Golden Koi - Navy lotus japanese.jpg"
-    },
-    {
-      "id": "cole-son-japanese-chinoiserie-126-5012---pink-opal",
-      "name": "Cole Son Japanese Chinoiserie 126-5012 - Pink Opal japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221259/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5012---pink-opal.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221259/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5012---pink-opal.jpg",
-      "filename": "Cole Son Japanese Chinoiserie 126-5012 - Pink Opal japanese.jpg"
-    },
-    {
-      "id": "schumacher-sea-garden---porcelain-blue-koi-fish-ja",
-      "name": "Schumacher Sea Garden - Porcelain blue koi fish japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221259/house-color-gallery/swatches/schumacher-sea-garden---porcelain-blue-koi-fish-ja.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221259/house-color-gallery/swatches/schumacher-sea-garden---porcelain-blue-koi-fish-ja.jpg",
-      "filename": "Schumacher Sea Garden - Porcelain blue koi fish japanese.jpg"
+      "filename": "Milton King Cranes - Midori green gold japanese.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "milton-king-golden-koi---deep-water-blue-japanese",
@@ -470,7 +216,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221260/house-color-gallery/swatches/milton-king-golden-koi---deep-water-blue-japanese.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221260/house-color-gallery/swatches/milton-king-golden-koi---deep-water-blue-japanese.jpg",
-      "filename": "Milton King Golden Koi - Deep Water blue japanese.jpg"
+      "filename": "Milton King Golden Koi - Deep Water blue japanese.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "schumacher-katsugi---cobalt-turquoise-japanese",
@@ -478,7 +226,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221260/house-color-gallery/swatches/schumacher-katsugi---cobalt-turquoise-japanese.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221260/house-color-gallery/swatches/schumacher-katsugi---cobalt-turquoise-japanese.jpg",
-      "filename": "Schumacher Katsugi - Cobalt Turquoise japanese.jpg"
+      "filename": "Schumacher Katsugi - Cobalt Turquoise japanese.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "schumacher-lotus-garden---jade-green-japanese",
@@ -486,7 +236,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221261/house-color-gallery/swatches/schumacher-lotus-garden---jade-green-japanese.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221261/house-color-gallery/swatches/schumacher-lotus-garden---jade-green-japanese.jpg",
-      "filename": "Schumacher Lotus Garden - Jade green japanese.jpg"
+      "filename": "Schumacher Lotus Garden - Jade green japanese.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "cole-son-japanese-woods-126-6018---charcoal-japane",
@@ -494,15 +246,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221261/house-color-gallery/swatches/cole-son-japanese-woods-126-6018---charcoal-japane.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221261/house-color-gallery/swatches/cole-son-japanese-woods-126-6018---charcoal-japane.jpg",
-      "filename": "Cole Son Japanese Woods 126-6018 - Charcoal japanese.jpg"
-    },
-    {
-      "id": "cole-son-japanese-woods-126-6022---patina-gold-jap",
-      "name": "Cole Son Japanese Woods 126-6022 - Patina Gold japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221262/house-color-gallery/swatches/cole-son-japanese-woods-126-6022---patina-gold-jap.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221262/house-color-gallery/swatches/cole-son-japanese-woods-126-6022---patina-gold-jap.jpg",
-      "filename": "Cole Son Japanese Woods 126-6022 - Patina Gold japanese.jpg"
+      "filename": "Cole Son Japanese Woods 126-6018 - Charcoal japanese.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "milton-king-great-wave-bloom---blue-ukiyo-e-japane",
@@ -510,23 +256,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221263/house-color-gallery/swatches/milton-king-great-wave-bloom---blue-ukiyo-e-japane.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221263/house-color-gallery/swatches/milton-king-great-wave-bloom---blue-ukiyo-e-japane.jpg",
-      "filename": "Milton King Great Wave Bloom - blue ukiyo-e japanese.jpg"
-    },
-    {
-      "id": "cole-son-japanese-chinoiserie-126-5015---orchid-pi",
-      "name": "Cole Son Japanese Chinoiserie 126-5015 - Orchid pink japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221263/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5015---orchid-pi.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221263/house-color-gallery/swatches/cole-son-japanese-chinoiserie-126-5015---orchid-pi.jpg",
-      "filename": "Cole Son Japanese Chinoiserie 126-5015 - Orchid pink japanese.jpg"
-    },
-    {
-      "id": "milton-king-cranes---yuri-blue-gold-japanese",
-      "name": "Milton King Cranes - Yuri blue gold japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221264/house-color-gallery/swatches/milton-king-cranes---yuri-blue-gold-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221264/house-color-gallery/swatches/milton-king-cranes---yuri-blue-gold-japanese.jpg",
-      "filename": "Milton King Cranes - Yuri blue gold japanese.jpg"
+      "filename": "Milton King Great Wave Bloom - blue ukiyo-e japanese.jpg",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "schumacher-mizu---sky-blue-japanese",
@@ -534,15 +266,9 @@
       "category": "Dining Room - Japanese",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221265/house-color-gallery/swatches/schumacher-mizu---sky-blue-japanese.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221265/house-color-gallery/swatches/schumacher-mizu---sky-blue-japanese.jpg",
-      "filename": "Schumacher Mizu - Sky blue japanese.jpg"
-    },
-    {
-      "id": "milton-king-golden-koi---black-gold-japanese",
-      "name": "Milton King Golden Koi - Black gold japanese",
-      "category": "Dining Room - Japanese",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221266/house-color-gallery/swatches/milton-king-golden-koi---black-gold-japanese.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221266/house-color-gallery/swatches/milton-king-golden-koi---black-gold-japanese.jpg",
-      "filename": "Milton King Golden Koi - Black gold japanese.jpg"
+      "filename": "Schumacher Mizu - Sky blue japanese.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "erismann-paradisio-10121-18---blue-green-toucans-h",
@@ -550,7 +276,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221266/house-color-gallery/swatches/erismann-paradisio-10121-18---blue-green-toucans-h.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221266/house-color-gallery/swatches/erismann-paradisio-10121-18---blue-green-toucans-h.jpg",
-      "filename": "Erismann Paradisio 10121-18 - blue green toucans hummingbirds jungle.jpg"
+      "filename": "Erismann Paradisio 10121-18 - blue green toucans hummingbirds jungle.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-hummingbirds-112-4014---viridian-green-ex",
@@ -558,7 +286,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221267/house-color-gallery/swatches/cole-son-hummingbirds-112-4014---viridian-green-ex.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221267/house-color-gallery/swatches/cole-son-hummingbirds-112-4014---viridian-green-ex.jpg",
-      "filename": "Cole Son Hummingbirds 112-4014 - viridian green exotic birds.jpg"
+      "filename": "Cole Son Hummingbirds 112-4014 - viridian green exotic birds.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-singita-109-7035---viridian-green-jungle-",
@@ -566,7 +296,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221267/house-color-gallery/swatches/cole-son-singita-109-7035---viridian-green-jungle-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221267/house-color-gallery/swatches/cole-son-singita-109-7035---viridian-green-jungle-.jpg",
-      "filename": "Cole Son Singita 109-7035 - viridian green jungle birds ardmore.jpg"
+      "filename": "Cole Son Singita 109-7035 - viridian green jungle birds ardmore.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "holden-jungle-animals-90690---navy-blue-tropical-b",
@@ -574,7 +306,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221269/house-color-gallery/swatches/holden-jungle-animals-90690---navy-blue-tropical-b.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221269/house-color-gallery/swatches/holden-jungle-animals-90690---navy-blue-tropical-b.jpg",
-      "filename": "Holden Jungle Animals 90690 - navy blue tropical birds reptiles.jpg"
+      "filename": "Holden Jungle Animals 90690 - navy blue tropical birds reptiles.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "milton-king-birds-of-paradise-wr427tc---green-vogu",
@@ -582,7 +316,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221270/house-color-gallery/swatches/milton-king-birds-of-paradise-wr427tc---green-vogu.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221270/house-color-gallery/swatches/milton-king-birds-of-paradise-wr427tc---green-vogu.jpg",
-      "filename": "Milton King Birds Of Paradise WR427TC - green vogue tropical.jpg"
+      "filename": "Milton King Birds Of Paradise WR427TC - green vogue tropical.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-hummingbirds-124-1005---fuchsia-on-racing",
@@ -590,7 +326,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221271/house-color-gallery/swatches/cole-son-hummingbirds-124-1005---fuchsia-on-racing.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221271/house-color-gallery/swatches/cole-son-hummingbirds-124-1005---fuchsia-on-racing.jpg",
-      "filename": "Cole Son Hummingbirds 124-1005 - fuchsia on racing green exotic birds.jpg"
+      "filename": "Cole Son Hummingbirds 124-1005 - fuchsia on racing green exotic birds.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-hummingbirds-flora-124-2013---multi-old-o",
@@ -598,7 +336,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221272/house-color-gallery/swatches/cole-son-hummingbirds-flora-124-2013---multi-old-o.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221272/house-color-gallery/swatches/cole-son-hummingbirds-flora-124-2013---multi-old-o.jpg",
-      "filename": "Cole Son Hummingbirds Flora 124-2013 - multi old olive on eau du nil panel.jpg"
+      "filename": "Cole Son Hummingbirds Flora 124-2013 - multi old olive on eau du nil panel.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "milton-king-birds-of-paradise-wr427tc---evening-bl",
@@ -606,7 +346,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221272/house-color-gallery/swatches/milton-king-birds-of-paradise-wr427tc---evening-bl.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221272/house-color-gallery/swatches/milton-king-birds-of-paradise-wr427tc---evening-bl.jpg",
-      "filename": "Milton King Birds Of Paradise WR427TC - evening blue tropical.jpg"
+      "filename": "Milton King Birds Of Paradise WR427TC - evening blue tropical.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "milton-king-parrot-jungle-wr519jac---black-tropica",
@@ -614,15 +356,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221273/house-color-gallery/swatches/milton-king-parrot-jungle-wr519jac---black-tropica.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221273/house-color-gallery/swatches/milton-king-parrot-jungle-wr519jac---black-tropica.jpg",
-      "filename": "Milton King Parrot Jungle WR519JAC - black tropical parrots orchids.jpg"
-    },
-    {
-      "id": "kelapa-112973---pink-blush-tropical-palm-leaves",
-      "name": "Kelapa 112973 - pink blush tropical palm-leaves",
-      "category": "Dining Room - Birds & Tropical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221231/house-color-gallery/swatches/kelapa-112973---pink-blush-tropical-palm-leaves.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221231/house-color-gallery/swatches/kelapa-112973---pink-blush-tropical-palm-leaves.png",
-      "filename": "Kelapa 112973 - pink blush tropical palm-leaves.png"
+      "filename": "Milton King Parrot Jungle WR519JAC - black tropical parrots orchids.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "sanderson-bird-of-paradise-216653---olive-green-tr",
@@ -630,15 +366,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221274/house-color-gallery/swatches/sanderson-bird-of-paradise-216653---olive-green-tr.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221274/house-color-gallery/swatches/sanderson-bird-of-paradise-216653---olive-green-tr.jpg",
-      "filename": "Sanderson Bird of Paradise 216653 - olive green tropical birds.jpg"
-    },
-    {
-      "id": "cole-son-hummingbirds-112-4017---charcoal-ginger-d",
-      "name": "Cole Son Hummingbirds 112-4017 - charcoal ginger dark exotic birds",
-      "category": "Dining Room - Birds & Tropical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221275/house-color-gallery/swatches/cole-son-hummingbirds-112-4017---charcoal-ginger-d.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221275/house-color-gallery/swatches/cole-son-hummingbirds-112-4017---charcoal-ginger-d.jpg",
-      "filename": "Cole Son Hummingbirds 112-4017 - charcoal ginger dark exotic birds.jpg"
+      "filename": "Sanderson Bird of Paradise 216653 - olive green tropical birds.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-hummingbirds-flora-124-2012---fuchsia-on-",
@@ -646,23 +376,9 @@
       "category": "Dining Room - Birds & Tropical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221275/house-color-gallery/swatches/cole-son-hummingbirds-flora-124-2012---fuchsia-on-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221275/house-color-gallery/swatches/cole-son-hummingbirds-flora-124-2012---fuchsia-on-.jpg",
-      "filename": "Cole Son Hummingbirds Flora 124-2012 - fuchsia on racing green panel.jpg"
-    },
-    {
-      "id": "cole-son-singita-109-7034---olive-green-jungle-bir",
-      "name": "Cole Son Singita 109-7034 - olive green jungle birds ardmore",
-      "category": "Dining Room - Birds & Tropical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221276/house-color-gallery/swatches/cole-son-singita-109-7034---olive-green-jungle-bir.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221276/house-color-gallery/swatches/cole-son-singita-109-7034---olive-green-jungle-bir.jpg",
-      "filename": "Cole Son Singita 109-7034 - olive green jungle birds ardmore.jpg"
-    },
-    {
-      "id": "masoala-91441---dark-green-tropical-jungle-birds",
-      "name": "Masoala 91441 - dark green tropical jungle birds",
-      "category": "Dining Room - Birds & Tropical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221236/house-color-gallery/swatches/masoala-91441---dark-green-tropical-jungle-birds.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221236/house-color-gallery/swatches/masoala-91441---dark-green-tropical-jungle-birds.png",
-      "filename": "Masoala 91441 - dark green tropical jungle birds.png"
+      "filename": "Cole Son Hummingbirds Flora 124-2012 - fuchsia on racing green panel.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "spoonflower-micklyn---coral-peach-peonies-emerald-",
@@ -670,15 +386,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221278/house-color-gallery/swatches/spoonflower-micklyn---coral-peach-peonies-emerald-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221278/house-color-gallery/swatches/spoonflower-micklyn---coral-peach-peonies-emerald-.jpg",
-      "filename": "Spoonflower micklyn - coral peach peonies emerald green.png"
-    },
-    {
-      "id": "happywall-71457---velveteen-teal-flowers",
-      "name": "Happywall 71457 - Velveteen Teal Flowers",
-      "category": "Dining Room - Teal Coral Roses Search",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221279/house-color-gallery/swatches/happywall-71457---velveteen-teal-flowers.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221279/house-color-gallery/swatches/happywall-71457---velveteen-teal-flowers.jpg",
-      "filename": "Happywall 71457 - Velveteen Teal Flowers.jpg"
+      "filename": "Spoonflower micklyn - coral peach peonies emerald green.png",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "house-of-hackney---hollyhocks-winter-teal-berry-pi",
@@ -686,15 +396,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221282/house-color-gallery/swatches/house-of-hackney---hollyhocks-winter-teal-berry-pi.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221282/house-color-gallery/swatches/house-of-hackney---hollyhocks-winter-teal-berry-pi.jpg",
-      "filename": "House of Hackney - Hollyhocks Winter teal berry pink.jpg"
-    },
-    {
-      "id": "full-bloom-navy---a-street-2821-12902",
-      "name": "Full Bloom Navy - A-Street 2821-12902",
-      "category": "Dining Room - Teal Coral Roses Search",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221282/house-color-gallery/swatches/full-bloom-navy---a-street-2821-12902.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221282/house-color-gallery/swatches/full-bloom-navy---a-street-2821-12902.jpg",
-      "filename": "Full Bloom Navy - A-Street 2821-12902.jpg"
+      "filename": "House of Hackney - Hollyhocks Winter teal berry pink.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "reference-06",
@@ -702,7 +406,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221283/house-color-gallery/swatches/reference-06.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221283/house-color-gallery/swatches/reference-06.jpg",
-      "filename": "reference-06.jpg"
+      "filename": "reference-06.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "reference-07",
@@ -710,7 +416,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221284/house-color-gallery/swatches/reference-07.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221284/house-color-gallery/swatches/reference-07.jpg",
-      "filename": "reference-07.jpg"
+      "filename": "reference-07.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "reference-05",
@@ -718,7 +426,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221284/house-color-gallery/swatches/reference-05.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221284/house-color-gallery/swatches/reference-05.jpg",
-      "filename": "reference-05.jpg"
+      "filename": "reference-05.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "reference-04",
@@ -726,7 +436,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221284/house-color-gallery/swatches/reference-04.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221284/house-color-gallery/swatches/reference-04.jpg",
-      "filename": "reference-04.jpg"
+      "filename": "reference-04.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "hovia-ornament---dark-green-pink-floral-mural",
@@ -734,7 +446,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221285/house-color-gallery/swatches/hovia-ornament---dark-green-pink-floral-mural.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221285/house-color-gallery/swatches/hovia-ornament---dark-green-pink-floral-mural.jpg",
-      "filename": "Hovia Ornament - dark green pink floral mural.jpg"
+      "filename": "Hovia Ornament - dark green pink floral mural.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "spoonflower-arcane-atelier---gilded-discontentment",
@@ -742,7 +456,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221286/house-color-gallery/swatches/spoonflower-arcane-atelier---gilded-discontentment.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221286/house-color-gallery/swatches/spoonflower-arcane-atelier---gilded-discontentment.jpg",
-      "filename": "Spoonflower arcane-atelier - gilded discontentment victorian.png"
+      "filename": "Spoonflower arcane-atelier - gilded discontentment victorian.png",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "reference-01",
@@ -750,7 +466,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221287/house-color-gallery/swatches/reference-01.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221287/house-color-gallery/swatches/reference-01.jpg",
-      "filename": "reference-01.jpg"
+      "filename": "reference-01.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "summer-love-teal---wallpops-nu3037",
@@ -758,7 +476,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221288/house-color-gallery/swatches/summer-love-teal---wallpops-nu3037.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221288/house-color-gallery/swatches/summer-love-teal---wallpops-nu3037.jpg",
-      "filename": "Summer Love Teal - WallPops NU3037.jpg"
+      "filename": "Summer Love Teal - WallPops NU3037.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "reference-03",
@@ -766,7 +486,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221288/house-color-gallery/swatches/reference-03.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221288/house-color-gallery/swatches/reference-03.jpg",
-      "filename": "reference-03.jpg"
+      "filename": "reference-03.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "reference-02",
@@ -774,7 +496,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221289/house-color-gallery/swatches/reference-02.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221289/house-color-gallery/swatches/reference-02.jpg",
-      "filename": "reference-02.jpg"
+      "filename": "reference-02.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "cole-son-116-3010---floral-kingdom-rose-forest-cha",
@@ -782,15 +506,9 @@
       "category": "Dining Room - Teal Coral Roses Search",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221289/house-color-gallery/swatches/cole-son-116-3010---floral-kingdom-rose-forest-cha.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221289/house-color-gallery/swatches/cole-son-116-3010---floral-kingdom-rose-forest-cha.jpg",
-      "filename": "Cole Son 116-3010 - Floral Kingdom rose forest charcoal.jpg"
-    },
-    {
-      "id": "cole-and-son-hummingbirds---charcoal-ginger-dark-b",
-      "name": "Cole and Son Hummingbirds - charcoal-ginger dark-botanical",
-      "category": "Dining Room - Dark Botanical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221290/house-color-gallery/swatches/cole-and-son-hummingbirds---charcoal-ginger-dark-b.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221290/house-color-gallery/swatches/cole-and-son-hummingbirds---charcoal-ginger-dark-b.jpg",
-      "filename": "Cole and Son Hummingbirds - charcoal-ginger dark-botanical.jpg"
+      "filename": "Cole Son 116-3010 - Floral Kingdom rose forest charcoal.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "cole-and-son-palm-jungle---green-black-dark-botani",
@@ -798,31 +516,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221291/house-color-gallery/swatches/cole-and-son-palm-jungle---green-black-dark-botani.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221291/house-color-gallery/swatches/cole-and-son-palm-jungle---green-black-dark-botani.jpg",
-      "filename": "Cole and Son Palm Jungle - green-black dark-botanical.jpg"
-    },
-    {
-      "id": "house-of-hackney-midnight-garden---multi-pink-gree",
-      "name": "House of Hackney Midnight Garden - multi-pink-green-blue-dutch-masters dark-botanical",
-      "category": "Dining Room - Dark Botanical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221292/house-color-gallery/swatches/house-of-hackney-midnight-garden---multi-pink-gree.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221292/house-color-gallery/swatches/house-of-hackney-midnight-garden---multi-pink-gree.jpg",
-      "filename": "House of Hackney Midnight Garden - multi-pink-green-blue-dutch-masters dark-botanical.jpg"
-    },
-    {
-      "id": "mulberry-game-birds---charcoal-game-birds-dark-bot",
-      "name": "Mulberry Game Birds - charcoal-game-birds dark-botanical",
-      "category": "Dining Room - Dark Botanical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221293/house-color-gallery/swatches/mulberry-game-birds---charcoal-game-birds-dark-bot.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221293/house-color-gallery/swatches/mulberry-game-birds---charcoal-game-birds-dark-bot.jpg",
-      "filename": "Mulberry Game Birds - charcoal-game-birds dark-botanical.jpg"
-    },
-    {
-      "id": "cole-and-son-cow-parsley---charcoal-dark-botanical",
-      "name": "Cole and Son Cow Parsley - charcoal dark-botanical",
-      "category": "Dining Room - Dark Botanical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221293/house-color-gallery/swatches/cole-and-son-cow-parsley---charcoal-dark-botanical.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221293/house-color-gallery/swatches/cole-and-son-cow-parsley---charcoal-dark-botanical.jpg",
-      "filename": "Cole and Son Cow Parsley - charcoal dark-botanical.jpg"
+      "filename": "Cole and Son Palm Jungle - green-black dark-botanical.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "seabrook-acanthus-floral---charcoal-rosewood-dark-",
@@ -830,7 +526,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221294/house-color-gallery/swatches/seabrook-acanthus-floral---charcoal-rosewood-dark-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221294/house-color-gallery/swatches/seabrook-acanthus-floral---charcoal-rosewood-dark-.jpg",
-      "filename": "Seabrook Acanthus Floral - charcoal-rosewood dark-botanical.jpg"
+      "filename": "Seabrook Acanthus Floral - charcoal-rosewood dark-botanical.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "rifle-paper-co-peacock---emerald-green-gold-art-no",
@@ -838,7 +536,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221294/house-color-gallery/swatches/rifle-paper-co-peacock---emerald-green-gold-art-no.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221294/house-color-gallery/swatches/rifle-paper-co-peacock---emerald-green-gold-art-no.jpg",
-      "filename": "Rifle Paper Co Peacock - emerald green gold art-nouveau.jpg"
+      "filename": "Rifle Paper Co Peacock - emerald green gold art-nouveau.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "house-of-hackney-papavera---noir-gothic-poppies-am",
@@ -846,7 +546,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221295/house-color-gallery/swatches/house-of-hackney-papavera---noir-gothic-poppies-am.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221295/house-color-gallery/swatches/house-of-hackney-papavera---noir-gothic-poppies-am.jpg",
-      "filename": "House of Hackney Papavera - noir-gothic-poppies-amber-blue dark-botanical.jpg"
+      "filename": "House of Hackney Papavera - noir-gothic-poppies-amber-blue dark-botanical.jpg",
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "graham-brown-wallflower-night-garden---black-pops-",
@@ -854,7 +556,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221296/house-color-gallery/swatches/graham-brown-wallflower-night-garden---black-pops-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221296/house-color-gallery/swatches/graham-brown-wallflower-night-garden---black-pops-.jpg",
-      "filename": "Graham Brown Wallflower Night Garden - black-pops-of-color dark-botanical.jpg"
+      "filename": "Graham Brown Wallflower Night Garden - black-pops-of-color dark-botanical.jpg",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "graham-brown-tigerlily---midnight-blue-orange-purp",
@@ -862,15 +566,9 @@
       "category": "Dining Room - Dark Botanical",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221296/house-color-gallery/swatches/graham-brown-tigerlily---midnight-blue-orange-purp.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221296/house-color-gallery/swatches/graham-brown-tigerlily---midnight-blue-orange-purp.jpg",
-      "filename": "Graham Brown Tigerlily - midnight-blue-orange-purple dark-botanical.jpg"
-    },
-    {
-      "id": "house-of-hackney-artemis---black-red-blue-wildflow",
-      "name": "House of Hackney Artemis - black-red-blue-wildflowers dark-botanical",
-      "category": "Dining Room - Dark Botanical",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221297/house-color-gallery/swatches/house-of-hackney-artemis---black-red-blue-wildflow.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221297/house-color-gallery/swatches/house-of-hackney-artemis---black-red-blue-wildflow.jpg",
-      "filename": "House of Hackney Artemis - black-red-blue-wildflowers dark-botanical.jpg"
+      "filename": "Graham Brown Tigerlily - midnight-blue-orange-purple dark-botanical.jpg",
+      "likes": 3,
+      "score": 6
     },
     {
       "id": "crown-flora-nouveau---peacock-green-teal-gold-art-",
@@ -878,7 +576,9 @@
       "category": "Dining Room - Art Nouveau",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221298/house-color-gallery/swatches/crown-flora-nouveau---peacock-green-teal-gold-art-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221298/house-color-gallery/swatches/crown-flora-nouveau---peacock-green-teal-gold-art-.jpg",
-      "filename": "Crown Flora Nouveau - peacock green teal gold art-nouveau.jpg"
+      "filename": "Crown Flora Nouveau - peacock green teal gold art-nouveau.jpg",
+      "likes": 1,
+      "score": 2
     },
     {
       "id": "house-of-hackney-golden-lily---midnight-teal-green",
@@ -886,15 +586,9 @@
       "category": "Dining Room - Art Nouveau",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221298/house-color-gallery/swatches/house-of-hackney-golden-lily---midnight-teal-green.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221298/house-color-gallery/swatches/house-of-hackney-golden-lily---midnight-teal-green.jpg",
-      "filename": "House of Hackney Golden Lily - midnight teal green art-nouveau.jpg"
-    },
-    {
-      "id": "cole-son-byron---teal-silver-olive-peacock-art-nou",
-      "name": "Cole Son Byron - teal silver olive peacock art-nouveau",
-      "category": "Dining Room - Art Nouveau",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221299/house-color-gallery/swatches/cole-son-byron---teal-silver-olive-peacock-art-nou.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221299/house-color-gallery/swatches/cole-son-byron---teal-silver-olive-peacock-art-nou.jpg",
-      "filename": "Cole Son Byron - teal silver olive peacock art-nouveau.jpg"
+      "filename": "House of Hackney Golden Lily - midnight teal green art-nouveau.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "rifle-paper-co-peacock---navy-blue-green-gold-art-",
@@ -902,7 +596,9 @@
       "category": "Dining Room - Art Nouveau",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221299/house-color-gallery/swatches/rifle-paper-co-peacock---navy-blue-green-gold-art-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221299/house-color-gallery/swatches/rifle-paper-co-peacock---navy-blue-green-gold-art-.jpg",
-      "filename": "Rifle Paper Co Peacock - navy blue green gold art-nouveau.jpg"
+      "filename": "Rifle Paper Co Peacock - navy blue green gold art-nouveau.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "schumacher-khilana-floral---peacock-teal-art-nouve",
@@ -910,23 +606,9 @@
       "category": "Dining Room - Art Nouveau",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221300/house-color-gallery/swatches/schumacher-khilana-floral---peacock-teal-art-nouve.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221300/house-color-gallery/swatches/schumacher-khilana-floral---peacock-teal-art-nouve.jpg",
-      "filename": "Schumacher Khilana Floral - peacock teal art-nouveau.jpg"
-    },
-    {
-      "id": "schumacher-indian-arbre---peacock-emerald-art-nouv",
-      "name": "Schumacher Indian Arbre - peacock emerald art-nouveau",
-      "category": "Dining Room - Art Nouveau",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221301/house-color-gallery/swatches/schumacher-indian-arbre---peacock-emerald-art-nouv.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221301/house-color-gallery/swatches/schumacher-indian-arbre---peacock-emerald-art-nouv.jpg",
-      "filename": "Schumacher Indian Arbre - peacock emerald art-nouveau.jpg"
-    },
-    {
-      "id": "milton-king-water-lillies---violet-green-art-nouve",
-      "name": "Milton King Water Lillies - violet green art-nouveau",
-      "category": "Dining Room - Art Nouveau",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221301/house-color-gallery/swatches/milton-king-water-lillies---violet-green-art-nouve.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221301/house-color-gallery/swatches/milton-king-water-lillies---violet-green-art-nouve.jpg",
-      "filename": "Milton King Water Lillies - violet green art-nouveau.jpg"
+      "filename": "Schumacher Khilana Floral - peacock teal art-nouveau.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "morris-co-golden-lily---green-red-art-nouveau",
@@ -934,7 +616,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221302/house-color-gallery/swatches/morris-co-golden-lily---green-red-art-nouveau.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221302/house-color-gallery/swatches/morris-co-golden-lily---green-red-art-nouveau.jpg",
-      "filename": "Morris Co Golden Lily - green red art-nouveau.jpg"
+      "filename": "Morris Co Golden Lily - green red art-nouveau.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "bird-anemone-216958---olive-turquoise-teal-birds-m",
@@ -942,7 +626,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221302/house-color-gallery/swatches/bird-anemone-216958---olive-turquoise-teal-birds-m.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221302/house-color-gallery/swatches/bird-anemone-216958---olive-turquoise-teal-birds-m.jpg",
-      "filename": "Bird Anemone 216958 - olive turquoise teal birds morris.jpg"
+      "filename": "Bird Anemone 216958 - olive turquoise teal birds morris.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "pimpernel-217362---ink-sage-green-morris",
@@ -950,7 +636,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221303/house-color-gallery/swatches/pimpernel-217362---ink-sage-green-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221303/house-color-gallery/swatches/pimpernel-217362---ink-sage-green-morris.jpg",
-      "filename": "Pimpernel 217362 - ink sage green morris.jpg"
+      "filename": "Pimpernel 217362 - ink sage green morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "bird-pomegranate-212538---turquoise-coral-teal-pin",
@@ -958,7 +646,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221303/house-color-gallery/swatches/bird-pomegranate-212538---turquoise-coral-teal-pin.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221303/house-color-gallery/swatches/bird-pomegranate-212538---turquoise-coral-teal-pin.jpg",
-      "filename": "Bird Pomegranate 212538 - turquoise coral teal pink birds morris.jpg"
+      "filename": "Bird Pomegranate 212538 - turquoise coral teal pink birds morris.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "morris-co-pimpernel---weld-leaf-green-art-nouveau",
@@ -966,31 +656,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221303/house-color-gallery/swatches/morris-co-pimpernel---weld-leaf-green-art-nouveau.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221303/house-color-gallery/swatches/morris-co-pimpernel---weld-leaf-green-art-nouveau.jpg",
-      "filename": "Morris Co Pimpernel - weld leaf green art-nouveau.jpg"
-    },
-    {
-      "id": "stockholm-floral-391174---teal-green-floral-botani",
-      "name": "Stockholm Floral 391174 - teal green floral botanical wildflower",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221225/house-color-gallery/swatches/stockholm-floral-391174---teal-green-floral-botani.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221225/house-color-gallery/swatches/stockholm-floral-391174---teal-green-floral-botani.png",
-      "filename": "Stockholm Floral 391174 - teal green floral botanical wildflower.png"
-    },
-    {
-      "id": "blackthorn-hoh---billiard-green-morris",
-      "name": "Blackthorn HOH - billiard green morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221304/house-color-gallery/swatches/blackthorn-hoh---billiard-green-morris.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221304/house-color-gallery/swatches/blackthorn-hoh---billiard-green-morris.jpg",
-      "filename": "Blackthorn HOH - billiard green morris.jpg"
-    },
-    {
-      "id": "simply-strawberry-thief-217061---cochineal-pink-bi",
-      "name": "Simply Strawberry Thief 217061 - cochineal pink birds morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221305/house-color-gallery/swatches/simply-strawberry-thief-217061---cochineal-pink-bi.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221305/house-color-gallery/swatches/simply-strawberry-thief-217061---cochineal-pink-bi.jpg",
-      "filename": "Simply Strawberry Thief 217061 - cochineal pink birds morris.jpg"
+      "filename": "Morris Co Pimpernel - weld leaf green art-nouveau.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "fruit-510018---tangled-green-morris",
@@ -998,15 +666,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221306/house-color-gallery/swatches/fruit-510018---tangled-green-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221306/house-color-gallery/swatches/fruit-510018---tangled-green-morris.jpg",
-      "filename": "Fruit 510018 - tangled green morris.jpg"
-    },
-    {
-      "id": "garden-140495---green-floral-morris-arts-crafts",
-      "name": "Garden 140495 - green floral morris arts-crafts",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221227/house-color-gallery/swatches/garden-140495---green-floral-morris-arts-crafts.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221227/house-color-gallery/swatches/garden-140495---green-floral-morris-arts-crafts.png",
-      "filename": "Garden 140495 - green floral morris arts-crafts.png"
+      "filename": "Fruit 510018 - tangled green morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "willow-boughs-216722---delft-porcelain-blue-green-",
@@ -1014,7 +676,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221307/house-color-gallery/swatches/willow-boughs-216722---delft-porcelain-blue-green-.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221307/house-color-gallery/swatches/willow-boughs-216722---delft-porcelain-blue-green-.jpg",
-      "filename": "Willow Boughs 216722 - delft porcelain blue green morris.jpg"
+      "filename": "Willow Boughs 216722 - delft porcelain blue green morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "blackthorn-hoh---tourmaline-pink-morris",
@@ -1022,7 +686,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221308/house-color-gallery/swatches/blackthorn-hoh---tourmaline-pink-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221308/house-color-gallery/swatches/blackthorn-hoh---tourmaline-pink-morris.jpg",
-      "filename": "Blackthorn HOH - tourmaline pink morris.jpg"
+      "filename": "Blackthorn HOH - tourmaline pink morris.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "morris-co-golden-lily---indigo-blue-gold-art-nouve",
@@ -1030,7 +696,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221309/house-color-gallery/swatches/morris-co-golden-lily---indigo-blue-gold-art-nouve.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221309/house-color-gallery/swatches/morris-co-golden-lily---indigo-blue-gold-art-nouve.jpg",
-      "filename": "Morris Co Golden Lily - indigo blue gold art-nouveau.jpg"
+      "filename": "Morris Co Golden Lily - indigo blue gold art-nouveau.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "pimpernel-210388---bayleaf-manilla-red-green-morri",
@@ -1038,7 +706,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221310/house-color-gallery/swatches/pimpernel-210388---bayleaf-manilla-red-green-morri.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221310/house-color-gallery/swatches/pimpernel-210388---bayleaf-manilla-red-green-morri.jpg",
-      "filename": "Pimpernel 210388 - bayleaf manilla red green morris.jpg"
+      "filename": "Pimpernel 210388 - bayleaf manilla red green morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "bower-217205---boughs-green-rose-morris",
@@ -1046,7 +716,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221310/house-color-gallery/swatches/bower-217205---boughs-green-rose-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221310/house-color-gallery/swatches/bower-217205---boughs-green-rose-morris.jpg",
-      "filename": "Bower 217205 - boughs green rose morris.jpg"
+      "filename": "Bower 217205 - boughs green rose morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "acanthus-w0175-01---sage-green-morris",
@@ -1054,7 +726,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221311/house-color-gallery/swatches/acanthus-w0175-01---sage-green-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221311/house-color-gallery/swatches/acanthus-w0175-01---sage-green-morris.jpg",
-      "filename": "Acanthus W0175-01 - sage green morris.jpg"
+      "filename": "Acanthus W0175-01 - sage green morris.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "fruit-216859---beige-gold-coral-pomegranate-morris",
@@ -1062,7 +736,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221311/house-color-gallery/swatches/fruit-216859---beige-gold-coral-pomegranate-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221311/house-color-gallery/swatches/fruit-216859---beige-gold-coral-pomegranate-morris.jpg",
-      "filename": "Fruit 216859 - beige gold coral pomegranate morris.jpg"
+      "filename": "Fruit 216859 - beige gold coral pomegranate morris.jpg",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "strawberry-thief-212564---indigo-mineral-red-green",
@@ -1070,15 +746,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221312/house-color-gallery/swatches/strawberry-thief-212564---indigo-mineral-red-green.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221312/house-color-gallery/swatches/strawberry-thief-212564---indigo-mineral-red-green.jpg",
-      "filename": "Strawberry Thief 212564 - indigo mineral red green morris.jpg"
-    },
-    {
-      "id": "dove-and-rose-140480---green-pink-floral-birds-mor",
-      "name": "Dove and Rose 140480 - green pink floral birds morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221233/house-color-gallery/swatches/dove-and-rose-140480---green-pink-floral-birds-mor.png",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221233/house-color-gallery/swatches/dove-and-rose-140480---green-pink-floral-birds-mor.png",
-      "filename": "Dove and Rose 140480 - green pink floral birds morris.png"
+      "filename": "Strawberry Thief 212564 - indigo mineral red green morris.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "blackthorn-216857---green-morris",
@@ -1086,15 +756,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221314/house-color-gallery/swatches/blackthorn-216857---green-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221314/house-color-gallery/swatches/blackthorn-216857---green-morris.jpg",
-      "filename": "Blackthorn 216857 - green morris.jpg"
-    },
-    {
-      "id": "strawberry-thief-w017106---teal-birds-morris",
-      "name": "Strawberry Thief W017106 - teal birds morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221315/house-color-gallery/swatches/strawberry-thief-w017106---teal-birds-morris.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221315/house-color-gallery/swatches/strawberry-thief-w017106---teal-birds-morris.jpg",
-      "filename": "Strawberry Thief W017106 - teal birds morris.jpg"
+      "filename": "Blackthorn 216857 - green morris.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "golden-lily-hoh---midnight-teal-green-morris",
@@ -1102,7 +766,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221316/house-color-gallery/swatches/golden-lily-hoh---midnight-teal-green-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221316/house-color-gallery/swatches/golden-lily-hoh---midnight-teal-green-morris.jpg",
-      "filename": "Golden Lily HOH - midnight teal green morris.jpg"
+      "filename": "Golden Lily HOH - midnight teal green morris.jpg",
+      "likes": 2,
+      "score": 5
     },
     {
       "id": "honeysuckle-dmc1hs102---green-coral-pink-morris",
@@ -1110,7 +776,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221317/house-color-gallery/swatches/honeysuckle-dmc1hs102---green-coral-pink-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221317/house-color-gallery/swatches/honeysuckle-dmc1hs102---green-coral-pink-morris.jpg",
-      "filename": "Honeysuckle DMC1HS102 - green coral pink morris.jpg"
+      "filename": "Honeysuckle DMC1HS102 - green coral pink morris.jpg",
+      "likes": 1,
+      "score": 4
     },
     {
       "id": "bird-pomegranate-124260---deep-green-birds-morris",
@@ -1118,7 +786,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221317/house-color-gallery/swatches/bird-pomegranate-124260---deep-green-birds-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221317/house-color-gallery/swatches/bird-pomegranate-124260---deep-green-birds-morris.jpg",
-      "filename": "Bird Pomegranate 124260 - deep green birds morris.jpg"
+      "filename": "Bird Pomegranate 124260 - deep green birds morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "golden-lily-hoh---apatite-green-pink-morris",
@@ -1126,7 +796,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221318/house-color-gallery/swatches/golden-lily-hoh---apatite-green-pink-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221318/house-color-gallery/swatches/golden-lily-hoh---apatite-green-pink-morris.jpg",
-      "filename": "Golden Lily HOH - apatite green pink morris.jpg"
+      "filename": "Golden Lily HOH - apatite green pink morris.jpg",
+      "likes": 2,
+      "score": 4
     },
     {
       "id": "honeysuckle-216842---green-beige-pink-morris",
@@ -1134,7 +806,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221318/house-color-gallery/swatches/honeysuckle-216842---green-beige-pink-morris.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221318/house-color-gallery/swatches/honeysuckle-216842---green-beige-pink-morris.jpg",
-      "filename": "Honeysuckle 216842 - green beige pink morris.jpg"
+      "filename": "Honeysuckle 216842 - green beige pink morris.jpg",
+      "likes": 1,
+      "score": 3
     },
     {
       "id": "morris-co-golden-lily---charcoal-olive-art-nouveau",
@@ -1142,23 +816,9 @@
       "category": "Dining Room - Morris & Arts Crafts",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221319/house-color-gallery/swatches/morris-co-golden-lily---charcoal-olive-art-nouveau.jpg",
       "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221319/house-color-gallery/swatches/morris-co-golden-lily---charcoal-olive-art-nouveau.jpg",
-      "filename": "Morris Co Golden Lily - charcoal olive art-nouveau.jpg"
-    },
-    {
-      "id": "snakeshead-216427---forest-thyme-green-morris",
-      "name": "Snakeshead 216427 - forest thyme green morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221320/house-color-gallery/swatches/snakeshead-216427---forest-thyme-green-morris.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221320/house-color-gallery/swatches/snakeshead-216427---forest-thyme-green-morris.jpg",
-      "filename": "Snakeshead 216427 - forest thyme green morris.jpg"
-    },
-    {
-      "id": "bird-pomegranate-212539---bayleaf-cream-green-bird",
-      "name": "Bird Pomegranate 212539 - bayleaf cream green birds morris",
-      "category": "Dining Room - Morris & Arts Crafts",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767221321/house-color-gallery/swatches/bird-pomegranate-212539---bayleaf-cream-green-bird.jpg",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767221321/house-color-gallery/swatches/bird-pomegranate-212539---bayleaf-cream-green-bird.jpg",
-      "filename": "Bird Pomegranate 212539 - bayleaf cream green birds morris.jpg"
+      "filename": "Morris Co Golden Lily - charcoal olive art-nouveau.jpg",
+      "likes": 1,
+      "score": 3
     }
   ]
 }

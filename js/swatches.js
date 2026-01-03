@@ -15,19 +15,10 @@ const Swatches = (function () {
     count: "#swatches-count",
   };
 
-  const TIERS = [
-    { likeCount: 3, name: "Favorites", emoji: "⭐", defaultOpen: true },
-    { likeCount: 2, name: "Strong", emoji: "👍", defaultOpen: true },
-    { likeCount: 1, name: "Maybe", emoji: "🤔", defaultOpen: true },
-    { likeCount: 0, name: "Rejected", emoji: "❌", defaultOpen: false },
-  ];
-
-  const TIER_STORAGE_KEY = "swatchesTierState";
-
   let allSwatches = [];
   let categories = [];
   let currentCategory = "all";
-  let currentRatingFilter = "tiered";
+  let currentRatingFilter = "all";
   let ratingsCache = {};
   let unsubscribers = [];
 
@@ -55,115 +46,29 @@ const Swatches = (function () {
     return document.querySelector(selector);
   }
 
-  function getTierState() {
-    try {
-      return JSON.parse(localStorage.getItem(TIER_STORAGE_KEY) || "{}");
-    } catch {
-      return {};
+  // Filter using pre-computed SCORE field (like=2, unsure=1, dislike=0)
+  // So "1 like + 2 unsures" (score 4) is Strong, not Controversial
+  function applyLikesFilter(swatches, filter) {
+    let result;
+    switch (filter) {
+      case "favorites":
+        result = swatches.filter(s => (s.score || 0) >= 5);
+        break;
+      case "strong":
+        result = swatches.filter(s => (s.score || 0) >= 4);
+        break;
+      case "promising":
+        result = swatches.filter(s => (s.score || 0) >= 3);
+        break;
+      case "controversial":
+        result = swatches.filter(s => (s.score || 0) <= 2);
+        break;
+      case "all":
+      default:
+        result = [...swatches];
     }
-  }
-
-  function saveTierState(tierState) {
-    localStorage.setItem(TIER_STORAGE_KEY, JSON.stringify(tierState));
-  }
-
-  function isTierOpen(tierName, defaultOpen) {
-    const tierState = getTierState();
-    return tierState[tierName] !== undefined ? tierState[tierName] : defaultOpen;
-  }
-
-  async function getRatingsForSwatch(swatchId) {
-    if (ratingsCache[swatchId]) return ratingsCache[swatchId];
-
-    let ratings = {};
-    if (typeof Ratings !== "undefined" && Ratings.getRatings) {
-      ratings = await Ratings.getRatings(swatchId);
-    } else {
-      const stored = JSON.parse(localStorage.getItem("houseRatings") || "{}");
-      ratings = stored[swatchId] || {};
-    }
-    ratingsCache[swatchId] = ratings;
-    return ratings;
-  }
-
-  function getCurrentUser() {
-    return (typeof App !== "undefined" && App.getUser?.()) || localStorage.getItem("houseColorUser") || "Guest";
-  }
-
-  function createTierSection(tier, swatches, createCardFn) {
-    const section = document.createElement("details");
-    section.className = "tier-section col-span-full mb-6";
-    section.open = isTierOpen(tier.name, tier.defaultOpen);
-
-    const summary = document.createElement("summary");
-    summary.className = "tier-header cursor-pointer select-none rounded-lg bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-colors flex items-center gap-2";
-    summary.innerHTML = `<span class="text-lg">${tier.emoji}</span> ${tier.name} (${tier.likeCount} like${tier.likeCount !== 1 ? "s" : ""}) — <span class="font-normal text-slate-500">${swatches.length} item${swatches.length !== 1 ? "s" : ""}</span>`;
-
-    section.appendChild(summary);
-
-    const content = document.createElement("div");
-    content.className = "tier-content mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5";
-
-    for (const swatch of swatches) {
-      const card = createCardFn(swatch);
-      if (card) content.appendChild(card);
-    }
-
-    section.appendChild(content);
-
-    // Save open/closed state when toggled
-    section.addEventListener("toggle", () => {
-      const tierState = getTierState();
-      tierState[tier.name] = section.open;
-      saveTierState(tierState);
-    });
-
-    return section;
-  }
-
-  async function groupSwatchesByLikes(swatches) {
-    const groups = { 3: [], 2: [], 1: [], 0: [] };
-
-    for (const swatch of swatches) {
-      const ratings = await getRatingsForSwatch(swatch.id);
-      const likeCount = typeof Ratings !== "undefined" && Ratings.getLikeCount
-        ? Ratings.getLikeCount(ratings)
-        : Object.values(ratings).filter(v => v === "like").length;
-
-      // Clamp to 0-3
-      const key = Math.min(3, Math.max(0, likeCount));
-      groups[key].push(swatch);
-    }
-
-    return groups;
-  }
-
-  async function applyRatingFilter(swatches, filter) {
-    if (filter === "all" || filter === "tiered") return swatches;
-
-    const user = getCurrentUser();
-    const results = [];
-
-    for (const swatch of swatches) {
-      const ratings = await getRatingsForSwatch(swatch.id);
-      const myRating = ratings[user];
-
-      switch (filter) {
-        case "unrated":
-          if (!myRating) results.push(swatch);
-          break;
-        case "my-likes":
-          if (myRating === "like") results.push(swatch);
-          break;
-        case "my-dislikes":
-          if (myRating === "dislike") results.push(swatch);
-          break;
-        default:
-          results.push(swatch);
-      }
-    }
-
-    return results;
+    // Sort by score (highest first), then by likes
+    return result.sort((a, b) => (b.score || 0) - (a.score || 0) || (b.likes || 0) - (a.likes || 0));
   }
 
   async function loadSwatches() {
@@ -458,7 +363,7 @@ const Swatches = (function () {
     }
   }
 
-  async function renderSwatches() {
+  function renderSwatches() {
     const grid = $(SELECTORS.grid);
     const countEl = $(SELECTORS.count);
     if (!grid) return;
@@ -467,35 +372,9 @@ const Swatches = (function () {
     cleanupSubscriptions();
 
     const categoryFiltered = getFilteredSwatches();
+    const filtered = applyLikesFilter(categoryFiltered, currentRatingFilter);
+
     grid.innerHTML = "";
-
-    // Handle tiered view
-    if (currentRatingFilter === "tiered") {
-      const groups = await groupSwatchesByLikes(categoryFiltered);
-      const totalCount = categoryFiltered.length;
-      const nonRejectedCount = groups[3].length + groups[2].length + groups[1].length;
-
-      if (countEl) {
-        countEl.textContent = `${nonRejectedCount} of ${totalCount} swatch${totalCount !== 1 ? "es" : ""} (${groups[0].length} rejected)`;
-      }
-
-      if (totalCount === 0) {
-        grid.innerHTML = '<p class="col-span-full text-center text-slate-500 py-8">No swatches found</p>';
-        return;
-      }
-
-      for (const tier of TIERS) {
-        const tierSwatches = groups[tier.likeCount];
-        if (tierSwatches.length === 0) continue;
-
-        const section = createTierSection(tier, tierSwatches, createSwatchCard);
-        grid.appendChild(section);
-      }
-      return;
-    }
-
-    // Apply rating filter for non-tiered views
-    const filtered = await applyRatingFilter(categoryFiltered, currentRatingFilter);
 
     if (countEl) {
       countEl.textContent = `${filtered.length} swatch${filtered.length === 1 ? "" : "es"}`;
@@ -506,22 +385,30 @@ const Swatches = (function () {
       return;
     }
 
-    // Group by category if showing all categories
-    if (currentCategory === "all" && currentRatingFilter === "all") {
-      const grouped = {};
-      for (const s of filtered) {
-        const cat = s.category || "Uncategorized";
-        if (!grouped[cat]) grouped[cat] = [];
-        grouped[cat].push(s);
-      }
+    // For "all" view, group by tier with headers based on SCORE (like=2, unsure=1)
+    // So "1 like + 2 unsures" (score 4) ranks with Strong, not Controversial
+    if (currentRatingFilter === "all") {
+      const tiers = [
+        { min: 5, label: "⭐ Favorites", sublabel: "score 5-6" },
+        { min: 4, max: 4, label: "👍 Strong", sublabel: "score 4" },
+        { min: 3, max: 3, label: "👀 Promising", sublabel: "score 3" },
+        { min: 1, max: 2, label: "🤔 Controversial", sublabel: "score 1-2" },
+      ];
 
-      for (const cat of Object.keys(grouped).sort()) {
-        const header = document.createElement("h3");
-        header.className = "col-span-full text-base font-semibold text-slate-900 mt-6 mb-2 first:mt-0";
-        header.textContent = `${cat} (${grouped[cat].length})`;
+      for (const tier of tiers) {
+        const tierSwatches = filtered.filter(s => {
+          const score = s.score || 0;
+          if (tier.max !== undefined) return score >= tier.min && score <= tier.max;
+          return score >= tier.min;
+        });
+        if (tierSwatches.length === 0) continue;
+
+        const header = document.createElement("div");
+        header.className = "col-span-full flex items-center gap-2 mt-6 mb-3 first:mt-0";
+        header.innerHTML = `<span class="text-base font-semibold text-slate-800">${tier.label}</span><span class="text-sm text-slate-500">(${tier.sublabel}) — ${tierSwatches.length} item${tierSwatches.length !== 1 ? "s" : ""}</span>`;
         grid.appendChild(header);
 
-        for (const swatch of grouped[cat]) {
+        for (const swatch of tierSwatches) {
           grid.appendChild(createSwatchCard(swatch));
         }
       }
