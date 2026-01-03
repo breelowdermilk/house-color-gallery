@@ -399,7 +399,7 @@ const Gallery = (function () {
           const score = img.score || 0;
           if (tier.max !== undefined) return score >= tier.min && score <= tier.max;
           return score >= tier.min;
-        });
+        }).sort((a, b) => (b.score || 0) - (a.score || 0) || (b.likes || 0) - (a.likes || 0));
         if (tierImages.length === 0) continue;
 
         const header = document.createElement("div");
