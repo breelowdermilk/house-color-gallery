@@ -176,12 +176,11 @@
               id="rating-filter"
               class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
             >
-              <option value="all">All</option>
-              <option value="unrated">Not yet rated</option>
-              <option value="my-likes">My likes</option>
-              <option value="my-dislikes">My dislikes</option>
-              <option value="popular">Popular (most likes)</option>
-              <option value="controversial">Controversial</option>
+              <option value="tiered" selected>By Rating</option>
+              <option value="all">Show All</option>
+              <option value="my-likes">My Likes</option>
+              <option value="my-dislikes">My Dislikes</option>
+              <option value="unrated">Unrated</option>
             </select>
           </div>
         </div>
@@ -281,14 +280,29 @@
             <h2 class="text-lg font-semibold text-slate-900">Wallpaper Swatches</h2>
             <p id="swatches-count" class="text-sm text-slate-600">0 swatches</p>
           </div>
-          <div class="flex items-center gap-2">
-            <label for="swatch-category-filter" class="text-sm text-slate-600">Category:</label>
-            <select
-              id="swatch-category-filter"
-              class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
-            >
-              <option value="all">All Categories</option>
-            </select>
+          <div class="flex flex-wrap items-center gap-4">
+            <div class="flex items-center gap-2">
+              <label for="swatch-rating-filter" class="text-sm text-slate-600">Show:</label>
+              <select
+                id="swatch-rating-filter"
+                class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
+              >
+                <option value="tiered" selected>By Rating</option>
+                <option value="all">Show All</option>
+                <option value="my-likes">My Likes</option>
+                <option value="my-dislikes">My Dislikes</option>
+                <option value="unrated">Unrated</option>
+              </select>
+            </div>
+            <div class="flex items-center gap-2">
+              <label for="swatch-category-filter" class="text-sm text-slate-600">Category:</label>
+              <select
+                id="swatch-category-filter"
+                class="rounded-md border-slate-200 bg-white py-1.5 pl-3 pr-8 text-sm shadow-sm focus:border-slate-400 focus:ring-slate-400"
+              >
+                <option value="all">All Categories</option>
+              </select>
+            </div>
           </div>
         </div>
         <div

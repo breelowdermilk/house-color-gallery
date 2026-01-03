@@ -321,12 +321,17 @@ const Ratings = (function () {
     void ensureUserDocument(resolveUser());
   }
 
+  function getLikeCount(ratings) {
+    return Object.values(ratings || {}).filter((v) => v === "like").length;
+  }
+
   return {
     init,
     setRating,
     getRatings,
     subscribeToRatings,
     mountCard,
+    getLikeCount,
   };
 })();
 

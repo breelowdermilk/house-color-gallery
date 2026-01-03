@@ -10,13 +10,25 @@ const Swatches = (function () {
     section: "#swatches-section",
     gallerySection: "section[aria-label='Gallery']",
     categoryFilter: "#swatch-category-filter",
+    ratingFilter: "#swatch-rating-filter",
     grid: "#swatches-grid",
     count: "#swatches-count",
   };
 
+  const TIERS = [
+    { likeCount: 3, name: "Favorites", emoji: "⭐", defaultOpen: true },
+    { likeCount: 2, name: "Strong", emoji: "👍", defaultOpen: true },
+    { likeCount: 1, name: "Maybe", emoji: "🤔", defaultOpen: true },
+    { likeCount: 0, name: "Rejected", emoji: "❌", defaultOpen: false },
+  ];
+
+  const TIER_STORAGE_KEY = "swatchesTierState";
+
   let allSwatches = [];
   let categories = [];
   let currentCategory = "all";
+  let currentRatingFilter = "tiered";
+  let ratingsCache = {};
   let unsubscribers = [];
 
   function ratingButtonClass(rating) {
@@ -41,6 +53,117 @@ const Swatches = (function () {
 
   function $(selector) {
     return document.querySelector(selector);
+  }
+
+  function getTierState() {
+    try {
+      return JSON.parse(localStorage.getItem(TIER_STORAGE_KEY) || "{}");
+    } catch {
+      return {};
+    }
+  }
+
+  function saveTierState(tierState) {
+    localStorage.setItem(TIER_STORAGE_KEY, JSON.stringify(tierState));
+  }
+
+  function isTierOpen(tierName, defaultOpen) {
+    const tierState = getTierState();
+    return tierState[tierName] !== undefined ? tierState[tierName] : defaultOpen;
+  }
+
+  async function getRatingsForSwatch(swatchId) {
+    if (ratingsCache[swatchId]) return ratingsCache[swatchId];
+
+    let ratings = {};
+    if (typeof Ratings !== "undefined" && Ratings.getRatings) {
+      ratings = await Ratings.getRatings(swatchId);
+    } else {
+      const stored = JSON.parse(localStorage.getItem("houseRatings") || "{}");
+      ratings = stored[swatchId] || {};
+    }
+    ratingsCache[swatchId] = ratings;
+    return ratings;
+  }
+
+  function getCurrentUser() {
+    return (typeof App !== "undefined" && App.getUser?.()) || localStorage.getItem("houseColorUser") || "Guest";
+  }
+
+  function createTierSection(tier, swatches, createCardFn) {
+    const section = document.createElement("details");
+    section.className = "tier-section col-span-full mb-6";
+    section.open = isTierOpen(tier.name, tier.defaultOpen);
+
+    const summary = document.createElement("summary");
+    summary.className = "tier-header cursor-pointer select-none rounded-lg bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-colors flex items-center gap-2";
+    summary.innerHTML = `<span class="text-lg">${tier.emoji}</span> ${tier.name} (${tier.likeCount} like${tier.likeCount !== 1 ? "s" : ""}) — <span class="font-normal text-slate-500">${swatches.length} item${swatches.length !== 1 ? "s" : ""}</span>`;
+
+    section.appendChild(summary);
+
+    const content = document.createElement("div");
+    content.className = "tier-content mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5";
+
+    for (const swatch of swatches) {
+      const card = createCardFn(swatch);
+      if (card) content.appendChild(card);
+    }
+
+    section.appendChild(content);
+
+    // Save open/closed state when toggled
+    section.addEventListener("toggle", () => {
+      const tierState = getTierState();
+      tierState[tier.name] = section.open;
+      saveTierState(tierState);
+    });
+
+    return section;
+  }
+
+  async function groupSwatchesByLikes(swatches) {
+    const groups = { 3: [], 2: [], 1: [], 0: [] };
+
+    for (const swatch of swatches) {
+      const ratings = await getRatingsForSwatch(swatch.id);
+      const likeCount = typeof Ratings !== "undefined" && Ratings.getLikeCount
+        ? Ratings.getLikeCount(ratings)
+        : Object.values(ratings).filter(v => v === "like").length;
+
+      // Clamp to 0-3
+      const key = Math.min(3, Math.max(0, likeCount));
+      groups[key].push(swatch);
+    }
+
+    return groups;
+  }
+
+  async function applyRatingFilter(swatches, filter) {
+    if (filter === "all" || filter === "tiered") return swatches;
+
+    const user = getCurrentUser();
+    const results = [];
+
+    for (const swatch of swatches) {
+      const ratings = await getRatingsForSwatch(swatch.id);
+      const myRating = ratings[user];
+
+      switch (filter) {
+        case "unrated":
+          if (!myRating) results.push(swatch);
+          break;
+        case "my-likes":
+          if (myRating === "like") results.push(swatch);
+          break;
+        case "my-dislikes":
+          if (myRating === "dislike") results.push(swatch);
+          break;
+        default:
+          results.push(swatch);
+      }
+    }
+
+    return results;
   }
 
   async function loadSwatches() {
@@ -335,7 +458,7 @@ const Swatches = (function () {
     }
   }
 
-  function renderSwatches() {
+  async function renderSwatches() {
     const grid = $(SELECTORS.grid);
     const countEl = $(SELECTORS.count);
     if (!grid) return;
@@ -343,8 +466,36 @@ const Swatches = (function () {
     // Cleanup previous subscriptions
     cleanupSubscriptions();
 
-    const filtered = getFilteredSwatches();
+    const categoryFiltered = getFilteredSwatches();
     grid.innerHTML = "";
+
+    // Handle tiered view
+    if (currentRatingFilter === "tiered") {
+      const groups = await groupSwatchesByLikes(categoryFiltered);
+      const totalCount = categoryFiltered.length;
+      const nonRejectedCount = groups[3].length + groups[2].length + groups[1].length;
+
+      if (countEl) {
+        countEl.textContent = `${nonRejectedCount} of ${totalCount} swatch${totalCount !== 1 ? "es" : ""} (${groups[0].length} rejected)`;
+      }
+
+      if (totalCount === 0) {
+        grid.innerHTML = '<p class="col-span-full text-center text-slate-500 py-8">No swatches found</p>';
+        return;
+      }
+
+      for (const tier of TIERS) {
+        const tierSwatches = groups[tier.likeCount];
+        if (tierSwatches.length === 0) continue;
+
+        const section = createTierSection(tier, tierSwatches, createSwatchCard);
+        grid.appendChild(section);
+      }
+      return;
+    }
+
+    // Apply rating filter for non-tiered views
+    const filtered = await applyRatingFilter(categoryFiltered, currentRatingFilter);
 
     if (countEl) {
       countEl.textContent = `${filtered.length} swatch${filtered.length === 1 ? "" : "es"}`;
@@ -355,8 +506,8 @@ const Swatches = (function () {
       return;
     }
 
-    // Group by category if showing all
-    if (currentCategory === "all") {
+    // Group by category if showing all categories
+    if (currentCategory === "all" && currentRatingFilter === "all") {
       const grouped = {};
       for (const s of filtered) {
         const cat = s.category || "Uncategorized";
@@ -425,13 +576,36 @@ const Swatches = (function () {
   }
 
   function init() {
-    const select = $(SELECTORS.categoryFilter);
-    if (select) {
-      select.addEventListener("change", (e) => {
+    const categorySelect = $(SELECTORS.categoryFilter);
+    if (categorySelect) {
+      categorySelect.addEventListener("change", (e) => {
         currentCategory = e.target.value;
+        ratingsCache = {}; // Clear cache
         renderSwatches();
       });
     }
+
+    const ratingSelect = $(SELECTORS.ratingFilter);
+    if (ratingSelect) {
+      ratingSelect.addEventListener("change", (e) => {
+        currentRatingFilter = e.target.value;
+        ratingsCache = {}; // Clear cache
+        renderSwatches();
+      });
+    }
+
+    // Listen for rating changes to update if filter is active
+    window.addEventListener("ratingChanged", (e) => {
+      const imageId = e.detail?.imageId;
+      if (imageId) {
+        delete ratingsCache[imageId];
+      }
+      // Re-render if not showing "all"
+      if (currentRatingFilter !== "all") {
+        ratingsCache = {};
+        renderSwatches();
+      }
+    });
   }
 
   return {

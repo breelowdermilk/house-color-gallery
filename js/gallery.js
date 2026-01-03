@@ -19,10 +19,19 @@ const Gallery = (function () {
     activeRoomTab: ".room-tab[data-room][aria-selected='true']",
   };
 
+  const TIERS = [
+    { likeCount: 3, name: "Favorites", emoji: "⭐", defaultOpen: true },
+    { likeCount: 2, name: "Strong", emoji: "👍", defaultOpen: true },
+    { likeCount: 1, name: "Maybe", emoji: "🤔", defaultOpen: true },
+    { likeCount: 0, name: "Rejected", emoji: "❌", defaultOpen: false },
+  ];
+
+  const TIER_STORAGE_KEY = "galleryTierState";
+
   const state = {
     allImages: [],
     currentRoom: "parlor",
-    currentFilter: "all",
+    currentFilter: "tiered",
     ratingsCache: {},
     cleanupLazy: null,
     unsubscribers: [],
@@ -218,6 +227,71 @@ const Gallery = (function () {
     return ratings;
   }
 
+  function getTierState() {
+    try {
+      return JSON.parse(localStorage.getItem(TIER_STORAGE_KEY) || "{}");
+    } catch {
+      return {};
+    }
+  }
+
+  function saveTierState(tierState) {
+    localStorage.setItem(TIER_STORAGE_KEY, JSON.stringify(tierState));
+  }
+
+  function isTierOpen(tierName, defaultOpen) {
+    const tierState = getTierState();
+    return tierState[tierName] !== undefined ? tierState[tierName] : defaultOpen;
+  }
+
+  function createTierSection(tier, images, createCardFn) {
+    const section = document.createElement("details");
+    section.className = "tier-section col-span-full mb-6";
+    section.open = isTierOpen(tier.name, tier.defaultOpen);
+
+    const summary = document.createElement("summary");
+    summary.className = "tier-header cursor-pointer select-none rounded-lg bg-slate-100 px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 transition-colors flex items-center gap-2";
+    summary.innerHTML = `<span class="text-lg">${tier.emoji}</span> ${tier.name} (${tier.likeCount} like${tier.likeCount !== 1 ? "s" : ""}) — <span class="font-normal text-slate-500">${images.length} item${images.length !== 1 ? "s" : ""}</span>`;
+
+    section.appendChild(summary);
+
+    const content = document.createElement("div");
+    content.className = "tier-content mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5";
+
+    for (const image of images) {
+      const card = createCardFn(image);
+      if (card) content.appendChild(card);
+    }
+
+    section.appendChild(content);
+
+    // Save open/closed state when toggled
+    section.addEventListener("toggle", () => {
+      const tierState = getTierState();
+      tierState[tier.name] = section.open;
+      saveTierState(tierState);
+    });
+
+    return section;
+  }
+
+  async function groupImagesByLikes(images) {
+    const groups = { 3: [], 2: [], 1: [], 0: [] };
+
+    for (const image of images) {
+      const ratings = await getRatingsForImage(image.id);
+      const likeCount = typeof Ratings !== "undefined" && Ratings.getLikeCount
+        ? Ratings.getLikeCount(ratings)
+        : Object.values(ratings).filter(v => v === "like").length;
+
+      // Clamp to 0-3
+      const key = Math.min(3, Math.max(0, likeCount));
+      groups[key].push(image);
+    }
+
+    return groups;
+  }
+
   async function applyRatingFilter(images, filter) {
     if (filter === "all") return images;
 
@@ -279,6 +353,101 @@ const Gallery = (function () {
     });
   }
 
+  function createImageCard(image) {
+    const imageId = normalizeText(image?.id);
+    if (!imageId) return null;
+
+    const card = document.createElement("div");
+    card.className =
+      "group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow";
+    card.dataset.imageId = imageId;
+
+    const link = document.createElement("div");
+    link.className = "block cursor-pointer";
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (typeof Lightbox !== "undefined" && Lightbox.openLightbox) {
+        Lightbox.openLightbox(imageId);
+      }
+    });
+
+    const img = document.createElement("img");
+    img.className = "h-40 w-full object-cover bg-slate-100";
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.alt = getTitle(image) || "Gallery image";
+    img.src = placeholderDataUrl();
+    img.dataset.src = getThumbUrl(image);
+
+    link.appendChild(img);
+
+    const meta = document.createElement("div");
+    meta.className = "p-3";
+
+    const title = document.createElement("p");
+    title.className = "text-sm font-medium text-slate-900 line-clamp-2";
+    title.textContent = getTitle(image) || image.id || "";
+
+    const subtitle = document.createElement("p");
+    subtitle.className = "mt-1 text-xs text-slate-600";
+    subtitle.textContent = titleCase(normalizeText(image.room || "")) || "";
+
+    const footer = document.createElement("div");
+    footer.className = "mt-3 flex items-start justify-between gap-2";
+
+    const buttons = document.createElement("div");
+    buttons.className = "flex items-center gap-1";
+    buttons.setAttribute("role", "group");
+    buttons.setAttribute("aria-label", "Rate this photo");
+
+    const likeBtn = document.createElement("button");
+    likeBtn.type = "button";
+    likeBtn.className = ratingButtonClass("like");
+    likeBtn.textContent = "👍";
+    likeBtn.setAttribute("data-image-id", imageId);
+    likeBtn.setAttribute("data-rating", "like");
+
+    const unsureBtn = document.createElement("button");
+    unsureBtn.type = "button";
+    unsureBtn.className = ratingButtonClass("unsure");
+    unsureBtn.textContent = "❓";
+    unsureBtn.setAttribute("data-image-id", imageId);
+    unsureBtn.setAttribute("data-rating", "unsure");
+
+    const dislikeBtn = document.createElement("button");
+    dislikeBtn.type = "button";
+    dislikeBtn.className = ratingButtonClass("dislike");
+    dislikeBtn.textContent = "✖️";
+    dislikeBtn.setAttribute("data-image-id", imageId);
+    dislikeBtn.setAttribute("data-rating", "dislike");
+
+    buttons.appendChild(likeBtn);
+    buttons.appendChild(unsureBtn);
+    buttons.appendChild(dislikeBtn);
+
+    const summary = document.createElement("div");
+    summary.className = "rating-summary flex items-center justify-end gap-1";
+    summary.setAttribute("data-rating-summary", "");
+    summary.setAttribute("data-image-id", imageId);
+
+    footer.appendChild(buttons);
+    footer.appendChild(summary);
+
+    meta.appendChild(title);
+    meta.appendChild(subtitle);
+    meta.appendChild(footer);
+
+    card.appendChild(link);
+    card.appendChild(meta);
+
+    if (typeof window !== "undefined" && window.Ratings?.mountCard) {
+      const unsub = window.Ratings.mountCard(card, imageId);
+      if (typeof unsub === "function") state.unsubscribers.push(unsub);
+    }
+
+    return card;
+  }
+
   async function renderGallery(room) {
     const grid = $(SELECTORS.grid);
     if (!grid) return;
@@ -293,105 +462,43 @@ const Gallery = (function () {
     state.currentRoom = roomValue || state.currentRoom;
 
     const roomImages = getRoomImages(state.currentRoom);
-    const filtered = await applyRatingFilter(roomImages, state.currentFilter);
 
     grid.innerHTML = "";
+
+    // Handle tiered view specially
+    if (state.currentFilter === "tiered") {
+      const groups = await groupImagesByLikes(roomImages);
+      const totalCount = roomImages.length;
+      const nonRejectedCount = groups[3].length + groups[2].length + groups[1].length;
+
+      setEmptyState(totalCount === 0);
+      setResultsSummary(`${nonRejectedCount} of ${totalCount} photo${totalCount !== 1 ? "s" : ""} (${groups[0].length} rejected)`);
+
+      const frag = document.createDocumentFragment();
+
+      for (const tier of TIERS) {
+        const tierImages = groups[tier.likeCount];
+        if (tierImages.length === 0) continue;
+
+        const section = createTierSection(tier, tierImages, createImageCard);
+        frag.appendChild(section);
+      }
+
+      grid.appendChild(frag);
+      state.cleanupLazy = setupLazyLoading(grid);
+      return;
+    }
+
+    // Regular (non-tiered) rendering
+    const filtered = await applyRatingFilter(roomImages, state.currentFilter);
+
     setEmptyState(filtered.length === 0);
     setResultsSummary(`${filtered.length} photo${filtered.length === 1 ? "" : "s"}`);
 
     const frag = document.createDocumentFragment();
     for (const image of filtered) {
-      const imageId = normalizeText(image?.id);
-      if (!imageId) continue;
-
-      const card = document.createElement("div");
-      card.className =
-        "group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow";
-      card.dataset.imageId = imageId;
-
-      const link = document.createElement("div");
-      link.className = "block cursor-pointer";
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        if (typeof Lightbox !== "undefined" && Lightbox.openLightbox) {
-          Lightbox.openLightbox(imageId);
-        }
-      });
-
-      const img = document.createElement("img");
-      img.className = "h-40 w-full object-cover bg-slate-100";
-      img.loading = "lazy";
-      img.decoding = "async";
-      img.alt = getTitle(image) || "Gallery image";
-      img.src = placeholderDataUrl();
-      img.dataset.src = getThumbUrl(image);
-
-      link.appendChild(img);
-
-      const meta = document.createElement("div");
-      meta.className = "p-3";
-
-      const title = document.createElement("p");
-      title.className = "text-sm font-medium text-slate-900 line-clamp-2";
-      title.textContent = getTitle(image) || image.id || "";
-
-      const subtitle = document.createElement("p");
-      subtitle.className = "mt-1 text-xs text-slate-600";
-      subtitle.textContent = titleCase(normalizeText(image.room || "")) || "";
-
-      const footer = document.createElement("div");
-      footer.className = "mt-3 flex items-start justify-between gap-2";
-
-      const buttons = document.createElement("div");
-      buttons.className = "flex items-center gap-1";
-      buttons.setAttribute("role", "group");
-      buttons.setAttribute("aria-label", "Rate this photo");
-
-      const likeBtn = document.createElement("button");
-      likeBtn.type = "button";
-      likeBtn.className = ratingButtonClass("like");
-      likeBtn.textContent = "👍";
-      likeBtn.setAttribute("data-image-id", imageId);
-      likeBtn.setAttribute("data-rating", "like");
-
-      const unsureBtn = document.createElement("button");
-      unsureBtn.type = "button";
-      unsureBtn.className = ratingButtonClass("unsure");
-      unsureBtn.textContent = "❓";
-      unsureBtn.setAttribute("data-image-id", imageId);
-      unsureBtn.setAttribute("data-rating", "unsure");
-
-      const dislikeBtn = document.createElement("button");
-      dislikeBtn.type = "button";
-      dislikeBtn.className = ratingButtonClass("dislike");
-      dislikeBtn.textContent = "✖️";
-      dislikeBtn.setAttribute("data-image-id", imageId);
-      dislikeBtn.setAttribute("data-rating", "dislike");
-
-      buttons.appendChild(likeBtn);
-      buttons.appendChild(unsureBtn);
-      buttons.appendChild(dislikeBtn);
-
-      const summary = document.createElement("div");
-      summary.className = "rating-summary flex items-center justify-end gap-1";
-      summary.setAttribute("data-rating-summary", "");
-      summary.setAttribute("data-image-id", imageId);
-
-      footer.appendChild(buttons);
-      footer.appendChild(summary);
-
-      meta.appendChild(title);
-      meta.appendChild(subtitle);
-      meta.appendChild(footer);
-
-      card.appendChild(link);
-      card.appendChild(meta);
-      frag.appendChild(card);
-
-      if (typeof window !== "undefined" && window.Ratings?.mountCard) {
-        const unsub = window.Ratings.mountCard(card, imageId);
-        if (typeof unsub === "function") state.unsubscribers.push(unsub);
-      }
+      const card = createImageCard(image);
+      if (card) frag.appendChild(card);
     }
 
     grid.appendChild(frag);
