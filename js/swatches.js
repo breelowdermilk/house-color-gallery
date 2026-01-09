@@ -393,6 +393,7 @@ const Swatches = (function () {
         { min: 4, max: 4, label: "👍 Strong", sublabel: "score 4" },
         { min: 3, max: 3, label: "👀 Promising", sublabel: "score 3" },
         { min: 1, max: 2, label: "🤔 Controversial", sublabel: "score 1-2" },
+        { min: 0, max: 0, label: "🆕 Unrated", sublabel: "no votes yet" },
       ];
 
       for (const tier of tiers) {
