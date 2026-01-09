@@ -400,9 +400,32 @@ const Gallery = (function () {
 
     const frag = document.createDocumentFragment();
 
+    // For current-setup, group by room (Parlor, Office, Dining Room) instead of score
+    if (state.currentRoom === "current-setup") {
+      const roomSections = [
+        { key: "parlor", label: "Parlor" },
+        { key: "office", label: "Office" },
+        { key: "dining-room", label: "Dining Room" },
+      ];
+
+      for (const section of roomSections) {
+        const sectionImages = filtered.filter(img => img.subRoom === section.key);
+        if (sectionImages.length === 0) continue;
+
+        const header = document.createElement("div");
+        header.className = "col-span-full flex items-center gap-2 mt-6 mb-3 first:mt-0";
+        header.innerHTML = `<span class="text-base font-semibold text-slate-800">${section.label}</span><span class="text-sm text-slate-500">— ${sectionImages.length} photo${sectionImages.length !== 1 ? "s" : ""}</span>`;
+        frag.appendChild(header);
+
+        for (const image of sectionImages) {
+          const card = createImageCard(image);
+          if (card) frag.appendChild(card);
+        }
+      }
+    }
     // For "all" view, group by tier with headers based on SCORE (like=2, unsure=1)
     // So "1 like + 2 unsures" (score 4) ranks with Strong, not Controversial
-    if (state.currentFilter === "all") {
+    else if (state.currentFilter === "all") {
       const tiers = [
         { min: 5, label: "⭐ Favorites", sublabel: "score 5-6" },
         { min: 4, max: 4, label: "👍 Strong", sublabel: "score 4" },
