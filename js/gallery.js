@@ -96,6 +96,18 @@ const Gallery = (function () {
 
       const flattened = [];
       for (const [room, items] of Object.entries(json)) {
+        // Handle nested structure like current-setup which has sub-arrays per room
+        if (items && typeof items === "object" && !Array.isArray(items)) {
+          for (const [subRoom, subItems] of Object.entries(items)) {
+            if (!Array.isArray(subItems)) continue;
+            for (const item of subItems) {
+              if (!item || typeof item !== "object") continue;
+              // Assign the parent room (current-setup) and sub-room as metadata
+              flattened.push({ ...item, room, subRoom });
+            }
+          }
+          continue;
+        }
         if (!Array.isArray(items)) continue;
         for (const item of items) {
           if (!item || typeof item !== "object") continue;
@@ -143,7 +155,7 @@ const Gallery = (function () {
   }
 
   function getTitle(image) {
-    return normalizeText(image?.pattern || image?.walls || image?.feature || image?.id || "");
+    return normalizeText(image?.filename || image?.pattern || image?.walls || image?.feature || image?.id || "");
   }
 
   function setupLazyLoading(root) {
@@ -304,7 +316,11 @@ const Gallery = (function () {
 
     const subtitle = document.createElement("p");
     subtitle.className = "mt-1 text-xs text-slate-600";
-    subtitle.textContent = titleCase(normalizeText(image.room || "")) || "";
+    // For current-setup images, show the sub-room (Parlor, Office, Dining Room)
+    const subtitleText = image.subRoom
+      ? titleCase(normalizeText(image.subRoom))
+      : titleCase(normalizeText(image.room || ""));
+    subtitle.textContent = subtitleText || "";
 
     const footer = document.createElement("div");
     footer.className = "mt-3 flex items-start justify-between gap-2";

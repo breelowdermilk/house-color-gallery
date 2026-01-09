@@ -256,6 +256,113 @@
       ],
       "likes": 2,
       "score": 5
+    },
+    {
+      "id": "parlor-038",
+      "filename": "Fireplace Mahogany Stain",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/fireplace-mahogany-stain-1767927166262",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/fireplace-mahogany-stain-1767927166262",
+      "walls": "Various",
+      "trim": "Mahogany",
+      "feature": "Mahogany Stain Fireplace",
+      "tags": [
+        "fireplace",
+        "mahogany",
+        "stain",
+        "wood"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "parlor-039",
+      "filename": "Fireplace Dark Walnut Stain",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/fireplace-dark-walnut-stain-1767927129315",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/fireplace-dark-walnut-stain-1767927129315",
+      "walls": "Various",
+      "trim": "Dark Walnut",
+      "feature": "Dark Walnut Stain Fireplace",
+      "tags": [
+        "fireplace",
+        "walnut",
+        "stain",
+        "wood",
+        "dark"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "parlor-040",
+      "filename": "P5 - Teal Marigold Sofa",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/parlor-p5-teal-marigold-sofa",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/parlor-p5-teal-marigold-sofa",
+      "walls": "Teal",
+      "trim": "Wood",
+      "feature": "Marigold Sofa",
+      "tags": [
+        "teal",
+        "marigold",
+        "sofa",
+        "phase5",
+        "complementary"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "parlor-041",
+      "filename": "P5 - Teal Burnt Orange Curtains",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/parlor-p5-teal-burnt-orange-curtains",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/parlor-p5-teal-burnt-orange-curtains",
+      "walls": "Teal",
+      "trim": "Wood",
+      "feature": "Burnt Orange Curtains",
+      "tags": [
+        "teal",
+        "burnt-orange",
+        "curtains",
+        "phase5",
+        "complementary"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "parlor-042",
+      "filename": "P4 - Moody Teal Purple Sofa",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/parlor-p4-moody-teal-purple-sofa",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/parlor-p4-moody-teal-purple-sofa",
+      "walls": "Teal",
+      "trim": "Dark",
+      "feature": "Purple Sofa - Moody",
+      "tags": [
+        "teal",
+        "purple",
+        "sofa",
+        "moody",
+        "phase4"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "parlor-043",
+      "filename": "P4 - Onyx Green Sofa",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/parlor/parlor-p4-onyx-green-sofa",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/parlor/parlor-p4-onyx-green-sofa",
+      "walls": "Onyx",
+      "trim": "Dark",
+      "feature": "Green Sofa",
+      "tags": [
+        "onyx",
+        "green",
+        "sofa",
+        "dark",
+        "phase4"
+      ],
+      "likes": 0,
+      "score": 0
     }
   ],
   "dining-room": [
@@ -856,6 +963,41 @@
       ],
       "likes": 1,
       "score": 3
+    },
+    {
+      "id": "dining-room-075",
+      "filename": "P3 - Teal Botanical NO BIRDS",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/dining-room/dining-p3-teal-botanical-no-birds",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/dining-room/dining-p3-teal-botanical-no-birds",
+      "wallpaper": "Teal Botanical",
+      "wainscoting": "Green",
+      "feature": "No Birds",
+      "tags": [
+        "teal",
+        "botanical",
+        "no-birds",
+        "phase3"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "dining-room-076",
+      "filename": "P3 - Teal Botanical NO BIRDS (Real Swatch)",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/dining-room/dining-p3-teal-botanical-no-birds-real-swatch",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/dining-room/dining-p3-teal-botanical-no-birds-real-swatch",
+      "wallpaper": "Teal Botanical",
+      "wainscoting": "Green",
+      "feature": "No Birds - Real Swatch",
+      "tags": [
+        "teal",
+        "botanical",
+        "no-birds",
+        "real-swatch",
+        "phase3"
+      ],
+      "likes": 0,
+      "score": 0
     }
   ],
   "office": [
@@ -949,6 +1091,199 @@
       ],
       "likes": 3,
       "score": 6
+    },
+    {
+      "id": "office-017",
+      "filename": "P3 - Burgundy Gold Metallic",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/office/office-p3-burgundy-gold-metallic",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/office/office-p3-burgundy-gold-metallic",
+      "walls": "Burgundy",
+      "trim": "Gold Metallic",
+      "ceiling": "Patterned",
+      "tags": [
+        "burgundy",
+        "gold",
+        "metallic",
+        "phase3"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "office-018",
+      "filename": "P3 - Burgundy Gold Metallic (Real Swatch)",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/office/office-p3-burgundy-gold-metallic-real-swatch",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/office/office-p3-burgundy-gold-metallic-real-swatch",
+      "walls": "Burgundy",
+      "trim": "Gold Metallic",
+      "ceiling": "Patterned",
+      "tags": [
+        "burgundy",
+        "gold",
+        "metallic",
+        "real-swatch",
+        "phase3"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "office-019",
+      "filename": "Concept - Red Ceiling Slats Desk",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/office/concept-red-ceiling-slats-desk",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/office/concept-red-ceiling-slats-desk",
+      "walls": "Gray-Blue",
+      "trim": "Wood",
+      "ceiling": "Red Slats",
+      "tags": [
+        "red",
+        "ceiling",
+        "slats",
+        "concept",
+        "desk"
+      ],
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "office-020",
+      "filename": "Concept - Red Ceiling Slats Couch",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/office/concept-red-ceiling-slats-couch",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/office/concept-red-ceiling-slats-couch",
+      "walls": "Gray-Blue",
+      "trim": "Wood",
+      "ceiling": "Red Slats",
+      "tags": [
+        "red",
+        "ceiling",
+        "slats",
+        "concept",
+        "couch"
+      ],
+      "likes": 0,
+      "score": 0
     }
-  ]
+  ],
+  "current-setup": {
+    "parlor": [
+      {
+        "id": "setup-parlor-001",
+        "filename": "Parlor Best Image (Combined)",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/combined-parlor-best-image",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/combined-parlor-best-image"
+      },
+      {
+        "id": "setup-parlor-002",
+        "filename": "Back Dining Table Stained Glass",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/parlor-back-dining-table-stained-glass-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/parlor-back-dining-table-stained-glass-stripped"
+      },
+      {
+        "id": "setup-parlor-003",
+        "filename": "Staircase View",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/actual-parlor-staircase-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/actual-parlor-staircase-stripped"
+      },
+      {
+        "id": "setup-parlor-004",
+        "filename": "Coffered Ceiling Doorway",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/parlor-coffered-ceiling-doorway-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/parlor-coffered-ceiling-doorway-stripped"
+      },
+      {
+        "id": "setup-parlor-005",
+        "filename": "Fireplace Coffered Ceiling",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/parlor-fireplace-coffered-ceiling-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/parlor-fireplace-coffered-ceiling-stripped"
+      },
+      {
+        "id": "setup-parlor-006",
+        "filename": "Window Radiator Transom",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/parlor-window-radiator-transom-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/parlor-window-radiator-transom-stripped"
+      },
+      {
+        "id": "setup-parlor-007",
+        "filename": "Window Seat Stained Glass",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/parlor/parlor-back-window-seat-stained-glass-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/parlor/parlor-back-window-seat-stained-glass-stripped"
+      }
+    ],
+    "office": [
+      {
+        "id": "setup-office-001",
+        "filename": "Office Stripped",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-stripped"
+      },
+      {
+        "id": "setup-office-002",
+        "filename": "Bay Window Dual Desks - Empty",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-bay-window-dual-desks-strippe",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-bay-window-dual-desks-strippe"
+      },
+      {
+        "id": "setup-office-003",
+        "filename": "Both Doors Wide - Brown Oak",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-both-doors-wide-stripped-brow",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-both-doors-wide-stripped-brow"
+      },
+      {
+        "id": "setup-office-004",
+        "filename": "Both Doors Wide - Empty",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-both-doors-wide-stripped-empt",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-both-doors-wide-stripped-empt"
+      },
+      {
+        "id": "setup-office-005",
+        "filename": "Entry Door Guitar Art - Brown Oak",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-entry-door-guitar-art-strippe",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-entry-door-guitar-art-strippe"
+      },
+      {
+        "id": "setup-office-006",
+        "filename": "Entry Door Guitar Art - Empty",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-entry-door-guitar-art-strippe",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-entry-door-guitar-art-strippe"
+      },
+      {
+        "id": "setup-office-007",
+        "filename": "Monitors Closet Door - Empty",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-monitors-closet-door-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-monitors-closet-door-stripped"
+      },
+      {
+        "id": "setup-office-008",
+        "filename": "Wide View Closet - Brown Oak",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-wide-view-closet-stripped-bro",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-wide-view-closet-stripped-bro"
+      },
+      {
+        "id": "setup-office-009",
+        "filename": "Wide View Closet - Empty",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/office/office-current-setup-wide-view-closet-stripped-emp",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/office/office-current-setup-wide-view-closet-stripped-emp"
+      }
+    ],
+    "dining-room": [
+      {
+        "id": "setup-dining-001",
+        "filename": "Dining Room Stripped",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/dining-room/dining-room-stripped",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/dining-room/dining-room-stripped"
+      },
+      {
+        "id": "setup-dining-002",
+        "filename": "Dining Room Facing Parlor",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/dining-room/diming-room-stripped-facing-parlor",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/dining-room/diming-room-stripped-facing-parlor"
+      },
+      {
+        "id": "setup-dining-003",
+        "filename": "Dining Room Best",
+        "url": "https://res.cloudinary.com/diasapebb/image/upload/house-color-gallery/stripped/dining-room/dining-room-stripped-best",
+        "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/house-color-gallery/stripped/dining-room/dining-room-stripped-best"
+      }
+    ]
+  }
 }
