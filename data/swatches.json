@@ -739,6 +739,476 @@
       "filename": "Morris Co Golden Lily - charcoal olive art-nouveau.jpg",
       "likes": 1,
       "score": 3
+    },
+    {
+      "id": "art-deco-160309-rose-gold",
+      "name": "Art Deco 160309 - Rose Gold",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932882/house-color-gallery/swatches/art-deco-160309-rose-gold.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932882/house-color-gallery/swatches/art-deco-160309-rose-gold.webp",
+      "filename": "Art Deco 160309 - Rose Gold.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "bananas-160357-copper-blush",
+      "name": "Bananas 160357 - Copper Blush",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932882/house-color-gallery/swatches/bananas-160357-copper-blush.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932882/house-color-gallery/swatches/bananas-160357-copper-blush.webp",
+      "filename": "Bananas 160357 - Copper Blush.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "bohemia-199526-black",
+      "name": "Bohemia 199526 - Black",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932883/house-color-gallery/swatches/bohemia-199526-black.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932883/house-color-gallery/swatches/bohemia-199526-black.webp",
+      "filename": "Bohemia 199526 - Black.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "bold-art-deco-169019-indigo",
+      "name": "Bold Art Deco 169019 - Indigo",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932885/house-color-gallery/swatches/bold-art-deco-169019-indigo.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932885/house-color-gallery/swatches/bold-art-deco-169019-indigo.webp",
+      "filename": "Bold Art Deco 169019 - Indigo.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "cabana-club-222393-lush",
+      "name": "Cabana Club 222393 - Lush",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932885/house-color-gallery/swatches/cabana-club-222393-lush.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932885/house-color-gallery/swatches/cabana-club-222393-lush.webp",
+      "filename": "Cabana Club 222393 - Lush.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "casa-floral-209748-green",
+      "name": "Casa Floral 209748 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932886/house-color-gallery/swatches/casa-floral-209748-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932886/house-color-gallery/swatches/casa-floral-209748-green.webp",
+      "filename": "Casa Floral 209748 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "cascada-202960-amazonite",
+      "name": "Cascada 202960 - Amazonite",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932887/house-color-gallery/swatches/cascada-202960-amazonite.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932887/house-color-gallery/swatches/cascada-202960-amazonite.webp",
+      "filename": "Cascada 202960 - Amazonite.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "cork-geo-204352-terracotta",
+      "name": "Cork Geo 204352 - Terracotta",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932888/house-color-gallery/swatches/cork-geo-204352-terracotta.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932888/house-color-gallery/swatches/cork-geo-204352-terracotta.webp",
+      "filename": "Cork Geo 204352 - Terracotta.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "cork-geo-204353-sage",
+      "name": "Cork Geo 204353 - Sage",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932888/house-color-gallery/swatches/cork-geo-204353-sage.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932888/house-color-gallery/swatches/cork-geo-204353-sage.webp",
+      "filename": "Cork Geo 204353 - Sage.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "coventry-213438-burgundy",
+      "name": "Coventry 213438 - Burgundy",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932889/house-color-gallery/swatches/coventry-213438-burgundy.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932889/house-color-gallery/swatches/coventry-213438-burgundy.webp",
+      "filename": "Coventry 213438 - Burgundy.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "dandy-floral-219208-sage",
+      "name": "Dandy Floral 219208 - Sage",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932890/house-color-gallery/swatches/dandy-floral-219208-sage.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932890/house-color-gallery/swatches/dandy-floral-219208-sage.webp",
+      "filename": "Dandy Floral 219208 - Sage.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "daraee-tapestry-211334-midnight",
+      "name": "Daraee Tapestry 211334 - Midnight",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932891/house-color-gallery/swatches/daraee-tapestry-211334-midnight.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932891/house-color-gallery/swatches/daraee-tapestry-211334-midnight.webp",
+      "filename": "Daraee Tapestry 211334 - Midnight.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "deco-175078-red",
+      "name": "Deco 175078 - Red",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932892/house-color-gallery/swatches/deco-175078-red.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932892/house-color-gallery/swatches/deco-175078-red.webp",
+      "filename": "Deco 175078 - Red.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "distressed-plaster-167038-ash",
+      "name": "Distressed Plaster 167038 - Ash",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932894/house-color-gallery/swatches/distressed-plaster-167038-ash.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932894/house-color-gallery/swatches/distressed-plaster-167038-ash.webp",
+      "filename": "Distressed Plaster 167038 - Ash.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "egon-42268-paintable-white",
+      "name": "Egon 42268 - Paintable White",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932894/house-color-gallery/swatches/egon-42268-paintable-white.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932894/house-color-gallery/swatches/egon-42268-paintable-white.webp",
+      "filename": "Egon 42268 - Paintable White.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "eternity-162801-teal",
+      "name": "Eternity 162801 - Teal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932895/house-color-gallery/swatches/eternity-162801-teal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932895/house-color-gallery/swatches/eternity-162801-teal.webp",
+      "filename": "Eternity 162801 - Teal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "fern-jungle-213546-dark-green",
+      "name": "Fern Jungle 213546 - Dark Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932895/house-color-gallery/swatches/fern-jungle-213546-dark-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932895/house-color-gallery/swatches/fern-jungle-213546-dark-green.webp",
+      "filename": "Fern Jungle 213546 - Dark Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "florence-floral-186302-yellow",
+      "name": "Florence Floral 186302 - Yellow",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932896/house-color-gallery/swatches/florence-floral-186302-yellow.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932896/house-color-gallery/swatches/florence-floral-186302-yellow.webp",
+      "filename": "Florence Floral 186302 - Yellow.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "grace-161069-teal",
+      "name": "Grace 161069 - Teal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932897/house-color-gallery/swatches/grace-161069-teal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932897/house-color-gallery/swatches/grace-161069-teal.webp",
+      "filename": "Grace 161069 - Teal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "heritage-159978-gold",
+      "name": "Heritage 159978 - Gold",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932897/house-color-gallery/swatches/heritage-159978-gold.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932897/house-color-gallery/swatches/heritage-159978-gold.webp",
+      "filename": "Heritage 159978 - Gold.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "jardin-botanico-209617-sage",
+      "name": "Jardin Botanico 209617 - Sage",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932898/house-color-gallery/swatches/jardin-botanico-209617-sage.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932898/house-color-gallery/swatches/jardin-botanico-209617-sage.webp",
+      "filename": "Jardin Botanico 209617 - Sage.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "josef-175385-tabac",
+      "name": "Josef 175385 - Tabac",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932898/house-color-gallery/swatches/josef-175385-tabac.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932898/house-color-gallery/swatches/josef-175385-tabac.webp",
+      "filename": "Josef 175385 - Tabac.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "lancet-194027-green-gold",
+      "name": "Lancet 194027 - Green & Gold",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932899/house-color-gallery/swatches/lancet-194027-green-gold.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932899/house-color-gallery/swatches/lancet-194027-green-gold.webp",
+      "filename": "Lancet 194027 - Green & Gold.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "leaf-fan-222024-duck-egg-blue",
+      "name": "Leaf Fan 222024 - Duck Egg Blue",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932900/house-color-gallery/swatches/leaf-fan-222024-duck-egg-blue.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932900/house-color-gallery/swatches/leaf-fan-222024-duck-egg-blue.webp",
+      "filename": "Leaf Fan 222024 - Duck Egg Blue.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "linear-web-202524-charcoal",
+      "name": "Linear Web 202524 - Charcoal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932901/house-color-gallery/swatches/linear-web-202524-charcoal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932901/house-color-gallery/swatches/linear-web-202524-charcoal.webp",
+      "filename": "Linear Web 202524 - Charcoal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "meiying-160883-teal",
+      "name": "Meiying 160883 - Teal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932902/house-color-gallery/swatches/meiying-160883-teal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932902/house-color-gallery/swatches/meiying-160883-teal.webp",
+      "filename": "Meiying 160883 - Teal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "miami-tropical-geo-189173-natural-green",
+      "name": "Miami Tropical Geo 189173 - Natural  Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932902/house-color-gallery/swatches/miami-tropical-geo-189173-natural-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932902/house-color-gallery/swatches/miami-tropical-geo-189173-natural-green.webp",
+      "filename": "Miami Tropical Geo 189173 - Natural  Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "miami-tropical-geo-189175-emerald-gold",
+      "name": "Miami Tropical Geo 189175 - Emerald  Gold",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932903/house-color-gallery/swatches/miami-tropical-geo-189175-emerald-gold.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932903/house-color-gallery/swatches/miami-tropical-geo-189175-emerald-gold.webp",
+      "filename": "Miami Tropical Geo 189175 - Emerald  Gold.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "miya-geo-214607-teal",
+      "name": "Miya Geo 214607 - Teal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932904/house-color-gallery/swatches/miya-geo-214607-teal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932904/house-color-gallery/swatches/miya-geo-214607-teal.webp",
+      "filename": "Miya Geo 214607 - Teal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "nagano-218541-gold",
+      "name": "Nagano 218541 - Gold",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932904/house-color-gallery/swatches/nagano-218541-gold.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932904/house-color-gallery/swatches/nagano-218541-gold.webp",
+      "filename": "Nagano 218541 - Gold.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "palais-209661-sage",
+      "name": "Palais 209661 - Sage",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932905/house-color-gallery/swatches/palais-209661-sage.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932905/house-color-gallery/swatches/palais-209661-sage.webp",
+      "filename": "Palais 209661 - Sage.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "paradys-199527-green",
+      "name": "Paradys 199527 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932906/house-color-gallery/swatches/paradys-199527-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932906/house-color-gallery/swatches/paradys-199527-green.webp",
+      "filename": "Paradys 199527 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "piastrella-162302-huntsman-green",
+      "name": "Piastrella 162302 - Huntsman Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932907/house-color-gallery/swatches/piastrella-162302-huntsman-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932907/house-color-gallery/swatches/piastrella-162302-huntsman-green.webp",
+      "filename": "Piastrella 162302 - Huntsman Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "pineapple-damask-216116-yellow",
+      "name": "Pineapple Damask 216116 - Yellow",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932907/house-color-gallery/swatches/pineapple-damask-216116-yellow.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932907/house-color-gallery/swatches/pineapple-damask-216116-yellow.webp",
+      "filename": "Pineapple Damask 216116 - Yellow.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "rabatt-204525-multi-dark",
+      "name": "Rabatt 204525 - Multi  Dark",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932908/house-color-gallery/swatches/rabatt-204525-multi-dark.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932908/house-color-gallery/swatches/rabatt-204525-multi-dark.webp",
+      "filename": "Rabatt 204525 - Multi  Dark.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "rene-160373-blush",
+      "name": "Rene 160373 - Blush",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932908/house-color-gallery/swatches/rene-160373-blush.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932908/house-color-gallery/swatches/rene-160373-blush.webp",
+      "filename": "Rene 160373 - Blush.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "richmond-223085-forest-green",
+      "name": "Richmond 223085 - Forest Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932909/house-color-gallery/swatches/richmond-223085-forest-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932909/house-color-gallery/swatches/richmond-223085-forest-green.webp",
+      "filename": "Richmond 223085 - Forest Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "scandi-leaf-179467-green",
+      "name": "Scandi Leaf 179467 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932910/house-color-gallery/swatches/scandi-leaf-179467-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932910/house-color-gallery/swatches/scandi-leaf-179467-green.webp",
+      "filename": "Scandi Leaf 179467 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "shard-trellis-186327-navy",
+      "name": "Shard Trellis 186327 - Navy",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932910/house-color-gallery/swatches/shard-trellis-186327-navy.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932910/house-color-gallery/swatches/shard-trellis-186327-navy.webp",
+      "filename": "Shard Trellis 186327 - Navy.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "shoji-162818-teal",
+      "name": "Shoji 162818 - Teal",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932911/house-color-gallery/swatches/shoji-162818-teal.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932911/house-color-gallery/swatches/shoji-162818-teal.webp",
+      "filename": "Shoji 162818 - Teal.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "stravinsky-136287-green",
+      "name": "Stravinsky 136287 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932912/house-color-gallery/swatches/stravinsky-136287-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932912/house-color-gallery/swatches/stravinsky-136287-green.webp",
+      "filename": "Stravinsky 136287 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "the-emerald-fan-189106-emerald",
+      "name": "The Emerald Fan 189106 - Emerald",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932912/house-color-gallery/swatches/the-emerald-fan-189106-emerald.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932912/house-color-gallery/swatches/the-emerald-fan-189106-emerald.webp",
+      "filename": "The Emerald Fan 189106 - Emerald.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "trellia-221963-green",
+      "name": "Trellia 221963 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932913/house-color-gallery/swatches/trellia-221963-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932913/house-color-gallery/swatches/trellia-221963-green.webp",
+      "filename": "Trellia 221963 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "tropical-tiles-mural-208863-green",
+      "name": "Tropical Tiles Mural 208863 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932914/house-color-gallery/swatches/tropical-tiles-mural-208863-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932914/house-color-gallery/swatches/tropical-tiles-mural-208863-green.webp",
+      "filename": "Tropical Tiles Mural 208863 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "vida-202992-amazonite",
+      "name": "Vida 202992 - Amazonite",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932914/house-color-gallery/swatches/vida-202992-amazonite.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932914/house-color-gallery/swatches/vida-202992-amazonite.webp",
+      "filename": "Vida 202992 - Amazonite.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "vincenzo-209110-green",
+      "name": "Vincenzo 209110 - Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932915/house-color-gallery/swatches/vincenzo-209110-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932915/house-color-gallery/swatches/vincenzo-209110-green.webp",
+      "filename": "Vincenzo 209110 - Green.webp",
+      "likes": 0,
+      "score": 0
+    },
+    {
+      "id": "willow-170845-sky-leaf-green",
+      "name": "Willow 170845 - Sky  Leaf Green",
+      "category": "General",
+      "url": "https://res.cloudinary.com/diasapebb/image/upload/v1767932915/house-color-gallery/swatches/willow-170845-sky-leaf-green.webp",
+      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_thumb,w_300,h_300/v1767932915/house-color-gallery/swatches/willow-170845-sky-leaf-green.webp",
+      "filename": "Willow 170845 - Sky  Leaf Green.webp",
+      "likes": 0,
+      "score": 0
     }
   ]
 }
