@@ -104,24 +104,6 @@
       "score": 3
     },
     {
-      "id": "parlor-017",
-      "filename": "Slate Blue Walls - Burgundy Trim - Wood Mantle - Moody",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Slate%20Blue%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20-%20Moody",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/Slate%20Blue%20Walls%20-%20Burgundy%20Trim%20-%20Wood%20Mantle%20-%20Moody",
-      "walls": "Slate Blue",
-      "trim": "Burgundy",
-      "feature": "Wood Mantle",
-      "tags": [
-        "burgundy",
-        "mantle",
-        "wood",
-        "blue",
-        "slate"
-      ],
-      "likes": 1,
-      "score": 2
-    },
-    {
       "id": "parlor-019",
       "filename": "Teal Walls - Burgundy Trim - Burgundy Mantle",
       "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/Teal%20Walls%20-%20Burgundy%20Trim%20-%20Burgundy%20Mantle",
@@ -220,25 +202,6 @@
       ],
       "likes": 2,
       "score": 4
-    },
-    {
-      "id": "parlor-031",
-      "filename": "parlor main hybrid all teal bright purple fireplace",
-      "url": "https://res.cloudinary.com/diasapebb/image/upload/parlor/parlor_main_hybrid_all_teal_bright_purple_fireplace_1767332090415",
-      "thumbnail": "https://res.cloudinary.com/diasapebb/image/upload/c_fill,w_400,h_300,q_auto,f_auto/parlor/parlor_main_hybrid_all_teal_bright_purple_fireplace_1767332090415",
-      "walls": "Teal",
-      "trim": "Purple",
-      "feature": "Main Room",
-      "tags": [
-        "hybrid",
-        "purple",
-        "bright",
-        "all",
-        "fireplace",
-        "teal"
-      ],
-      "likes": 1,
-      "score": 3
     },
     {
       "id": "parlor-032",
